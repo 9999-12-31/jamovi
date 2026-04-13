@@ -1,0 +1,70 @@
+---
+title: Plots bundled with jamovi
+name: scatr
+version: 2.8.0
+jms: '1.0'
+authors:
+  - Ravi Selker
+maintainer: Ravi Selker <selker.ravi@gmail.com>
+date: '2026-03-11'
+category: plots
+type: R
+description: >-
+  Create elegant and interactive plots built on 'ggplot2'. The package is
+  designed to provide a convenience layer to 'ggplot2' within jamovi.
+analyses:
+  - title: Bar Plot
+    name: jmvbar
+    ns: scatr
+    menuGroup: .
+    menuTitle: Bar Plot
+    category: plots
+  - title: Box Plot
+    name: jmvbox
+    ns: scatr
+    menuGroup: .
+    menuTitle: Box Plot
+    category: plots
+  - title: Histogram
+    name: jmvhist
+    ns: scatr
+    menuGroup: .
+    menuTitle: Histogram
+    category: plots
+  - title: Scatter Plot
+    name: scat
+    ns: scatr
+    menuGroup: .
+    menuTitle: Scatter Plot
+    category: plots
+  - title: Line Plot
+    name: jmvline
+    ns: scatr
+    menuGroup: .
+    menuTitle: Line Plot
+    category: plots
+  - title: Pareto Plot
+    name: pareto
+    ns: scatr
+    menuGroup: More
+    menuTitle: Pareto Plot
+    category: plots
+  - title: Scatter Plot
+    name: scat
+    ns: scatr
+    menuGroup: Exploration
+    menuTitle: Scatter Plot
+    menuSubgroup: scatr
+    category: analyses
+  - title: Pareto Plot
+    name: pareto
+    ns: scatr
+    menuGroup: Exploration
+    menuTitle: Pareto Plot
+    menuSubgroup: scatr
+    category: analyses
+usesNative: true
+minApp: 1.0.8
+index: 1
+
+...

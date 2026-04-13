@@ -1,0 +1,14 @@
+---
+name:  pareto
+title: Pareto Plot
+jrs:   '1.1'
+
+items:
+    - name: plot
+      title: ''
+      type: Image
+      description: a Pareto chart
+      width: 550
+      height: 500
+      renderFun: .pareto
+...

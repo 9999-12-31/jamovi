@@ -1,0 +1,28 @@
+
+.jmv-variable-list {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    min-width: 200px;
+}
+
+.jmv-variable-list > .middle {
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+.jmv-variable-list-item.none-item {
+    min-width: 100px;
+    height: 25px;
+    min-height: 25px;
+    padding-inline-start: 25px;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.jmv-variable-list-item.hidden {
+    display: none;
+}
+
+.jmv-variable-list-item.highlighted {
+    background-color: #DDDDDD;
+}

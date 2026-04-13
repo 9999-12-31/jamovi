@@ -1,0 +1,2695 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2026-03-21 00:09+0000\n"
+"Last-Translator: தமிழ்நேரம் <tamilneram247@gmail.com>\n"
+"Language-Team: Tamil <https://hosted.weblate.org/projects/jamovi/jamovi-i18n/"
+"ta/>\n"
+"Language: ta\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.17-dev\n"
+
+#: jamovi/server/jamovi/server/column.py
+msgid "'{}' is in error"
+msgstr "'{}' பிழையில் உள்ளது"
+
+#: jamovi/server/jamovi/server/compute/checker.py
+msgid "'{}' is not an argument for {}()\n"
+"(If you're wanting to test equality, use two equal signs '==')"
+msgstr "'{}' என்பது {} () க்கு ஒரு உரையாடல் அல்ல\n"
+" (நீங்கள் சமத்துவத்தை சோதிக்க விரும்பினால், இரண்டு சம அறிகுறிகளைப் பயன்படுத்துங்கள் '==')"
+
+#: jamovi/client/main/vareditor/datavarwidget.js:34
+msgid "(auto)"
+msgstr "(ஆட்டோ)"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:269
+msgid "(current)"
+msgstr "(மின்னோட்டம்)"
+
+#: jamovi/client/main/utils/headeralert.js:36
+msgid "(This is a quirk of Safari and iPads)"
+msgstr "(இது சஃபாரி மற்றும் ஐபாட்களின் நகைச்சுவை)"
+
+#: jamovi/client/main/contextmenu/contextmenus.ts:189
+msgid "{} Options:"
+msgstr "{} விருப்பங்கள்:"
+
+#: jamovi/client/main/backstage/fsentrybrowserview.ts:448
+msgid "{0} directory contents"
+msgstr "{0} அடைவு உள்ளடக்கங்கள்"
+
+#: jamovi/client/main/tableview.js:1427
+msgid "{columnType} columns may not be edited."
+msgstr "{columnType} நெடுவரிசைகள் திருத்தப்படாமல் போகலாம்."
+
+#: jamovi/client/analysisui/formatdef.js:116
+#: jamovi/client/analysisui/formatdef.js:271
+#: jamovi/client/analysisui/gridtargetcontrol.js:596
+msgid "{list} and {lastItem}"
+msgstr "{list} மற்றும் {lastItem}"
+
+#: jamovi/client/analysisui/formatdef.js:112
+#: jamovi/client/analysisui/formatdef.js:267
+#: jamovi/client/analysisui/gridtargetcontrol.js:592
+msgid "{list}, {nextItem}"
+msgstr "{list}, {nextItem}"
+
+#: jamovi/client/main/store/pagemodules.js:312
+msgid "{m} was uninstalled successfully"
+msgstr "{m the வெற்றிகரமாக நிறுவல் நீக்கப்பட்டது"
+
+#: jamovi/client/main/store/pagemodules.js:369
+msgid "{module} was installed successfully"
+msgstr "{module} வெற்றிகரமாக நிறுவப்பட்டது"
+
+#: jamovi/client/main/ribbon/appmenu.js:76
+#: jamovi/client/main/ribbon/appmenu.js:84
+msgid "{n} dp"
+msgstr "{n} dp"
+
+#: jamovi/client/main/viewcontroller.js:600
+#: jamovi/client/main/viewcontroller.js:641
+msgid "{n} is not a positive integer"
+msgstr "{n} ஒரு நேர்மறையான முழு எண் அல்ல"
+
+#: jamovi/client/main/ribbon/appmenu.js:76
+#: jamovi/client/main/ribbon/appmenu.js:84
+msgid "{n} sf"
+msgstr "{n} sf"
+
+#: jamovi/client/analysisui/formatdef.js:164
+msgid "{name} variable"
+msgstr "{name} மாறி"
+
+#: jamovi/client/main/vareditor/datavarwidget.js:107
+msgid "{r} is not an integer"
+msgstr "{r} ஒரு முழு எண் அல்ல"
+
+#: jamovi/client/resultsview/array.js:182
+#: jamovi/client/resultsview/group.js:129
+msgid "{title} Initial Annotation"
+msgstr "{title} ஆரம்ப சிறுகுறிப்பு"
+
+#: jamovi/client/analysisui/variableslistbox.js:174
+msgid "{var} not permitted. Incorrect measure or data type."
+msgstr "{var} அனுமதிக்கப்படவில்லை. தவறான நடவடிக்கை அல்லது தரவு வகை."
+
+#: jamovi/client/analysisui/gridtargetcontrol.js:842
+msgid "{vars} added to {list}."
+msgstr "{vars} {list} இல் சேர்க்கப்பட்டுள்ளது."
+
+#: jamovi/client/analysisui/gridtargetcontrol.js:844
+msgid "{vars} items added to {list}."
+msgstr "{vars} உருப்படிகள் {list} இல் சேர்க்கப்பட்டுள்ளன."
+
+#: jamovi/client/analysisui/gridtargetcontrol.js:890
+msgid "{vars} items removed from {list}."
+msgstr "{vars} உருப்படிகள் {list} இலிருந்து அகற்றப்பட்டன."
+
+#: jamovi/client/analysisui/gridtargetcontrol.js:888
+msgid "{vars} removed from {list}."
+msgstr "{vars} {பட்டியல் இருந்து இலிருந்து அகற்றப்பட்டது."
+
+#: jamovi/client/main/ribbon/appmenu.js:284
+msgid "A change of language requires jamovi to be restarted"
+msgstr "மொழியின் மாற்றத்திற்கு சாமோவியை மறுதொடக்கம் செய்ய வேண்டும்"
+
+#: jamovi/server/jamovi/server/formatio/omv.py
+msgid "A newer version of jamovi is required"
+msgstr "சாமோவியின் புதிய பதிப்புத் தேவை"
+
+#: jamovi/client/main/ribbon/appmenu.js:119
+msgid "Accent"
+msgstr "உச்சரிப்பு"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "Access is denied. You may not have the appropriate permissions to access this resource."
+msgstr "அணுகல் மறுக்கப்படுகிறது. இந்த வளத்தை அணுக உங்களுக்கு பொருத்தமான அனுமதிகள் இல்லை."
+
+#: jamovi/client/main/vareditor/filterwidget.js:379
+#: jamovi/client/main/vareditor/filterwidget.js:497
+#: jamovi/client/main/vareditor/filterwidget.js:534
+msgid "active"
+msgstr "செயலில்"
+
+#: jamovi/client/main/ribbon/datatab.js:43
+#: jamovi/client/main/ribbon/datatab.js:70
+#: jamovi/client/main/ribbon/variablestab.js:26
+msgid "Add"
+msgstr "கூட்டு"
+
+#: jamovi/client/analysisui/gridtargetcontrol.js:612
+msgid "Add {1} items to {0}"
+msgstr "{0} இல் {1} உருப்படிகளைச் சேர்க்கவும்"
+
+#: jamovi/client/main/vareditor/filterwidget.js:264
+#: jamovi/client/main/vareditor/filterwidget.js:408
+msgid "Add another nested filter"
+msgstr "மற்றொரு உள்ளமைக்கப்பட்ட வடிப்பானைச் சேர்க்கவும்"
+
+#: jamovi/client/analysisui/gridtargetcontrol.js:610
+msgid "Add item {1} to {0}"
+msgstr "உருப்படி {1} {0 பெறுநர் க்குச் சேர்க்கவும்"
+
+#: jamovi/client/analysisui/gridtargetcontrol.js:608
+msgid "Add items to {0}"
+msgstr "{0} இல் உருப்படிகளைச் சேர்க்கவும்"
+
+#: jamovi/client/main/vareditor/missingvaluelist.js:46
+msgid "Add Missing Value"
+msgstr "காணாமல் போன மதிப்பைச் சேர்க்கவும்"
+
+#: jamovi/client/main/vareditor/filterwidget.js:40
+msgid "Add new filter"
+msgstr "புதிய வடிகட்டியைச் சேர்க்கவும்"
+
+#: jamovi/client/main/vareditor/datavarwidget.js:44
+msgid "Add new level"
+msgstr "புதிய மட்டத்தைச் சேர்க்கவும்"
+
+#: jamovi/client/main/ribbon/datatab.js:70
+msgid "Add new rows"
+msgstr "புதிய வரிசைகளைச் சேர்க்கவும்"
+
+#: jamovi/client/main/ribbon/datatab.js:43
+msgid "Add new variable"
+msgstr "புதிய மாறியைச் சேர்க்கவும்"
+
+#: jamovi/client/resultsview/element.js:134
+msgid "Add Note"
+msgstr "குறிப்பைச் சேர்க்கவும்"
+
+#: jamovi/client/main/editors/transformeditor.js:144
+msgid "Add recode condition"
+msgstr "ரெகோட் நிபந்தனையைச் சேர்க்கவும்"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:57
+msgid "Add Variable"
+msgstr "மாறி சேர்க்கவும்"
+
+#: jamovi/client/main/tableview.js:97
+msgid "Added"
+msgstr "சேர்க்கப்பட்டது"
+
+#: jamovi/client/main/resultspanel.js:596
+msgid "All"
+msgstr "அனைத்தும்"
+
+#: jamovi/client/analysisui/gridtargetcontrol.js:1033
+#: jamovi/client/analysisui/gridtargetcontrol.js:1034
+#: jamovi/client/analysisui/gridtargetcontrol.js:1035
+#: jamovi/client/analysisui/gridtargetcontrol.js:1036
+msgid "All {n} way"
+msgstr "அனைத்து {n} வழி"
+
+#: jamovi/client/main/backstage/fsentrybrowserview.ts:465
+msgid "An online data set hosted by {hostname}"
+msgstr "{hostname} வழங்கிய நிகழ்நிலை தரவுத் தொகுப்புத் தொகுப்பு"
+
+#: jamovi/client/main/main.js:144
+msgid "An unexpected error has occured, and jamovi must now close."
+msgstr "எதிர்பாராத பிழை ஏற்பட்டுள்ளது, சாமோவி இப்போது மூடப்பட வேண்டும்."
+
+#: jamovi/server/jamovi/server/syncs/http.py
+msgid "An unexpected error occurred"
+msgstr "எதிர்பாராத பிழை ஏற்பட்டது"
+
+#: jamovi/client/main/ribbon/analysetab.js:14
+#: jamovi/client/main/ribbon/analysetab.js:97
+msgid "Analyses"
+msgstr "பகுப்பாய்வு"
+
+#: jamovi/server/jamovi/server/engine.py
+msgid "Analyses which execute arbitrary code are not permitted in this session."
+msgstr "இந்த அமர்வில் தன்னிச்சையான குறியீட்டை இயக்கும் பகுப்பாய்வுகள் அனுமதிக்கப்படவில்லை."
+
+#: jamovi/client/resultsview/main.js:133
+msgid "Analysis"
+msgstr "பகுப்பாய்வு"
+
+#: jamovi/client/resultsview/heading.js:164
+#: jamovi/client/resultsview/heading.js:17
+msgid "Analysis Heading - {title}"
+msgstr "பகுப்பாய்வு தலைப்பு - {title}"
+
+#: jamovi/client/main/vareditor/filterwidget.js:402
+msgid "and"
+msgstr "மற்றும்"
+
+#: jamovi/client/resultsview/annotation.js:168
+msgid "Annotation"
+msgstr "சிறுகுறி"
+
+#: jamovi/client/resultsview/array.js:276
+#: jamovi/client/resultsview/group.js:181
+msgid "Annotation for group {name}"
+msgstr "குழுவிற்கான சிறுகுறிப்பு {name}"
+
+#: jamovi/client/resultsview/array.js:280
+#: jamovi/client/resultsview/group.js:185
+msgid "Annotation for image {name}"
+msgstr "படத்திற்கான சிறுகுறிப்பு {name}"
+
+#: jamovi/client/resultsview/array.js:282
+#: jamovi/client/resultsview/group.js:187
+msgid "Annotation for item {name}"
+msgstr "உருப்படிக்கான சிறுகுறிப்பு {name}"
+
+#: jamovi/client/resultsview/array.js:278
+#: jamovi/client/resultsview/group.js:183
+msgid "Annotation for list {name}"
+msgstr "பட்டியலுக்கான சிறுகுறிப்பு {name}"
+
+#: jamovi/client/resultsview/array.js:274
+#: jamovi/client/resultsview/group.js:179
+msgid "Annotation for table {name}"
+msgstr "அட்டவணைக்கான சிறுகுறிப்பு {name}"
+
+#: jamovi/client/main/ribbon/analysetab.js:188
+msgid "ANOVA"
+msgstr "அனோவா"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:102
+#: jamovi/client/main/contextmenu/contextmenus.js:107
+#: jamovi/client/main/contextmenu/contextmenus.js:112
+#: jamovi/client/main/contextmenu/contextmenus.js:60
+#: jamovi/client/main/contextmenu/contextmenus.js:64
+#: jamovi/client/main/contextmenu/contextmenus.js:68
+#: jamovi/client/main/ribbon/datatab.js:46
+#: jamovi/client/main/ribbon/datatab.js:51
+#: jamovi/client/main/ribbon/datatab.js:56
+#: jamovi/client/main/ribbon/datatab.js:72
+#: jamovi/client/main/ribbon/variablestab.js:29
+#: jamovi/client/main/ribbon/variablestab.js:34
+#: jamovi/client/main/ribbon/variablestab.js:39
+msgid "Append"
+msgstr "பிற்சேர்"
+
+#: jamovi/client/main/viewcontroller.js:634
+msgid "Append how many rows?"
+msgstr "எத்தனை வரிசைகளைச் சேர்க்கவும்?"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:24
+#: jamovi/client/main/contextmenu/contextmenus.js:44
+msgid "Append Row..."
+msgstr "வரிசையைச் சேர்க்கவும் ..."
+
+#: jamovi/client/main/variableeditor.js:191
+msgid "Apply changes"
+msgstr "மாற்றங்களைப் பயன்படுத்துங்கள்"
+
+#: jamovi/client/main/notification.js:82
+msgid "Approaching plan time limit"
+msgstr "திட்ட நேர வரம்பை அணுகும்"
+
+#: jamovi/server/jamovi/server/server.py
+msgid "Authentication failure"
+msgstr "அங்கீகார தோல்வி"
+
+#: jamovi/server/jamovi/server/server.py
+msgid "Authentication required"
+msgstr "ஏற்பு தேவை"
+
+#: jamovi/client/main/editors/transformeditor.js:246
+#: jamovi/client/main/vareditor/measurelist.js:44
+msgid "Auto"
+msgstr "தானி"
+
+#: jamovi/client/main/ribbon/annotationtab.js:134
+msgid "Automatic"
+msgstr "தானியங்கி"
+
+#: jamovi/client/main/ribbon/appmenu.js:226
+#: jamovi/client/main/store.js:51
+msgid "Available"
+msgstr "கிடைக்கிறது"
+
+#: jamovi/client/analysisui/layoutsupplierview.js:147
+msgid "Available items"
+msgstr "கிடைக்கும் உருப்படிகள்"
+
+#: jamovi/server/jamovi/server/compute/checker.py
+msgid "Bad function definition"
+msgstr "மோசமான செயல்பாட்டு வரையறை"
+
+#: jamovi/client/main/ribbon/appmenu.js:111
+msgid "Black & white"
+msgstr "கருப்பு & வெள்ளை"
+
+#: jamovi/client/main/ribbon/appmenu.js:119
+msgid "Blues"
+msgstr "ப்ளூச்"
+
+#: jamovi/client/main/ribbon/annotationtab.js:122
+msgid "Bold"
+msgstr "தடிமான"
+
+#: jamovi/client/main/backstage/fsentrybrowserview.ts:323
+msgid "Browse"
+msgstr "உலாவு"
+
+#: jamovi/client/main/ribbon/annotationtab.js:153
+msgid "Bullet List"
+msgstr "புல்லட் பட்டியல்"
+
+#: jamovi/client/main/main.js:749
+#: jamovi/client/main/notifications.js:33
+msgid "Cancel"
+msgstr "ரத்துசெய்"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "Cannot assign non-integer value to column '{}'"
+msgstr "'{}' நெடுவரிசைக்கு முழு எண் அல்லாத மதிப்பை ஒதுக்க முடியாது"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "Cannot assign non-numeric value to column '{}'"
+msgstr "'{}' நெடுவரிசைக்கு எண் அல்லாத மதிப்பை ஒதுக்க முடியாது"
+
+#: jamovi/client/main/tableview.js:1485
+msgid "Cannot assign non-numeric value to column '{columnName}'"
+msgstr "'{columnName}' நெடுவரிசைக்கு எண் வரிசை அல்லாத மதிப்பை ஒதுக்க முடியாது"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "Cannot assign to computed column '{}'"
+msgstr "கணக்கிடப்பட்ட நெடுவரிசைக்கு '{}' க்கு ஒதுக்க முடியாது"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "Cannot assign to filter column '{}'"
+msgstr "'{}' நெடுவரிசையை வடிகட்ட ஒதுக்க முடியாது"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "Cannot assign to recoded column '{}'"
+msgstr "மறுகட்டப்பட்ட நெடுவரிசைக்கு '{}' க்கு ஒதுக்க முடியாது"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "Cannot assign to these columns."
+msgstr "இந்த நெடுவரிசைகளுக்கு ஒதுக்க முடியாது."
+
+#: jamovi/client/main/tableview.js:96
+msgid "Cells edited"
+msgstr "செல்கள் திருத்தப்பட்டன"
+
+#: jamovi/client/main/ribbon/annotationtab.js:145
+msgid "Center Align"
+msgstr "நடுவண் சீரமை"
+
+#: jamovi/client/main/vareditor/datavarlevelwidget.js:92
+msgid "change label..."
+msgstr "லேபிளை மாற்றவும் ..."
+
+#: jamovi/server/jamovi/server/compute/messages.py
+msgid "Circular reference detected"
+msgstr "வட்ட குறிப்பு கண்டறியப்பட்டது"
+
+#: jamovi/client/main/resultspanel.js:447
+msgid "Clear selection"
+msgstr "தெளிவான தேர்வு"
+
+#: jamovi/client/main/ribbon/annotationtab.js:100
+#: jamovi/client/main/ribbon/datatab.js:24
+msgid "Clipboard"
+msgstr "இடைநிலைப் பலகை"
+
+#: jamovi/client/main/infobox.js:277
+msgid "Close"
+msgstr "மூடு"
+
+#: jamovi/client/main/backstage.ts:1305
+msgid "Close file menu"
+msgstr "கோப்பு மெனுவை மூடு"
+
+#: jamovi/client/main/main.ts:311
+msgid "Close jamovi window"
+msgstr "சாமோவி சாளரத்தை மூடு"
+
+#: jamovi/client/main/ribbon/appmenu.js:49
+msgid "Close preferences"
+msgstr "விருப்பங்களை மூடு"
+
+#: jamovi/client/main/ribbon/annotationtab.js:170
+msgid "Code-Block"
+msgstr "குறியீடு-தொகுதி"
+
+#: jamovi/client/main/ribbon/appmenu.js:118
+msgid "Color palette"
+msgstr "வண்ண தட்டு"
+
+#: jamovi/server/jamovi/server/compute/checker.py
+#: jamovi/server/jamovi/server/compute/transmogrifier.py
+msgid "Column '{}' does not exist in the dataset"
+msgstr "தரவுத்தொகுப்பில் '{}' நெடுவரிசை இல்லை"
+
+#: jamovi/client/main/viewcontroller.js:294
+msgid "Column {columnName} deleted"
+msgid_plural "{n} columns deleted"
+msgstr[0] "நெடுவரிசை {columnName} நீக்கப்பட்டது"
+msgstr[1] "{n} நெடுவரிசைகள் நீக்கப்பட்டன"
+
+#: jamovi/client/main/tableview.js:1426
+msgid "Column is not editable"
+msgstr "நெடுவரிசை திருத்தக்கூடியது அல்ல"
+
+#: jamovi/client/main/ribbon/appmenu.ts:134
+msgid "Comma"
+msgstr "கமா"
+
+#: jamovi/client/main/ribbon/datatab.js:39
+#: jamovi/client/main/ribbon/variablestab.js:23
+msgid "Compute"
+msgstr "கணக்கிடுங்கள்"
+
+#: jamovi/client/main/dataset.js:1316
+msgid "Computed"
+msgstr "கணக்கிடப்பட்டது"
+
+#: jamovi/client/main/tableview.js:307
+msgid "Computed variable"
+msgstr "கணக்கிடப்பட்ட மாறி"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:105
+#: jamovi/client/main/contextmenu/contextmenus.js:62
+#: jamovi/client/main/ribbon/datatab.js:49
+#: jamovi/client/main/ribbon/variablestab.js:32
+#: jamovi/client/main/vareditor/editorwidget.js:246
+msgid "Computed Variable"
+msgid_plural "Multiple Computed Variables ({n})"
+msgstr[0] "கணக்கிடப்பட்ட மாறி"
+msgstr[1] "பல கணக்கிடப்பட்ட மாறிகள் ({n})"
+
+#: jamovi/client/main/main.js:889
+msgid "Connection failed"
+msgstr "இணைப்பு தோல்வியடைந்தது"
+
+#: jamovi/client/main/main.js:143
+#: jamovi/client/main/main.js:150
+msgid "Connection lost"
+msgstr "இணைப்பு இழந்தது"
+
+#: jamovi/client/main/editors/transformeditor.js:249
+#: jamovi/client/main/vareditor/datavarwidget.js:288
+#: jamovi/client/main/vareditor/measurelist.js:57
+msgid "Continuous"
+msgstr "தொடர்ச்சியான"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:62
+msgid "Convenience short-hand for ABS(IQR( variable ))"
+msgstr "ஏபிஎச் (IQR (மாறி)) க்கான வசதி குறுகிய கை"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:64
+msgid "Convenience short-hand for ABS(Z( variable ))"
+msgstr "ஏபிஎச் (இசட் (மாறி)) க்கான வசதி குறுகிய கை"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:72
+msgid "Convenience short-hand for MAX(ABSIQR( variable 1, variable 2, … ))"
+msgstr "அதிகபட்சத்திற்கான வசதி குறுகிய கை (Absiqr (மாறி 1, மாறி 2,…))"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:74
+msgid "Convenience short-hand for MAX(ABSZ( variable 1, variable 2, … ))"
+msgstr "அதிகபட்சத்திற்கான வசதி குறுகிய கை (APSZ (மாறி 1, மாறி 2,…))"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:150
+msgid "Converts a number to an integer."
+msgstr "ஒரு எண்ணை ஒரு முழு எண்ணாக மாற்றுகிறது."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:138
+msgid "Converts text to a number (if possible)."
+msgstr "உரையை ஒரு எண்ணாக மாற்றுகிறது (முடிந்தால்)."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:136
+msgid "Converts the value to text."
+msgstr "மதிப்பை உரையாக மாற்றுகிறது."
+
+#: jamovi/client/main/resultspanel.js:690
+#: jamovi/client/main/resultspanel.js:796
+msgid "Copied"
+msgstr "நகலெடுக்கப்பட்டது"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:133
+#: jamovi/client/main/contextmenu/contextmenus.js:14
+#: jamovi/client/main/contextmenu/contextmenus.js:36
+#: jamovi/client/main/contextmenu/contextmenus.js:89
+#: jamovi/client/main/menu.js:153
+#: jamovi/client/main/resultspanel.js:436
+#: jamovi/client/main/resultspanel.js:600
+#: jamovi/client/main/ribbon/annotationtab.js:105
+#: jamovi/client/main/ribbon/datatab.js:28
+#: jamovi/client/main/utils/clipboardprompt.js:19
+#: jamovi/client/main/utils/clipboardprompt.js:21
+#: jamovi/client/resultsview/element.js:134
+#: jamovi/client/resultsview/group.js:210
+#: jamovi/client/resultsview/group.js:212
+msgid "Copy"
+msgstr "நகலெடு"
+
+#: jamovi/client/resultsview/element.ts:206
+#: jamovi/client/resultsview/group.ts:268
+msgid "Copy Latex"
+msgstr "லேடெக்சை நகலெடுக்கவும்"
+
+#: jamovi/client/main/tableview.js:1484
+#: jamovi/server/jamovi/server/instance.py
+msgid "Could not assign data"
+msgstr "தரவை ஒதுக்க முடியவில்லை"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "Could not delete rows"
+msgstr "வரிசைகளை நீக்க முடியவில்லை"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "Could not insert columns"
+msgstr "நெடுவரிசைகளை செருக முடியவில்லை"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "Could not insert rows"
+msgstr "வரிசைகளைச் செருக முடியவில்லை"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "Could not modify columns"
+msgstr "நெடுவரிசைகளை மாற்ற முடியவில்லை"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "Could not modify transform"
+msgstr "உருமாற்றத்தை மாற்ற முடியவில்லை"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "Could not perform operation"
+msgstr "செயல்பாட்டைச் செய்ய முடியவில்லை"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:179
+msgid "Counts the number of non-missing values"
+msgstr "மிச்சிங் அல்லாத மதிப்புகளின் எண்ணிக்கையை கணக்கிடுகிறது"
+
+#: jamovi/client/main/vareditor/transformlist.js:20
+msgid "Create New Transform..."
+msgstr "புதிய உருமாற்றத்தை உருவாக்கவும் ..."
+
+#: jamovi/client/main/backstage.ts:116
+#: jamovi/client/main/backstage.ts:173
+#: jamovi/client/main/backstage.ts:195
+msgid "CSV (Comma delimited) {ext}"
+msgstr "காபிம (கமா பிரிக்கப்பட்ட) {ext}"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:13
+#: jamovi/client/main/contextmenu/contextmenus.js:88
+#: jamovi/client/main/ribbon/annotationtab.js:104
+#: jamovi/client/main/ribbon/datatab.js:27
+msgid "Cut"
+msgstr "வெட்டு"
+
+#: jamovi/client/main/ribbon/appmenu.js:119
+msgid "Dark2"
+msgstr "டார்க் 2"
+
+#: jamovi/client/main/dataset.js:1313
+#: jamovi/client/main/ribbon/datatab.js:15
+msgid "Data"
+msgstr "தகவல்கள்"
+
+#: jamovi/client/main/backstage.ts:110
+msgid "Data files"
+msgstr "தரவுக் கோப்புகள்"
+
+#: jamovi/server/jamovi/server/analyses/weights.py
+msgid "Data is unweighted"
+msgstr "தரவு கவனிக்கப்படவில்லை"
+
+#: jamovi/client/main/backstage.ts:368
+#: jamovi/client/main/backstage.ts:455
+#: jamovi/client/main/utils/pathtools.js:17
+msgid "Data Library"
+msgstr "தரவு நூலகம்"
+
+#: jamovi/client/main/statusbar/statusbar.js:9
+msgid "Data status bar"
+msgstr "தரவு நிலை பட்டி"
+
+#: jamovi/client/main/vareditor/datavarwidget.js:32
+msgid "Data type"
+msgstr "தரவு வகை"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:110
+#: jamovi/client/main/contextmenu/contextmenus.js:58
+#: jamovi/client/main/ribbon/datatab.js:44
+#: jamovi/client/main/ribbon/variablestab.js:27
+#: jamovi/client/main/vareditor/editorwidget.js:244
+msgid "Data Variable"
+msgid_plural "Multiple Data Variables ({n})"
+msgstr[0] "தரவு மாறி"
+msgstr[1] "பல தரவு மாறிகள் ({n})"
+
+#: jamovi/client/main/ribbon/datatab.js:41
+msgid "Data weights"
+msgstr "தரவு எடைகள்"
+
+#: jamovi/client/main/vareditor/datavarwidget.js:33
+msgid "Decimal"
+msgstr "தசம"
+
+#: jamovi/client/main/ribbon/appmenu.js:76
+#: jamovi/client/main/ribbon/appmenu.js:84
+msgid "decimal places"
+msgstr "தசம இடங்கள்"
+
+#: jamovi/client/main/ribbon/appmenu.ts:133
+msgid "Decimal symbol"
+msgstr "தசம அடையாளம்"
+
+#: jamovi/client/main/ribbon/appmenu.js:111
+msgid "Default"
+msgstr "இயல்புநிலை"
+
+#: jamovi/client/main/ribbon/appmenu.js:130
+msgid "Default missings"
+msgstr "இயல்புநிலை இல்லை"
+
+#: jamovi/client/main/ribbon/datatab.js:63
+#: jamovi/client/main/ribbon/datatab.js:74
+#: jamovi/client/main/ribbon/variablestab.js:42
+msgid "Delete"
+msgstr "நீக்கு"
+
+#: jamovi/client/main/viewcontroller.js:275
+msgid "Delete column '{columnName}'?"
+msgid_plural "Delete {n} columns?"
+msgstr[0] "'{columnName}' நெடுவரிசையை நீக்கவா?"
+msgstr[1] "{n} நெடுவரிசைகளை நீக்கவா?"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:122
+#: jamovi/client/main/contextmenu/contextmenus.js:137
+msgid "Delete Filter"
+msgstr "வடிகட்டியை நீக்கு"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:28
+#: jamovi/client/main/contextmenu/contextmenus.js:49
+msgid "Delete Row"
+msgstr "வரிசையை நீக்கு"
+
+#: jamovi/client/main/viewcontroller.js:325
+msgid "Delete row {index}?"
+msgid_plural "Delete {n} rows?"
+msgstr[0] "வரிசையை {index} நீக்கவா?"
+msgstr[1] "{n} வரிசைகளை நீக்கவா?"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:28
+msgid "Delete Rows"
+msgstr "வரிசைகளை நீக்கு"
+
+#: jamovi/client/main/ribbon/datatab.js:74
+msgid "Delete selected rows"
+msgstr "தேர்ந்தெடுக்கப்பட்ட வரிசைகளை நீக்கு"
+
+#: jamovi/client/main/ribbon/datatab.js:63
+msgid "Delete selected variables"
+msgstr "தேர்ந்தெடுக்கப்பட்ட மாறிகள் நீக்கு"
+
+#: jamovi/client/main/vareditor/transformlistitem.js:30
+msgid "Delete transform  - {transformName}"
+msgstr "உருமாற்றத்தை நீக்கு - {transformName}"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:74
+msgid "Delete Variable"
+msgid_plural "Delete Variables"
+msgstr[0] "மாறியை நீக்கு"
+msgstr[1] "மாறிகளை நீக்கு"
+
+#: jamovi/client/main/tableview.js:98
+msgid "Deleted"
+msgstr "நீக்கப்பட்டது"
+
+#: jamovi/client/main/editors/transformeditor.js:62
+#: jamovi/client/main/vareditor/editorwidget.js:67
+#: jamovi/client/main/vareditor/filterwidget.js:506
+#: jamovi/client/main/variablesview.js:341
+msgid "Description"
+msgstr "விவரம்"
+
+#: jamovi/client/main/utils/pathtools.js:11
+#: jamovi/server/jamovi/server/instance.py
+msgid "Desktop"
+msgstr "டெச்க்டாப்"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:132
+msgid "Determines if any of the items appear in in1, in2, in3, .... Note that most of these arguments are optional -- it is possible to simply use <b>CONTAINS(needle, haystack)</b>."
+msgstr ""
+"in1, in2, in3,இல் ஏதேனும் உருப்படிகள் தோன்றினையா என்பதை தீர்மானிக்கிறது .... இந்த "
+"வாதங்களில் பெரும்பாலானவை விருப்பமானவை என்பதை நினைவில் கொள்க - <b>ஐக் கொண்டுள்ளது (ஊசி, "
+"ஏச்டாக்)</b> ஆகியவற்றைப் பயன்படுத்த முடியும்."
+
+#: jamovi/client/main/ribbon/appmenu.js:181
+msgid "Developer mode"
+msgstr "உருவாக்குபவர் பயன்முறை"
+
+#: jamovi/client/main/utils/pathtools.js:7
+#: jamovi/server/jamovi/server/instance.py
+msgid "Documents"
+msgstr "ஆவணங்கள்"
+
+#: jamovi/client/main/main.js:462
+msgid "Don't enable"
+msgstr "இயக்க வேண்டாம்"
+
+#: jamovi/client/main/main.js:749
+msgid "Don't Save"
+msgstr "சேமிக்க வேண்டாம்"
+
+#: jamovi/client/main/ribbon/appmenu.ts:134
+msgid "Dot"
+msgstr "புள்ளி"
+
+#: jamovi/client/main/backstage.ts:303
+#: jamovi/client/main/backstage.ts:408
+#: jamovi/client/main/backstage.ts:421
+msgid "Download"
+msgstr "பதிவிறக்கம்"
+
+#: jamovi/client/main/utils/pathtools.js:9
+#: jamovi/server/jamovi/server/instance.py
+msgid "Downloads"
+msgstr "பதிவிறக்கங்கள்"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:156
+msgid "Draws a sample of n from the variable. i.e. SAMPLE(var, 20), i.e. SAMPLE(1, 20), i.e. SAMPLE('training', 20, 'test')"
+msgstr "மாறியிலிருந்து n இன் மாதிரியை ஈர்க்கிறது. அதாவது மாதிரி (var, 20), அதாவது மாதிரி (1, 20), அதாவது மாதிரி ('பயிற்சி', 20, 'சோதனை')"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:162
+msgid "Draws samples from a Beta distribution."
+msgstr "பீட்டா விநியோகத்திலிருந்து மாதிரிகளை ஈர்க்கிறது."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:164
+msgid "Draws samples from a Gamma distribution."
+msgstr "காமா விநியோகத்திலிருந்து மாதிரிகளை ஈர்க்கிறது."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:166
+msgid "Draws samples from a normal (Gaussian) distribution."
+msgstr "ஒரு சாதாரண (காசியன்) விநியோகத்திலிருந்து மாதிரிகளை ஈர்க்கிறது."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:168
+msgid "Draws samples from a uniform distribution."
+msgstr "ஒரு சீரான விநியோகத்திலிருந்து மாதிரிகளை ஈர்க்கிறது."
+
+#: jamovi/client/resultsview/group.js:212
+msgid "Duplicate"
+msgstr "நகல்"
+
+#: jamovi/client/main/vareditor/transformlistitem.js:29
+msgid "Duplicate transform  - {transformName}"
+msgstr "நகல் உருமாற்றம் - {transformName}"
+
+#: jamovi/client/main/main.js:191
+#: jamovi/client/main/ribbon/annotationtab.js:112
+#: jamovi/client/main/ribbon/annotationtab.js:13
+#: jamovi/client/main/ribbon/datatab.js:32
+#: jamovi/client/main/ribbon/variablestab.js:16
+#: jamovi/client/main/ribbon/variablestab.js:22
+#: jamovi/client/main/tableview.js:1198
+#: jamovi/client/main/tableview.js:1438
+#: jamovi/client/main/tableview.js:1627
+msgid "Edit"
+msgstr "தொகு"
+
+#: jamovi/client/main/tableview.js:104
+msgid "Edit filters"
+msgstr "வடிப்பான்களைத் திருத்து"
+
+#: jamovi/client/main/vareditor/transformlistitem.js:28
+msgid "Edit transform - {transformName}"
+msgstr "உருமாற்றத்தைத் திருத்து - {transformName}"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:126
+#: jamovi/client/main/contextmenu/contextmenus.js:141
+#: jamovi/client/main/vareditor/recodedvarwidget.js:38
+msgid "Edit..."
+msgstr "திருத்து ..."
+
+#: jamovi/client/main/editors/transformeditor.js:381
+#: jamovi/client/main/editors/transformeditor.js:438
+msgid "else use"
+msgstr "வேறு பயன்படுத்தவும்"
+
+#: jamovi/client/main/main.js:463
+msgid "Enable"
+msgstr "இயக்கு"
+
+#: jamovi/client/main/ribbon.js:131
+msgid "Enable/disable full screen mode"
+msgstr "முழு திரை பயன்முறையை இயக்கவும்/முடக்கவும்"
+
+#: jamovi/client/main/tableview.js:1438
+#: jamovi/client/main/tableview.js:1623
+msgid "Enter"
+msgstr "உள்ளிடவும்"
+
+#: jamovi/client/main/variablesview.js:153
+msgid "Enter description"
+msgstr "விளக்கத்தை உள்ளிடவும்"
+
+#: jamovi/client/main/backstage/fsentrybrowserview.ts:238
+#: jamovi/client/main/backstage/fsentrybrowserview.ts:296
+msgid "Enter file name here"
+msgstr "கோப்பு பெயரை இங்கே உள்ளிடவும்"
+
+#: jamovi/client/main/vareditor/datavarlevelwidget.js:90
+msgid "Enter label..."
+msgstr "லேபிளை உள்ளிடவும் ..."
+
+#: jamovi/client/main/vareditor/datavarwidget.js:86
+msgid "Enter level value"
+msgstr "நிலை மதிப்பை உள்ளிடவும்"
+
+#: jamovi/client/main/variablesview.js:152
+msgid "Enter name"
+msgstr "பெயரை உள்ளிடவும்"
+
+#: jamovi/client/resultsview/annotation.js:149
+msgid "Enter your URL here"
+msgstr "உங்கள் முகவரி ஐ இங்கே உள்ளிடவும்"
+
+#: jamovi/client/main/resultspanel.js:728
+msgid "EPS Image {ext}"
+msgstr "இபிஎச் படம் {ext}"
+
+#: jamovi/client/main/editors/operatordropdown.js:41
+msgid "Equal to"
+msgstr "சமமான"
+
+#: jamovi/client/main/strings.ts:12
+msgid "Error"
+msgstr "பிழை"
+
+#: jamovi/client/main/backstage.ts:119
+msgid "Excel {ext}"
+msgstr "எக்செல் {ext}"
+
+#: jamovi/client/main/ribbon/analysetab.js:186
+msgid "Exploration"
+msgstr "ஆய்வு"
+
+#: jamovi/client/main/backstage.ts:417
+#: jamovi/client/main/backstage.ts:508
+#: jamovi/client/main/backstage/fsentrybrowserview.ts:305
+#: jamovi/client/main/resultspanel.js:601
+#: jamovi/client/resultsview/element.js:134
+#: jamovi/client/resultsview/group.js:212
+msgid "Export"
+msgstr "ஏற்றுமதி"
+
+#: jamovi/client/main/resultspanel.js:723
+msgid "Export image"
+msgstr "ஏற்றுமதி படம்"
+
+#: jamovi/client/main/resultspanel.js:752
+msgid "Export results"
+msgstr "ஏற்றுமதி முடிவுகள்"
+
+#: jamovi/client/main/instance.ts:425
+msgid "Exported"
+msgstr "ஏற்றுமதி"
+
+#: jamovi/client/main/instance.ts:425
+msgid "Exported to '{filename}'"
+msgstr "'{filename}' க்கு ஏற்றுமதி செய்யப்பட்டது"
+
+#: jamovi/client/main/ribbon/analysetab.js:191
+msgid "Factor"
+msgstr "காரணி"
+
+#: jamovi/client/main/main.js:185
+#: jamovi/client/main/ribbon.js:128
+msgid "File"
+msgstr "கோப்பு"
+
+#: jamovi/server/jamovi/server/formatio/exceptions.py
+msgid "File format is not supported"
+msgstr "கோப்பு வடிவம் ஆதரிக்கப்படவில்லை"
+
+#: jamovi/client/main/instance.ts:150
+msgid "File imported"
+msgstr "கோப்பு இறக்குமதி செய்யப்பட்டது"
+
+#: jamovi/server/jamovi/server/formatio/exceptions.py
+msgid "File is corrupt"
+msgstr "கோப்பு சிதைந்துள்ளது"
+
+#: jamovi/server/jamovi/server/formatio/omv.py
+msgid "File is corrupt (manifest is corrupt or missing)"
+msgstr "கோப்பு ஊழல் நிறைந்தது (வெளிப்படையானது ஊழல் நிறைந்தது அல்லது காணவில்லை)"
+
+#: jamovi/server/jamovi/server/formatio/omv.py
+msgid "File is corrupt (manifest is corrupt)"
+msgstr "கோப்பு ஊழல் நிறைந்தது (வெளிப்படையானது ஊழல் நிறைந்தது)"
+
+#: jamovi/client/main/ribbon.js:174
+msgid "File menu"
+msgstr "கோப்பு பட்டியல்"
+
+#: jamovi/client/main/backstage.ts:1184
+msgid "File menu items"
+msgstr "கோப்பு பட்டியல் உருப்படிகள்"
+
+#: jamovi/client/main/instance.ts:419
+msgid "File Saved"
+msgstr "கோப்பு சேமிக்கப்பட்டது"
+
+#: jamovi/client/main/backstage/fsentrybrowserview.ts:212
+msgid "File type"
+msgstr "கோப்பு வகை"
+
+#: jamovi/client/main/dataset.js:1322
+msgid "Filter"
+msgstr "வடிப்பி"
+
+#: jamovi/server/jamovi/server/instancemodel.py
+msgid "Filter {}"
+msgstr "வடிகட்டி {}"
+
+#: jamovi/client/main/vareditor/filterwidget.js:493
+msgid "Filter {i}"
+msgstr "வடிகட்டி {i}"
+
+#: jamovi/client/main/vareditor/filterwidget.js:381
+#: jamovi/client/main/vareditor/filterwidget.js:496
+msgid "Filter is active"
+msgstr "வடிகட்டி செயலில் உள்ளது"
+
+#: jamovi/client/main/vareditor/filterwidget.js:386
+msgid "Filter is inactive"
+msgstr "வடிகட்டி செயலற்றது"
+
+#: jamovi/client/main/tableview.js:99
+msgid "Filtered"
+msgstr "வடிகட்டப்பட்டது"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:19
+#: jamovi/client/main/contextmenu/contextmenus.js:40
+#: jamovi/client/main/ribbon/datatab.js:68
+#: jamovi/client/main/ribbon/variablestab.js:47
+#: jamovi/client/main/tableview.js:104
+#: jamovi/client/main/variablesview.js:61
+msgid "Filters"
+msgstr "வடிப்பான்கள்"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:148
+msgid "Filters a variable using the filter expression."
+msgstr "வடிகட்டி வெளிப்பாட்டைப் பயன்படுத்தி ஒரு மாறியை வடிகட்டுகிறது."
+
+#: jamovi/server/jamovi/server/compute/checker.py
+msgid "Filters may not reference columns using 'V' or column functions"
+msgstr "வடிப்பான்கள் 'வி' அல்லது நெடுவரிசை செயல்பாடுகளைப் பயன்படுத்தி நெடுவரிசைகளைக் குறிப்பிடக்கூடாது"
+
+#: jamovi/server/jamovi/server/compute/checker.py
+msgid "Filters may not reference output variables"
+msgstr "வடிப்பான்கள் வெளியீட்டு மாறிகளைக் குறிப்பிடக்கூடாது"
+
+#: jamovi/client/analysisui/main.ts:333
+msgid "Find module in jamovi library"
+msgstr "சமோவி நூலகத்தில் தொகுதியைக் கண்டறியவும்"
+
+#: jamovi/client/main/main.ts:243
+msgid "Focus on spreadsheet"
+msgstr "விரிதாளில் கவனம் செலுத்துங்கள்"
+
+#: jamovi/client/main/main.ts:262
+msgid "Focus on the variable setup"
+msgstr "மாறி அமைப்பில் கவனம் செலுத்துங்கள்"
+
+#: jamovi/client/main/main.ts:248
+msgid "Focus on variable list"
+msgstr "மாறி பட்டியலில் கவனம் செலுத்துங்கள்"
+
+#: jamovi/client/main/ribbon/annotationtab.js:119
+msgid "Font"
+msgstr "எழுத்துரு"
+
+#: jamovi/client/main/ribbon/annotationtab.js:164
+#: jamovi/client/main/vareditor/computedvarwidget.js:76
+msgid "Formula"
+msgstr "தேற்றம்"
+
+#: jamovi/server/jamovi/server/compute/checker.py
+msgid "Formula contains illegal node"
+msgstr "சூத்திரத்தில் சட்டவிரோத முனை உள்ளது"
+
+#: jamovi/server/jamovi/server/compute/parser.py
+msgid "Formula is mis-specified (If you're wanting to test equality, use two equals signs '==')"
+msgstr "தேற்றம் தவறாக குறிப்பிடப்பட்டுள்ளது (நீங்கள் சமத்துவத்தை சோதிக்க விரும்பினால், இரண்டு சமமான அறிகுறிகளைப் பயன்படுத்துங்கள் '==')"
+
+#: jamovi/client/main/ribbon/analysetab.js:190
+msgid "Frequencies"
+msgstr "அலைவெண்கள்"
+
+#: jamovi/server/jamovi/server/compute/checker.py
+#: jamovi/server/jamovi/server/compute/nodes.py
+msgid "Function {}() does not exist"
+msgstr "செயல்பாடு {} () இல்லை"
+
+#: jamovi/server/jamovi/server/compute/checker.py
+msgid "Function {}() requires atleast {} argument{}"
+msgstr "செயல்பாடு {} () க்கு குறைந்தபட்சம் {} உரையாடல் {} தேவை"
+
+#: jamovi/server/jamovi/server/compute/checker.py
+msgid "Function {}() requires between {} and {} arguments"
+msgstr "செயல்பாடு {} () {} மற்றும் {} வாதங்களுக்கு இடையில் தேவைப்படுகிறது"
+
+#: jamovi/server/jamovi/server/compute/checker.py
+msgid "Function {}() takes {} argument{}"
+msgstr "{} () செயல்பாடு {} உரையாடல் {} எடுக்கும்"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:188
+msgid "Functions"
+msgstr "செயல்பாடுகள்"
+
+#: jamovi/client/main/editors/operatordropdown.js:45
+msgid "Greater than"
+msgstr "விட பெரியது"
+
+#: jamovi/client/main/editors/operatordropdown.js:49
+msgid "Greater than or equal to"
+msgstr "விட பெரியது அல்லது சமம்"
+
+#: jamovi/client/main/ribbon/appmenu.js:119
+msgid "Greens"
+msgstr "கீரைகள்"
+
+#: jamovi/client/main/ribbon/appmenu.js:119
+msgid "Greys"
+msgstr "கிரேச்"
+
+#: jamovi/client/resultsview/array.js:73
+#: jamovi/client/resultsview/group.js:70
+msgid "Group"
+msgstr "குழு"
+
+#: jamovi/client/main/ribbon/appmenu.js:111
+#: jamovi/client/main/ribbon/appmenu.js:119
+msgid "Hadley"
+msgstr "ஆட்லி"
+
+#: jamovi/client/main/ribbon/annotationtab.js:171
+msgid "Heading"
+msgstr "தலைப்பு"
+
+#: jamovi/client/resultsview/annotation.js:139
+msgid "Help"
+msgstr "உதவி"
+
+#: jamovi/client/main/infobox.js:31
+msgid "Hi"
+msgstr "ஆய்"
+
+#: jamovi/client/main/ribbon/appmenu.js:92
+msgid "Hidden"
+msgstr "மறைக்கப்பட்ட"
+
+#: jamovi/client/main/store/pagemodules.js:226
+#: jamovi/client/main/variableeditor.js:193
+#: jamovi/client/main/variableeditor.js:64
+msgid "Hide"
+msgstr "மறை"
+
+#: jamovi/client/main/main.ts:238
+msgid "Hide analysis options"
+msgstr "பகுப்பாய்வு விருப்பங்களை மறைக்கவும்"
+
+#: jamovi/client/main/vareditor/filterwidget.js:70
+msgid "Hide filter columns"
+msgstr "வடிகட்டி நெடுவரிசைகளை மறைக்கவும்"
+
+#: jamovi/client/main/store.js:29
+msgid "Hide library"
+msgstr "நூலகத்தை மறைக்கவும்"
+
+#: jamovi/client/main/store/pagemodules.js:271
+msgid "Hide module {moduleName} from the Analyses ribbon"
+msgstr "பகுப்பாய்வு ரிப்பனில் இருந்து தொகுதி {moduleName} மறைக்கவும்"
+
+#: jamovi/client/analysisui/main.js:235
+msgid "Hide options"
+msgstr "விருப்பங்களை மறைக்கவும்"
+
+#: jamovi/client/main/variableeditor.js:52
+msgid "Hide variable setup"
+msgstr "மாறி அமைப்பை மறைக்கவும்"
+
+#: jamovi/client/main/ribbon/annotationtab.js:133
+msgid "Highlight Color"
+msgstr "வண்ணத்தை முன்னிலைப்படுத்தவும்"
+
+#: jamovi/client/main/utils/pathtools.js:13
+#: jamovi/server/jamovi/server/instance.py
+msgid "Home"
+msgstr "வீடு"
+
+#: jamovi/client/resultsview/html.js:53
+msgid "Html"
+msgstr "உஉகுமொ"
+
+#: jamovi/client/main/ribbon/appmenu.js:111
+#: jamovi/client/main/ribbon/appmenu.js:119
+msgid "I ♥ SPSS"
+msgstr "நான் ♥ SPSS"
+
+#: jamovi/client/main/editors/transformeditor.js:250
+#: jamovi/client/main/vareditor/datavarwidget.js:289
+#: jamovi/client/main/vareditor/measurelist.js:61
+msgid "ID"
+msgstr "ஐடி"
+
+#: jamovi/client/main/notification.js:74
+msgid "Idle session"
+msgstr "செயலற்ற அமர்வு"
+
+#: jamovi/client/main/editors/transformeditor.js:376
+msgid "if"
+msgstr "என்றால்"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:124
+msgid "If the expression resolves true, use the value, otherwise the else."
+msgstr "வெளிப்பாடு உண்மையை தீர்த்தால், மதிப்பைப் பயன்படுத்துங்கள், இல்லையெனில் வேறு."
+
+#: jamovi/client/resultsview/image.js:54
+msgid "Image"
+msgstr "படம்"
+
+#: jamovi/client/resultsview/image.ts:233
+msgid "Image resized to {width} by {height}"
+msgstr "படத்தின் அளவை {width} ஆல் {height}"
+
+#: jamovi/client/main/backstage/fsentrybrowserview.ts:241
+#: jamovi/client/main/ribbon/appmenu.js:128
+msgid "Import"
+msgstr "இறக்குமதி"
+
+#: jamovi/client/main/instance.ts:151
+msgid "Import successful"
+msgstr "இறக்குமதி வெற்றிகரமாக"
+
+#: jamovi/client/main/vareditor/editorwidget.js:42
+msgid "Imported as"
+msgstr "இறக்குமதி செய்யப்பட்டது"
+
+#: jamovi/client/main/instance.ts:133
+msgid "Importing"
+msgstr "இறக்குமதி"
+
+#: jamovi/client/main/ribbon/appmenu.js:221
+msgid "In development"
+msgstr "வளர்ச்சியில்"
+
+#: jamovi/client/main/vareditor/filterwidget.js:384
+#: jamovi/client/main/vareditor/filterwidget.js:534
+msgid "inactive"
+msgstr "செயலற்றது"
+
+#: jamovi/client/main/ribbon/annotationtab.js:155
+msgid "Indent -1"
+msgstr "இன்டென்ட் -1"
+
+#: jamovi/client/main/ribbon/annotationtab.js:156
+msgid "Indent +1"
+msgstr "உள்தள்ளல் +1"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:101
+#: jamovi/client/main/contextmenu/contextmenus.js:106
+#: jamovi/client/main/contextmenu/contextmenus.js:111
+#: jamovi/client/main/contextmenu/contextmenus.js:59
+#: jamovi/client/main/contextmenu/contextmenus.js:63
+#: jamovi/client/main/contextmenu/contextmenus.js:67
+#: jamovi/client/main/ribbon/annotationtab.js:163
+#: jamovi/client/main/ribbon/datatab.js:45
+#: jamovi/client/main/ribbon/datatab.js:50
+#: jamovi/client/main/ribbon/datatab.js:55
+#: jamovi/client/main/ribbon/datatab.js:71
+#: jamovi/client/main/ribbon/variablestab.js:28
+#: jamovi/client/main/ribbon/variablestab.js:33
+#: jamovi/client/main/ribbon/variablestab.js:38
+msgid "Insert"
+msgstr "செருகவும்"
+
+#: jamovi/client/main/viewcontroller.js:593
+msgid "Insert how many rows?"
+msgstr "எத்தனை வரிசைகளை செருகவும்?"
+
+#: jamovi/client/main/ribbon/datatab.js:39
+msgid "Insert new computed variable"
+msgstr "புதிய கணக்கிடப்பட்ட மாறியைச் செருகவும்"
+
+#: jamovi/client/main/ribbon/datatab.js:40
+msgid "Insert new transformed variable"
+msgstr "புதிய மாற்றப்பட்ட மாறியைச் செருகவும்"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:23
+#: jamovi/client/main/contextmenu/contextmenus.js:45
+msgid "Insert Row..."
+msgstr "வரிசையைச் செருகவும் ..."
+
+#: jamovi/client/main/store/pagemodules.js:199
+msgid "Install"
+msgstr "நிறுவவும்"
+
+#: jamovi/client/main/store/pagemodules.js:240
+msgid "Install module {moduleName} version {version}"
+msgstr "தொகுதி {{{moduleName} பதிப்பு {version}"
+
+#: jamovi/client/main/store.js:50
+#: jamovi/client/main/store/pagemodules.js:202
+msgid "Installed"
+msgstr "நிறுவப்பட்டது"
+
+#: jamovi/client/main/ribbon/analysetab.js:119
+msgid "Installed Modules"
+msgstr "நிறுவப்பட்ட தொகுதிகள்"
+
+#: jamovi/client/main/store/pagemodules.js:216
+msgid "Installed version needs to be updated"
+msgstr "நிறுவப்பட்ட பதிப்பு புதுப்பிக்கப்பட வேண்டும்"
+
+#: jamovi/client/main/store/pagemodules.js:364
+msgid "Installing {module}"
+msgstr "{module} நிறுவுகிறது"
+
+#: jamovi/client/main/store/pagemodules.js:115
+msgid "Installing modules is not available on your plan"
+msgstr "தொகுதிகள் நிறுவுவது உங்கள் திட்டத்தில் கிடைக்கவில்லை"
+
+#: jamovi/client/main/vareditor/datavarwidget.js:33
+msgid "Integer"
+msgstr "முழு எண்"
+
+#: jamovi/client/analysisui/gridtargetcontrol.js:1030
+msgid "Interaction"
+msgstr "உள்வினை"
+
+#: jamovi/client/analysisui/gridtargetcontrol.js:1031
+msgid "Interactions"
+msgstr "இடைவினைகள்"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:128
+msgid "Inverts the value."
+msgstr "மதிப்பைத் தலைகீழாக மாற்றுகிறது."
+
+#: jamovi/client/main/tableview.js:542
+#: jamovi/client/main/tableview.js:581
+#: jamovi/client/main/tableview.js:636
+msgid "Issue with formula"
+msgstr "சூத்திரத்துடன் சிக்கல்"
+
+#: jamovi/client/main/ribbon/annotationtab.js:123
+msgid "Italic"
+msgstr "சாய்வு"
+
+#: jamovi/client/main/backstage.ts:145
+#: jamovi/client/main/backstage.ts:155
+#: jamovi/client/main/backstage.ts:238
+msgid "jamovi file {ext}"
+msgstr "சாமோவி கோப்பு {ext}"
+
+#: jamovi/client/main/backstage.ts:114
+msgid "jamovi files {ext}"
+msgstr "சாமோவி கோப்புகள் {ext}"
+
+#: jamovi/client/main/misc/announcements.js:4
+msgid "jamovi is now available in { insert translation language }! (Many thanks to { insert your name here (or put a more generic \"the jamovi translation team\", if you don't want credit) })"
+msgstr "சாமோவி இப்போது { மொழிபெயர்ப்பு மொழியைச் செருகவும் } இல் கிடைக்கிறது! ({ உங்கள் பெயரை இங்கே செருகவும் (அல்லது உங்களுக்குப் பெயர் தேவையில்லை என்றால், \"சாமோவி மொழிபெயர்ப்புக் குழு\" என்று பொதுவான ஒன்றைச் சேர்க்கவும்) } க்கு மிக்க நன்றி)"
+
+#: jamovi/client/main/misc/announcements.js:3
+msgid "jamovi is now available in { insert translation language }! (Many thanks to @{ insert your twitter handle here (or put a more generic \"the jamovi translation team\", if you don't want credit) })"
+msgstr "சாமோவி இப்போது { மொழிபெயர்ப்பு மொழியைச் செருகவும் } இல் கிடைக்கிறது! (@{ க்கு மிக்க நன்றி உங்கள் ட்விட்டர் கைப்பிடியை இங்கே செருகவும் (அல்லது உங்களுக்குக் கிரெடிட் தேவையில்லை என்றால், மிகவும் பொதுவான \"சாமோவி மொழிபெயர்ப்புக் குழு\" என்று வைக்கவும்) })"
+
+#: jamovi/client/main/ribbon/analysetab.js:117
+msgid "jamovi library"
+msgstr "சாமோவி நூலகம்"
+
+#: jamovi/client/main/store/pagesideload.js:27
+msgid "jamovi modules"
+msgstr "சாமோவி தொகுதிகள்"
+
+#: jamovi/client/main/backstage.ts:172
+#: jamovi/client/main/backstage.ts:194
+msgid "jamovi template {ext}"
+msgstr "சாமோவி வார்ப்புரு {ext}"
+
+#: jamovi/client/main/backstage.ts:115
+msgid "jamovi templates {ext}"
+msgstr "சாமோவி வார்ப்புருக்கள் {ext}"
+
+#: jamovi/client/main/backstage.ts:124
+msgid "JASP files {ext}"
+msgstr "JASP கோப்புகள் {ext}"
+
+#: jamovi/client/main/backstage.ts:117
+msgid "JSON files {ext}"
+msgstr "சாதொபொகு கோப்புகள் {ext}"
+
+#: jamovi/client/main/ribbon/annotationtab.js:147
+msgid "Justify"
+msgstr "நியாயப்படுத்துங்கள்"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:245
+msgid "Keyword: {v}"
+msgstr "முக்கிய சொல்: {v}"
+
+#: jamovi/client/main/ribbon/appmenu.js:174
+msgid "Language"
+msgstr "மொழி"
+
+#: jamovi/client/main/backstage.ts:174
+#: jamovi/client/main/backstage.ts:196
+#: jamovi/client/main/resultspanel.js:760
+msgid "LaTeX bundle {ext}"
+msgstr "லேடெக்ச் மூட்டை {ext}"
+
+#: jamovi/client/main/ribbon/annotationtab.js:144
+msgid "Left Align"
+msgstr "இடது சீரமைப்பு"
+
+#: jamovi/client/main/editors/operatordropdown.js:47
+msgid "Less than"
+msgstr "குறைவாக"
+
+#: jamovi/client/main/editors/operatordropdown.js:51
+msgid "Less than or equal to"
+msgstr "குறைவாக அல்லது சமமான"
+
+#: jamovi/client/analysisui/rmanovafactorscontrol.js:137
+#: jamovi/client/analysisui/rmanovafactorscontrol.js:289
+#: jamovi/client/analysisui/rmanovafactorscontrol.js:320
+#: jamovi/client/analysisui/rmanovafactorscontrol.js:467
+msgid "Level {0}"
+msgstr "நிலை {0}"
+
+#: jamovi/client/main/vareditor/datavarwidget.js:194
+msgid "Level value"
+msgstr "நிலை மதிப்பு"
+
+#: jamovi/client/main/vareditor/datavarwidget.js:46
+#: jamovi/client/main/vareditor/outputvarwidget.js:26
+msgid "Levels"
+msgstr "நிலைகள்"
+
+#: jamovi/client/main/store/pagemodules.js:98
+msgid "Library error"
+msgstr "நூலக பிழை"
+
+#: jamovi/client/main/ribbon/annotationtab.js:173
+msgid "Link"
+msgstr "இணைப்பு"
+
+#: jamovi/client/analysisui/gridtargetcontrol.js:1032
+msgid "Main Effects"
+msgstr "முக்கிய விளைவுகள்"
+
+#: jamovi/client/main/ribbon/analysetab.js:118
+msgid "Manage installed"
+msgstr "நிறுவப்பட்ட நிர்வகிக்கவும்"
+
+#: jamovi/client/analysisui/variableslistbox.ts:119
+msgid "Max: {count}"
+msgstr "அதிகபட்சம்: {count}"
+
+#: jamovi/client/main/editors/transformeditor.js:244
+#: jamovi/client/main/vareditor/datavarwidget.js:283
+msgid "Measure type"
+msgstr "அளவீட்டு வகை"
+
+#: jamovi/client/main/ribbon/appmenu.js:111
+msgid "Minimal"
+msgstr "குறைந்தபட்ச"
+
+#: jamovi/client/main/optionspanel.ts:175
+msgid "Missing or incompatible module"
+msgstr "காணவில்லை அல்லது பொருந்தாத தொகுதி"
+
+#: jamovi/client/main/vareditor/datavarwidget.js:258
+msgid "Missing values"
+msgstr "மதிப்புகள் இல்லை"
+
+#: jamovi/client/main/editors/missingvalueeditor.js:14
+msgid "Missing Values"
+msgstr "மதிப்புகள் இல்லை"
+
+#: jamovi/client/main/store/pagemodules.js:244
+msgid "Module {moduleName} is installed"
+msgstr "தொகுதி {moduleName} நிறுவப்பட்டுள்ளது"
+
+#: jamovi/client/main/store/pagemodules.js:286
+msgid "Module installed"
+msgstr "தொகுதி நிறுவப்பட்டது"
+
+#: jamovi/client/main/store/pagesideload.js:46
+msgid "Module installed successfully"
+msgstr "தொகுதி வெற்றிகரமாக நிறுவப்பட்டுள்ளது"
+
+#: jamovi/client/main/store/pagemodules.js:311
+msgid "Module uninstalled"
+msgstr "தொகுதி நிறுவல் நீக்கப்பட்டது"
+
+#: jamovi/client/main/ribbon/analysetab.js:116
+msgid "Modules"
+msgstr "தொகுதிகள்"
+
+#: jamovi/client/main/main.js:461
+msgid "More info ..."
+msgstr "மேலும் செய்தி ..."
+
+#: jamovi/client/main/backstage/fsentrybrowserview.ts:316
+msgid "Move back directory"
+msgstr "கோப்பகத்தை மீண்டும் நகர்த்தவும்"
+
+#: jamovi/client/main/backstage/fsentrybrowserview.ts:446
+msgid "Move back from directory {0}"
+msgstr "கோப்பகத்திலிருந்து திரும்பிச் செல்லுங்கள் {0}"
+
+#: jamovi/client/main/vareditor/editorwidget.js:53
+#: jamovi/client/main/variablesview.js:340
+msgid "Name"
+msgstr "பெயர்"
+
+#: jamovi/client/main/backstage.ts:358
+#: jamovi/client/main/backstage.ts:434
+msgid "New"
+msgstr "புதிய"
+
+#: jamovi/client/main/tableview.js:2479
+#: jamovi/client/main/tableview.js:603
+#: jamovi/client/main/tableview.js:660
+msgid "New column {0}"
+msgstr "புதிய நெடுவரிசை {0}"
+
+#: jamovi/client/main/vareditor/newvarwidget.js:25
+msgid "New computed variable"
+msgstr "புதிய கணக்கிடப்பட்ட மாறி"
+
+#: jamovi/client/main/vareditor/newvarwidget.js:21
+msgid "New data variable"
+msgstr "புதிய தரவு மாறி"
+
+#: jamovi/client/main/vareditor/newvarwidget.js:29
+msgid "New transformed variable"
+msgstr "புதிய மாற்றப்பட்ட மாறி"
+
+#: jamovi/client/main/variableeditor.js:65
+msgid "Next variable"
+msgstr "அடுத்த மாறி"
+
+#: jamovi/client/main/ribbon/annotationtab.js:133
+msgid "No Color"
+msgstr "நிறம் இல்லை"
+
+#: jamovi/client/main/editors/operatordropdown.js:101
+#: jamovi/client/main/vareditor/formulatoolbar.js:218
+msgid "No information about this function is available"
+msgstr "இந்த செயல்பாடு குறித்த எந்த தகவலும் கிடைக்கவில்லை"
+
+#: jamovi/server/jamovi/server/downloader.py
+msgid "No internet connection"
+msgstr "இணைய இணைப்பு இல்லை"
+
+#: jamovi/client/main/backstage/fsentrybrowserview.ts:591
+msgid "No recognised data files were found."
+msgstr "அங்கீகரிக்கப்பட்ட தரவுக் கோப்புகள் எதுவும் காணப்படவில்லை."
+
+#: jamovi/client/main/variablesview.js:377
+msgid "No variables match your query."
+msgstr "எந்த மாறிகள் உங்கள் வினவலுடன் பொருந்தவில்லை."
+
+#: jamovi/client/main/editors/transformeditor.js:247
+#: jamovi/client/main/vareditor/datavarwidget.js:286
+#: jamovi/client/main/vareditor/measurelist.js:49
+msgid "Nominal"
+msgstr "பெயரளவு"
+
+#: jamovi/client/main/dataset.js:1328
+#: jamovi/client/main/dataset.js:1330
+#: jamovi/client/main/vareditor/recodedvarwidget.js:259
+#: jamovi/client/main/vareditor/recodedvarwidget.js:309
+#: jamovi/client/main/vareditor/recodedvarwidget.js:37
+#: jamovi/client/main/vareditor/transformlist.js:15
+#: jamovi/client/main/vareditor/variablelist.js:15
+#: jamovi/client/main/vareditor/variablelist.js:20
+msgid "None"
+msgstr "எதுவுமில்லை"
+
+#: jamovi/client/main/editors/operatordropdown.js:43
+msgid "Not equal to"
+msgstr "சமமாக இல்லை"
+
+#: jamovi/client/resultsview/main.js:128
+#: jamovi/client/resultsview/table.js:599
+msgid "Note"
+msgstr "குறிப்பு"
+
+#: jamovi/client/resultsview/notice.js:44
+msgid "Notice"
+msgstr "அறிவிப்பு"
+
+#: jamovi/client/main/ribbon/appmenu.js:75
+msgid "Number format"
+msgstr "எண் வடிவம்"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:152
+msgid "Offsets the values up or down."
+msgstr "மதிப்புகளை மேலே அல்லது கீழ்நோக்கி ஈடுசெய்கிறது."
+
+#: jamovi/client/main/editorpanel.js:19
+#: jamovi/client/main/variableeditor.js:64
+msgid "Ok"
+msgstr "சரி"
+
+#: jamovi/client/main/infobox.js:283
+#: jamovi/client/main/infobox.js:34
+msgid "OK"
+msgstr "சரி"
+
+#: jamovi/client/main/backstage.ts:367
+#: jamovi/client/main/backstage.ts:402
+msgid "One Drive"
+msgstr "Onedrive"
+
+#: jamovi/client/main/main.js:456
+msgid "One or more analyses in this data set have been disabled\n"
+"                    because they allow the execution of arbitrary code. You\n"
+"                    should only enable them if you trust this data set's\n"
+"                    source."
+msgstr "இந்த தரவு தொகுப்பில் ஒன்று அல்லது அதற்கு மேற்பட்ட பகுப்பாய்வுகள் முடக்கப்பட்டுள்ளன\n"
+" ஏனெனில் அவை தன்னிச்சையான குறியீட்டை செயல்படுத்த அனுமதிக்கின்றன. நீங்கள்\n"
+" இந்த தரவுத் தொகுப்பை நீங்கள் நம்பினால் மட்டுமே அவற்றை இயக்க வேண்டும்\n"
+" சான்று."
+
+#: jamovi/client/main/viewcontroller.js:678
+msgid "One row appended."
+msgid_plural "{n} rows appended."
+msgstr[0] "ஒரு வரிசை இணைக்கப்பட்டது."
+msgstr[1] "{n} வரிசைகள் இணைக்கப்பட்டன."
+
+#: jamovi/client/main/viewcontroller.js:641
+msgid "One row inserted."
+msgid_plural "{n} rows inserted."
+msgstr[0] "ஒரு வரிசை செருகப்பட்டது."
+msgstr[1] "{n} வரிசைகள் செருகப்பட்டன."
+
+#: jamovi/client/main/backstage/fsentrybrowserview.ts:472
+msgid "Online data set"
+msgstr "நிகழ்நிலை தரவு தொகுப்பு"
+
+#: jamovi/client/main/backstage.ts:364
+#: jamovi/client/main/backstage.ts:440
+msgid "Open"
+msgstr "திற"
+
+#: jamovi/client/main/main.ts:266
+msgid "Open application menu"
+msgstr "பயன்பாட்டு மெனுவைத் திறக்கவும்"
+
+#: jamovi/client/main/main.ts:234
+msgid "Open data file"
+msgstr "தரவுக் கோப்பைத் திறக்கவும்"
+
+#: jamovi/client/main/backstage.ts:118
+msgid "Open Document (LibreOffice) {ext}"
+msgstr "திறந்த ஆவணம் (லிப்ரேஃபிச்) {ext}"
+
+#: jamovi/client/main/main.ts:270
+msgid "Open the jamovi module library"
+msgstr "சாமோவி தொகுதி நூலகத்தைத் திறக்கவும்"
+
+#: jamovi/client/main/main.ts:253
+msgid "Open the main menu"
+msgstr "முதன்மையான மெனுவைத் திறக்கவும்"
+
+#: jamovi/client/main/backstage.ts:903
+#: jamovi/client/main/instance.ts:336
+#: jamovi/client/main/main.js:772
+msgid "Opening"
+msgstr "திறப்பு"
+
+#: jamovi/client/main/editors/operatordropdown.js:70
+msgid "Operators"
+msgstr "ஆபரேட்டர்கள்"
+
+#: jamovi/client/main/ribbon/annotationtab.js:152
+msgid "Ordered List"
+msgstr "ஆர்டர் செய்யப்பட்ட பட்டியல்"
+
+#: jamovi/client/main/editors/transformeditor.js:248
+#: jamovi/client/main/vareditor/datavarwidget.js:287
+#: jamovi/client/main/vareditor/measurelist.js:53
+msgid "Ordinal"
+msgstr "சாதாரண"
+
+#: jamovi/client/main/dataset.js:1325
+msgid "Output"
+msgstr "வெளியீடு"
+
+#: jamovi/client/main/vareditor/editorwidget.js:250
+msgid "Output Variable"
+msgid_plural "Multiple Output Variables ({n})"
+msgstr[0] "வெளியீடு மாறி"
+msgstr[1] "பல வெளியீடு மாறிகள் ({n})"
+
+#: jamovi/client/main/ribbon/appmenu.js:83
+msgid "p-value format"
+msgstr "பி-மதிப்பு வடிவம்"
+
+#: jamovi/client/main/ribbon/annotationtab.js:141
+msgid "Paragraph"
+msgstr "பத்தி"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:161
+msgid "Parses a date, and converts it to the number of days since the 1st of January, 1970."
+msgstr "ஒரு தேதியை பாகுபடுத்தி, அதை 1970 சனவரி 1 முதல் நாட்களின் எண்ணிக்கையாக மாற்றுகிறது."
+
+#: jamovi/client/main/contextmenu/contextmenus.js:15
+#: jamovi/client/main/contextmenu/contextmenus.js:90
+#: jamovi/client/main/ribbon/annotationtab.js:101
+#: jamovi/client/main/ribbon/datatab.js:25
+msgid "Paste"
+msgstr "ஒட்டு"
+
+#: jamovi/client/main/viewcontroller.js:356
+msgid "Paste is unavailable using the menus"
+msgstr "மெனுக்களைப் பயன்படுத்தி பேச்ட் கிடைக்கவில்லை"
+
+#: jamovi/client/main/backstage.ts:170
+#: jamovi/client/main/backstage.ts:192
+#: jamovi/client/main/resultspanel.js:725
+#: jamovi/client/main/resultspanel.js:754
+msgid "PDF Document {ext}"
+msgstr "PDF ஆவணம் {ext}"
+
+#: jamovi/client/main/vareditor/datavarlevelwidget.js:18
+msgid "Pin level"
+msgstr "முள் நிலை"
+
+#: jamovi/client/analysisui/main.ts:331
+msgid "Please <em>install or update</em> this module from the jamovi library."
+msgstr ""
+"சாமோவி நூலகத்திலிருந்து இந்தத் தொகுதியை <em>நிறுவவும் அல்லது புதுப்பி</em>."
+
+#: jamovi/client/main/viewcontroller.js:357
+msgid "Please use ctrl-v to paste into the spreadsheet."
+msgstr "விரிதாளில் ஒட்ட ctrl-V ஐப் பயன்படுத்தவும்."
+
+#: jamovi/client/resultsview/main.ts:221
+msgid "Plot"
+msgstr "சூழ்ச்சி"
+
+#: jamovi/client/main/ribbon/appmenu.js:110
+msgid "Plot theme"
+msgstr "சூழ்ச்சி கருப்பொருள்"
+
+#: jamovi/client/main/ribbon/appmenu.js:106
+msgid "Plots"
+msgstr "அடுக்கு"
+
+#: jamovi/client/main/resultspanel.js:726
+msgid "PNG Image {ext}"
+msgstr "Png படம் {ext}"
+
+#: jamovi/client/main/resultspanel.ts:954
+msgid "PowerPoint Slide {ext}"
+msgstr "பவர்பாயிண்ட் ச்லைடு {ext}"
+
+#: jamovi/client/main/ribbon.js:132
+msgid "Preferences"
+msgstr "விருப்பத்தேர்வுகள்"
+
+#: jamovi/client/resultsview/annotation.js:79
+msgid "Press enter to edit"
+msgstr "திருத்த Enter ஐ அழுத்தவும்"
+
+#: jamovi/client/main/variableeditor.js:66
+msgid "Previous variable"
+msgstr "முந்தைய மாறி"
+
+#: jamovi/client/main/main.ts:274
+msgid "Project Save As"
+msgstr "திட்டம் சேமி"
+
+#: jamovi/client/main/ribbon/appmenu.js:119
+msgid "qualitative"
+msgstr "தரமான"
+
+#: jamovi/client/main/backstage.ts:121
+msgid "R data files {ext}"
+msgstr "R தரவு கோப்புகள் {ext}"
+
+#: jamovi/client/main/backstage.ts:175
+#: jamovi/client/main/backstage.ts:176
+#: jamovi/client/main/backstage.ts:197
+#: jamovi/client/main/backstage.ts:198
+msgid "R object {ext}"
+msgstr "R பொருள் {ext}"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:80
+msgid "Ranks each value"
+msgstr "ஒவ்வொரு மதிப்பையும் வரிசைப்படுத்துகிறது"
+
+#: jamovi/client/main/tableview.js:101
+#: jamovi/client/main/tableview.js:1516
+#: jamovi/client/main/tableview.js:1554
+#: jamovi/client/main/variablesview.js:58
+msgid "Ready"
+msgstr "ஆயத்தம்"
+
+#: jamovi/client/main/store/pagemodules.js:303
+msgid "Really uninstall {m}?"
+msgstr "{m} உண்மையில் நிறுவல் நீக்கவா?"
+
+#: jamovi/client/main/backstage.ts:1244
+msgid "Recent"
+msgstr "அண்மைக் கால"
+
+#: jamovi/client/main/ribbon/annotationtab.js:114
+#: jamovi/client/main/ribbon/datatab.js:34
+#: jamovi/client/main/ribbon/variablestab.js:18
+msgid "Redo Edit"
+msgstr "மீண்டும் திருத்து"
+
+#: jamovi/client/main/references.js:20
+#: jamovi/client/main/resultspanel.js:430
+#: jamovi/client/main/resultspanel.js:432
+#: jamovi/client/main/ribbon/appmenu.js:91
+msgid "References"
+msgstr "குறிப்புகள்"
+
+#: jamovi/client/main/infobox.js:280
+msgid "Refresh"
+msgstr "புதுப்பிப்பு"
+
+#: jamovi/client/main/ribbon/analysetab.js:189
+msgid "Regression"
+msgstr "பின்னடைவு"
+
+#: jamovi/client/main/menu.js:169
+#: jamovi/client/main/resultspanel.js:580
+#: jamovi/client/main/resultspanel.js:602
+#: jamovi/client/main/store/pagemodules.js:194
+msgid "Remove"
+msgstr "அகற்று"
+
+#: jamovi/client/analysisui/gridtargetcontrol.js:620
+msgid "Remove {1} from {0}"
+msgstr "{0} இலிருந்து {1} ஐ அகற்று"
+
+#: jamovi/client/analysisui/gridtargetcontrol.js:623
+msgid "Remove {1} items from {0}"
+msgstr "{0} இலிருந்து {1} உருப்படிகளை அகற்று"
+
+#: jamovi/client/main/vareditor/filterwidget.js:501
+msgid "Remove filter"
+msgstr "வடிகட்டியை அகற்று"
+
+#: jamovi/client/analysisui/gridtargetcontrol.js:617
+msgid "Remove items from {0}"
+msgstr "{0 இருந்து இலிருந்து உருப்படிகளை அகற்று"
+
+#: jamovi/client/main/store/pagemodules.js:234
+msgid "Remove module {moduleName}"
+msgstr "தொகுதியை அகற்று {moduleName}"
+
+#: jamovi/client/main/vareditor/filterwidget.js:403
+msgid "Remove nested filter"
+msgstr "உள்ளமைக்கப்பட்ட வடிப்பானை அகற்று"
+
+#: jamovi/client/main/store/pagemodules.js:213
+msgid "Requires a newer version of jamovi"
+msgstr "சாமோவியின் புதிய பதிப்புத் தேவை"
+
+#: jamovi/client/main/ribbon/appmenu.js:283
+msgid "Restart required"
+msgstr "மறுதொடக்கம் தேவை"
+
+#: jamovi/client/main/analyses.ts:363
+#: jamovi/client/main/ribbon/appmenu.js:71
+#: jamovi/server/jamovi/server/analyses/analyses.py
+#: jamovi/server/jamovi/server/instance.py
+msgid "Results"
+msgstr "முடிவுகள்"
+
+#: jamovi/client/main/vareditor/editorwidget.js:99
+msgid "Retain unused levels in analyses"
+msgstr "பகுப்பாய்வுகளில் பயன்படுத்தப்படாத நிலைகளைத் தக்க வைத்துக் கொள்ளுங்கள்"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:66
+msgid "Returns a Box Cox transformation of the variable."
+msgstr "மாறியின் ஒரு பெட்டி காக்ச் உருமாற்றத்தை வழங்குகிறது."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:68
+msgid "Returns a whether the variable is an outlier according to the IQR: If the value is within the box of a Boxplot 0 is returned, absolute values larger than 1.5 are outside the whiskers."
+msgstr "IQR இன் படி மாறி ஒரு வெளிநாட்டவரா என்பதை வழங்குகிறது: மதிப்பு ஒரு பாக்ச் பிளாட் 0 இன் பெட்டியில் இருந்தால், 1.5 ஐ விட பெரிய மதிப்புகள் விச்கர்களுக்கு வெளியே உள்ளன."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:50
+msgid "Returns the absolute value of a number."
+msgstr "ஒரு எண்ணின் முழுமையான மதிப்பை வழங்குகிறது."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:56
+msgid "Returns the base-10 logarithm of a number."
+msgstr "ஒரு எண்ணின் அடிப்படை -10 மடக்கை வழங்குகிறது."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:52
+msgid "Returns the exponent for basis ℯ of a number."
+msgstr "ஒரு எண்ணின் அடிப்படைக்கு அதிவேகத்தை வழங்குகிறது."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:70
+msgid "Returns the largest value of a set of numbers."
+msgstr "எண்களின் தொகுப்பின் மிகப்பெரிய மதிப்பை வழங்குகிறது."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:98
+msgid "Returns the largest value of a variable."
+msgstr "மாறியின் மிகப்பெரிய மதிப்பை வழங்குகிறது."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:76
+msgid "Returns the mean of a set of numbers."
+msgstr "எண்களின் தொகுப்பின் சராசரியை வழங்குகிறது."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:94
+msgid "Returns the median absolute deviation of a variable."
+msgstr "ஒரு மாறியின் சராசரி முழுமையான விலகலை வழங்குகிறது."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:102
+msgid "Returns the median of a variable."
+msgstr "ஒரு மாறியின் சராசரியை வழங்குகிறது."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:106
+msgid "Returns the most common value in a variable."
+msgstr "ஒரு மாறியில் மிகவும் பொதுவான மதிப்பை வழங்குகிறது."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:54
+msgid "Returns the natural logarithm of a number."
+msgstr "ஒரு எண்ணின் இயற்கையான மடக்கை வழங்குகிறது."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:120
+#: jamovi/client/main/vareditor/formulatoolbar.js:88
+msgid "Returns the normalized values of a set of numbers."
+msgstr "எண்களின் தொகுப்பின் இயல்பாக்கப்பட்ட மதிப்புகளை வழங்குகிறது."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:108
+msgid "Returns the number of cases in a variable."
+msgstr "ஒரு மாறியில் வழக்குகளின் எண்ணிக்கையை வழங்குகிறது."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:158
+msgid "Returns the number of rows of a variable."
+msgstr "மாறியின் வரிசைகளின் எண்ணிக்கையை வழங்குகிறது."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:100
+msgid "Returns the overall mean of a variable."
+msgstr "ஒரு மாறியின் ஒட்டுமொத்த சராசரியை வழங்குகிறது."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:114
+msgid "Returns the overall sum of a variable."
+msgstr "ஒரு மாறியின் ஒட்டுமொத்த தொகையை வழங்குகிறது."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:96
+msgid "Returns the robust median absolute deviation of a variable."
+msgstr "ஒரு மாறியின் வலுவான சராசரி முழுமையான விலகலை வழங்குகிறது."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:154
+msgid "Returns the row numbers."
+msgstr "வரிசை எண்களை வழங்குகிறது."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:78
+msgid "Returns the smallest value of a set of numbers."
+msgstr "எண்களின் தொகுப்பின் மிகச்சிறிய மதிப்பை வழங்குகிறது."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:104
+msgid "Returns the smallest value of a variable."
+msgstr "மாறியின் மிகச்சிறிய மதிப்பை வழங்குகிறது."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:58
+msgid "Returns the square root of a number."
+msgstr "ஒரு எண்ணின் சதுர மூலத்தை வழங்குகிறது."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:90
+msgid "Returns the standard deviation of a set of numbers."
+msgstr "எண்களின் தொகுப்பின் நிலையான விலகலை வழங்குகிறது."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:112
+msgid "Returns the standard deviation of a variable."
+msgstr "மாறியின் நிலையான விலகலை வழங்குகிறது."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:110
+msgid "Returns the standard error of the mean of a variable."
+msgstr "மாறியின் சராசரியின் நிலையான பிழையை வழங்குகிறது."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:92
+msgid "Returns the sum of a set of numbers."
+msgstr "எண்களின் தொகுப்பின் தொகையை வழங்குகிறது."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:116
+msgid "Returns the variance of a set of numbers."
+msgstr "எண்களின் தொகுப்பின் மாறுபாட்டை வழங்குகிறது."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:118
+msgid "Returns the variance of a variable."
+msgstr "மாறியின் மாறுபாட்டை வழங்குகிறது."
+
+#: jamovi/client/main/main.ts:286
+msgid "Returns to the previously selected analysis and opens the options panel, with focus set in the options panel."
+msgstr "முன்னர் தேர்ந்தெடுக்கப்பட்ட பகுப்பாய்விற்குத் திரும்பி, விருப்பங்கள் குழுவில் கவனம் செலுத்தப்படுவதோடு, விருப்பங்கள் குழுவைத் திறக்கிறது."
+
+#: jamovi/client/main/main.ts:302
+msgid "Returns to the previously selected analysis and shifts focus into the results output."
+msgstr "முன்னர் தேர்ந்தெடுக்கப்பட்ட பகுப்பாய்விற்குத் திரும்பும் மற்றும் முடிவுகள் வெளியீட்டில் கவனம் செலுத்துகிறது."
+
+#: jamovi/client/main/main.ts:291
+#: jamovi/client/main/main.ts:307
+msgid "Returns to the previously selected analysis and shifts focus to the results output."
+msgstr "முன்னர் தேர்ந்தெடுக்கப்பட்ட பகுப்பாய்விற்குத் திரும்பும் மற்றும் முடிவுகள் வெளியீட்டில் கவனம் செலுத்துகிறது."
+
+#: jamovi/client/main/ribbon/annotationtab.js:146
+msgid "Right Align"
+msgstr "சரியான சீரமை"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:82
+msgid "Rounds each value"
+msgstr "ஒவ்வொரு மதிப்பையும் சுற்றி வருகிறது"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:86
+msgid "Rounds each value to the integer above"
+msgstr "ஒவ்வொரு மதிப்பையும் மேலே உள்ள முழு எண்ணுக்கு வட்டமிடுகிறது"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:84
+msgid "Rounds each value to the integer below"
+msgstr "ஒவ்வொரு மதிப்பையும் கீழே உள்ள முழு எண்ணுக்கு வட்டமிடுகிறது"
+
+#: jamovi/client/main/viewcontroller.js:345
+msgid "row {index} deleted."
+msgid_plural "{n} rows deleted."
+msgstr[0] "வரிசை {index} நீக்கப்பட்டது."
+msgstr[1] "{n} வரிசைகள் நீக்கப்பட்டன."
+
+#: jamovi/client/main/tableview.js:100
+msgid "Row count"
+msgstr "வரிசை எண்ணிக்கை"
+
+#: jamovi/client/main/vareditor/editorwidget.js:252
+msgid "Row Filters"
+msgstr "வரிசை வடிப்பான்கள்"
+
+#: jamovi/client/main/ribbon/datatab.js:67
+#: jamovi/client/main/ribbon/variablestab.js:46
+msgid "Rows"
+msgstr "வரிசைகள்"
+
+#: jamovi/client/main/backstage.ts:179
+#: jamovi/client/main/backstage.ts:201
+msgid "SAS 7bdat {ext}"
+msgstr "SAS விருப்பமானது {ext}"
+
+#: jamovi/client/main/backstage.ts:123
+msgid "SAS files {ext}"
+msgstr "SAS கோப்புகள் {ext}"
+
+#: jamovi/client/main/backstage.ts:180
+#: jamovi/client/main/backstage.ts:202
+msgid "SAS xpt {ext}"
+msgstr "Sas xpt {ext}"
+
+#: jamovi/client/main/backstage.ts:382
+#: jamovi/client/main/backstage.ts:479
+#: jamovi/client/main/backstage/fsentrybrowserview.ts:303
+#: jamovi/client/main/main.js:749
+#: jamovi/client/main/menu.js:160
+msgid "Save"
+msgstr "சேமி"
+
+#: jamovi/client/main/backstage.ts:398
+#: jamovi/client/main/backstage.ts:495
+msgid "Save As"
+msgstr "என சேமி"
+
+#: jamovi/client/main/main.js:751
+msgid "Save changes to '{title}'?"
+msgstr "மாற்றங்களை '{title}' இல் சேமிக்கவா?"
+
+#: jamovi/client/main/instance.ts:442
+#: jamovi/client/main/instance.ts:515
+msgid "Save failed"
+msgstr "சேமி தோல்வியுற்றது"
+
+#: jamovi/client/main/main.ts:233
+msgid "Save project"
+msgstr "திட்டத்தை சேமிக்கவும்"
+
+#: jamovi/client/main/instance.ts:419
+msgid "Saved to '{filename}'"
+msgstr "'{filename}' என சேமிக்கப்பட்டது"
+
+#: jamovi/client/main/instance.ts:383
+msgid "Saving"
+msgstr "சேமிப்பு"
+
+#: jamovi/client/main/notification.js:78
+msgid "Scheduled maintenance"
+msgstr "திட்டமிடப்பட்ட பராமரிப்பு"
+
+#: jamovi/client/analysisui/layoutsupplierview.js:169
+#: jamovi/client/analysisui/layoutsupplierview.js:173
+#: jamovi/client/main/store/pagemodules.js:34
+msgid "Search"
+msgstr "தேடல்"
+
+#: jamovi/client/main/store/pagemodules.js:42
+msgid "Search available modules"
+msgstr "கிடைக்கக்கூடிய தொகுதிகளைத் தேடுங்கள்"
+
+#: jamovi/client/main/backstage/fsentrybrowserview.ts:261
+msgid "Search files"
+msgstr "கோப்புகளைத் தேடுங்கள்"
+
+#: jamovi/client/main/backstage/fsentrybrowserview.ts:433
+msgid "Search for file in directory {0}"
+msgstr "கோப்பகத்தில் கோப்பைத் தேடுங்கள் {0}"
+
+#: jamovi/client/main/store/pagemodules.js:42
+msgid "Search installed modules"
+msgstr "நிறுவப்பட்ட தொகுதிகளைத் தேடுங்கள்"
+
+#: jamovi/client/analysisui/layoutsupplierview.js:172
+msgid "Search list items"
+msgstr "தேடல் பட்டியல் உருப்படிகள்"
+
+#: jamovi/client/main/variablesview.js:48
+msgid "Search variables"
+msgstr "தேடல் மாறிகள்"
+
+#: jamovi/client/main/resultspanel.js:442
+msgid "Select all"
+msgstr "அனைத்தையும் தெரிவுசெய்"
+
+#: jamovi/client/main/vareditor/editorwidget.js:82
+#: jamovi/client/main/variablesview.js:63
+msgid "Selected"
+msgstr "தேர்ந்தெடுக்கப்பட்டது"
+
+#: jamovi/client/main/ribbon/appmenu.js:119
+msgid "sequential"
+msgstr "தொடர்ச்சியான"
+
+#: jamovi/client/main/ribbon/appmenu.js:119
+msgid "Set1"
+msgstr "தொகுப்பு 1"
+
+#: jamovi/client/main/ribbon/datatab.js:38
+msgid "Setup"
+msgstr "அமைவு"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:78
+msgid "Setup..."
+msgstr "அமைவு..."
+
+#: jamovi/client/main/store/pagemodules.js:221
+msgid "Show"
+msgstr "காட்டு"
+
+#: jamovi/client/main/vareditor/filterwidget.js:58
+#: jamovi/client/main/vareditor/filterwidget.js:75
+msgid "Show filter columns"
+msgstr "வடிகட்டி நெடுவரிசைகளைக் காட்டு"
+
+#: jamovi/client/main/editors/transformeditor.js:655
+#: jamovi/client/main/vareditor/computedvarwidget.js:124
+#: jamovi/client/main/vareditor/filterwidget.js:412
+msgid "Show formula editor"
+msgstr "ஃபார்முலா எடிட்டரைக் காட்டு"
+
+#: jamovi/client/main/ribbon/ribbonmenu.js:224
+msgid "Show in main menu"
+msgstr "முதன்மையான பட்டியலில் காண்பி"
+
+#: jamovi/client/main/store/pagemodules.js:265
+msgid "Show module {moduleName} in the Analyses ribbon"
+msgstr "பகுப்பாய்வு ரிப்பனில் தொகுதி {moduleName} ஐக் காட்டு"
+
+#: jamovi/client/main/store.js:93
+msgid "Side-loading modules is not available."
+msgstr "பக்க-ஏற்றுதல் தொகுதிகள் கிடைக்கவில்லை."
+
+#: jamovi/client/main/store.js:52
+msgid "Sideload"
+msgstr "பக்கவாட்டு"
+
+#: jamovi/client/main/ribbon/appmenu.js:76
+#: jamovi/client/main/ribbon/appmenu.js:84
+msgid "significant figures"
+msgstr "குறிப்பிடத்தக்க புள்ளிவிவரங்கள்"
+
+#: jamovi/client/main/vareditor/recodedvarwidget.js:30
+msgid "Source variable"
+msgstr "மூல மாறி"
+
+#: jamovi/client/main/backstage.ts:460
+msgid "Special Import"
+msgstr "சிறப்பு இறக்குமதி"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:134
+msgid "Splits text into pieces based on a separator. <i>piece</i> specifies the desired piece by index."
+msgstr "ஒரு பிரிப்பான் அடிப்படையில் உரைகளை துண்டுகளாகப் பிரிக்கவும். <i>piece</i> விரும்பிய பகுதியை குறியீட்டால் குறிப்பிடுகிறது."
+
+#: jamovi/client/main/tableview.js:62
+msgid "Spreadsheet"
+msgstr "விரிவுத்தாள்"
+
+#: jamovi/client/main/backstage.ts:120
+msgid "SPSS files {ext}"
+msgstr "SPSS கோப்புகள் {ext}"
+
+#: jamovi/client/main/backstage.ts:177
+#: jamovi/client/main/backstage.ts:199
+msgid "SPSS sav {ext}"
+msgstr "Spss sav {ext}"
+
+#: jamovi/client/main/backstage.ts:181
+#: jamovi/client/main/backstage.ts:203
+msgid "Stata {ext}"
+msgstr "நிலை {ext}"
+
+#: jamovi/client/main/backstage.ts:122
+msgid "Stata files {ext}"
+msgstr "ச்டேட்டா கோப்புகள் {ext}"
+
+#: jamovi/client/main/ribbon/annotationtab.js:125
+msgid "Strike"
+msgstr "வேலைநிறுத்தம்"
+
+#: jamovi/client/main/ribbon/annotationtab.js:169
+msgid "Styles"
+msgstr "பாணிகள்"
+
+#: jamovi/client/main/ribbon/annotationtab.js:130
+msgid "Sub Script"
+msgstr "சந்தா"
+
+#: jamovi/client/main/ribbon/annotationtab.js:131
+msgid "Super Script"
+msgstr "சூப்பர் ச்கிரிப்ட்"
+
+#: jamovi/client/main/resultspanel.js:727
+msgid "SVG Image {ext}"
+msgstr "எச்.வி.சி படம் {ext}"
+
+#: jamovi/client/resultsview/syntax.js:43
+msgid "Syntax"
+msgstr "தொடரியல்"
+
+#: jamovi/client/main/ribbon/appmenu.js:99
+msgid "Syntax mode"
+msgstr "தொடரியல் பயன்முறை"
+
+#: jamovi/client/main/ribbon/appmenu.js:229
+msgid "System default"
+msgstr "கணினி இயல்புநிலை"
+
+#: jamovi/client/main/ribbon/analysetab.js:187
+msgid "T-Tests"
+msgstr "டி-சோதனைகள்"
+
+#: jamovi/client/resultsview/table.js:171
+msgid "Table"
+msgstr "அட்டவணை"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:163
+msgid "Takes a number representing the number of days since the 1st of January 1970, and produces a formatted date."
+msgstr "1970 சனவரி 1 ஆம் தேதி முதல் பல நாட்களைக் குறிக்கும் எண்ணை எடுத்துக்கொள்கிறது, மேலும் வடிவமைக்கப்பட்ட தேதியை உருவாக்குகிறது."
+
+#: jamovi/client/main/vareditor/datavarwidget.js:33
+#: jamovi/client/main/vareditor/formulatoolbar.js:130
+msgid "Text"
+msgstr "உரை"
+
+#: jamovi/client/main/ribbon/annotationtab.js:134
+msgid "Text Color"
+msgstr "உரை நிறம்"
+
+#: jamovi/client/main/resultspanel.js:691
+#: jamovi/client/main/resultspanel.js:797
+msgid "The content has been copied to the clipboard"
+msgstr "உள்ளடக்கம் இடைநிலைப்பலகைக்கு நகலெடுக்கப்பட்டுள்ளது"
+
+#: jamovi/client/main/utils/clipboardprompt.js:20
+msgid "The content has been prepared, and can be copied with the button below, or by pressing <em>{k}+C</em> on your keyboard"
+msgstr ""
+"உள்ளடக்கம் தயாரிக்கப்பட்டுள்ளது, மேலும் கீழே உள்ள பொத்தானைக் கொண்டு நகலெடுக்கலாம் அல்லது உங்கள் "
+"விசைப்பலகையில் <em>{k}+C</em> ஐ அழுத்துவதன் மூலம் நகலெடுக்கலாம்"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:246
+msgid "The current value of the variable to which this transform is applied."
+msgstr "இந்த உருமாற்றம் பயன்படுத்தப்படும் மாறியின் தற்போதைய மதிப்பு."
+
+#: jamovi/client/main/strings.ts:6
+msgid "The data is weighted by the variable {}, however this analysis does not support non-integer weights. The weights were rounded to the nearest integer."
+msgstr "தரவு {by மூலம் எடைபோடப்படுகிறது, இருப்பினும் இந்த பகுப்பாய்வு முழு எண் அல்லாத எடையை ஆதரிக்காது. எடைகள் அருகிலுள்ள முழு எண்ணுக்கு வட்டமானவை."
+
+#: jamovi/client/main/strings.ts:7
+#: jamovi/server/jamovi/server/analyses/weights.py
+msgid "The data is weighted by the variable {}."
+msgstr "தரவு {by மூலம் எடையுள்ளதாக இருக்கும்."
+
+#: jamovi/client/main/strings.ts:5
+msgid "The data is weighted, however this analysis does not support weights. This analysis used the data unweighted."
+msgstr "தரவு எடையுள்ளதாக இருக்கிறது, இருப்பினும் இந்த பகுப்பாய்வு எடையை ஆதரிக்காது. இந்த பகுப்பாய்வு தரவைப் பார்த்தது."
+
+#: jamovi/client/main/instance.ts:431
+msgid "The file '{filename}' already exists. Overwrite this file?"
+msgstr "'{filename}' கோப்பு ஏற்கனவே உள்ளது. இந்த கோப்பை மேலெழுதவா?"
+
+#: jamovi/server/jamovi/server/compute/messages.py
+msgid "The formula is mis-specified"
+msgstr "தேற்றம் தவறாக குறிப்பிடப்பட்டுள்ளது"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:144
+msgid "The index of value in the provided values."
+msgstr "வழங்கப்பட்ட மதிப்புகளில் மதிப்பின் அட்டவணை."
+
+#: jamovi/client/resultsview/table.js:754
+msgid "The interaction of {0} and {1}"
+msgstr "{0} மற்றும் {1 of இன் தொடர்பு"
+
+#: jamovi/client/analysisui/formatdef.js:272
+msgid "The interaction of {list}"
+msgstr "{பட்டியல் of இன் தொடர்பு"
+
+#: jamovi/client/main/store.js:80
+msgid "The jamovi library is not available to your session."
+msgstr "உங்கள் அமர்வுக்கு சாமோவி நூலகம் கிடைக்கவில்லை."
+
+#: jamovi/client/main/vareditor/datavarwidget.js:123
+msgid "The level value {r} is already in use."
+msgstr "நிலை மதிப்பு {r} ஏற்கனவே பயன்பாட்டில் உள்ளது."
+
+#: jamovi/client/main/vareditor/datavarwidget.js:135
+msgid "The level value cannot be blank."
+msgstr "நிலை மதிப்பு காலியாக இருக்க முடியாது."
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "The library is disabled"
+msgstr "நூலகம் முடக்கப்பட்டுள்ளது"
+
+#: jamovi/server/jamovi/server/scheduler.py
+msgid "The module for this analysis is not installed, or is unavailable"
+msgstr "இந்த பகுப்பாய்விற்கான தொகுதி நிறுவப்படவில்லை, அல்லது கிடைக்கவில்லை"
+
+#: jamovi/server/jamovi/server/syncs/http.py
+msgid "The remote server could not be reached"
+msgstr "தொலை சேவையகத்தை அடைய முடியவில்லை"
+
+#: jamovi/server/jamovi/server/syncs/http.py
+msgid "The remote server rejected the request"
+msgstr "தொலை சேவையகம் கோரிக்கையை நிராகரித்தது"
+
+#: jamovi/server/jamovi/server/syncs/http.py
+msgid "The remote server reported an error"
+msgstr "தொலை சேவையகம் ஒரு பிழையைப் புகாரளித்தது"
+
+#: jamovi/server/jamovi/server/syncs/http.py
+msgid "The remote server sent an unexpected response"
+msgstr "தொலை சேவையகம் எதிர்பாராத பதிலை அனுப்பியது"
+
+#: jamovi/server/jamovi/server/syncs/http.py
+msgid "The resource doesn't exist, or has moved (404)"
+msgstr "சான்று இல்லை, அல்லது நகர்ந்தது (404)"
+
+#: jamovi/client/main/vareditor/recodedvarwidget.js:288
+msgid "The selected transform is in error and should be edited."
+msgstr "தேர்ந்தெடுக்கப்பட்ட உருமாற்றம் பிழையில் உள்ளது மற்றும் திருத்தப்பட வேண்டும்."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:142
+msgid "The value in the provided values at index."
+msgstr "குறியீட்டில் வழங்கப்பட்ட மதிப்புகளில் உள்ள மதிப்பு."
+
+#: jamovi/server/jamovi/server/engine.py
+msgid "This analysis has exceeded the current time limits and has been terminated."
+msgstr "இந்த பகுப்பாய்வு தற்போதைய நேர வரம்புகளை மீறி நிறுத்தப்பட்டுள்ளது."
+
+#: jamovi/server/jamovi/server/engine.py
+msgid "This analysis has terminated, likely due to hitting a resource limit."
+msgstr "இந்த பகுப்பாய்வு ஒரு வள வரம்பைத் தாக்கியதால் நிறுத்தப்பட்டுள்ளது."
+
+#: jamovi/client/main/main.ts:912
+msgid "This data set could not be opened"
+msgstr "இந்த தரவு தொகுப்பை திறக்க முடியவில்லை"
+
+#: jamovi/server/jamovi/server/server.py
+msgid "This data set is no longer available"
+msgstr "இந்த தரவு தொகுப்பு இனி கிடைக்காது"
+
+#: jamovi/client/main/backstage.ts:369
+#: jamovi/client/main/utils/pathtools.js:15
+msgid "This Device"
+msgstr "இந்த சாதனம்"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:250
+msgid "This is a data variable."
+msgstr "இது தரவு மாறி."
+
+#: jamovi/client/analysisui/main.ts:330
+msgid "This module is either <em>missing or incompatible</em> with this version of jamovi."
+msgstr ""
+"இந்தத் தொகுதி சாமோவியின் இந்தப் பதிப்போடு <em>காணவில்லை அல்லது பொருந்தவில்லை</em>."
+
+#: jamovi/client/main/backstage.ts:320
+#: jamovi/client/main/backstage.ts:454
+#: jamovi/client/main/backstage.ts:474
+#: jamovi/client/main/backstage.ts:503
+#: jamovi/client/main/backstage.ts:512
+msgid "This PC"
+msgstr "இந்த பிசி"
+
+#: jamovi/server/jamovi/server/instance.py
+#: jamovi/server/jamovi/server/instancemodel.py
+msgid "This session is limited to {} columns"
+msgstr "இந்த அமர்வு {} நெடுவரிசைகளுக்கு மட்டுமே"
+
+#: jamovi/server/jamovi/server/instance.py
+#: jamovi/server/jamovi/server/instancemodel.py
+msgid "This session is limited to {} rows"
+msgstr "இந்த அமர்வு {} வரிசைகளுக்கு மட்டுமே"
+
+#: jamovi/client/main/notification.js:39
+msgid "This session will end any moment now"
+msgstr "இந்த அமர்வு இப்போது எந்த தருணத்திலும் முடிவடையும்"
+
+#: jamovi/client/main/notification.js:35
+msgid "This session will end in around {} minutes"
+msgstr "இந்த அமர்வு சுமார்}} நிமிடங்களில் முடிவடையும்"
+
+#: jamovi/client/main/notification.js:37
+msgid "This session will end in around 1 minute"
+msgstr "இந்த அமர்வு சுமார் 1 நிமிடத்தில் முடிவடையும்"
+
+#: jamovi/client/main/vareditor/recodedvarwidget.js:39
+msgid "This transform is in error and should be edited."
+msgstr "இந்த மாற்றம் பிழையில் உள்ளது மற்றும் திருத்தப்பட வேண்டும்."
+
+#: jamovi/client/main/tableview.js:105
+msgid "Toggle filters visibility"
+msgstr "வடிப்பான்களின் தெரிவுநிலையை மாற்றவும்"
+
+#: jamovi/client/main/ribbon.js:199
+msgid "Toggle screen state"
+msgstr "திரை நிலையை மாற்றவும்"
+
+#: jamovi/client/main/main.ts:256
+msgid "Toggle variable setup"
+msgstr "மாறி அமைப்பை மாற்றவும்"
+
+#: jamovi/client/main/viewcontroller.js:376
+msgid "Too much data, use import instead"
+msgstr "அதிகப்படியான தரவு, அதற்கு பதிலாக இறக்குமதியைப் பயன்படுத்தவும்"
+
+#: jamovi/client/main/editors/transformeditor.js:25
+#: jamovi/client/main/ribbon/datatab.js:40
+#: jamovi/client/main/ribbon/variablestab.js:24
+msgid "Transform"
+msgstr "உருமாற்று, உருமாற்றம்"
+
+#: jamovi/server/jamovi/server/instancemodel.py
+msgid "Transform {}"
+msgstr "உருமாற்றம் {}"
+
+#: jamovi/client/main/tableview.js:296
+msgid "Transform: {name}"
+msgstr "உருமாற்றம்: {name}"
+
+#: jamovi/client/main/tableview.js:301
+msgid "Transform: None"
+msgstr "உருமாற்றம்: எதுவுமில்லை"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:81
+msgid "Transform..."
+msgstr "உருமாற்றம் ..."
+
+#: jamovi/client/main/dataset.js:1319
+msgid "Transformed"
+msgstr "மாற்றப்பட்டது"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:100
+#: jamovi/client/main/contextmenu/contextmenus.js:66
+#: jamovi/client/main/ribbon/datatab.js:54
+#: jamovi/client/main/ribbon/variablestab.js:37
+#: jamovi/client/main/vareditor/editorwidget.js:248
+msgid "Transformed Variable"
+msgid_plural "Multiple Transformed Variables ({n})"
+msgstr[0] "மாற்றப்பட்ட மாறி"
+msgstr[1] "பல மாற்றப்பட்ட மாறிகள் ({n})"
+
+#: jamovi/client/main/utils/headeralert.js:27
+msgid "Try again"
+msgstr "மீண்டும் முயற்சிக்கவும்"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "Unable to access analysis"
+msgstr "பகுப்பாய்வை அணுக முடியவில்லை"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "Unable to access library"
+msgstr "நூலகத்தை அணுக முடியவில்லை"
+
+#: jamovi/server/jamovi/server/downloader.py
+msgid "Unable to access the internet (likely due to a captive portal)"
+msgstr "இணையத்தை அணுக முடியவில்லை (சிறைப்பிடிக்கப்பட்ட போர்ட்டல் காரணமாக இருக்கலாம்)"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "Unable to browse {}"
+msgstr "உலாவ முடியவில்லை {}"
+
+#: jamovi/client/main/main.js:890
+msgid "Unable to connect to the server"
+msgstr "சேவையகத்துடன் இணைக்க முடியவில்லை"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "Unable to import {}"
+msgstr "இறக்குமதி செய்ய முடியவில்லை {}"
+
+#: jamovi/client/main/store/pagemodules.js:376
+msgid "Unable to install {module}"
+msgstr "{module} நிறுவ முடியவில்லை"
+
+#: jamovi/client/main/store/pagemodules.js:293
+#: jamovi/client/main/store/pagesideload.js:56
+#: jamovi/server/jamovi/server/instance.py
+msgid "Unable to install module"
+msgstr "தொகுதி நிறுவ முடியவில்லை"
+
+#: jamovi/client/main/backstage.ts:945
+#: jamovi/client/main/instance.ts:301
+#: jamovi/client/main/instance.ts:304
+#: jamovi/client/main/instance.ts:350
+#: jamovi/client/main/instance.ts:356
+#: jamovi/client/main/main.js:852
+msgid "Unable to open"
+msgstr "திறக்க முடியவில்லை"
+
+#: jamovi/client/main/viewcontroller.js:375
+msgid "Unable to paste"
+msgstr "ஒட்ட முடியவில்லை"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "Unable to perform import"
+msgstr "இறக்குமதியை செய்ய முடியவில்லை"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "Unable to perform request"
+msgstr "கோரிக்கையைச் செய்ய முடியவில்லை"
+
+#: jamovi/server/jamovi/server/downloader.py
+msgid "Unable to reach the library"
+msgstr "நூலகத்தை அடைய முடியவில்லை"
+
+#: jamovi/client/main/strings.ts:13
+msgid "Unable to save"
+msgstr "சேமிக்க முடியவில்லை"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "Unable to save {}"
+msgstr "{} சேமிக்க முடியவில்லை"
+
+#: jamovi/client/main/store/pagemodules.js:318
+msgid "Unable to uninstall module"
+msgstr "தொகுதி நிறுவல் நீக்க முடியவில்லை"
+
+#: jamovi/client/main/store/pagemodules.js:205
+msgid "Unavailable"
+msgstr "கிடைக்கவில்லை"
+
+#: jamovi/client/main/ribbon/annotationtab.js:124
+msgid "Underline"
+msgstr "அடிக்கோடிட்டு"
+
+#: jamovi/client/main/ribbon/annotationtab.js:113
+#: jamovi/client/main/ribbon/datatab.js:33
+#: jamovi/client/main/ribbon/variablestab.js:17
+msgid "Undo Edit"
+msgstr "திருத்தவும்"
+
+#: jamovi/client/main/instance.ts:351
+#: jamovi/client/main/instance.ts:358
+#: jamovi/client/main/notification.js:86
+#: jamovi/server/jamovi/server/compute/messages.py
+msgid "Unexpected error"
+msgstr "எதிர்பாராத பிழை"
+
+#: jamovi/server/jamovi/server/syncs/http.py
+msgid "Unrecognised file format"
+msgstr "அங்கீகரிக்கப்படாத கோப்பு வடிவம்"
+
+#: jamovi/server/jamovi/server/formatio/blank.py
+msgid "Untitled"
+msgstr "தலைப்பிடப்படாத"
+
+#: jamovi/client/main/ribbon/appmenu.js:152
+#: jamovi/client/main/store/pagemodules.js:210
+msgid "Update"
+msgstr "புதுப்பிப்பு"
+
+#: jamovi/client/main/store/pagemodules.js:253
+msgid "Update module {moduleName} to version {version}"
+msgstr "பதிப்பு {moduleName} க்கு தொகுதி {மாடுலென் பெயரைப் புதுப்பிக்கவும்"
+
+#: jamovi/client/main/instance.ts:217
+#: jamovi/client/main/instance.ts:257
+#: jamovi/client/main/instance.ts:260
+msgid "Upload failed"
+msgstr "பதிவேற்றம் தோல்வியடைந்தது"
+
+#: jamovi/client/main/instance.ts:224
+#: jamovi/client/main/instance.ts:228
+msgid "Uploading"
+msgstr "பதிவேற்றம்"
+
+#: jamovi/client/main/editors/transformeditor.js:410
+msgid "use"
+msgstr "பயன்படுத்தவும்"
+
+#: jamovi/client/main/editors/transformeditor.js:281
+msgid "used by"
+msgstr "பயன்படுத்தியது"
+
+#: jamovi/client/main/vareditor/recodedvarwidget.js:35
+msgid "using transform"
+msgstr "உருமாற்றத்தைப் பயன்படுத்துதல்"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "Value is too large for column '{}' of type integer"
+msgstr "வகை முழு எண் நெடுவரிசைக்கு மதிப்பு மிகப் பெரியது"
+
+#: jamovi/client/analysisui/formatdef.js:107
+msgid "Variable {0}"
+msgstr "மாறி {0}"
+
+#: jamovi/client/main/vareditor/editorwidget.js:67
+msgid "Variable Description"
+msgstr "மாறக்கூடிய விளக்கம்"
+
+#: jamovi/client/main/vareditor/editorwidget.js:53
+msgid "Variable Name"
+msgstr "மாறக்கூடிய பெயர்"
+
+#: jamovi/client/main/ribbon/datatab.js:38
+msgid "Variable setup"
+msgstr "மாறி அமைப்பு"
+
+#: jamovi/client/main/editors/transformeditor.js:63
+msgid "Variable suffix"
+msgstr "மாறக்கூடிய பின்னொட்டு"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:249
+msgid "Variable: {v}"
+msgstr "மாறி: {v}"
+
+#: jamovi/client/main/ribbon/datatab.js:37
+#: jamovi/client/main/ribbon/variablestab.js:11
+#: jamovi/client/main/ribbon/variablestab.js:21
+#: jamovi/client/main/vareditor/formulatoolbar.js:228
+#: jamovi/client/main/variablesview.js:62
+msgid "Variables"
+msgstr "மாறிகள்"
+
+#: jamovi/client/analysisui/formatdef.js:117
+msgid "Variables {list}"
+msgstr "மாறிகள் {list}"
+
+#: jamovi/client/main/variablesview.js:41
+msgid "Variables List View"
+msgstr "மாறிகள் பட்டியல் பார்வை"
+
+#: jamovi/client/main/variablesview.js:111
+msgid "Variables View"
+msgstr "மாறிகள் பார்வை"
+
+#: jamovi/client/main/ribbon/appmenu.js:196
+msgid "Version {v}"
+msgstr "பதிப்பு {v}"
+
+#: jamovi/client/main/ribbon/appmenu.js:92
+msgid "Visible"
+msgstr "தெரியும்"
+
+#: jamovi/client/main/backstage.ts:171
+#: jamovi/client/main/backstage.ts:193
+#: jamovi/client/main/resultspanel.js:755
+msgid "Web Page {ext}"
+msgstr "வலைப்பக்கம் {ext}"
+
+#: jamovi/client/main/ribbon/datatab.js:18
+#: jamovi/client/main/ribbon/datatab.js:41
+#: jamovi/client/resultsview/main.js:334
+#: jamovi/server/jamovi/server/analyses/weights.py
+msgid "Weights"
+msgstr "எடைகள்"
+
+#: jamovi/client/main/vareditor/missingvaluelistitem.js:33
+msgid "when"
+msgstr "எப்போது"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:126
+msgid "When the variable contains a missing value, use the value, otherwise the else."
+msgstr "மாறி காணாமல் போன மதிப்பைக் கொண்டிருக்கும்போது, மதிப்பைப் பயன்படுத்தவும், இல்லையெனில் வேறு."
+
+#: jamovi/client/main/utils/clipboardprompt.js:22
+msgid "Why is this additional step necessary?"
+msgstr "இந்த கூடுதல் படி ஏன் அவசியம்?"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "You cannot delete rows while filtered rows are hidden"
+msgstr "வடிகட்டப்பட்ட வரிசைகள் மறைக்கப்படும்போது நீங்கள் வரிசைகளை நீக்க முடியாது"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "You cannot insert rows while filtered rows are hidden"
+msgstr "வடிகட்டப்பட்ட வரிசைகள் மறைக்கப்படும்போது நீங்கள் வரிசைகளைச் செருக முடியாது"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "You cannot modify columns that affect filters when filtered rows are hidden"
+msgstr "வடிகட்டப்பட்ட வரிசைகள் மறைக்கப்படும்போது வடிப்பான்களை பாதிக்கும் நெடுவரிசைகளை நீங்கள் மாற்ற முடியாது"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "You cannot modify transforms that affect filters when filtered rows are hidden"
+msgstr "வடிகட்டப்பட்ட வரிசைகள் மறைக்கப்படும்போது வடிப்பான்களை பாதிக்கும் உருமாற்றங்களை நீங்கள் மாற்ற முடியாது"
+
+#: jamovi/server/jamovi/server/syncs/http.py
+msgid "You do not have appropriate permissions (403)"
+msgstr "உங்களுக்கு பொருத்தமான அனுமதிகள் இல்லை (403)"
+
+#: jamovi/client/main/main.js:151
+msgid "Your connection has been lost. Please refresh the page to continue."
+msgstr "உங்கள் இணைப்பு இழந்துவிட்டது. தொடர பக்கத்தைப் புதுப்பிக்கவும்."
+
+#: jamovi/client/main/utils/headeralert.js:32
+msgid "Your web browser prevented jamovi from opening a new tab"
+msgstr "உங்கள் வலை உலாவி சாமோவியை புதிய தாவலைத் திறப்பதைத் தடுத்தது"
+
+#: jamovi/client/main/ribbon/appmenu.js:61
+msgid "Zoom"
+msgstr "பெரிதாக்கு"
+
+#: jamovi/client/main/ribbon/appmenu.js:65
+msgid "Zoom in"
+msgstr "பெரிதாக்கு"
+
+#: jamovi/client/main/ribbon/appmenu.js:63
+msgid "Zoom out"
+msgstr "சிறிதாக்கு"

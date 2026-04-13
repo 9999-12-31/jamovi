@@ -1,0 +1,446 @@
+.jmv-transform-editor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.jmv-transform-editor > .contents {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-bottom: 10px;
+    background-color: hsla(0, 0%, 99%, 1);
+    padding: 3px;
+    border: 1px solid #dfdfdf;
+    height: 140px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.jmv-transform-editor .contents:focus {
+    outline: auto;
+}
+
+.jmv-transform-editor > .contents > .content-list {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    background-color: #fdfdfd;
+    margin-top: 3px;
+    margin-inline-start: 5px;
+    max-height: 103px;
+}
+
+.jmv-editor-panel-main .title-box .transform-colour {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    margin-top: 2px;
+    margin-inline-start: 5px;
+}
+
+.jmv-transform-editor-options {
+    flex: 2;
+    overflow-y: auto;
+    padding-inline-end: 5px;
+}
+
+.jmv-transform-editor-widget-title {
+    font-size: 150%;
+    color: #555555;
+    background-color: white;
+    padding: 3px 4px 3px 4px;
+    border: 1px solid #CCCCCC;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.jmv-transform-editor-widget-description {
+    font-size: 100%;
+    color: #555555;
+    background-color: white;
+    padding: 3px 4px 3px 4px;
+    margin: 3px 0px 0px 0px;
+    border: 1px solid #CCCCCC;
+    max-height: 3.2em;
+    overflow: auto;
+    cursor: text;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.jmv-transform-editor-widget-shortname {
+    font-size: 100%;
+    color: #555555;
+    background-color: white;
+    padding: 3px 4px 3px 4px;
+    margin: 3px 0px 0px 0px;
+    border: 1px solid #CCCCCC;
+    max-height: 3.2em;
+    overflow: auto;
+    cursor: text;
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 8em;
+    margin-inline-start: 5px;
+}
+
+.jmv-transform-editor-top .desc-box {
+    display: flex;
+}
+
+.jmv-transform-editor-top {
+    display: flex;
+    flex-flow: column;
+    color: #848484;
+    margin: 3px 0 5px 0;
+}
+
+.jmv-transform-editor-bottom .usage-box {
+    position: absolute;
+    top: 3px;
+    inset-inline-end: 100px;
+}
+
+.jmv-transform-editor-bottom .measure-box, .jmv-transform-editor-bottom .usage-box {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.jmv-transform-editor-bottom .measure-box #transform-measure-type {
+    margin-inline-start: 8px;
+}
+
+.jmv-transform-editor-bottom .measure-box .transform-measure-icon {
+    width: 16px;
+    height: 16px;
+    margin-inline-start: 8px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    align-self: center;
+}
+
+.jmv-transform-editor-bottom .measure-box .transform-measure-icon[measure-type='id'] {
+    background-image: url('../../assets/variable-id.svg');
+}
+
+.jmv-transform-editor-bottom .measure-box .transform-measure-icon[measure-type='continuous'] {
+    background-image: url('../../assets/variable-continuous.svg');
+}
+
+.jmv-transform-editor-bottom .measure-box .transform-measure-icon[measure-type='nominal'] {
+    background-image: url('../../assets/variable-nominal.svg');
+}
+
+.jmv-transform-editor-bottom .measure-box .transform-measure-icon[measure-type='ordinal'] {
+    background-image: url('../../assets/variable-ordinal.svg');
+}
+
+.jmv-transform-editor-bottom {
+    display: flex;
+    flex-flow: row;
+    align-items: baseline;
+    color: #575757;
+    justify-content: space-between;
+    padding-inline-end: 33px;
+}
+
+.jmv-transform-editor-bottom .view-button {
+    border: 1px solid #a0a0a0;
+    border-radius: 2px;
+    margin-inline-start: 5px;
+    padding: 0 5px;
+    line-height: 1.5;
+    background-color: #eeeeee;
+    transition: .4s background-color;
+    color: #212121;
+}
+
+.jmv-transform-editor-bottom .view-button:hover {
+    background-color: rgb(230, 241, 255);
+    border-color: rgb(62, 109, 169);
+}
+
+.jmv-transform-editor-top .recoded-from {
+    margin-inline-start: 1ex;
+    margin-inline-end: 1ex;
+}
+
+.jmv-transform-editor-bottom .usage-box .usage-label {
+    color: #b2b2b2;
+}
+
+.jmv-transform-editor-options > .formula-box {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 3px;
+    align-items: center;
+    transition: .2s opacity, .2s height, .2s margin, .2s top, 0.2s visibility;
+    overflow: hidden;
+    opacity: 1;
+    top: 0px;
+    visibility: visible;
+}
+
+.jmv-transform-editor-options > .formula-box:first-child {
+    margin-top: 0px;
+}
+
+.jmv-transform-editor-options > .formula-box.hidden {
+    opacity: 0;
+    height: 0px;
+    visibility: hidden;
+}
+
+.jmv-transform-editor-options > .formula-box > .reorder-cond {
+
+}
+
+.jmv-transform-editor-options > .formula-box .remove-cond {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    justify-self: end;
+    height: 100%;
+    line-height: inherit;
+    align-self: center;
+    margin-inline-end: 6px;
+    color: #bbbbbb;
+}
+
+.jmv-transform-editor-options > .formula-box .remove-cond span {
+    margin-bottom: 1px;
+}
+
+.jmv-transform-editor-options > .formula-box .remove-cond:hover {
+    color: #c15050;
+}
+
+.jmv-transform-editor > .contents > .insert-box {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    align-items: center;
+    border: 1px solid hsla(0, 0%, 88%, 0);
+    border-radius: 2px;
+    padding: 0 5px;
+    line-height: 1.5;
+    background-color: hsla(0, 0%, 99%, 1);
+    transition: .4s background-color;
+    color: #575757;
+    flex-shrink: 0;
+    margin-inline-start: 5px;
+    height: 22px;
+}
+
+.jmv-transform-editor > .contents > .content-list > .right-box {
+    margin-inline-start: 3px;
+    overflow: hidden;
+    width: 25px;
+    transition: 0.2s width, .2s opacity, .2s margin, 0.2s visibility;
+    opacity: 1;
+    visibility: visible;
+}
+
+.jmv-transform-editor > .contents > .content-list > .right-box.hidden {
+    width: 0px;
+    opacity: 0;
+    margin-inline-start: 0px;
+    visibility: hidden;
+}
+
+.jmv-transform-editor > .contents > .insert-box > .insert {
+    background-size: 100%;
+    background-image: url('../../assets/filters-add.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    width: 11px;
+    height: 11px;
+    margin-inline-end: 6px;
+}
+
+.jmv-transform-editor > .contents > .insert-box:hover {
+    background-color: rgb(230, 241, 255);
+    border-color: rgb(62, 109, 169);
+}
+
+.jmv-transform-editor > .contents  .button {
+    vertical-align: unset;
+    width: 25px;
+    height: 25px;
+    line-height: 1;
+    font-size: 20px;
+    text-align: center;
+    color: #bbbbbb;
+}
+
+.jmv-transform-editor > .contents  .button:hover {
+    color: #999999 ;
+}
+
+
+.jmv-transform-editor-options > .formula-box .show-editor {
+    filter: hue-rotate(40deg) saturate(5) grayscale(100%);
+    width: 28px;
+    align-self: stretch;
+    margin-inline-end: 4px;
+    border: 1px solid #dadada;
+    background-image: url('../../assets/filters-formula.svg');
+    background-position: center left 1px;
+    background-repeat: no-repeat;
+    background-size: 65%;
+    cursor: default;
+    flex: none;
+    background-color: white;
+}
+
+.jmv-transform-editor-options > .formula-box .show-editor:hover, .jmv-transform-editor-options > .formula-box .show-editor.is-active {
+    filter: none;
+    background-color: #ffffff;
+}
+
+.jmv-transform-editor-options > .formula-box .show-editor > .down-arrow {
+    filter: inherit;
+    position: absolute;
+    background-image: url('../../assets/filters-down-arrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: 50%;
+    margin-top: -3px;
+    width: 5px;
+    inset-inline-start: 16px;
+    height: 5px;
+}
+
+.jmv-transform-editor-options > .formula-box .formula-list-item > .down-arrow {
+    position: absolute;
+    background-image: url('../../assets/filters-down-arrow.svg');
+    background-position: right 2px top 1px;
+    background-repeat: no-repeat;
+    background-size: 5px 5px;
+    top: 0px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    width: 3ch;
+    margin-inline-start: 0.5ch;
+    border-inline-end: 1px dashed rgba(62, 109, 169, 0.28);
+    border-inline-start: 1px dashed rgba(62, 109, 169, 0.28);
+    box-sizing: border-box;
+    font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+    font-size: 12px;
+    color: rgba(220, 220, 220, 0);
+    line-height: 2;
+}
+
+.jmv-transform-editor-options > .formula-box .formula-list-item > .down-arrow:hover {
+    background-color: rgba(62, 109, 169, 0.05);
+    border-inline-end: 1px solid rgba(62, 109, 169, 0.28);
+    border-inline-start: 1px solid rgba(62, 109, 169, 0.28);
+}
+
+.jmv-transform-editor-options > .formula-box .equal {
+    position: absolute;
+    top: 0;
+    inset-inline-start: 0;
+    pointer-events: none;
+    font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+    font-size: 12px;
+    color: #3e6da9;
+    line-height: inherit;
+    padding-top: 0;
+    padding-inline-end: 0;
+    padding-bottom: 0px;
+    padding-inline-start: 1ch;
+    border: 1px solid transparent;
+}
+
+.jmv-transform-editor-options > .formula-box .equal span {
+    color: rgba(62, 109, 169, 0.35);
+}
+
+.jmv-transform-editor-options > .formula-box .formula-grid {
+    display: grid;
+    background-color: transparent;
+    border-radius: 4px;
+    width: 100%;
+    grid-template-columns: 65% 35%;
+    line-height: 2;
+}
+
+.jmv-transform-editor-options > .formula-box.recode-else:not(:first-child) {
+    margin-top: 10px;
+}
+
+.jmv-transform-editor-options > .formula-box .formula-list-item {
+    position: relative;
+    height: 100%;
+}
+
+.jmv-transform-editor-options > .formula-box .formula-message-box > .formula-message {
+    background-color: pink;
+    padding: 5px;
+    line-height: 1;
+    border: 1px solid #c998a0;
+}
+
+.jmv-transform-editor-options > .formula-box .formula-message-box > .formula-message:empty {
+    display: none;
+}
+
+.jmv-transform-editor-options > .formula-box .formula {
+    flex: 1;
+    resize: none;
+    text-indent: 1.5em;
+    font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+    font-size: 12px;
+    padding-top: 0;
+    padding-inline-end: 20px;
+    padding-bottom: 0px;
+    padding-inline-start: 1ex;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-inline-start: none;
+    border-inline-end: none;
+    cursor: text;
+    overflow-y: auto;
+    line-height: inherit;
+    min-height: 1em;
+    height: inherit;
+    box-sizing: border-box;
+    transition: .2s text-indent;
+    white-space: pre-wrap;
+}
+
+.jmv-transform-editor-options > .formula-box .item-0 .formula {
+    border-inline-start: 1px solid #CCCCCC;
+}
+
+.jmv-transform-editor-options > .formula-box .item-last .formula {
+    border-inline-end: 1px solid #CCCCCC;
+}
+
+.jmv-transform-editor-options > .formula-box .item-0.item-last {
+    grid-column-end: span last-line;
+}
+
+[contenteditable=true]:empty:before {
+    content: attr(placeholder);
+    display: block; /* For Firefox */
+    color: #CCCCCC;
+}
+
+.jmv-transform-editor-options > .formula-box .caret {
+    border-inline-start: 1px solid #888888;
+    top: 2px;
+    inset-inline-start: 15px;
+    height: calc(1em + 2px);
+    position: absolute;
+    transition: .05s left ease-out, .05s inset-inline-start ease-out, .05s top ease-out;
+    pointer-events: none;
+}

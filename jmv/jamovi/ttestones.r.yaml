@@ -1,0 +1,324 @@
+---
+name: ttestOneS
+title: One Sample T-Test
+jrs: '1.0'
+
+items:
+    - name: ttest
+      title: One Sample T-Test
+      type: Table
+      description: a table containing the t-test results
+      rows: (vars)
+      clearWith:
+        - hypothesis
+        - testValue
+        - miss
+        - bfPrior
+        - ciWidth
+        - ciWidthES
+
+      columns:
+        - name: var[stud]
+          title: ""
+          content: ($key)
+          type: text
+          combineBelow: true
+          visible: (students)
+
+        - name: name[stud]
+          title: ''
+          type: text
+          content: Student's t
+          visible: (students)
+
+        - name: stat[stud]
+          title: Statistic
+          type: number
+          visible: (students)
+
+        - name: err[stud]
+          title: 'error %'
+          type: number
+          visible: (students && bf)
+          content: ''
+
+        - name: df[stud]
+          title: df
+          type: number
+          visible: (students)
+
+        - name: p[stud]
+          title: p
+          type: number
+          format: zto,pvalue
+          visible: (students)
+
+        - name: md[stud]
+          title: Mean difference
+          type: number
+          visible: (meanDiff && students)
+
+        - name: cil[stud]
+          title: Lower
+          type: number
+          visible: (ci && meanDiff && students)
+
+        - name: ciu[stud]
+          title: Upper
+          type: number
+          visible: (ci && meanDiff && students)
+
+        - name: esType[stud]
+          title: ''
+          content: Cohen's d
+          type: text
+          visible: (effectSize && students)
+
+        - name: es[stud]
+          title: Effect Size
+          type: number
+          visible: (effectSize && students)
+
+        - name: ciles[stud]
+          title: Lower
+          type: number
+          visible: (ciES && effectSize && students)
+
+        - name: ciues[stud]
+          title: Upper
+          type: number
+          visible: (ciES && effectSize && students)
+
+        - name: var[bf]
+          title: ""
+          content: ($key)
+          type: text
+          combineBelow: true
+          visible: (bf)
+
+        - name: name[bf]
+          title: ''
+          type: text
+          content: Bayes factor₁₀
+          visible: (bf)
+
+        - name: stat[bf]
+          title: Statistic
+          type: number
+          visible: (bf)
+          refs: [ BF, btt ]
+
+        - name: err[bf]
+          title: '±%'
+          type: number
+          visible: (bf)
+
+        - name: df[bf]
+          title: df
+          type: number
+          visible: (bf)
+          content: ''
+
+        - name: p[bf]
+          title: p
+          type: number
+          format: zto,pvalue
+          visible: (bf)
+          content: ''
+
+        - name: md[bf]
+          title: Mean difference
+          type: number
+          visible: (meanDiff && bf)
+          content: ''
+
+        - name: cil[bf]
+          title: Lower
+          type: number
+          visible: (ci && meanDiff && bf)
+          content: ''
+
+        - name: ciu[bf]
+          title: Upper
+          type: number
+          visible: (ci && meanDiff && bf)
+          content: ''
+
+        - name: esType[bf]
+          title: ''
+          content: ''
+          type: text
+          visible: (effectSize && bf)
+
+        - name: es[bf]
+          title: Effect Size
+          type: number
+          visible: (effectSize && bf)
+          content: ''
+
+        - name: ciles[bf]
+          title: Lower
+          type: number
+          visible: (ciES && effectSize && bf)
+          content: ''
+
+        - name: ciues[bf]
+          title: Upper
+          type: number
+          visible: (ciES && effectSize && bf)
+          content: ''
+
+        - name: var[wilc]
+          title: ""
+          content: ($key)
+          type: text
+          combineBelow: true
+          visible: (wilcoxon || mann)
+
+        - name: name[wilc]
+          title: ''
+          type: text
+          content: Wilcoxon W
+          visible: (wilcoxon || mann)
+
+        - name: stat[wilc]
+          title: Statistic
+          type: number
+          visible: (wilcoxon || mann)
+
+        - name: err[wilc]
+          title: '±%'
+          type: number
+          visible: (bf && (wilcoxon || mann))
+          content: ''
+
+        - name: p[wilc]
+          title: p
+          type: number
+          format: zto,pvalue
+          visible: (wilcoxon || mann)
+
+        - name: md[wilc]
+          title: Mean difference
+          type: number
+          visible: (meanDiff && (wilcoxon || mann))
+
+        - name: cil[wilc]
+          title: Lower
+          type: number
+          visible: (ci && meanDiff && (wilcoxon || mann))
+
+        - name: ciu[wilc]
+          title: Upper
+          type: number
+          visible: (ci && meanDiff && (wilcoxon || mann))
+
+        - name: esType[wilc]
+          title: ''
+          content: Rank biserial correlation
+          type: text
+          visible: (effectSize && wilcoxon)
+          refs: Kerby2014
+
+        - name: es[wilc]
+          title: Effect Size
+          type: number
+          visible: (effectSize && wilcoxon)
+
+        - name: ciles[wilc]
+          title: Lower
+          type: number
+          visible: (ciES && effectSize && (wilcoxon || mann))
+
+        - name: ciues[wilc]
+          title: Upper
+          type: number
+          visible: (ciES && effectSize && (wilcoxon || mann))
+
+    - name: normality
+      title: Normality Test (Shapiro-Wilk)
+      type: Table
+      description: a table containing the normality test results
+      visible: (norm)
+      rows: (vars)
+      notes:
+          p: A low p-value suggests a violation of the assumption of normality
+      clearWith:
+          - miss
+
+      columns:
+        - name: name
+          title: ""
+          content: ($key)
+          type: text
+
+        - name: w
+          title: "W"
+          type: number
+
+        - name: p
+          type: number
+          format: zto,pvalue
+
+    - name: descriptives
+      title: Descriptives
+      type: Table
+      description: a table containing the descriptives
+      visible: (desc)
+      rows: (vars)
+      clearWith:
+          - miss
+
+      columns:
+        - name: name
+          title: ""
+          content: ($key)
+          type: text
+
+        - name: num
+          title: "N"
+          type: number
+
+        - name: mean
+          title: Mean
+          type: number
+
+        - name: median
+          title: Median
+          type: number
+
+        - name: sd
+          title: SD
+          type: number
+
+        - name: se
+          title: SE
+          type: number
+
+    - name: plots
+      title: Plots
+      description: an image of the descriptive plots
+      visible: (plots)
+      type: Image
+      renderFun: .desc
+      clearWith:
+        - vars
+        - miss
+        - testValue
+
+    - name: qq
+      title: Q-Q plots
+      type: Array
+      description: an array of Q-Q plots
+      visible: (qq)
+      items: (vars)
+      clearWith:
+        - miss
+      template:
+        type: Image
+        description: Q-Q plot
+        width: 350
+        height: 300
+        requiresData: true
+        renderFun: .qq
+        clearWith: []

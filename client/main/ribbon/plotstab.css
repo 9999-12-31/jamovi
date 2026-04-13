@@ -1,0 +1,25 @@
+
+.jmv-ribbon-button[data-name="scatr-jmvbox"] .jmv-ribbon-button-icon {
+    background-image: url("../../assets/analysis-scatr-jmvbox.svg");
+}
+
+.jmv-ribbon-button[data-name="scatr-jmvline"] .jmv-ribbon-button-icon {
+    background-image: url("../../assets/analysis-scatr-jmvline.svg");
+}
+
+.jmv-ribbon-button[data-name="scatr-jmvhist"] .jmv-ribbon-button-icon {
+    background-image: url("../../assets/analysis-scatr-jmvhist.svg");
+}
+
+.jmv-ribbon-button[data-name="scatr-jmvbar"] .jmv-ribbon-button-icon {
+    background-image: url("../../assets/analysis-scatr-jmvbar.svg");
+}
+
+.jmv-ribbon-button[data-name="scatr-scat"] .jmv-ribbon-button-icon {
+    background-image: url("../../assets/analysis-scatr-jmvscatter.svg");
+}
+
+.jmv-ribbon-button[data-name="more"] .jmv-ribbon-button-icon {
+    background-image: url("../../assets/analysis-plots-more.svg");
+}
+

@@ -1,0 +1,198 @@
+
+.silky-options-title {
+    font-size: 170% ;
+}
+
+.silky-options-header {
+    margin-top: 5px ;
+    padding-bottom: 5px ;
+    padding-inline-end: 15px ;
+    padding-inline-start: 15px ;
+
+    background-image: linear-gradient(to left, #555555, transparent);
+    background-size: 100% 2px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+}
+
+.silky-options-group {
+    margin-inline-end: 15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.silky-options-group.silky-options-level-1 {
+    margin-inline-end: 0px;
+}
+
+.silky-options-group.silky-gridlayout-collapsed {
+    margin-bottom: 0px;
+}
+
+/*Adding a space after a header if the grid is inline*/
+.silky-options-group.silky-options-group-style-inline .silky-options-group-header {
+    margin-inline-end: 1ex;
+}
+
+.silky-options-group-header1 {
+    margin-bottom: 20px;
+}
+
+.silky-gridlayout-collapsed .silky-options-group-header1 {
+    margin-bottom: 8px;
+}
+
+.silky-options-group-header2 {
+    margin-bottom: 5px;
+}
+
+.silky-option-checkbox, .silky-option-radio {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.silky-options-h1 {
+    font-size: 100% ;
+    border: 1px solid rgb(150, 150, 150);
+    background-color: rgb(200, 200, 200);
+    padding: 5px;
+    vertical-align: middle ;
+}
+
+.silky-options-h2 {
+    font-size: 100% ;
+    font-weight: bold;
+}
+
+.silky-options-group-header .silky-option-checkbox {
+    margin-bottom: 0px;
+}
+
+.silky-options-group-header .silky-options-h1 {
+    margin-bottom: 0px;
+}
+
+.silky-options-group-header .silky-options-h2 {
+    margin-bottom: 0px;
+}
+
+.electron input[type="radio"] {
+    width: 18px;
+    height: 18px;
+}
+
+input[type="radio"] {
+    position: relative;
+    vertical-align: middle;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 5px;
+}
+
+.electron input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+input[type="checkbox"] {
+    position: relative;
+    vertical-align: middle;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 5px;
+}
+
+label.silky-option-checkbox span, .silky-option-radio label span {
+    vertical-align: middle;
+    line-height: 18px;
+}
+
+/*textbox input*/
+.silky-option-text-label, input[type="text"].silky-option-input, .silky-option-suffix {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/*textbox sizing*/
+input[type="text"].silky-option-short-text {
+    width: 50px;
+}
+
+/*textbox sizing*/
+input[type="text"].silky-option-Medium-text {
+    width: 100px;
+}
+
+/*textbox sizing*/
+input[type="text"].silky-option-long-text {
+    width: 150px;
+}
+
+.silky-option-suffix {
+    margin-inline-start: 1ex;
+}
+
+.silky-options-collapse-icon {
+    border-inline-end: 1px solid rgb(130, 130, 130) ;
+    padding-inline-end: 23px;
+    margin-inline-end: 10px;
+    box-sizing: border-box ;
+    cursor: default ;
+    height: 100%;
+    width: 10px;
+}
+
+.silky-dropdown-toggle {
+  position: relative;
+  top: -4px ;
+  inset-inline-start: 6px ;
+}
+
+.silky-variable-supplier {
+    border: 1px solid rgb(130, 130, 130);
+    background-color: rgb(255, 255, 255);
+}
+
+.silky-gridlayout-collapsed .silky-options-group-header1 .silky-dropdown-toggle {
+  top: -3px ;
+}
+
+.silky-dropdown-toggle:before {
+  display: block;
+  position: absolute;
+  /*vertical-align: middle;*/
+  color: transparent;
+  font-size: 0;
+  content: "";
+  height: 5px;
+  width: 5px;
+  background-color: transparent;
+  border-inline-start: 2px solid;
+  border-bottom: 2px solid;
+  border-color: rgb(100, 100, 100);
+  top: 50%;
+  inset-inline-start: 50%;
+    margin-top: -1px;
+  z-index: 2;
+}
+
+.silky-gridlayout-collapsed .silky-options-group-header1 .silky-dropdown-toggle:before {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.silky-dropdown-toggle:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.silky-option-variable-button {
+    width: 40px;
+    height:25px;
+    border: 1px solid rgb(130, 130, 130) ;
+    background-color: rgb(255, 255, 255);
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+}

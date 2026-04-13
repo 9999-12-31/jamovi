@@ -1,0 +1,421 @@
+---
+name:  descriptives
+title: Descriptives
+menuGroup: Exploration
+version: '1.0.0'
+jas: '1.2'
+weightsSupport: 'full'
+
+description:
+    main: >
+        Descriptives are an assortment of summarising statistics, and
+        visualizations which allow exploring the shape and distribution of
+        data. It is good practice to explore your data with descriptives before
+        proceeding to more formal tests.
+
+    R:
+        usage: |
+            data('mtcars')
+            dat <- mtcars
+
+            # frequency tables can be provided for factors
+            dat$gear <- as.factor(dat$gear)
+
+            descriptives(dat, vars = vars(mpg, cyl, disp, gear), freq = TRUE)
+
+            #
+            #  DESCRIPTIVES
+            #
+            #  Descriptives
+            #  ───────────────────────────────────────────
+            #               mpg     cyl     disp    gear
+            #  ───────────────────────────────────────────
+            #    N            32      32      32      32
+            #    Missing       0       0       0       0
+            #    Mean       20.1    6.19     231    3.69
+            #    Median     19.2    6.00     196    4.00
+            #    Minimum    10.4    4.00    71.1       3
+            #    Maximum    33.9    8.00     472       5
+            #  ───────────────────────────────────────────
+            #
+            #
+            #  FREQUENCIES
+            #
+            #  Frequencies of gear
+            #  ────────────────────
+            #    Levels    Counts
+            #  ────────────────────
+            #    3             15
+            #    4             12
+            #    5              5
+            #  ────────────────────
+            #
+
+            # spliting by a variable
+            descriptives(formula = disp + mpg ~ cyl, dat,
+                median=FALSE, min=FALSE, max=FALSE, n=FALSE,
+                missing=FALSE)
+
+            # providing histograms
+            descriptives(formula = mpg ~ cyl, dat, hist=TRUE,
+                median=FALSE, min=FALSE, max=FALSE, n=FALSE,
+                missing=FALSE)
+
+            # splitting by multiple variables
+            descriptives(formula = mpg ~ cyl:gear, dat,
+                median=FALSE, min=FALSE, max=FALSE,
+                missing=FALSE)
+
+formula:
+    vars:
+        from: lhs
+    splitBy:
+        from: rhs
+        subset: ':3'
+
+completeWhenFilled: true
+
+options:
+    - name: data
+      type: Data
+      description:
+          R: the data as a data frame
+
+    - name: vars
+      title: Variables
+      type: Variables
+      takeFromDataIfMissing: true
+      permitted:
+        - numeric
+        - factor
+        - id
+      description:
+          R: a vector of strings naming the variables of interest in `data`
+
+    - name: splitBy
+      title: Split by
+      type: Variables
+      suggested:
+        - nominal
+      permitted:
+        - factor
+      default: null
+      description:
+          R: a vector of strings naming the variables used to split `vars`
+
+    - name: freq
+      title: Frequency tables
+      type: Bool
+      default: false
+      description:
+          R: >
+            `TRUE` or `FALSE` (default), provide frequency tables (nominal, ordinal
+            variables only)
+
+    - name: desc
+      title: Descriptives
+      type: List
+      options:
+        - title: Variables across rows
+          name: 'rows'
+        - title: Variables across columns
+          name: 'columns'
+      default: 'columns'
+      description:
+          R: >
+            `'rows'` or `'columns'` (default), display the variables across the
+            rows or across the columns (default)
+
+    - name: hist
+      title: Histogram
+      type: Bool
+      default: false
+      description:
+          R: >
+            `TRUE` or `FALSE` (default), provide histograms (continuous variables only)
+
+    - name: dens
+      title: Density
+      type: Bool
+      default: false
+      description:
+          R: >
+            `TRUE` or `FALSE` (default), provide density plots (continuous variables only)
+
+    - name: bar
+      title: Bar plot
+      type: Bool
+      default: false
+      description:
+          R: >
+            `TRUE` or `FALSE` (default), provide bar plots (nominal, ordinal
+            variables only)
+
+    - name: barCounts
+      title: Counts
+      type: Bool
+      default: false
+      hidden: true
+      description:
+          R: >
+            `TRUE` or `FALSE` (default), add counts to the  bar plots
+
+    - name: box
+      title: Box plot
+      type: Bool
+      default: false
+      description:
+          R: >
+            `TRUE` or `FALSE` (default), provide box plots (continuous variables only)
+
+    - name: violin
+      title: Violin
+      type: Bool
+      default: false
+      description:
+          R: >
+            `TRUE` or `FALSE` (default), provide violin plots (continuous variables only)
+
+    - name: dot
+      title: Data
+      type: Bool
+      default: false
+      description:
+          R: >
+            `TRUE` or `FALSE` (default), provide dot plots (continuous variables only)
+
+    - name: dotType
+      title: ''
+      type: List
+      options:
+        - name: jitter
+          title: "Jittered"
+        - name: stack
+          title: "Stacked"
+      default: jitter
+
+    - name: boxMean
+      title: Mean
+      type: Bool
+      default: false
+      description:
+          R: >
+            `TRUE` or `FALSE` (default), add mean to box plot
+
+    - name: boxLabelOutliers
+      title: Label outliers
+      type: Bool
+      default: true
+      description:
+          R: >
+            `TRUE` (default) or `FALSE`, add labels with the row number to the
+            outliers in the box plot
+
+
+    - name: qq
+      title: Q-Q plot
+      type: Bool
+      default: false
+      description:
+          R: >
+            `TRUE` or `FALSE` (default), provide Q-Q plots (continuous variables only)
+
+    - name: n
+      title: N
+      type: Bool
+      default: true
+      description:
+          R: >
+            `TRUE` (default) or `FALSE`, provide the sample size
+
+    - name: missing
+      title: Missing
+      type: Bool
+      default: true
+      description:
+          R: >
+            `TRUE` (default) or `FALSE`, provide the number of missing values
+
+    - name: mean
+      title: Mean
+      type: Bool
+      default: true
+      description:
+          R: >
+            `TRUE` (default) or `FALSE`, provide the mean
+
+    - name: median
+      title: Median
+      type: Bool
+      default: true
+      description:
+          R: >
+            `TRUE` (default) or `FALSE`, provide the median
+
+    - name: mode
+      title: Mode
+      type: Bool
+      default: false
+      description:
+          R: >
+            `TRUE` or `FALSE` (default), provide the mode
+
+    - name: sum
+      title: Sum
+      type: Bool
+      default: false
+      description:
+          R: >
+            `TRUE` or `FALSE` (default), provide the sum
+
+    - name: sd
+      title: Standard deviation
+      type: Bool
+      default: true
+      description:
+          R: >
+            `TRUE` (default) or `FALSE`, provide the standard deviation
+
+    - name: variance
+      title: Variance
+      type: Bool
+      default: false
+      description:
+          R: >
+            `TRUE` or `FALSE` (default), provide the variance
+
+    - name: range
+      title: Range
+      type: Bool
+      default: false
+      description:
+          R: >
+            `TRUE` or `FALSE` (default), provide the range
+
+    - name: min
+      title: Minimum
+      type: Bool
+      default: true
+      description:
+          R: >
+            `TRUE` or `FALSE` (default), provide the minimum
+
+    - name: max
+      title: Maximum
+      type: Bool
+      default: true
+      description:
+          R: >
+            `TRUE` or `FALSE` (default), provide the maximum
+
+    - name: se
+      title: Standard error
+      type: Bool
+      default: false
+      description:
+          R: >
+            `TRUE` or `FALSE` (default), provide the standard error
+
+    - name: ci
+      title: Confidence Interval
+      type: Bool
+      default: false
+      description:
+          R: >
+            `TRUE` or `FALSE` (default), provide confidence intervals for the mean
+
+    - name: ciWidth
+      title: Confidence level
+      type: Number
+      min: 50
+      max: 99.9
+      default: 95
+      description:
+          R: >
+            a number between 50 and 99.9 (default: 95), the width of confidence
+            intervals
+
+    - name: iqr
+      title: IQR
+      type: Bool
+      default: false
+      description:
+          R: >
+            `TRUE` or `FALSE` (default), provide the interquartile range
+
+    - name: skew
+      title: Skewness
+      type: Bool
+      default: false
+      description:
+          R: >
+            `TRUE` or `FALSE` (default), provide the skewness
+
+    - name: kurt
+      title: Kurtosis
+      type: Bool
+      default: false
+      description:
+          R: >
+            `TRUE` or `FALSE` (default), provide the kurtosis
+
+    - name: sw
+      title: Shapiro-Wilk
+      type: Bool
+      default: false
+      description:
+          R: >
+            `TRUE` or `FALSE` (default), provide Shapiro-Wilk p-value
+
+    - name: pcEqGr
+      title: Cut points for
+      type: Bool
+      default: false
+      description:
+          R: >
+            `TRUE` or `FALSE` (default), provide quantiles
+
+    - name: pcNEqGr
+      title: Cut point values
+      type: Integer
+      default: 4
+      min: 2
+      max: 10
+      description:
+          R: >
+            an integer (default: 4) specifying the number of equal groups
+
+    - name: pc
+      title: Percentile
+      type: Bool
+      default: false
+      description:
+          R: >
+            `TRUE` or `FALSE` (default), provide percentiles
+
+    - name: pcValues
+      title: Percentile values
+      type: String
+      default: "25,50,75"
+      description:
+          R: >
+            a comma-separated list (default: 25,50,75) specifying the percentiles
+
+    - name: extreme
+      title: Extreme values
+      type: Bool
+      default: false
+      description:
+          R: >
+            `TRUE` or `FALSE` (default), provide N most extreme (highest and lowest) values
+
+    - name: extremeN
+      title: Number of extreme values
+      type: Integer
+      default: 5
+      min: 1
+      max: 20
+      description:
+          R: >
+            an integer (default: 5) specifying the number of extreme values
+...

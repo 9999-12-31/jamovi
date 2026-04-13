@@ -1,0 +1,82 @@
+---
+name: descriptives
+title: Descriptives
+jrs: '1.0'
+
+items:
+    - name: descriptives
+      title: Descriptives
+      description: a table of the descriptive statistics
+      visible: (n || missing || mean || median || mode || sum || sd || variance || range || min || max || se || ci || iqr || skew || kurt || pcEqGr || pc)
+      type: Table
+      rows: 1
+      clearWith:
+        - splitBy
+        - pcNEqGr
+        - pcValues
+        - ciWidth
+      columns: []
+
+    - name: descriptivesT
+      title: Descriptives
+      description: a table of the descriptive statistics
+      visible: (n || missing || mean || median || mode || sum || sd || variance || range || min || max || se || ci || iqr || skew || kurt || pcEqGr || pc)
+      type: Table
+      clearWith:
+        - vars
+        - splitBy
+        - pcNEqGr
+        - pcValues
+        - ciWidth
+      columns: []
+
+    - name: frequencies
+      title: Frequencies
+      type: Array
+      description: an array of frequency tables
+      visible: (freq)
+
+      items: (vars)
+      template:
+          title: Frequencies of $key
+          type: Table
+          visible: (levels($key))
+          clearWith:
+            - splitBy
+          columns: []
+
+    - name: extremeValues
+      title: Extreme Values
+      type: Array
+      description: an array of extreme values tables
+      visible: (extreme)
+      items: (vars)
+      template:
+          title: Extreme values of $key
+          type: Table
+          rows: (extremeN * 2)
+          columns:
+            - name: type
+              title: ''
+              type: text
+              combineBelow: true
+            - name: place
+              title: ''
+              type: integer
+            - name: row
+              title: 'Row number'
+              type: integer
+            - name: value
+              title: 'Value'
+              type: number
+
+    - name: plots
+      title: Plots
+      type: Array
+      description: an array of descriptive plots
+      items: (vars)
+
+      template:
+          title: ($key)
+          type: Group
+          items: []

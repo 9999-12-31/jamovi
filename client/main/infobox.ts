@@ -1,0 +1,526 @@
+
+'use strict';
+
+import host from './host';
+import focusLoop, { FocusMode } from '../common/focusloop';
+
+export interface InfoBoxData {
+    'message-src'?: string;
+    title: string;
+    message: string;
+    status: string;
+    data?: any;
+    cancelable?: boolean;
+}
+
+export interface InfoBoxElement extends HTMLElement {
+    focusElement: () => HTMLElement;
+}
+
+export class InfoBox extends HTMLElement {
+
+    static get observedAttributes() {
+        return ['title', 'message', 'message-src', 'status'];
+    }
+
+    _visible: boolean;
+    _root: ShadowRoot;
+    _host: HTMLElement;
+    _complete: Promise<any>;
+    _processEnterKey: boolean;
+    _body: HTMLElement;
+    _local: HTMLElement;
+    _container: HTMLElement;
+    _remote: HTMLElement;
+    _heading: HTMLElement;
+    _content: HTMLElement;
+    _button: HTMLElement;
+    _cancel: HTMLElement;
+    _indicator: HTMLElement
+    _loaded: boolean;
+    _iframe: HTMLIFrameElement;
+    _displayInfo: InfoBoxData | InfoBoxElement;
+    _currentElement: InfoBoxElement;
+    _focusLoopElement: HTMLElement;
+    _cancelable: boolean;
+    _resolve: (data: any) => void;
+    _cssStyles: {[style: string]: string};
+
+    constructor() {
+        super();
+
+        this._complete = Promise.resolve();
+
+        this._root = this.attachShadow({ mode: 'open' });
+        this._host = this._root.host as HTMLElement;
+
+        this._root.innerHTML = `
+            <style>
+                ${ this._css() }
+            </style>
+            <div class="body">
+                <div class="local">
+                    <slot>
+                        <div class="container">
+                            <div class="heading">
+                                <div class="icon"></div>
+                                <div class="title">${_('Hi')}</div>
+                            </div>
+                            <div class="content"></div>
+                            <div class="button-box"><button>${_('OK')}</button></div>
+                        </div>
+                    </slot>
+                </div>
+                <div class="remote" style="display: none">
+                </div>
+                <div class="cancel">
+                </div>
+                <div class="indicator"></div>
+            </div>`;
+
+        this._body = this._root.querySelector('.body');
+        this._local = this._body.querySelector('.local');
+        this._container = this._body.querySelector('.container');
+        this._remote = this._body.querySelector('.remote');
+        this._heading = this._body.querySelector('.heading .title');
+        this._content = this._body.querySelector('.content');
+        this._button = this._body.querySelector('.button-box button');
+        this._cancel = this._body.querySelector('.cancel');
+        this._indicator = this._body.querySelector('.indicator');
+
+        this._cancel.addEventListener('click', () => this.hide());
+        this._host.addEventListener('click', (event) => this._backgroundClicked(event));
+        this._host.addEventListener('keydown', (event) => this._onKeyDown(event));
+
+        this._button.addEventListener('click', () => this.clicked());
+        window.addEventListener('message', (event) => this.onMessage(event));
+
+        focusLoop.addFocusLoop(this._container, { level: 1, modal: true, allowKeyPaths: true } );
+    }
+
+    setup(info: InfoBoxData | InfoBoxElement, params?: { cancelable?: boolean, class?: string[] | string }, closeFocusMode?: FocusMode) {
+
+        const useExisting = this._visible && (info instanceof HTMLElement === false) && (this._displayInfo instanceof HTMLElement === false) && (
+            (info['message-src'] && info['message-src'] === this._displayInfo['message-src'])
+            || (info.title === this._displayInfo.title
+                && info.message === this._displayInfo.message
+                && info.status === this._displayInfo.status)
+        )
+
+        if (useExisting) {
+            if (this._loaded === false)
+                this._displayInfo = info;
+            else if (info['message-src'] && info.data) {
+                // this allows the iframe to receive updates
+                this._iframe.contentWindow.postMessage(info.data);
+            }
+
+            return this._complete;
+        }
+
+        if (params === undefined)
+            params = { };
+
+        if (this._visible)
+            this.hide();
+
+        this._visible = true;
+        this._processEnterKey = false;
+        this._displayInfo = info;
+        let show = true;
+
+        let isIframe =  false;
+        if (info['message-src']) {
+
+            if (params.cancelable === undefined)
+                params.cancelable = false;
+
+            this._loaded = false;
+            this._local.classList.remove('external');
+            this._body.classList.add('initial-size');
+            this._host.setAttribute('message-src', info['message-src'] || '');
+            this._indicator.style.display = null;
+            isIframe = true;
+        }
+        else {
+            this._indicator.style.display = 'none';
+
+            if (params.cancelable === undefined)
+                params.cancelable = true;
+
+            this._local.classList.add('external');
+
+            if (info instanceof HTMLElement) {
+                if (info !== this._currentElement) {
+                    if (this._currentElement)
+                        focusLoop.removeFocusLoop(this._currentElement);
+
+                    this._currentElement = info;
+
+                    focusLoop.addFocusLoop(this._currentElement, { level: 1, modal: true, allowKeyPaths: true } );
+
+                    if (params.class)
+                        this._local.classList.add(...params.class);
+                }
+                this._focusLoopElement = this._currentElement;
+                this.appendChild(this._currentElement);
+                if (this._currentElement.focusElement)
+                    setTimeout(() => {
+                        this._currentElement.focusElement().focus();
+                }, 100);
+            }
+            else if (info.message || info.title) {
+                this._host.setAttribute('title', info.title || '');
+                this._host.setAttribute('message', info.message || '');
+                this._host.setAttribute('status', info.status || '');
+                params.cancelable = info.cancelable === undefined ? false : info.cancelable;
+                this._processEnterKey = true;
+                this._focusLoopElement = this._container;
+                setTimeout(() => {
+                        this._button.focus();
+                }, 100);
+            }
+            else {
+                show = false;
+            }
+        }
+
+        if (show) {
+            if (this._focusLoopElement)
+                focusLoop.enterFocusLoop(this._focusLoopElement, { withMouse: false, closeFocusMode });
+            this._host.style.display = null;
+            setTimeout(() => {
+                this._body.style.opacity = '1';
+                this._host.style.opacity = '1';
+            }, 10);
+        }
+
+        this._cancelable = params.cancelable;
+
+        if (this._cancelable)
+            this._cancel.style.display = null;
+        else
+            this._cancel.style.display = 'none';
+
+        this._complete = new Promise((resolve, reject) => {
+            this._resolve = resolve;
+        });
+
+        return this._complete;
+    }
+
+    hide() {
+        if (this._visible === false)
+            return;
+
+        this._visible = false;
+        if (this._displayInfo instanceof HTMLElement)
+            this.removeChild(this._displayInfo);
+        else {
+            this._host.setAttribute('title', '');
+            this._host.setAttribute('message', '');
+            this._host.setAttribute('status', '');
+            this._host.setAttribute('message-src', '');
+        }
+        this._displayInfo = null;
+
+        this.clearCSS();
+
+        this._body.classList.remove('initial-size');
+
+        this._host.style.display = 'none';
+        this._host.style.opacity = null;
+        this._body.style.opacity = null;
+        this._processEnterKey = false;
+
+        if (this._focusLoopElement) {
+            focusLoop.leaveFocusLoop(this._focusLoopElement);
+            this._focusLoopElement = null;
+        }
+    }
+
+    complete() {
+        return this._complete;
+    }
+
+    _onKeyDown(event) {
+        var keypressed = event.keyCode || event.which;
+        if (this._processEnterKey && keypressed === 13) { // enter key
+            this.clicked();
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        else if (keypressed === 27) { // escape key
+            if (this._cancelable) {
+                this.hide();
+                event.preventDefault();
+                event.stopPropagation();
+            }
+        }
+    }
+
+    clicked() {
+
+        switch (this._host.getAttribute('status')) {
+            case 'terminated':
+                this.hide();
+                host.closeWindow();
+                break;
+            case 'disconnected':
+                this.hide();
+                window.location.reload();
+                break;
+            default:
+                this.hide();
+                this._host.parentNode.removeChild(this._host);
+                break;
+        }
+    }
+
+    _backgroundClicked(e) {
+        if (this._visible && this._cancelable) {
+            if ((e.pageX >= this._body.offsetLeft && e.pageX <= this._body.offsetLeft + this._body.offsetWidth && e.pageY >= this._body.offsetTop && e.pageY <= this._body.offsetTop + this._body.offsetHeight) === false) {
+                this.hide();
+            }
+        }
+    }
+
+    onMessage(event) {
+        if (this._iframe && event.source === this._iframe.contentWindow) {
+            let data = event.data;
+            if (data.status === 'complete') {
+                this.hide();
+                this._resolve(data.data);
+            }
+            if (data.status === 'show') {
+                this._indicator.style.display = 'none';
+                this._cssStyles = data.css;
+                for (let style in data.css) {
+                    this._body.style[style] = data.css[style];
+                }
+                this._iframe.contentWindow.focus();
+            }
+        }
+    }
+
+    clearCSS() {
+        if (this._cssStyles) {
+            for (let style in this._cssStyles) {
+                this._body.style[style] = '';
+            }
+        }
+        this._cssStyles = { };
+    }
+
+    attributeChangedCallback(name, old, value) {
+        this._local.style.display = 'none';
+        this._remote.style.display = 'none';
+
+        if (name === 'message-src' || name === undefined) {
+            let src = this._host.getAttribute('message-src');
+            if (src) {
+                this._local.style.display = 'none';
+                this._remote.style.display = null;
+
+                if (this._iframe)
+                    this._remote.removeChild(this._iframe);
+                this._iframe = document.createElement('iframe');
+                this._iframe.onload = () => {
+                    this._loaded = true;
+                    if (this._displayInfo instanceof HTMLElement === false && this._displayInfo['message-src'] && this._displayInfo.data)
+                        this._iframe.contentWindow.postMessage(this._displayInfo.data);
+                };
+                this._iframe.sandbox = 'allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms';
+                this._iframe.setAttribute('src', src);
+                this._remote.appendChild(this._iframe);
+            }
+        }
+        else if (name === 'title' || name === 'message' || name === 'status' || name === undefined) {
+
+            this._local.style.display = null;
+            this._remote.style.display = 'none';
+
+            this._heading.textContent = this._host.getAttribute('title');
+            this._content.textContent = this._host.getAttribute('message');
+            switch (this._host.getAttribute('status')) {
+            case 'terminated':
+                this._button.textContent = _('Close');
+                break;
+            case 'disconnected':
+                this._button.textContent = _('Refresh');
+                break;
+            default:
+                this._button.textContent = _('OK');
+                break;
+            }
+        }
+    }
+
+    _css() {
+        return `
+            :host {
+                position: fixed;
+                left: 0 ;
+                top: 0 ;
+                bottom: 0 ;
+                right: 0 ;
+                z-index: 300;
+                display: flex ;
+                align-items: center;
+                justify-content: center;
+                padding: 24px ;
+                color: #333333 ;
+                background-color: rgba(0, 0, 0, 0.4) ;
+                opacity: 0;
+                transition: opacity 0.2s;
+                backdrop-filter: blur(1px);
+            }
+
+            div.body {
+                position: relative ;
+                box-sizing: border-box ;
+                display: flex ;
+                flex-direction: column ;
+                justify-content: center ;
+                transition: width 0.2s, height 0.2s, opacity .2s ;
+                overflow: hidden ;
+            }
+
+            @media (forced-colors: active) {
+                div.local {
+                    border: 1px solid buttonBorder;
+                }
+            }
+
+            div.local {
+                margin: 20px;
+                background-color: white;
+                padding: 20px;
+                box-shadow: 0px 0px 10px #777777;
+            }
+
+            div.local.import {
+                z-index: 99999;
+                display: flex;
+                border: 0px none transparent;
+                background-color: transparent;
+                overflow-x: hidden;
+                overflow-y: auto;
+                visibility: visible;
+                margin: 0px;
+                padding: 0px;
+                -webkit-tap-highlight-color: transparent;
+                position: fixed;
+                left: 0px;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+
+            div.remote {
+                height: 100% ;
+                width: 100% ;
+            }
+
+            iframe {
+                z-index: 99999;
+                display: block;
+                background-color: transparent;
+                border: 0px none transparent;
+                overflow-x: hidden;
+                overflow-y: auto;
+                visibility: visible;
+                margin: 0px;
+                padding: 0px;
+                -webkit-tap-highlight-color: transparent;
+                position: fixed;
+                left: 0px;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+            }
+
+            .heading {
+                display: flex;
+                align-items: center;
+            }
+
+            .heading .title {
+                font-size: 130%;
+                margin-inline-start: 11px;
+            }
+
+            .heading .icon {
+                height: 30px;
+                width: 30px;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: center;
+                background-image: url("data:image/svg+xml,%3Csvg fill='%23eac282' height='30px' viewBox='0 0 24 24' width='30px' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z'/%3E%3C/svg%3E");
+                margin-inline-end: 10px;
+            }
+
+            .content {
+                margin-top: 20px;
+                line-height: 1.4;
+            }
+
+            .button-box {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+            }
+
+            .button-box button {
+                width: 80px;
+                line-height: 25px;
+                background-color: #3E6DA9;
+                color: white;
+                border: 1px solid transparent;
+                border-radius: 2px;
+            }
+
+            .button-box button:hover {
+                background-color: #224a80;
+            }
+
+            .cancel {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                width: 18px;
+                height: 18px;
+                background-repeat: no-repeat;
+                background-size: 50%;
+                background-position: center;
+                background-image: url("data:image/svg+xml, %3Csvg xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23' xmlns='http://www.w3.org/2000/svg' height='10' width='10' version='1.1' xmlns:cc='http://creativecommons.org/ns%23' xmlns:dc='http://purl.org/dc/elements/1.1/' viewBox='0 0 10 10'%3E%3Cg transform='translate(0 -1042.4)' stroke='%23777777' stroke-linecap='round' stroke-width='1.2' fill='none'%3E%3Cpath d='m0.48949 1051.9c8.9785-8.9782 9.021-9.0209 9.021-9.0209'/%3E%3Cpath d='m9.5105 1051.9c-8.9785-8.9782-9.021-9.0209-9.021-9.0209'/%3E%3C/g%3E%3C/svg%3E");
+            }
+
+            .cancel:hover {
+                background-color: #dedede;
+            }
+
+            .indicator {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -15px;
+                margin-inline-start: -15px;
+                width: 30px;
+                height: 30px;
+                z-index: 100;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: center;
+                background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg width='32px' height='32px' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='xMidYMid' class='uil-ring'%3E%3Crect x='0' y='0' width='100' height='100' fill='none' class='bk'%3E%3C/rect%3E%3Ccircle cx='50' cy='50' r='40' stroke-dasharray='163.36281798666926 87.9645943005142' stroke='%233e6da9' fill='none' stroke-width='20'%3E%3CanimateTransform attributeName='transform' type='rotate' values='0 50 50;180 50 50;360 50 50;' keyTimes='0;0.5;1' dur='1s' repeatCount='indefinite' begin='0s'%3E%3C/animateTransform%3E%3C/circle%3E%3C/svg%3E");
+            }
+
+        `;
+    }
+
+}
+
+customElements.define('jmv-infobox', InfoBox);
+export default InfoBox;

@@ -1,0 +1,80 @@
+# 自动构建 Docker 镜像并发布到 GitHub Container Registry (ghcr.io)
+name: 构建并发布 Docker 镜像
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - 'v*'
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:  # 支持手动触发
+
+env:
+  REGISTRY: ghcr.io
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      id-token: write  # provenance 需要
+
+    steps:
+      - name: 检出代码（含子模块）
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        with:
+          submodules: recursive
+
+      - name: 读取版本号与镜像前缀
+        id: vars
+        run: |
+          VERSION=$(cat version | tr -d '\n')
+          # 去掉末尾的 .0 作为镜像 tag（如 2.7.24.0 -> 2.7.24）
+          TAG="${VERSION%.0}"
+          # GHCR 要求镜像名小写
+          IMAGE_PREFIX="${{ env.REGISTRY }}/$(echo ${{ github.repository_owner }} | tr '[:upper:]' '[:lower:]')"
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "tag=$TAG" >> $GITHUB_OUTPUT
+          echo "image_prefix=$IMAGE_PREFIX" >> $GITHUB_OUTPUT
+          echo "镜像将使用 tag: $TAG, 前缀: $IMAGE_PREFIX"
+
+      - name: 设置 Docker Buildx
+        uses: docker/setup-buildx-action@8d2750c68a42422c14e847fe6c8ac0403b4cbd6f # v3.12.0
+
+      - name: 登录 GitHub Container Registry
+        if: github.event_name != 'pull_request'
+        uses: docker/login-action@5e57cd118135c172c3672efd75eb46360885c0ef # v3.6.0
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 提取 jamovi 元数据
+        id: meta-jamovi
+        uses: docker/metadata-action@c299e40c65443455700f0fdfc63efafe5b349051 # v5.10.0
+        with:
+          images: ${{ steps.vars.outputs.image_prefix }}/jamovi
+          tags: |
+            type=raw,value=${{ steps.vars.outputs.tag }}
+            type=raw,value=latest
+
+      - name: 构建并推送 jamovi
+        uses: docker/build-push-action@263435318d21b8e681c14492fe198d362a7d2c83 # v6.18.0
+        with:
+          context: .
+          file: docker/jamovi-Dockerfile
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: ${{ steps.meta-jamovi.outputs.tags }}
+          labels: ${{ steps.meta-jamovi.outputs.labels }}
+          sbom: true
+          provenance: mode=max
+          cache-from: type=gha,scope=buildx-jamovi
+          cache-to: type=gha,mode=max,scope=buildx-jamovi

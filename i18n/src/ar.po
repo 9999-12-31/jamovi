@@ -1,0 +1,3184 @@
+#
+msgid ""
+msgstr "PO-Revision-Date: 2026-01-10 21:01+0000\n"
+"Last-Translator: Lahoucine Boumahdy <lahoucineboumahdy99@gmail.com>\n"
+"Language-Team: Arabic <https://hosted.weblate.org/projects/jamovi/jamovi-i18n/ar/>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Weblate 5.15.1\n"
+
+#: jamovi/server/jamovi/server/column.py
+msgid "'{}' is in error"
+msgstr "\"{}\" خطأ"
+
+#: jamovi/server/jamovi/server/compute/checker.py
+msgid "'{}' is not an argument for {}()\n"
+"(If you're wanting to test equality, use two equal signs '==')"
+msgstr "'{}' ليست وسيطة لـ {} ()\n"
+"(إذا كنت ترغب في اختبار المساواة ، فاستخدم علامتين متساويتين '==')"
+
+#: jamovi/client/main/vareditor/datavarwidget.js:33
+msgid "(auto)"
+msgstr "(تلقائي)"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:265
+msgid "(current)"
+msgstr "(الحالي)"
+
+#: jamovi/client/main/utils/headeralert.js:33
+#, fuzzy
+msgid "(This is a quirk of Safari and iPads)"
+msgstr "(هذا سلوك من متصفح سفاري او اجهزة الايباد)"
+
+#: jamovi/client/main/contextmenu/contextmenus.ts:189
+#, fuzzy
+msgid "{} Options:"
+msgstr "خيارات {}:"
+
+#: jamovi/client/main/backstage/fsentrybrowserview.ts:448
+#, fuzzy
+msgid "{0} directory contents"
+msgstr "{0} محتويات المجلد"
+
+#: jamovi/client/main/tableview.js:1164
+msgid "{columnType} columns may not be edited."
+msgstr "قد لا يتم تحرير أعمدة {columnType}."
+
+#: jamovi/client/analysisui/formatdef.js:116
+#: jamovi/client/analysisui/formatdef.js:271
+#: jamovi/client/analysisui/gridtargetcontrol.js:596
+msgid "{list} and {lastItem}"
+msgstr "{list} و {lastItem}"
+
+#: jamovi/client/analysisui/formatdef.js:112
+#: jamovi/client/analysisui/formatdef.js:267
+#: jamovi/client/analysisui/gridtargetcontrol.js:592
+msgid "{list}, {nextItem}"
+msgstr "{list}, {nextItem}"
+
+#: jamovi/client/main/store/pagemodules.js:218
+msgid "{m} was uninstalled successfully"
+msgstr "تم إلغاء تثبيت {m} بنجاح"
+
+#: jamovi/client/main/store/pagemodules.js:369
+msgid "{module} was installed successfully"
+msgstr "تم تنزيل {module} بنجاح"
+
+#: jamovi/client/main/ribbon/appmenu.js:63
+#: jamovi/client/main/ribbon/appmenu.js:70
+msgid "{n} dp"
+msgstr "{n} dp"
+
+#: jamovi/client/main/viewcontroller.js:579
+#: jamovi/client/main/viewcontroller.js:617
+msgid "{n} is not a positive integer"
+msgstr "{n} ليس عددا صحيحا موجبا"
+
+#: jamovi/client/main/ribbon/appmenu.js:63
+#: jamovi/client/main/ribbon/appmenu.js:70
+msgid "{n} sf"
+msgstr "{n} sf"
+
+#: jamovi/client/analysisui/formatdef.js:164
+msgid "{name} variable"
+msgstr "{name} قيمة"
+
+#: jamovi/client/main/vareditor/datavarwidget.js:100
+msgid "{r} is not an integer"
+msgstr "{r} ليس عددا صحيحا"
+
+#: jamovi/client/resultsview/array.js:182
+#: jamovi/client/resultsview/group.js:129
+msgid "{title} Initial Annotation"
+msgstr "{title} تعليق توضيحي أولي"
+
+#: jamovi/client/analysisui/variableslistbox.js:174
+#, fuzzy
+msgid "{var} not permitted. Incorrect measure or data type."
+msgstr "{var} غير مسموح به. نوع البيانات او القياس غير صحيح"
+
+#: jamovi/client/analysisui/gridtargetcontrol.js:842
+msgid "{vars} added to {list}."
+msgstr "تم اضافة {vars} الى {list}"
+
+#: jamovi/client/analysisui/gridtargetcontrol.js:844
+msgid "{vars} items added to {list}."
+msgstr "تم اضافة عناصر {vars} الى {list}"
+
+#: jamovi/client/analysisui/gridtargetcontrol.js:890
+msgid "{vars} items removed from {list}."
+msgstr "تم ازالة عناصر {vars} من {list}"
+
+#: jamovi/client/analysisui/gridtargetcontrol.js:888
+msgid "{vars} removed from {list}."
+msgstr "تم ازالة {‏vars} من {list}."
+
+#: jamovi/client/main/ribbon/appmenu.js:262
+msgid "A change of language requires jamovi to be restarted"
+msgstr "يتطلب تغيير اللغة إعادة تشغيل جيموفي"
+
+#: jamovi/server/jamovi/server/formatio/omv.py
+msgid "A newer version of jamovi is required"
+msgstr "هناك حاجة لنسخة جديدة من الـ(جيموفي)"
+
+#: jamovi/client/main/ribbon/appmenu.js:100
+msgid "Accent"
+msgstr "لهجة"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "Access is denied. You may not have the appropriate permissions to access this resource."
+msgstr "الدخول محظور. قد لا يكون لديك الأذونات المناسبة للوصول إلى هذا المورد."
+
+#: jamovi/client/main/vareditor/filterwidget.js:380
+#: jamovi/client/main/vareditor/filterwidget.js:498
+#: jamovi/client/main/vareditor/filterwidget.js:535
+msgid "active"
+msgstr "مفعل"
+
+#: jamovi/client/main/ribbon/datatab.js:33
+#: jamovi/client/main/ribbon/datatab.js:58
+#: jamovi/client/main/ribbon/variablestab.js:27
+msgid "Add"
+msgstr "إضافة"
+
+#: jamovi/client/analysisui/gridtargetcontrol.js:612
+msgid "Add {1} items to {0}"
+msgstr "تم اضافة {1} عنصر الى {0}"
+
+#: jamovi/client/main/vareditor/filterwidget.js:265
+#: jamovi/client/main/vareditor/filterwidget.js:409
+msgid "Add another nested filter"
+msgstr "أضف مرشحًا متداخلًا آخر"
+
+#: jamovi/client/analysisui/gridtargetcontrol.js:610
+msgid "Add item {1} to {0}"
+msgstr "اضف {1} الى {0}"
+
+#: jamovi/client/analysisui/gridtargetcontrol.js:608
+msgid "Add items to {0}"
+msgstr "اضف عناصر الى {0}"
+
+#: jamovi/client/main/vareditor/missingvaluelist.js:46
+msgid "Add Missing Value"
+msgstr "أضف القيمة المفقودة"
+
+#: jamovi/client/main/vareditor/filterwidget.js:41
+msgid "Add new filter"
+msgstr "إضافة مرشح جديد"
+
+#: jamovi/client/main/vareditor/datavarwidget.js:46
+msgid "Add new level"
+msgstr "أضف مستوى جديد"
+
+#: jamovi/client/main/ribbon/datatab.js:70
+msgid "Add new rows"
+msgstr "اضافة صفوف جديدة"
+
+#: jamovi/client/main/ribbon/datatab.js:43
+msgid "Add new variable"
+msgstr "اضافة قيمة جديدة"
+
+#: jamovi/client/resultsview/element.js:134
+msgid "Add Note"
+msgstr "إضافة ملاحظة"
+
+#: jamovi/client/main/editors/transformeditor.js:123
+msgid "Add recode condition"
+msgstr "إضافة شرط إعادة الترميز"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:57
+msgid "Add Variable"
+msgstr "أضافة متغير"
+
+#: jamovi/client/main/tableview.js:76
+msgid "Added"
+msgstr "مضاف إليها"
+
+#: jamovi/client/main/resultspanel.js:587
+msgid "All"
+msgstr "الكل"
+
+#: jamovi/client/analysisui/gridtargetcontrol.js:1022
+#: jamovi/client/analysisui/gridtargetcontrol.js:1023
+#: jamovi/client/analysisui/gridtargetcontrol.js:1024
+#: jamovi/client/analysisui/gridtargetcontrol.js:1025
+msgid "All {n} way"
+msgstr "كل {n} طريقة"
+
+#: jamovi/client/main/backstage.js:456
+msgid "An online data set hosted by {hostname}"
+msgstr "مجموعة بيانات على الإنترنت يستضيفها {hostname}"
+
+#: jamovi/client/main/main.js:135
+msgid "An unexpected error has occured, and jamovi must now close."
+msgstr "حدث خطأ غير متوقع، ويجب الآن إغلاق jamovi."
+
+#: jamovi/server/jamovi/server/syncs/http.py
+msgid "An unexpected error occurred"
+msgstr "حدث خطا ما"
+
+#: jamovi/client/main/ribbon/analysetab.js:11
+#: jamovi/client/main/ribbon/analysetab.js:58
+msgid "Analyses"
+msgstr "التحليلات"
+
+#: jamovi/server/jamovi/server/engine.py
+msgid "Analyses which execute arbitrary code are not permitted in this session."
+msgstr "التحليلات التي تنفذ تعليمات برمجية عشوائية غير مسموح بها في هذه الجلسة."
+
+#: jamovi/client/resultsview/main.js:113
+msgid "Analysis"
+msgstr "التحليلات"
+
+#: jamovi/client/resultsview/heading.js:164
+#: jamovi/client/resultsview/heading.js:17
+msgid "Analysis Heading - {title}"
+msgstr "عنوان التحليل - {title}"
+
+#: jamovi/client/main/vareditor/filterwidget.js:403
+msgid "and"
+msgstr "و"
+
+#: jamovi/client/resultsview/annotation.js:168
+msgid "Annotation"
+msgstr "تعليق"
+
+#: jamovi/client/resultsview/array.js:276
+#: jamovi/client/resultsview/group.js:181
+msgid "Annotation for group {name}"
+msgstr "تعليق للمجموعة {group}"
+
+#: jamovi/client/resultsview/array.js:280
+#: jamovi/client/resultsview/group.js:185
+msgid "Annotation for image {name}"
+msgstr "تعليق للصورة {name}"
+
+#: jamovi/client/resultsview/array.js:282
+#: jamovi/client/resultsview/group.js:187
+msgid "Annotation for item {name}"
+msgstr "تعليق على العنصر {name}"
+
+#: jamovi/client/resultsview/array.js:278
+#: jamovi/client/resultsview/group.js:183
+msgid "Annotation for list {name}"
+msgstr "تعليق على القائمة {name}"
+
+#: jamovi/client/resultsview/array.js:274
+#: jamovi/client/resultsview/group.js:179
+msgid "Annotation for table {name}"
+msgstr "تعليق على الجدول {name}"
+
+#: jamovi/client/main/ribbon/analysetab.js:188
+msgid "ANOVA"
+msgstr "‎تحليل التباين"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:102
+#: jamovi/client/main/contextmenu/contextmenus.js:106
+#: jamovi/client/main/contextmenu/contextmenus.js:110
+#: jamovi/client/main/contextmenu/contextmenus.js:60
+#: jamovi/client/main/contextmenu/contextmenus.js:64
+#: jamovi/client/main/contextmenu/contextmenus.js:68
+#: jamovi/client/main/ribbon/datatab.js:36
+#: jamovi/client/main/ribbon/datatab.js:40
+#: jamovi/client/main/ribbon/datatab.js:44
+#: jamovi/client/main/ribbon/datatab.js:60
+#: jamovi/client/main/ribbon/variablestab.js:30
+#: jamovi/client/main/ribbon/variablestab.js:34
+#: jamovi/client/main/ribbon/variablestab.js:38
+msgid "Append"
+msgstr "أضف"
+
+#: jamovi/client/main/viewcontroller.js:611
+msgid "Append how many rows?"
+msgstr "أضف كم عدد الصفوف؟"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:24
+#: jamovi/client/main/contextmenu/contextmenus.js:44
+msgid "Append Row..."
+msgstr "أضف صف ..."
+
+#: jamovi/client/main/variableeditor.js:173
+msgid "Apply changes"
+msgstr "تطبيق التعديلات"
+
+#: jamovi/client/main/notification.js:82
+msgid "Approaching plan time limit"
+msgstr "‎ الاقتراب من الحد الزمني الأقصى  للخطة"
+
+#: jamovi/server/jamovi/server/server.py
+msgid "Authentication failure"
+msgstr "‎فشل المصادقة"
+
+#: jamovi/server/jamovi/server/server.py
+#, fuzzy
+msgid "Authentication required"
+msgstr "مطلوب المصادقة"
+
+#: jamovi/client/main/editors/transformeditor.js:225
+#: jamovi/client/main/vareditor/measurelist.js:44
+msgid "Auto"
+msgstr "آلي"
+
+#: jamovi/client/main/ribbon/annotationtab.js:131
+msgid "Automatic"
+msgstr "تلقائي"
+
+#: jamovi/client/main/ribbon/appmenu.js:206
+#: jamovi/client/main/store.js:36
+msgid "Available"
+msgstr "متاح"
+
+#: jamovi/client/analysisui/layoutsupplierview.js:147
+#, fuzzy
+msgid "Available items"
+msgstr "العناصر المتاحة"
+
+#: jamovi/server/jamovi/server/compute/checker.py
+msgid "Bad function definition"
+msgstr "تعريف دالة تالفة"
+
+#: jamovi/client/main/ribbon/appmenu.js:93
+msgid "Black & white"
+msgstr "أبيض وأسود"
+
+#: jamovi/client/main/ribbon/appmenu.js:100
+msgid "Blues"
+msgstr "مزرق"
+
+#: jamovi/client/main/ribbon/annotationtab.js:121
+msgid "Bold"
+msgstr "عريض"
+
+#: jamovi/client/main/backstage.js:341
+msgid "Browse"
+msgstr "تصفح"
+
+#: jamovi/client/main/ribbon/annotationtab.js:144
+msgid "Bullet List"
+msgstr "قائمة ذات تعداد نقطي"
+
+#: jamovi/client/main/main.js:643
+#: jamovi/client/main/notifications.js:36
+msgid "Cancel"
+msgstr "إلغاء"
+
+#: jamovi/server/jamovi/server/instance.py
+#, fuzzy
+msgid "Cannot assign non-integer value to column '{}'"
+msgstr "لا يمكن تعيين قيمة غير صحيحة للعمود '{}'"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "Cannot assign non-numeric value to column '{}'"
+msgstr "لا يمكن تعيين قيمة غير رقمية للعمود \"{}\""
+
+#: jamovi/client/main/tableview.js:1219
+msgid "Cannot assign non-numeric value to column '{columnName}'"
+msgstr "لا يمكن تعيين قيمة غير رقمية للعمود '{columnName}'"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "Cannot assign to computed column '{}'"
+msgstr "لا يمكن التخصيص للعمود المحسوب '{}'"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "Cannot assign to filter column '{}'"
+msgstr "لا يمكن التعيين لتصفية عمود \"{}\""
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "Cannot assign to recoded column '{}'"
+msgstr "لا يمكن التخصيص للعمود المعاد ترميزه '{}'"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "Cannot assign to these columns."
+msgstr "لا يمكن تعيين لهذه الأعمدة."
+
+#: jamovi/client/main/tableview.js:75
+msgid "Cells edited"
+msgstr "الوحدات التي تم تحريرها "
+
+#: jamovi/client/main/ribbon/annotationtab.js:138
+msgid "Center Align"
+msgstr "محاذاة للوسط"
+
+#: jamovi/client/main/vareditor/datavarlevelwidget.js:95
+msgid "change label..."
+msgstr "تغيير التسمية..."
+
+#: jamovi/server/jamovi/server/compute/messages.py
+msgid "Circular reference detected"
+msgstr "تم الكشف عن مرجع دائري"
+
+#: jamovi/client/main/resultspanel.js:438
+msgid "Clear selection"
+msgstr "مسح التحديد"
+
+#: jamovi/client/main/ribbon/annotationtab.js:106
+#: jamovi/client/main/ribbon/datatab.js:15
+msgid "Clipboard"
+msgstr "حافظة"
+
+#: jamovi/client/main/infobox.js:270
+msgid "Close"
+msgstr "إغلاق"
+
+#: jamovi/client/main/backstage.ts:1305
+#, fuzzy
+msgid "Close file menu"
+msgstr "إغلاق قائمة الملفات"
+
+#: jamovi/client/main/main.ts:311
+#, fuzzy
+msgid "Close jamovi window"
+msgstr "إغلاق نافذة jamovi"
+
+#: jamovi/client/main/ribbon/appmenu.js:49
+#, fuzzy
+msgid "Close preferences"
+msgstr "إغلاق التفضيلات"
+
+#: jamovi/client/main/ribbon/annotationtab.js:156
+msgid "Code-Block"
+msgstr "كود بلوك"
+
+#: jamovi/client/main/ribbon/appmenu.js:99
+msgid "Color palette"
+msgstr "شاحبة اللون"
+
+#: jamovi/server/jamovi/server/compute/checker.py
+#: jamovi/server/jamovi/server/compute/transmogrifier.py
+msgid "Column '{}' does not exist in the dataset"
+msgstr "العمود \"{}\" غير موجود في مجموعة البيانات"
+
+#: jamovi/client/main/viewcontroller.js:294
+#, fuzzy
+msgid "Column {columnName} deleted"
+msgid_plural "{n} columns deleted"
+msgstr[0] ""
+msgstr[1] ""
+
+#: jamovi/client/main/tableview.js:1163
+msgid "Column is not editable"
+msgstr "العمود غير قابل للتحرير"
+
+#: jamovi/client/main/ribbon/appmenu.ts:134
+#, fuzzy
+msgid "Comma"
+msgstr "فاصلة"
+
+#: jamovi/client/main/ribbon/datatab.js:30
+#: jamovi/client/main/ribbon/variablestab.js:24
+msgid "Compute"
+msgstr "إحصاء - عد"
+
+#: jamovi/client/main/dataset.js:1316
+msgid "Computed"
+msgstr "محسوب"
+
+#: jamovi/client/main/tableview.js:282
+msgid "Computed variable"
+msgstr "متغير محسوب"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:104
+#: jamovi/client/main/contextmenu/contextmenus.js:62
+#: jamovi/client/main/ribbon/datatab.js:38
+#: jamovi/client/main/ribbon/variablestab.js:32
+#: jamovi/client/main/vareditor/editorwidget.js:240
+msgid "Computed Variable"
+msgid_plural "Multiple Computed Variables ({n})"
+msgstr[0] "متغير محسوب"
+msgstr[1] "المتغير المحسوب"
+msgstr[2] "المتغير المحسوب"
+msgstr[3] "المتغير المحسوب"
+msgstr[4] "المتغير المحسوب"
+msgstr[5] "المتغير المحسوب"
+
+#: jamovi/client/main/main.js:767
+msgid "Connection failed"
+msgstr "فشل الاتصال"
+
+#: jamovi/client/main/main.js:134
+#: jamovi/client/main/main.js:141
+msgid "Connection lost"
+msgstr "فُقد الإتصال"
+
+#: jamovi/client/main/editors/transformeditor.js:228
+#: jamovi/client/main/vareditor/datavarwidget.js:276
+#: jamovi/client/main/vareditor/measurelist.js:57
+msgid "Continuous"
+msgstr "مستمر"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:62
+#, fuzzy
+msgid "Convenience short-hand for ABS(IQR( variable ))"
+msgstr "اختصار مريح ل ABS(IQR( متغير ))"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:64
+#, fuzzy
+msgid "Convenience short-hand for ABS(Z( variable ))"
+msgstr "اختصار ل ABS(Z( متغير ))"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:72
+#, fuzzy
+msgid "Convenience short-hand for MAX(ABSIQR( variable 1, variable 2, … ))"
+msgstr "اختصار ل MAX(ABSIQR( متغير 1، متغير 2، ... ))"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:74
+#, fuzzy
+msgid "Convenience short-hand for MAX(ABSZ( variable 1, variable 2, … ))"
+msgstr "اختصار مريح ل MAX(ABSZ(متغير 1، متغير 2، …))"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:146
+#, fuzzy
+msgid "Converts a number to an integer."
+msgstr "يحول رقمًا إلى صحيح."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:134
+#, fuzzy
+msgid "Converts text to a number (if possible)."
+msgstr "يحول النص إلى رقم (إذا كان ذلك ممكنًا)"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:132
+#, fuzzy
+msgid "Converts the value to text."
+msgstr "يحول القيمة إلى نص."
+
+#: jamovi/client/main/resultspanel.js:681
+#: jamovi/client/main/resultspanel.js:783
+msgid "Copied"
+msgstr "منسوخ"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:131
+#: jamovi/client/main/contextmenu/contextmenus.js:14
+#: jamovi/client/main/contextmenu/contextmenus.js:36
+#: jamovi/client/main/contextmenu/contextmenus.js:89
+#: jamovi/client/main/menu.js:153
+#: jamovi/client/main/resultspanel.js:427
+#: jamovi/client/main/resultspanel.js:591
+#: jamovi/client/main/ribbon/annotationtab.js:110
+#: jamovi/client/main/ribbon/datatab.js:19
+#: jamovi/client/main/utils/clipboardprompt.js:19
+#: jamovi/client/main/utils/clipboardprompt.js:21
+#: jamovi/client/resultsview/element.js:134
+#: jamovi/client/resultsview/group.js:213
+#: jamovi/client/resultsview/group.js:215
+msgid "Copy"
+msgstr "نسخ"
+
+#: jamovi/client/resultsview/element.ts:206
+#: jamovi/client/resultsview/group.ts:268
+#, fuzzy
+msgid "Copy Latex"
+msgstr "نسخ لاتخ"
+
+#: jamovi/client/main/tableview.js:1218
+#: jamovi/server/jamovi/server/instance.py
+#, fuzzy
+msgid "Could not assign data"
+msgstr "تعذر تعيين البيانات"
+
+#: jamovi/server/jamovi/server/instance.py
+#, fuzzy
+msgid "Could not delete rows"
+msgstr "تعذر حذف الصفوف"
+
+#: jamovi/server/jamovi/server/instance.py
+#, fuzzy
+msgid "Could not insert columns"
+msgstr "لا يمكن إدراج الأعمدة"
+
+#: jamovi/server/jamovi/server/instance.py
+#, fuzzy
+msgid "Could not insert rows"
+msgstr "تعذر إدراج الصفوف"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "Could not modify columns"
+msgstr "تعذر تعديل الأعمدة"
+
+#: jamovi/server/jamovi/server/instance.py
+#, fuzzy
+msgid "Could not modify transform"
+msgstr "لم يتم تعديل التحويل"
+
+#: jamovi/server/jamovi/server/instance.py
+#, fuzzy
+msgid "Could not perform operation"
+msgstr "تعذر تنفيذ العملية"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:179
+#, fuzzy
+msgid "Counts the number of non-missing values"
+msgstr "يعد عدد القيم غير المفقودة"
+
+#: jamovi/client/main/vareditor/transformlist.js:20
+#, fuzzy
+msgid "Create New Transform..."
+msgstr "إنشاء تحويل جديد..."
+
+#: jamovi/client/main/backstage.js:1031
+#: jamovi/client/main/backstage.js:1054
+#: jamovi/client/main/backstage.js:978
+#, fuzzy
+msgid "CSV (Comma delimited) {ext}"
+msgstr "CSV (محدد بالفاصلة) {ext}"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:13
+#: jamovi/client/main/contextmenu/contextmenus.js:88
+#: jamovi/client/main/ribbon/annotationtab.js:109
+#: jamovi/client/main/ribbon/datatab.js:18
+msgid "Cut"
+msgstr "قص"
+
+#: jamovi/client/main/ribbon/appmenu.js:100
+#, fuzzy
+msgid "Dark2"
+msgstr "الغامق 2"
+
+#: jamovi/client/main/dataset.js:1313
+#: jamovi/client/main/ribbon/datatab.js:11
+msgid "Data"
+msgstr "بيانات"
+
+#: jamovi/client/main/backstage.js:972
+#, fuzzy
+msgid "Data files"
+msgstr "ملفات البيانات"
+
+#: jamovi/server/jamovi/server/analyses/weights.py
+#, fuzzy
+msgid "Data is unweighted"
+msgstr "البيانات غير موزونة"
+
+#: jamovi/client/main/backstage.js:1197
+#: jamovi/client/main/backstage.js:1274
+#: jamovi/client/main/utils/pathtools.js:17
+#, fuzzy
+msgid "Data Library"
+msgstr "مكتبة البيانات"
+
+#: jamovi/client/main/statusbar/statusbar.js:9
+#, fuzzy
+msgid "Data status bar"
+msgstr "شريط حالة البيانات"
+
+#: jamovi/client/main/vareditor/datavarwidget.js:31
+#, fuzzy
+msgid "Data type"
+msgstr "نوع البيانات"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:108
+#: jamovi/client/main/contextmenu/contextmenus.js:58
+#: jamovi/client/main/ribbon/datatab.js:34
+#: jamovi/client/main/ribbon/variablestab.js:28
+#: jamovi/client/main/vareditor/editorwidget.js:238
+#, fuzzy
+msgid "Data Variable"
+msgid_plural "Multiple Data Variables ({n})"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#: jamovi/client/main/ribbon/datatab.js:41
+#, fuzzy
+msgid "Data weights"
+msgstr "أوزان البيانات"
+
+#: jamovi/client/main/vareditor/datavarwidget.js:32
+#, fuzzy
+msgid "Decimal"
+msgstr "عشري"
+
+#: jamovi/client/main/ribbon/appmenu.js:63
+#: jamovi/client/main/ribbon/appmenu.js:70
+#, fuzzy
+msgid "decimal places"
+msgstr "الوحدات العشرية"
+
+#: jamovi/client/main/ribbon/appmenu.ts:133
+#, fuzzy
+msgid "Decimal symbol"
+msgstr "رمز عشري"
+
+#: jamovi/client/main/ribbon/appmenu.js:93
+#, fuzzy
+msgid "Default"
+msgstr "افتراضي"
+
+#: jamovi/client/main/ribbon/appmenu.js:110
+#, fuzzy
+msgid "Default missings"
+msgstr "المفقودات الافتراضية"
+
+#: jamovi/client/main/ribbon/datatab.js:51
+#: jamovi/client/main/ribbon/datatab.js:62
+#: jamovi/client/main/ribbon/variablestab.js:41
+msgid "Delete"
+msgstr "حذف"
+
+#: jamovi/client/main/viewcontroller.js:273
+#, fuzzy
+msgid "Delete column '{columnName}'?"
+msgid_plural "Delete {n} columns?"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#: jamovi/client/main/contextmenu/contextmenus.js:120
+#: jamovi/client/main/contextmenu/contextmenus.js:135
+#, fuzzy
+msgid "Delete Filter"
+msgstr "حذف المرشح"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:28
+#: jamovi/client/main/contextmenu/contextmenus.js:49
+msgid "Delete Row"
+msgstr "حذف الصف"
+
+#: jamovi/client/main/viewcontroller.js:322
+msgid "Delete row {index}?"
+msgid_plural "Delete {n} rows?"
+msgstr[0] "هل تريد حذف أي صف؟"
+msgstr[1] "هل تريد حذف الصف {index}؟"
+msgstr[2] "هل تريد حذف الصفين {n} ؟"
+msgstr[3] "هل تريد حذف {n} صفوف ؟"
+msgstr[4] "هل تريد حذف {n} صفًا ؟"
+msgstr[5] "هل تريد حذف {n} صف ؟"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:28
+#, fuzzy
+msgid "Delete Rows"
+msgstr "حذف الصفوف"
+
+#: jamovi/client/main/ribbon/datatab.js:74
+#, fuzzy
+msgid "Delete selected rows"
+msgstr "حذف الصفوف المحددة"
+
+#: jamovi/client/main/ribbon/datatab.js:63
+#, fuzzy
+msgid "Delete selected variables"
+msgstr "حذف المتغيرات المحددة"
+
+#: jamovi/client/main/vareditor/transformlistitem.js:30
+#, fuzzy
+msgid "Delete transform  - {transformName}"
+msgstr "حذف تحويل - {transformName}"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:74
+msgid "Delete Variable"
+msgid_plural "Delete Variables"
+msgstr[0] "حذف أي متغير"
+msgstr[1] "حذف المتغير"
+msgstr[2] "حذف المتغيرين"
+msgstr[3] "حذف المتغيرات"
+msgstr[4] "حذف متغيرًا"
+msgstr[5] "حذف متغير"
+
+#: jamovi/client/main/tableview.js:77
+msgid "Deleted"
+msgstr "محذوف"
+
+#: jamovi/client/main/editors/transformeditor.js:61
+#: jamovi/client/main/vareditor/editorwidget.js:68
+#: jamovi/client/main/vareditor/filterwidget.js:507
+#: jamovi/client/main/variablesview.js:321
+#, fuzzy
+msgid "Description"
+msgstr "الوصف"
+
+#: jamovi/client/main/utils/pathtools.js:11
+#: jamovi/server/jamovi/server/instance.py
+#, fuzzy
+msgid "Desktop"
+msgstr "سطح المكتب"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:128
+#, fuzzy
+msgid "Determines if any of the items appear in in1, in2, in3, .... Note that most of these arguments are optional -- it is possible to simply use <b>CONTAINS(needle, haystack)</b>."
+msgstr "يحدد ما إذا كان أي من العناصر تظهر في in1، in2، in3، .... ملاحظة أن معظم هذه الحجج اختيارية -- يمكن استخدام CONTAINS(needle, haystack) ببساطة."
+
+#: jamovi/client/main/ribbon/appmenu.js:161
+#, fuzzy
+msgid "Developer mode"
+msgstr "وضع المطور"
+
+#: jamovi/client/main/utils/pathtools.js:7
+#: jamovi/server/jamovi/server/instance.py
+#, fuzzy
+msgid "Documents"
+msgstr "الوثائق"
+
+#: jamovi/client/main/main.js:371
+#, fuzzy
+msgid "Don't enable"
+msgstr "لا تمكين"
+
+#: jamovi/client/main/main.js:643
+msgid "Don't Save"
+msgstr "عدم الحفظ"
+
+#: jamovi/client/main/ribbon/appmenu.ts:134
+#, fuzzy
+msgid "Dot"
+msgstr "نقطة"
+
+#: jamovi/client/main/backstage.js:1122
+#: jamovi/client/main/backstage.js:1224
+#: jamovi/client/main/backstage.js:1242
+#, fuzzy
+msgid "Download"
+msgstr "تنزيل"
+
+#: jamovi/client/main/utils/pathtools.js:9
+#: jamovi/server/jamovi/server/instance.py
+#, fuzzy
+msgid "Downloads"
+msgstr "التنزيلات"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:152
+#, fuzzy
+msgid "Draws a sample of n from the variable. i.e. SAMPLE(var, 20), i.e. SAMPLE(1, 20), i.e. SAMPLE('training', 20, 'test')"
+msgstr "يرسم عينة من n من المتغير. على سبيل المثال، SAMPLE(var، 20)، على سبيل المثال، SAMPLE(1، 20)، على سبيل المثال، SAMPLE('training'، 20، 'test')"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:158
+#, fuzzy
+msgid "Draws samples from a Beta distribution."
+msgstr "يرسم عينات من توزيع بيتا."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:160
+#, fuzzy
+msgid "Draws samples from a Gamma distribution."
+msgstr "يرسم عينات من توزيع جاما."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:162
+#, fuzzy
+msgid "Draws samples from a normal (Gaussian) distribution."
+msgstr "يرسم عينات من توزيع طبيعي (غاوسي)."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:164
+#, fuzzy
+msgid "Draws samples from a uniform distribution."
+msgstr "يرسم عينات من توزيع متساو"
+
+#: jamovi/client/resultsview/group.js:215
+#, fuzzy
+msgid "Duplicate"
+msgstr "مضاعفة"
+
+#: jamovi/client/main/vareditor/transformlistitem.js:29
+#, fuzzy
+msgid "Duplicate transform  - {transformName}"
+msgstr "مكرر تحويل - {transformName}"
+
+#: jamovi/client/main/main.js:182
+#: jamovi/client/main/ribbon/annotationtab.js:114
+#: jamovi/client/main/ribbon/annotationtab.js:13
+#: jamovi/client/main/ribbon/datatab.js:23
+#: jamovi/client/main/ribbon/variablestab.js:17
+#: jamovi/client/main/ribbon/variablestab.js:23
+#: jamovi/client/main/tableview.js:1173
+#: jamovi/client/main/tableview.js:1283
+#, fuzzy
+msgid "Edit"
+msgstr "تحرير"
+
+#: jamovi/client/main/tableview.js:104
+#, fuzzy
+msgid "Edit filters"
+msgstr "تحرير المرشحات"
+
+#: jamovi/client/main/vareditor/transformlistitem.js:28
+#, fuzzy
+msgid "Edit transform - {transformName}"
+msgstr "عدل التحويل - {transformName}"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:124
+#: jamovi/client/main/contextmenu/contextmenus.js:139
+#: jamovi/client/main/vareditor/recodedvarwidget.js:33
+#, fuzzy
+msgid "Edit..."
+msgstr "تحرير..."
+
+#: jamovi/client/main/editors/transformeditor.js:360
+#: jamovi/client/main/editors/transformeditor.js:417
+#, fuzzy
+msgid "else use"
+msgstr "استخدم إذا"
+
+#: jamovi/client/main/main.js:372
+msgid "Enable"
+msgstr "تفعيل"
+
+#: jamovi/client/main/ribbon.js:131
+#, fuzzy
+msgid "Enable/disable full screen mode"
+msgstr "تمكين/تعطيل وضع الشاشة الكاملة"
+
+#: jamovi/client/main/tableview.js:1424
+#: jamovi/client/main/tableview.js:1609
+#, fuzzy
+msgid "Enter"
+msgstr "أدخل"
+
+#: jamovi/client/main/variablesview.js:133
+#, fuzzy
+msgid "Enter description"
+msgstr "أدخل وصف"
+
+#: jamovi/client/main/backstage.js:277
+#: jamovi/client/main/backstage.js:314
+#, fuzzy
+msgid "Enter file name here"
+msgstr "أدخل اسم الملف هنا"
+
+#: jamovi/client/main/vareditor/datavarlevelwidget.js:93
+#, fuzzy
+msgid "Enter label..."
+msgstr "أدخل التسمية..."
+
+#: jamovi/client/main/vareditor/datavarwidget.js:80
+#, fuzzy
+msgid "Enter level value"
+msgstr "أدخل قيمة المستوى"
+
+#: jamovi/client/main/variablesview.js:132
+#, fuzzy
+msgid "Enter name"
+msgstr "أدخل الاسم"
+
+#: jamovi/client/resultsview/annotation.js:148
+#, fuzzy
+msgid "Enter your URL here"
+msgstr "أدخل الرابط هنا"
+
+#: jamovi/client/main/resultspanel.js:718
+#, fuzzy
+msgid "EPS Image {ext}"
+msgstr "صورة EPS {ext}"
+
+#: jamovi/client/main/editors/operatordropdown.js:41
+#, fuzzy
+msgid "Equal to"
+msgstr "مساوي لـ"
+
+#: jamovi/server/jamovi/server/instance.py
+msgid "Error"
+msgstr "خطأ"
+
+#: jamovi/client/main/backstage.js:980
+#, fuzzy
+msgid "Excel {ext}"
+msgstr "إكسل {ext}"
+
+#: jamovi/client/main/ribbon/analysetab.js:186
+#, fuzzy
+msgid "Exploration"
+msgstr "استكشاف"
+
+#: jamovi/client/main/backstage.js:1233
+#: jamovi/client/main/backstage.js:1325
+#: jamovi/client/main/backstage.js:323
+#: jamovi/client/main/resultspanel.js:592
+#: jamovi/client/resultsview/element.js:134
+#: jamovi/client/resultsview/group.js:215
+#, fuzzy
+msgid "Export"
+msgstr "تصدير"
+
+#: jamovi/client/main/resultspanel.js:713
+#, fuzzy
+msgid "Export image"
+msgstr "تصدير الصورة"
+
+#: jamovi/client/main/resultspanel.js:740
+#, fuzzy
+msgid "Export results"
+msgstr "تصدير النتائج"
+
+#: jamovi/client/main/instance.js:460
+#, fuzzy
+msgid "Exported"
+msgstr "تم تصديره"
+
+#: jamovi/client/main/instance.js:461
+#, fuzzy
+msgid "Exported to '{filename}'"
+msgstr "تم تصديره إلى '{filename}'"
+
+#: jamovi/client/main/ribbon/analysetab.js:191
+#, fuzzy
+msgid "Factor"
+msgstr "عامل"
+
+#: jamovi/client/main/main.js:176
+#, fuzzy
+msgid "File"
+msgstr "ملف"
+
+#: jamovi/server/jamovi/server/formatio/exceptions.py
+#, fuzzy
+msgid "File format is not supported"
+msgstr "تنسيق الملف غير مدعوم"
+
+#: jamovi/client/main/instance.js:136
+#, fuzzy
+msgid "File imported"
+msgstr "تم استيراد الملف"
+
+#: jamovi/server/jamovi/server/formatio/exceptions.py
+#, fuzzy
+msgid "File is corrupt"
+msgstr "الملف معيب"
+
+#: jamovi/server/jamovi/server/formatio/omv.py
+#, fuzzy
+msgid "File is corrupt (manifest is corrupt or missing)"
+msgstr "الملف معيب (البيان معيب أو مفقود)"
+
+#: jamovi/server/jamovi/server/formatio/omv.py
+#, fuzzy
+msgid "File is corrupt (manifest is corrupt)"
+msgstr "الملف معيب (البيان معيب)"
+
+#: jamovi/client/main/ribbon.js:174
+#, fuzzy
+msgid "File menu"
+msgstr "قائمة الملف"
+
+#: jamovi/client/main/backstage.ts:1184
+#, fuzzy
+msgid "File menu items"
+msgstr "عناصر قائمة الملف"
+
+#: jamovi/client/main/instance.js:474
+#, fuzzy
+msgid "File Saved"
+msgstr "تم حفظ الملف"
+
+#: jamovi/client/main/backstage/fsentrybrowserview.ts:212
+#, fuzzy
+msgid "File type"
+msgstr "نوع الملف"
+
+#: jamovi/client/main/dataset.js:1322
+#, fuzzy
+msgid "Filter"
+msgstr "مرشح"
+
+#: jamovi/server/jamovi/server/instancemodel.py
+#, fuzzy
+msgid "Filter {}"
+msgstr "مرشح {}"
+
+#: jamovi/client/main/vareditor/filterwidget.js:494
+#, fuzzy
+msgid "Filter {i}"
+msgstr "فلتر {i}"
+
+#: jamovi/client/main/vareditor/filterwidget.js:382
+#: jamovi/client/main/vareditor/filterwidget.js:497
+#, fuzzy
+msgid "Filter is active"
+msgstr "المرشح نشط"
+
+#: jamovi/client/main/vareditor/filterwidget.js:387
+#, fuzzy
+msgid "Filter is inactive"
+msgstr "المرشح غير نشط"
+
+#: jamovi/client/main/tableview.js:78
+#, fuzzy
+msgid "Filtered"
+msgstr "مرشح"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:19
+#: jamovi/client/main/contextmenu/contextmenus.js:40
+#: jamovi/client/main/ribbon/datatab.js:56
+#: jamovi/client/main/ribbon/variablestab.js:46
+#: jamovi/client/main/tableview.js:83
+#: jamovi/client/main/variablesview.js:61
+#, fuzzy
+msgid "Filters"
+msgstr "مرشحات"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:144
+#, fuzzy
+msgid "Filters a variable using the filter expression."
+msgstr "يفلتر متغيرًا باستخدام تعبير الفلتر."
+
+#: jamovi/server/jamovi/server/compute/checker.py
+#, fuzzy
+msgid "Filters may not reference columns using 'V' or column functions"
+msgstr "قد لا يُحال المرشحات إلى أعمدة باستخدام 'V' أو وظائف الأعمدة"
+
+#: jamovi/server/jamovi/server/compute/checker.py
+#, fuzzy
+msgid "Filters may not reference output variables"
+msgstr "قد لا تشير المرشحات إلى متغيرات الإخراج"
+
+#: jamovi/client/analysisui/main.ts:333
+#, fuzzy
+msgid "Find module in jamovi library"
+msgstr "ابحث عن وحدة في مكتبة jamovi"
+
+#: jamovi/client/main/main.ts:243
+#, fuzzy
+msgid "Focus on spreadsheet"
+msgstr "التركيز على جدول البيانات"
+
+#: jamovi/client/main/main.ts:262
+#, fuzzy
+msgid "Focus on the variable setup"
+msgstr "التركيز على إعداد المتغير"
+
+#: jamovi/client/main/main.ts:248
+#, fuzzy
+msgid "Focus on variable list"
+msgstr "ركز على قائمة المتغيرات"
+
+#: jamovi/client/main/ribbon/annotationtab.js:119
+#, fuzzy
+msgid "Font"
+msgstr "خط"
+
+#: jamovi/client/main/ribbon/annotationtab.js:152
+#: jamovi/client/main/vareditor/computedvarwidget.js:78
+#, fuzzy
+msgid "Formula"
+msgstr "الصيغة"
+
+#: jamovi/server/jamovi/server/compute/checker.py
+#, fuzzy
+msgid "Formula contains illegal node"
+msgstr "تحتوي الصيغة على عقدة غير قانونية"
+
+#: jamovi/server/jamovi/server/compute/parser.py
+#, fuzzy
+msgid "Formula is mis-specified (If you're wanting to test equality, use two equals signs '==')"
+msgstr "الصيغة غير محددة بشكل صحيح (إذا كنت ترغب في اختبار المساواة، استخدم علامتي مساواة '==')"
+
+#: jamovi/client/main/ribbon/analysetab.js:190
+#, fuzzy
+msgid "Frequencies"
+msgstr "التكرارات"
+
+#: jamovi/server/jamovi/server/compute/checker.py
+#: jamovi/server/jamovi/server/compute/nodes.py
+#, fuzzy
+msgid "Function {}() does not exist"
+msgstr "الدالة {}() غير موجودة"
+
+#: jamovi/server/jamovi/server/compute/checker.py
+#, fuzzy
+msgid "Function {}() requires atleast {} argument{}"
+msgstr "تطلب الدالة {}() على الأقل {} حجة{}"
+
+#: jamovi/server/jamovi/server/compute/checker.py
+#, fuzzy
+msgid "Function {}() requires between {} and {} arguments"
+msgstr "تتطلب الدالة {}() بين {} و {} حجج"
+
+#: jamovi/server/jamovi/server/compute/checker.py
+#, fuzzy
+msgid "Function {}() takes {} argument{}"
+msgstr "دالة {}() تأخذ {} حجة{}"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:184
+#, fuzzy
+msgid "Functions"
+msgstr "الدالات"
+
+#: jamovi/client/main/editors/operatordropdown.js:45
+#, fuzzy
+msgid "Greater than"
+msgstr "أكبر من"
+
+#: jamovi/client/main/editors/operatordropdown.js:49
+#, fuzzy
+msgid "Greater than or equal to"
+msgstr "أكبر من أو يساوي"
+
+#: jamovi/client/main/ribbon/appmenu.js:100
+#, fuzzy
+msgid "Greens"
+msgstr "الأخضر"
+
+#: jamovi/client/main/ribbon/appmenu.js:100
+#, fuzzy
+msgid "Greys"
+msgstr "رمادي"
+
+#: jamovi/client/resultsview/array.js:73
+#: jamovi/client/resultsview/group.js:73
+msgid "Group"
+msgstr "مجموعة"
+
+#: jamovi/client/main/ribbon/appmenu.js:100
+#: jamovi/client/main/ribbon/appmenu.js:93
+#, fuzzy
+msgid "Hadley"
+msgstr "هادلي"
+
+#: jamovi/client/main/ribbon/annotationtab.js:157
+#, fuzzy
+msgid "Heading"
+msgstr "عنوان"
+
+#: jamovi/client/resultsview/annotation.js:138
+#, fuzzy
+msgid "Help"
+msgstr "مساعدة"
+
+#: jamovi/client/main/infobox.js:31
+#, fuzzy
+msgid "Hi"
+msgstr "مرحبا"
+
+#: jamovi/client/main/ribbon/appmenu.js:77
+#, fuzzy
+msgid "Hidden"
+msgstr "مخفي"
+
+#: jamovi/client/main/store/pagemodules.js:139
+#: jamovi/client/main/variableeditor.js:175
+#: jamovi/client/main/variableeditor.js:49
+#, fuzzy
+msgid "Hide"
+msgstr "إخفاء"
+
+#: jamovi/client/main/main.ts:238
+#, fuzzy
+msgid "Hide analysis options"
+msgstr "إخفاء خيارات التحليل"
+
+#: jamovi/client/main/vareditor/filterwidget.js:71
+#, fuzzy
+msgid "Hide filter columns"
+msgstr "إخفاء أعمدة المرشحات"
+
+#: jamovi/client/main/store.js:25
+#, fuzzy
+msgid "Hide library"
+msgstr "إخفاء المكتبة"
+
+#: jamovi/client/main/store/pagemodules.js:271
+#, fuzzy
+msgid "Hide module {moduleName} from the Analyses ribbon"
+msgstr "إخفاء وحدة {moduleName} من شريط التحليلات"
+
+#: jamovi/client/analysisui/main.js:223
+#, fuzzy
+msgid "Hide options"
+msgstr "إخفاء الخيارات"
+
+#: jamovi/client/main/variableeditor.js:52
+#, fuzzy
+msgid "Hide variable setup"
+msgstr "إخفاء إعداد المتغير"
+
+#: jamovi/client/main/ribbon/annotationtab.js:130
+#, fuzzy
+msgid "Highlight Color"
+msgstr "لون التمييز"
+
+#: jamovi/client/main/utils/pathtools.js:13
+#: jamovi/server/jamovi/server/instance.py
+#, fuzzy
+msgid "Home"
+msgstr "الصفحة الرئيسية"
+
+#: jamovi/client/resultsview/html.js:53
+#, fuzzy
+msgid "Html"
+msgstr "HTML"
+
+#: jamovi/client/main/ribbon/appmenu.js:100
+#: jamovi/client/main/ribbon/appmenu.js:93
+#, fuzzy
+msgid "I ♥ SPSS"
+msgstr "أنا أحب SPSS"
+
+#: jamovi/client/main/editors/transformeditor.js:229
+#: jamovi/client/main/vareditor/datavarwidget.js:277
+#: jamovi/client/main/vareditor/measurelist.js:61
+#, fuzzy
+msgid "ID"
+msgstr "المعرف"
+
+#: jamovi/client/main/notification.js:73
+#, fuzzy
+msgid "Idle session"
+msgstr "جلسة غير نشطة"
+
+#: jamovi/client/main/editors/transformeditor.js:355
+#, fuzzy
+msgid "if"
+msgstr "إذا"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:120
+#, fuzzy
+msgid "If the expression resolves true, use the value, otherwise the else."
+msgstr "إذا كان التعبير يُحل بالصواب، استخدم القيمة، وإلا استخدم القيمة البديلة."
+
+#: jamovi/client/resultsview/image.js:54
+#, fuzzy
+msgid "Image"
+msgstr "صورة"
+
+#: jamovi/client/resultsview/image.ts:233
+#, fuzzy
+msgid "Image resized to {width} by {height}"
+msgstr "صورة محددة إلى {width} بواسطة {height}"
+
+#: jamovi/client/main/backstage.js:280
+#: jamovi/client/main/ribbon/appmenu.js:108
+#, fuzzy
+msgid "Import"
+msgstr "استيراد"
+
+#: jamovi/client/main/instance.js:137
+#, fuzzy
+msgid "Import successful"
+msgstr "استيراد ناجح"
+
+#: jamovi/client/main/vareditor/editorwidget.js:43
+#, fuzzy
+msgid "Imported as"
+msgstr "تم استيراده باسم"
+
+#: jamovi/client/main/instance.js:119
+#, fuzzy
+msgid "Importing"
+msgstr "استيراد"
+
+#: jamovi/client/main/ribbon/appmenu.js:201
+#, fuzzy
+msgid "In development"
+msgstr "قيد التطوير"
+
+#: jamovi/client/main/vareditor/filterwidget.js:385
+#: jamovi/client/main/vareditor/filterwidget.js:535
+#, fuzzy
+msgid "inactive"
+msgstr "غير نشط"
+
+#: jamovi/client/main/ribbon/annotationtab.js:146
+#, fuzzy
+msgid "Indent -1"
+msgstr "مسافة بادئة -1"
+
+#: jamovi/client/main/ribbon/annotationtab.js:147
+#, fuzzy
+msgid "Indent +1"
+msgstr "التبويب +1"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:101
+#: jamovi/client/main/contextmenu/contextmenus.js:105
+#: jamovi/client/main/contextmenu/contextmenus.js:109
+#: jamovi/client/main/contextmenu/contextmenus.js:59
+#: jamovi/client/main/contextmenu/contextmenus.js:63
+#: jamovi/client/main/contextmenu/contextmenus.js:67
+#: jamovi/client/main/ribbon/annotationtab.js:151
+#: jamovi/client/main/ribbon/datatab.js:35
+#: jamovi/client/main/ribbon/datatab.js:39
+#: jamovi/client/main/ribbon/datatab.js:43
+#: jamovi/client/main/ribbon/datatab.js:59
+#: jamovi/client/main/ribbon/variablestab.js:29
+#: jamovi/client/main/ribbon/variablestab.js:33
+#: jamovi/client/main/ribbon/variablestab.js:37
+#, fuzzy
+msgid "Insert"
+msgstr "إدراج"
+
+#: jamovi/client/main/viewcontroller.js:573
+#, fuzzy
+msgid "Insert how many rows?"
+msgstr "أدخل عدد الصفوف التي تريد إضافتها"
+
+#: jamovi/client/main/ribbon/datatab.js:39
+#, fuzzy
+msgid "Insert new computed variable"
+msgstr "أدرج متغير محسوب جديد"
+
+#: jamovi/client/main/ribbon/datatab.js:40
+#, fuzzy
+msgid "Insert new transformed variable"
+msgstr "إدراج متغير محول جديد"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:23
+#: jamovi/client/main/contextmenu/contextmenus.js:45
+#, fuzzy
+msgid "Insert Row..."
+msgstr "إدراج صف..."
+
+#: jamovi/client/main/store/pagemodules.js:118
+#, fuzzy
+msgid "Install"
+msgstr "تثبيت"
+
+#: jamovi/client/main/store/pagemodules.js:240
+#, fuzzy
+msgid "Install module {moduleName} version {version}"
+msgstr "تثبيت وحدة {moduleName} الإصدار {version}"
+
+#: jamovi/client/main/store.js:35
+#: jamovi/client/main/store/pagemodules.js:121
+#, fuzzy
+msgid "Installed"
+msgstr "مثبت"
+
+#: jamovi/client/main/ribbon/analysetab.js:80
+#, fuzzy
+msgid "Installed Modules"
+msgstr "الوحدات المثبتة"
+
+#: jamovi/client/main/store/pagemodules.js:216
+#, fuzzy
+msgid "Installed version needs to be updated"
+msgstr "الإصدار المثبت يحتاج إلى تحديث"
+
+#: jamovi/client/main/store/pagemodules.js:364
+#, fuzzy
+msgid "Installing {module}"
+msgstr "تثبيت {module}"
+
+#: jamovi/client/main/store/pagemodules.js:115
+#, fuzzy
+msgid "Installing modules is not available on your plan"
+msgstr "تثبيت الوحدات النمطية غير متاح في خطتك"
+
+#: jamovi/client/main/vareditor/datavarwidget.js:32
+#, fuzzy
+msgid "Integer"
+msgstr "صحيح"
+
+#: jamovi/client/analysisui/gridtargetcontrol.js:1019
+#, fuzzy
+msgid "Interaction"
+msgstr "التفاعل"
+
+#: jamovi/client/analysisui/gridtargetcontrol.js:1020
+#, fuzzy
+msgid "Interactions"
+msgstr "التفاعلات"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:124
+#, fuzzy
+msgid "Inverts the value."
+msgstr "يعكس القيمة."
+
+#: jamovi/client/main/tableview.js:497
+#: jamovi/client/main/tableview.js:536
+#: jamovi/client/main/tableview.js:591
+#, fuzzy
+msgid "Issue with formula"
+msgstr "مشكلة في الصيغة"
+
+#: jamovi/client/main/ribbon/annotationtab.js:122
+#, fuzzy
+msgid "Italic"
+msgstr "مائل"
+
+#: jamovi/client/main/backstage.js:1007
+#: jamovi/client/main/backstage.js:1018
+#, fuzzy
+msgid "jamovi file {ext}"
+msgstr "ملف jamovi {ext}"
+
+#: jamovi/client/main/backstage.js:976
+#, fuzzy
+msgid "jamovi files {ext}"
+msgstr "ملفات jamovi {ext}"
+
+#: jamovi/client/main/misc/announcements.js:3
+#, fuzzy
+msgid "jamovi is now available in { insert translation language }! (Many thanks to { insert your name here (or put a more generic \"the jamovi translation team\", if you don't want credit) })"
+msgstr "jamovi متوفر الآن باللغة { insert translation language }! (شكرا ل { insert your name here (or put a more generic \"the jamovi translation team\", if you don't want credit) })"
+
+#: jamovi/client/main/misc/announcements.js:2
+#, fuzzy
+msgid "jamovi is now available in { insert translation language }! (Many thanks to @{ insert your twitter handle here (or put a more generic \"the jamovi translation team\", if you don't want credit) })"
+msgstr "jamovi الآن متاح باللغة { insert translation language }! (شكراً ل @{ insert your twitter handle here (or put a more generic \"the jamovi translation team\", if you don't want credit) })"
+
+#: jamovi/client/main/ribbon/analysetab.js:78
+#, fuzzy
+msgid "jamovi library"
+msgstr "مكتبة jamovi"
+
+#: jamovi/client/main/store/pagesideload.js:27
+#, fuzzy
+msgid "jamovi modules"
+msgstr "وحدات jamovi"
+
+#: jamovi/client/main/backstage.js:1030
+#: jamovi/client/main/backstage.js:1053
+#, fuzzy
+msgid "jamovi template {ext}"
+msgstr "قالب jamovi {ext}"
+
+#: jamovi/client/main/backstage.js:977
+#, fuzzy
+msgid "jamovi templates {ext}"
+msgstr "قوالب jamovi {ext}"
+
+#: jamovi/client/main/backstage.js:985
+#, fuzzy
+msgid "JASP files {ext}"
+msgstr "ملفات JASP {ext}"
+
+#: jamovi/client/main/backstage.js:1092
+#, fuzzy
+msgid "JSON files {ext}"
+msgstr "ملفات JSON {ext}"
+
+#: jamovi/client/main/ribbon/annotationtab.js:140
+#, fuzzy
+msgid "Justify"
+msgstr "مبرر"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:241
+#, fuzzy
+msgid "Keyword: {v}"
+msgstr "كلمة رئيسية: {v}"
+
+#: jamovi/client/main/ribbon/appmenu.js:154
+#, fuzzy
+msgid "Language"
+msgstr "اللغة"
+
+#: jamovi/client/main/backstage.js:1032
+#: jamovi/client/main/backstage.js:1055
+#: jamovi/client/main/resultspanel.js:748
+#, fuzzy
+msgid "LaTeX bundle {ext}"
+msgstr "حزمة LaTeX {ext}"
+
+#: jamovi/client/main/ribbon/annotationtab.js:137
+#, fuzzy
+msgid "Left Align"
+msgstr "محاذاة إلى اليسار"
+
+#: jamovi/client/main/editors/operatordropdown.js:47
+#, fuzzy
+msgid "Less than"
+msgstr "أقل من"
+
+#: jamovi/client/main/editors/operatordropdown.js:51
+#, fuzzy
+msgid "Less than or equal to"
+msgstr "أقل من أو يساوي"
+
+#: jamovi/client/analysisui/rmanovafactorscontrol.js:137
+#: jamovi/client/analysisui/rmanovafactorscontrol.js:289
+#: jamovi/client/analysisui/rmanovafactorscontrol.js:320
+#: jamovi/client/analysisui/rmanovafactorscontrol.js:467
+#, fuzzy
+msgid "Level {0}"
+msgstr "قيمة المستوى {0}"
+
+#: jamovi/client/main/vareditor/datavarwidget.js:184
+#, fuzzy
+msgid "Level value"
+msgstr "قيمة المستوى"
+
+#: jamovi/client/main/vareditor/datavarwidget.js:48
+#: jamovi/client/main/vareditor/outputvarwidget.js:26
+#, fuzzy
+msgid "Levels"
+msgstr "مستويات"
+
+#: jamovi/client/main/store/pagemodules.js:98
+#, fuzzy
+msgid "Library error"
+msgstr "خطأ في المكتبة"
+
+#: jamovi/client/main/ribbon/annotationtab.js:159
+#, fuzzy
+msgid "Link"
+msgstr "رابط"
+
+#: jamovi/client/analysisui/gridtargetcontrol.js:1021
+#, fuzzy
+msgid "Main Effects"
+msgstr "التأثيرات الرئيسية"
+
+#: jamovi/client/main/ribbon/analysetab.js:79
+#, fuzzy
+msgid "Manage installed"
+msgstr "إدارة المثبت"
+
+#: jamovi/client/analysisui/variableslistbox.ts:119
+#, fuzzy
+msgid "Max: {count}"
+msgstr "الحد الأقصى: {count}"
+
+#: jamovi/client/main/editors/transformeditor.js:223
+#: jamovi/client/main/vareditor/datavarwidget.js:271
+#, fuzzy
+msgid "Measure type"
+msgstr "نوع القياس"
+
+#: jamovi/client/main/ribbon/appmenu.js:93
+#, fuzzy
+msgid "Minimal"
+msgstr "أقصى حد"
+
+#: jamovi/client/main/optionspanel.ts:175
+#, fuzzy
+msgid "Missing or incompatible module"
+msgstr "وحدة مفقودة أو غير متوافقة"
+
+#: jamovi/client/main/vareditor/datavarwidget.js:244
+#, fuzzy
+msgid "Missing values"
+msgstr "قيم مفقودة"
+
+#: jamovi/client/main/editors/missingvalueeditor.js:14
+msgid "Missing Values"
+msgstr "قيم مفقودة"
+
+#: jamovi/client/main/store/pagemodules.js:244
+#, fuzzy
+msgid "Module {moduleName} is installed"
+msgstr "الوحدة {moduleName} مثبتة"
+
+#: jamovi/client/main/store/pagemodules.js:192
+#, fuzzy
+msgid "Module installed"
+msgstr "تم تثبيت الوحدة"
+
+#: jamovi/client/main/store/pagesideload.js:44
+#, fuzzy
+msgid "Module installed successfully"
+msgstr "تم تثبيت الوحدة النمطية بنجاح"
+
+#: jamovi/client/main/store/pagemodules.js:217
+#, fuzzy
+msgid "Module uninstalled"
+msgstr "الوحدة النمطية غير مثبتة"
+
+#: jamovi/client/main/ribbon/analysetab.js:77
+#, fuzzy
+msgid "Modules"
+msgstr "الوحدات النمطية"
+
+#: jamovi/client/main/main.js:370
+#, fuzzy
+msgid "More info ..."
+msgstr "مزيد من المعلومات..."
+
+#: jamovi/client/main/backstage/fsentrybrowserview.ts:316
+#, fuzzy
+msgid "Move back directory"
+msgstr "انتقل إلى الدليل السابق"
+
+#: jamovi/client/main/backstage/fsentrybrowserview.ts:446
+#, fuzzy
+msgid "Move back from directory {0}"
+msgstr "الانتقال إلى الخلف من الدليل {0}"
+
+#: jamovi/client/main/variablesview.js:320
+#, fuzzy
+msgid "Name"
+msgstr "الاسم"
+
+#: jamovi/client/main/backstage.js:1178
+#: jamovi/client/main/backstage.js:1255
+#, fuzzy
+msgid "New"
+msgstr "جديد"
+
+#: jamovi/client/main/tableview.js:2479
+#: jamovi/client/main/tableview.js:603
+#: jamovi/client/main/tableview.js:660
+#, fuzzy
+msgid "New column {0}"
+msgstr "عمود جديد {0}"
+
+#: jamovi/client/main/vareditor/newvarwidget.js:27
+#, fuzzy
+msgid "New computed variable"
+msgstr "متغير محسوب جديد"
+
+#: jamovi/client/main/vareditor/newvarwidget.js:22
+#, fuzzy
+msgid "New data variable"
+msgstr "متغير بيانات جديد"
+
+#: jamovi/client/main/vareditor/newvarwidget.js:32
+#, fuzzy
+msgid "New transformed variable"
+msgstr "متغير محول جديد"
+
+#: jamovi/client/main/variableeditor.js:52
+#, fuzzy
+msgid "Next variable"
+msgstr "المتغير التالي"
+
+#: jamovi/client/main/ribbon/annotationtab.js:130
+#, fuzzy
+msgid "No Color"
+msgstr "لا يوجد لون"
+
+#: jamovi/client/main/editors/operatordropdown.js:101
+#: jamovi/client/main/vareditor/formulatoolbar.js:214
+#, fuzzy
+msgid "No information about this function is available"
+msgstr "لا توجد معلومات حول هذه الوظيفة"
+
+#: jamovi/server/jamovi/server/downloader.py
+#, fuzzy
+msgid "No internet connection"
+msgstr "لا يوجد اتصال بالإنترنت"
+
+#: jamovi/client/main/backstage.js:569
+#, fuzzy
+msgid "No recognised data files were found."
+msgstr "لم يتم العثور على ملفات بيانات معترف بها."
+
+#: jamovi/client/main/variablesview.js:357
+#, fuzzy
+msgid "No variables match your query."
+msgstr "لا توجد متغيرات تطابق استعلامك."
+
+#: jamovi/client/main/editors/transformeditor.js:226
+#: jamovi/client/main/vareditor/datavarwidget.js:274
+#: jamovi/client/main/vareditor/measurelist.js:49
+#, fuzzy
+msgid "Nominal"
+msgstr "اسمي"
+
+#: jamovi/client/main/dataset.js:1328
+#: jamovi/client/main/dataset.js:1330
+#: jamovi/client/main/vareditor/recodedvarwidget.js:255
+#: jamovi/client/main/vareditor/recodedvarwidget.js:305
+#: jamovi/client/main/vareditor/recodedvarwidget.js:32
+#: jamovi/client/main/vareditor/transformlist.js:15
+#: jamovi/client/main/vareditor/variablelist.js:15
+#: jamovi/client/main/vareditor/variablelist.js:20
+msgid "None"
+msgstr "لا أحد"
+
+#: jamovi/client/main/editors/operatordropdown.js:43
+#, fuzzy
+msgid "Not equal to"
+msgstr "لا يساوي"
+
+#: jamovi/client/resultsview/main.js:108
+#: jamovi/client/resultsview/table.js:624
+#, fuzzy
+msgid "Note"
+msgstr "ملاحظة"
+
+#: jamovi/client/resultsview/notice.js:44
+#, fuzzy
+msgid "Notice"
+msgstr "إشعار"
+
+#: jamovi/client/main/ribbon/appmenu.js:62
+#, fuzzy
+msgid "Number format"
+msgstr "تنسيق الأرقام"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:148
+#, fuzzy
+msgid "Offsets the values up or down."
+msgstr "يحرك القيم لأعلى أو لأسفل."
+
+#: jamovi/client/main/editorpanel.js:19
+#: jamovi/client/main/variableeditor.js:64
+#, fuzzy
+msgid "Ok"
+msgstr "موافق"
+
+#: jamovi/client/main/infobox.js:276
+#: jamovi/client/main/infobox.js:34
+#, fuzzy
+msgid "OK"
+msgstr "موافق"
+
+#: jamovi/client/main/backstage.ts:367
+#: jamovi/client/main/backstage.ts:402
+msgid "One Drive"
+msgstr "OneDrive"
+
+#: jamovi/client/main/main.js:365
+#, fuzzy
+msgid "One or more analyses in this data set have been disabled\n"
+"                    because they allow the execution of arbitrary code. You\n"
+"                    should only enable them if you trust this data set's\n"
+"                    source."
+msgstr "تحليل واحد أو أكثر في مجموعة البيانات هذه قد تم تعطيلها\n"
+"                    لأنها تسمح بتنفيذ رمز عشوائي. يجب عليك تمكينها فقط إذا كنت تثق بمصدر مجموعة البيانات هذه.\n"
+
+#: jamovi/client/main/viewcontroller.js:678
+#, fuzzy
+msgid "One row appended."
+msgid_plural "{n} rows appended."
+msgstr[0] ""
+msgstr[1] ""
+
+#: jamovi/client/main/viewcontroller.js:641
+#, fuzzy
+msgid "One row inserted."
+msgid_plural "{n} rows inserted."
+msgstr[0] ""
+msgstr[1] ""
+
+#: jamovi/client/main/backstage.js:463
+#, fuzzy
+msgid "Online data set"
+msgstr "مجموعة بيانات trực tuyến"
+
+#: jamovi/client/main/backstage.js:1183
+#: jamovi/client/main/backstage.js:1260
+#, fuzzy
+msgid "Open"
+msgstr "فتح"
+
+#: jamovi/client/main/main.ts:266
+#, fuzzy
+msgid "Open application menu"
+msgstr "فتح قائمة التطبيق"
+
+#: jamovi/client/main/main.ts:234
+#, fuzzy
+msgid "Open data file"
+msgstr "فتح ملف البيانات"
+
+#: jamovi/client/main/backstage.js:979
+#, fuzzy
+msgid "Open Document (LibreOffice) {ext}"
+msgstr "افتح المستند (LibreOffice) {ext}"
+
+#: jamovi/client/main/main.ts:270
+#, fuzzy
+msgid "Open the jamovi module library"
+msgstr "افتح مكتبة الوحدات jamovi"
+
+#: jamovi/client/main/main.ts:253
+#, fuzzy
+msgid "Open the main menu"
+msgstr "افتح القائمة الرئيسية"
+
+#: jamovi/client/main/backstage.js:1706
+#: jamovi/client/main/instance.js:304
+#: jamovi/client/main/main.js:665
+#, fuzzy
+msgid "Opening"
+msgstr "فتح"
+
+#: jamovi/client/main/editors/operatordropdown.js:70
+#, fuzzy
+msgid "Operators"
+msgstr "عوامل"
+
+#: jamovi/client/main/ribbon/annotationtab.js:143
+#, fuzzy
+msgid "Ordered List"
+msgstr "قائمة مرتّبة"
+
+#: jamovi/client/main/editors/transformeditor.js:227
+#: jamovi/client/main/vareditor/datavarwidget.js:275
+#: jamovi/client/main/vareditor/measurelist.js:53
+#, fuzzy
+msgid "Ordinal"
+msgstr "ترتيبي"
+
+#: jamovi/client/main/dataset.js:1325
+#, fuzzy
+msgid "Output"
+msgstr "الإخراج"
+
+#: jamovi/client/main/vareditor/editorwidget.js:244
+msgid "Output Variable"
+msgid_plural "Multiple Output Variables ({n})"
+msgstr[0] "أي متغير إخراج"
+msgstr[1] "متغير الإخراج"
+msgstr[2] "متغيرا الإخراج"
+msgstr[3] "{n} متغيرات إخراج"
+msgstr[4] "{n} متغير إخراج"
+msgstr[5] "{n} متغير إخراج"
+
+#: jamovi/client/main/ribbon/appmenu.js:69
+#, fuzzy
+msgid "p-value format"
+msgstr "تنسيق قيمة p"
+
+#: jamovi/client/main/ribbon/annotationtab.js:135
+#, fuzzy
+msgid "Paragraph"
+msgstr "الفقرة"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:161
+#, fuzzy
+msgid "Parses a date, and converts it to the number of days since the 1st of January, 1970."
+msgstr "يحلل التاريخ و يتحوله إلى عدد الأيام منذ 1 يناير 1970."
+
+#: jamovi/client/main/contextmenu/contextmenus.js:15
+#: jamovi/client/main/contextmenu/contextmenus.js:90
+#: jamovi/client/main/ribbon/annotationtab.js:107
+#: jamovi/client/main/ribbon/datatab.js:16
+#, fuzzy
+msgid "Paste"
+msgstr "لصق"
+
+#: jamovi/client/main/viewcontroller.js:354
+#, fuzzy
+msgid "Paste is unavailable using the menus"
+msgstr "لصق غير متاح باستخدام القوائم"
+
+#: jamovi/client/main/backstage.js:1028
+#: jamovi/client/main/backstage.js:1051
+#: jamovi/client/main/resultspanel.js:715
+#: jamovi/client/main/resultspanel.js:742
+#, fuzzy
+msgid "PDF Document {ext}"
+msgstr "مستند PDF {ext}"
+
+#: jamovi/client/main/vareditor/datavarlevelwidget.js:19
+#, fuzzy
+msgid "Pin level"
+msgstr "مستوى التثبيت"
+
+#: jamovi/client/analysisui/main.ts:331
+#, fuzzy
+msgid "Please <em>install or update</em> this module from the jamovi library."
+msgstr "يرجى <em>تثبيت أو تحديث</em> هذا الوحد من مكتبة jamovi."
+
+#: jamovi/client/main/viewcontroller.js:355
+#, fuzzy
+msgid "Please use ctrl-v to paste into the spreadsheet."
+msgstr "يرجى استخدام ctrl-v للصق في جدول البيانات."
+
+#: jamovi/client/resultsview/main.ts:221
+#, fuzzy
+msgid "Plot"
+msgstr "رسم بياني"
+
+#: jamovi/client/main/ribbon/appmenu.js:92
+#, fuzzy
+msgid "Plot theme"
+msgstr "سمة التخطيط"
+
+#: jamovi/client/main/ribbon/appmenu.js:89
+#, fuzzy
+msgid "Plots"
+msgstr "الرسوم البيانية"
+
+#: jamovi/client/main/resultspanel.js:716
+#, fuzzy
+msgid "PNG Image {ext}"
+msgstr "صورة PNG {ext}"
+
+#: jamovi/client/main/resultspanel.ts:954
+#, fuzzy
+msgid "PowerPoint Slide {ext}"
+msgstr "شريحة باور بوينت {ext}"
+
+#: jamovi/client/main/ribbon.js:132
+#, fuzzy
+msgid "Preferences"
+msgstr "الإعدادات"
+
+#: jamovi/client/resultsview/annotation.js:79
+#, fuzzy
+msgid "Press enter to edit"
+msgstr "اضغط على Enter للتعديل"
+
+#: jamovi/client/main/variableeditor.js:51
+#, fuzzy
+msgid "Previous variable"
+msgstr "المتغير السابق"
+
+#: jamovi/client/main/main.ts:274
+#, fuzzy
+msgid "Project Save As"
+msgstr "حفظ المشروع باسم"
+
+#: jamovi/client/main/ribbon/appmenu.js:100
+#, fuzzy
+msgid "qualitative"
+msgstr "نوعي"
+
+#: jamovi/client/main/backstage.js:982
+#, fuzzy
+msgid "R data files {ext}"
+msgstr "ملفات بيانات R {ext}"
+
+#: jamovi/client/main/backstage.js:1033
+#: jamovi/client/main/backstage.js:1034
+#: jamovi/client/main/backstage.js:1056
+#: jamovi/client/main/backstage.js:1057
+#, fuzzy
+msgid "R object {ext}"
+msgstr "كائن R {ext}"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:80
+#, fuzzy
+msgid "Ranks each value"
+msgstr "يصنف كل قيمة"
+
+#: jamovi/client/main/tableview.js:1250
+#: jamovi/client/main/tableview.js:80
+#: jamovi/client/main/variablesview.js:58
+#, fuzzy
+msgid "Ready"
+msgstr "جاهز"
+
+#: jamovi/client/main/store/pagemodules.js:209
+#, fuzzy
+msgid "Really uninstall {m}?"
+msgstr "هل تريد حقًا إلغاء تثبيت {m}?"
+
+#: jamovi/client/main/backstage.js:2008
+#, fuzzy
+msgid "Recent"
+msgstr "أحدث"
+
+#: jamovi/client/main/ribbon/annotationtab.js:116
+#: jamovi/client/main/ribbon/datatab.js:25
+#: jamovi/client/main/ribbon/variablestab.js:19
+#, fuzzy
+msgid "Redo Edit"
+msgstr "إعادة تحرير"
+
+#: jamovi/client/main/references.js:20
+#: jamovi/client/main/resultspanel.js:421
+#: jamovi/client/main/resultspanel.js:423
+#: jamovi/client/main/ribbon/appmenu.js:76
+#, fuzzy
+msgid "References"
+msgstr "مراجع"
+
+#: jamovi/client/main/infobox.js:273
+#, fuzzy
+msgid "Refresh"
+msgstr "تحديث"
+
+#: jamovi/client/main/ribbon/analysetab.js:189
+#, fuzzy
+msgid "Regression"
+msgstr "الانحدار"
+
+#: jamovi/client/main/menu.js:169
+#: jamovi/client/main/resultspanel.js:571
+#: jamovi/client/main/resultspanel.js:593
+#: jamovi/client/main/store/pagemodules.js:115
+#, fuzzy
+msgid "Remove"
+msgstr "إزالة"
+
+#: jamovi/client/analysisui/gridtargetcontrol.js:620
+#, fuzzy
+msgid "Remove {1} from {0}"
+msgstr "إزالة {1} من {0}"
+
+#: jamovi/client/analysisui/gridtargetcontrol.js:623
+#, fuzzy
+msgid "Remove {1} items from {0}"
+msgstr "إزالة {1} عناصر من {0}"
+
+#: jamovi/client/main/vareditor/filterwidget.js:502
+#, fuzzy
+msgid "Remove filter"
+msgstr "إزالة المرشح"
+
+#: jamovi/client/analysisui/gridtargetcontrol.js:617
+#, fuzzy
+msgid "Remove items from {0}"
+msgstr "إزالة عناصر من {0}"
+
+#: jamovi/client/main/store/pagemodules.js:234
+#, fuzzy
+msgid "Remove module {moduleName}"
+msgstr "إزالة وحدة {moduleName}"
+
+#: jamovi/client/main/vareditor/filterwidget.js:403
+#, fuzzy
+msgid "Remove nested filter"
+msgstr "إزالة فلتر متداخل"
+
+#: jamovi/client/main/store/pagemodules.js:130
+#, fuzzy
+msgid "Requires a newer version of jamovi"
+msgstr "يتطلب إصدارًا أحدث من jamovi"
+
+#: jamovi/client/main/ribbon/appmenu.js:261
+#, fuzzy
+msgid "Restart required"
+msgstr "يتطلب إعادة التشغيل"
+
+#: jamovi/client/main/analyses.js:336
+#: jamovi/client/main/ribbon/appmenu.js:59
+#: jamovi/server/jamovi/server/analyses.py
+#: jamovi/server/jamovi/server/instance.py
+#, fuzzy
+msgid "Results"
+msgstr "النتائج"
+
+#: jamovi/client/main/vareditor/editorwidget.js:101
+#, fuzzy
+msgid "Retain unused levels in analyses"
+msgstr "احتفظ بالمستويات غير المستخدمة في التحليلات"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:66
+#, fuzzy
+msgid "Returns a Box Cox transformation of the variable."
+msgstr "يعيد تحويل Box Cox لمتغير."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:68
+#, fuzzy
+msgid "Returns a whether the variable is an outlier according to the IQR: If the value is within the box of a Boxplot 0 is returned, absolute values larger than 1.5 are outside the whiskers."
+msgstr "يعيد ما إذا كان المتغير مُختلِفًا وفقًا لـ IQR: إذا كان القيمة ضمن الصندوق في مخطط الصندوق ، يتم إرجاع 0 ، والقيم المطلقة أكبر من 1.5 خارج الشعيرات"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:50
+#, fuzzy
+msgid "Returns the absolute value of a number."
+msgstr "يعيد القيمة المطلقة لعدد."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:56
+#, fuzzy
+msgid "Returns the base-10 logarithm of a number."
+msgstr "يعيد لوغاريتم القاعدة 10 لرقم."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:52
+#, fuzzy
+msgid "Returns the exponent for basis ℯ of a number."
+msgstr "يعيد السالب لأساس ℯ من رقم"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:70
+#, fuzzy
+msgid "Returns the largest value of a set of numbers."
+msgstr "يعيد أكبر قيمة لمجموعة من الأرقام."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:94
+#, fuzzy
+msgid "Returns the largest value of a variable."
+msgstr "يعيد أكبر قيمة لمتغير."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:76
+#, fuzzy
+msgid "Returns the mean of a set of numbers."
+msgstr "يعيد متوسط مجموعة من الأرقام"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:94
+#, fuzzy
+msgid "Returns the median absolute deviation of a variable."
+msgstr "يعيد انحراف الوسط المطلق لمتغير."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:98
+#, fuzzy
+msgid "Returns the median of a variable."
+msgstr "يعيد الوسيط لمتغير."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:102
+#, fuzzy
+msgid "Returns the most common value in a variable."
+msgstr "يعيد القيمة الأكثر شيوعًا في متغير."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:54
+#, fuzzy
+msgid "Returns the natural logarithm of a number."
+msgstr "يعيد اللوغاريتم الطبيعي لعدد."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:116
+#: jamovi/client/main/vareditor/formulatoolbar.js:88
+#, fuzzy
+msgid "Returns the normalized values of a set of numbers."
+msgstr "يعيد القيم المعيارية لمجموعة من الأرقام."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:104
+#, fuzzy
+msgid "Returns the number of cases in a variable."
+msgstr "يعيد عدد الحالات في متغير."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:154
+#, fuzzy
+msgid "Returns the number of rows of a variable."
+msgstr "يعيد عدد صفوف متغير."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:96
+#, fuzzy
+msgid "Returns the overall mean of a variable."
+msgstr "يعيد المتوسط العام لمتغير"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:110
+#, fuzzy
+msgid "Returns the overall sum of a variable."
+msgstr "يعيد المجموع الكلي لمتغير."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:96
+#, fuzzy
+msgid "Returns the robust median absolute deviation of a variable."
+msgstr "يعيد الانحراف المعياري القوي للمتغير."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:150
+#, fuzzy
+msgid "Returns the row numbers."
+msgstr "يعيد أرقام الصفوف."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:78
+#, fuzzy
+msgid "Returns the smallest value of a set of numbers."
+msgstr "يعيد أصغر قيمة من مجموعة من الأرقام."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:100
+#, fuzzy
+msgid "Returns the smallest value of a variable."
+msgstr "يعيد أصغر قيمة لمتغير"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:58
+#, fuzzy
+msgid "Returns the square root of a number."
+msgstr "يعيد الجذر التربيعي لعدد"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:90
+#, fuzzy
+msgid "Returns the standard deviation of a set of numbers."
+msgstr "يعيد الانحراف المعياري لمجموعة من الأرقام"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:108
+#, fuzzy
+msgid "Returns the standard deviation of a variable."
+msgstr "يعيد الانحراف المعياري لمتغير."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:106
+#, fuzzy
+msgid "Returns the standard error of the mean of a variable."
+msgstr "يعيد متوسط الخطأ المعياري لمتغير."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:92
+#, fuzzy
+msgid "Returns the sum of a set of numbers."
+msgstr "يعيد مجموع مجموعة من الأرقام"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:112
+#, fuzzy
+msgid "Returns the variance of a set of numbers."
+msgstr "يعيد الانحراف المعياري لمجموعة من الأرقام."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:114
+#, fuzzy
+msgid "Returns the variance of a variable."
+msgstr "يعيد الانحراف المعياري لمتغير."
+
+#: jamovi/client/main/main.ts:286
+#, fuzzy
+msgid "Returns to the previously selected analysis and opens the options panel, with focus set in the options panel."
+msgstr "يعود إلى التحليل المحدد مسبقًا وفتح لوحة الخيارات، مع ضبط التركيز في لوحة الخيارات."
+
+#: jamovi/client/main/main.ts:302
+#, fuzzy
+msgid "Returns to the previously selected analysis and shifts focus into the results output."
+msgstr "يعود إلى التحليل المحدد مسبقًا وينتقل التركيز إلى إخراج النتائج"
+
+#: jamovi/client/main/main.ts:291
+#: jamovi/client/main/main.ts:307
+#, fuzzy
+msgid "Returns to the previously selected analysis and shifts focus to the results output."
+msgstr "يعود إلى التحليل المحدد مسبقًا و ينتقل التركيز إلى نتائج الإخراج."
+
+#: jamovi/client/main/ribbon/annotationtab.js:139
+#, fuzzy
+msgid "Right Align"
+msgstr "التركيب إلى اليمين"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:82
+#, fuzzy
+msgid "Rounds each value"
+msgstr "يستدير كل قيمة"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:86
+#, fuzzy
+msgid "Rounds each value to the integer above"
+msgstr "يقوم بتقريب كل قيمة إلى الأعلى"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:84
+#, fuzzy
+msgid "Rounds each value to the integer below"
+msgstr "يقلل كل قيمة إلى الصحيح أدناه"
+
+#: jamovi/client/main/viewcontroller.js:345
+#, fuzzy
+msgid "row {index} deleted."
+msgid_plural "{n} rows deleted."
+msgstr[0] ""
+msgstr[1] ""
+
+#: jamovi/client/main/tableview.js:79
+#, fuzzy
+msgid "Row count"
+msgstr "عدد الصفوف"
+
+#: jamovi/client/main/vareditor/editorwidget.js:246
+#, fuzzy
+msgid "Row Filters"
+msgstr "مرشحات الصفوف"
+
+#: jamovi/client/main/ribbon/datatab.js:55
+#: jamovi/client/main/ribbon/variablestab.js:45
+#, fuzzy
+msgid "Rows"
+msgstr "الصفوف"
+
+#: jamovi/client/main/backstage.js:1037
+#: jamovi/client/main/backstage.js:1060
+#, fuzzy
+msgid "SAS 7bdat {ext}"
+msgstr "ملف SAS 7bdat {ext}"
+
+#: jamovi/client/main/backstage.js:984
+#, fuzzy
+msgid "SAS files {ext}"
+msgstr "ملفات SAS {ext}"
+
+#: jamovi/client/main/backstage.js:1038
+#: jamovi/client/main/backstage.js:1061
+#, fuzzy
+msgid "SAS xpt {ext}"
+msgstr "SAS xpt {ext}"
+
+#: jamovi/client/main/backstage.js:1297
+#: jamovi/client/main/backstage.js:321
+#: jamovi/client/main/main.js:643
+#: jamovi/client/main/menu.js:160
+#, fuzzy
+msgid "Save"
+msgstr "حفظ"
+
+#: jamovi/client/main/backstage.js:1211
+#: jamovi/client/main/backstage.js:1312
+#, fuzzy
+msgid "Save As"
+msgstr "حفظ باسم"
+
+#: jamovi/client/main/main.js:645
+#, fuzzy
+msgid "Save changes to '{title}'?"
+msgstr "حفظ التغييرات على '{title}'؟"
+
+#: jamovi/client/main/instance.js:506
+#, fuzzy
+msgid "Save failed"
+msgstr "فشل الحفظ"
+
+#: jamovi/client/main/main.ts:233
+#, fuzzy
+msgid "Save project"
+msgstr "حفظ المشروع"
+
+#: jamovi/client/main/instance.js:475
+#, fuzzy
+msgid "Saved to '{filename}'"
+msgstr "حفظ إلى '{filename}'"
+
+#: jamovi/client/main/instance.js:427
+#, fuzzy
+msgid "Saving"
+msgstr "حفظ"
+
+#: jamovi/client/main/notification.js:77
+#, fuzzy
+msgid "Scheduled maintenance"
+msgstr "صيانة محجوزة"
+
+#: jamovi/client/analysisui/layoutsupplierview.js:169
+#: jamovi/client/main/store/pagemodules.js:34
+#, fuzzy
+msgid "Search"
+msgstr "بحث"
+
+#: jamovi/client/main/store/pagemodules.js:42
+#, fuzzy
+msgid "Search available modules"
+msgstr "ابحث عن الوحدات المتاحة"
+
+#: jamovi/client/main/backstage/fsentrybrowserview.ts:261
+#, fuzzy
+msgid "Search files"
+msgstr "بحث الملفات"
+
+#: jamovi/client/main/backstage/fsentrybrowserview.ts:433
+#, fuzzy
+msgid "Search for file in directory {0}"
+msgstr "ابحث عن ملف في الدليل {0}"
+
+#: jamovi/client/main/store/pagemodules.js:42
+#, fuzzy
+msgid "Search installed modules"
+msgstr "البحث في الوحدات المثبتة"
+
+#: jamovi/client/analysisui/layoutsupplierview.js:172
+#, fuzzy
+msgid "Search list items"
+msgstr "بحث عن عناصر القائمة"
+
+#: jamovi/client/main/variablesview.js:48
+#, fuzzy
+msgid "Search variables"
+msgstr "بحث المتغيرات"
+
+#: jamovi/client/main/resultspanel.js:433
+#, fuzzy
+msgid "Select all"
+msgstr "تحديد الكل"
+
+#: jamovi/client/main/vareditor/editorwidget.js:83
+#: jamovi/client/main/variablesview.js:63
+#, fuzzy
+msgid "Selected"
+msgstr "محدد"
+
+#: jamovi/client/main/ribbon/appmenu.js:100
+#, fuzzy
+msgid "sequential"
+msgstr "تتابعي"
+
+#: jamovi/client/main/ribbon/appmenu.js:100
+#, fuzzy
+msgid "Set1"
+msgstr "مجموعة 1"
+
+#: jamovi/client/main/ribbon/datatab.js:29
+#, fuzzy
+msgid "Setup"
+msgstr "الإعداد"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:78
+#, fuzzy
+msgid "Setup..."
+msgstr "إعداد..."
+
+#: jamovi/client/main/store/pagemodules.js:136
+#, fuzzy
+msgid "Show"
+msgstr "إظهار"
+
+#: jamovi/client/main/vareditor/filterwidget.js:59
+#: jamovi/client/main/vareditor/filterwidget.js:76
+#, fuzzy
+msgid "Show filter columns"
+msgstr "إظهار أعمدة المرشح"
+
+#: jamovi/client/main/editors/transformeditor.js:634
+#: jamovi/client/main/vareditor/computedvarwidget.js:128
+#: jamovi/client/main/vareditor/filterwidget.js:413
+#, fuzzy
+msgid "Show formula editor"
+msgstr "إظهار محرر الصيغة"
+
+#: jamovi/client/main/ribbon/ribbonmenu.js:208
+#, fuzzy
+msgid "Show in main menu"
+msgstr "إظهار في القائمة الرئيسية"
+
+#: jamovi/client/main/store/pagemodules.js:265
+#, fuzzy
+msgid "Show module {moduleName} in the Analyses ribbon"
+msgstr "إظهار وحدة {moduleName} في شريط التحليلات"
+
+#: jamovi/client/main/store.js:93
+#, fuzzy
+msgid "Side-loading modules is not available."
+msgstr "لا يتوفر تحميل الوحدات الجانبية."
+
+#: jamovi/client/main/store.js:37
+#, fuzzy
+msgid "Sideload"
+msgstr "تحميل جانبي"
+
+#: jamovi/client/main/ribbon/appmenu.js:63
+#: jamovi/client/main/ribbon/appmenu.js:70
+#, fuzzy
+msgid "significant figures"
+msgstr "الأرقام المهمة"
+
+#: jamovi/client/main/vareditor/recodedvarwidget.js:27
+#, fuzzy
+msgid "Source variable"
+msgstr "المتغير المصدر"
+
+#: jamovi/client/main/backstage.js:1279
+#, fuzzy
+msgid "Special Import"
+msgstr "استيراد خاص"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:130
+#, fuzzy
+msgid "Splits text into pieces based on a separator. <i>piece</i> specifies the desired piece by index."
+msgstr "يقسم النص إلى قطع بناءً على فاصل. <i>piece</i> يحدد القطعة المرغوبة حسب الفهرس."
+
+#: jamovi/client/main/tableview.js:62
+#, fuzzy
+msgid "Spreadsheet"
+msgstr "جدول بيانات"
+
+#: jamovi/client/main/backstage.js:981
+#, fuzzy
+msgid "SPSS files {ext}"
+msgstr "ملفات SPSS {ext}"
+
+#: jamovi/client/main/backstage.js:1035
+#: jamovi/client/main/backstage.js:1058
+#, fuzzy
+msgid "SPSS sav {ext}"
+msgstr "ملف SPSS sav {ext}"
+
+#: jamovi/client/main/backstage.js:1039
+#: jamovi/client/main/backstage.js:1062
+#, fuzzy
+msgid "Stata {ext}"
+msgstr "Stata {ext}"
+
+#: jamovi/client/main/backstage.js:983
+#, fuzzy
+msgid "Stata files {ext}"
+msgstr "ملفات Stata {ext}"
+
+#: jamovi/client/main/ribbon/annotationtab.js:124
+#, fuzzy
+msgid "Strike"
+msgstr "ضرب"
+
+#: jamovi/client/main/ribbon/annotationtab.js:155
+#, fuzzy
+msgid "Styles"
+msgstr "أنماط"
+
+#: jamovi/client/main/ribbon/annotationtab.js:127
+#, fuzzy
+msgid "Sub Script"
+msgstr "الخط السفلي"
+
+#: jamovi/client/main/ribbon/annotationtab.js:128
+#, fuzzy
+msgid "Super Script"
+msgstr "الكتابة الفائقة"
+
+#: jamovi/client/main/resultspanel.js:717
+#, fuzzy
+msgid "SVG Image {ext}"
+msgstr "صورة SVG {ext}"
+
+#: jamovi/client/resultsview/syntax.js:43
+#, fuzzy
+msgid "Syntax"
+msgstr "صيغة"
+
+#: jamovi/client/main/ribbon/appmenu.js:83
+#, fuzzy
+msgid "Syntax mode"
+msgstr "وضع الصياغة"
+
+#: jamovi/client/main/ribbon/appmenu.js:209
+#, fuzzy
+msgid "System default"
+msgstr "افتراضي النظام"
+
+#: jamovi/client/main/ribbon/analysetab.js:187
+#, fuzzy
+msgid "T-Tests"
+msgstr "اختبارات T"
+
+#: jamovi/client/resultsview/table.js:184
+#, fuzzy
+msgid "Table"
+msgstr "جدول"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:163
+#, fuzzy
+msgid "Takes a number representing the number of days since the 1st of January 1970, and produces a formatted date."
+msgstr "يأخذ رقمًا يمثل عدد الأيام منذ 1 يناير 1970، وينتج تاريخًا معالجًا."
+
+#: jamovi/client/main/vareditor/datavarwidget.js:32
+#: jamovi/client/main/vareditor/formulatoolbar.js:126
+#, fuzzy
+msgid "Text"
+msgstr "نص"
+
+#: jamovi/client/main/ribbon/annotationtab.js:131
+#, fuzzy
+msgid "Text Color"
+msgstr "لون النص"
+
+#: jamovi/client/main/resultspanel.js:682
+#: jamovi/client/main/resultspanel.js:784
+#, fuzzy
+msgid "The content has been copied to the clipboard"
+msgstr "تم نسخ المحتوى إلى الحافظة"
+
+#: jamovi/client/main/utils/clipboardprompt.js:20
+#, fuzzy
+msgid "The content has been prepared, and can be copied with the button below, or by pressing <em>{k}+C</em> on your keyboard"
+msgstr "تم إعداد المحتوى ويمكن نسخة باستخدام الزر أدناه ، أو عن طريق الضغط على <em>{k}+C</em> على لوحة المفاتيح"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:242
+#, fuzzy
+msgid "The current value of the variable to which this transform is applied."
+msgstr "القيمة الحالية للمتغير الذي يتم تطبيق هذا التحويل عليه."
+
+#: jamovi/client/main/strings.ts:6
+#, fuzzy
+msgid "The data is weighted by the variable {}, however this analysis does not support non-integer weights. The weights were rounded to the nearest integer."
+msgstr "بياناتها موزونة حسب المتغير {}، ومع ذلك لا تدعم هذه التحليل الأوزان غير الصحيحة. تم تقريب الأوزان إلى الأقرب صحيح."
+
+#: jamovi/client/main/strings.ts:7
+#: jamovi/server/jamovi/server/analyses/weights.py
+#, fuzzy
+msgid "The data is weighted by the variable {}."
+msgstr "البيانات موزونة بالمتغير {}"
+
+#: jamovi/client/main/strings.ts:5
+#, fuzzy
+msgid "The data is weighted, however this analysis does not support weights. This analysis used the data unweighted."
+msgstr "البيانات موزونة، ومع ذلك لا تدعم هذه التحليل الأوزان. تم استخدام البيانات غير الموزونة في هذه التحليل"
+
+#: jamovi/client/main/instance.js:489
+#, fuzzy
+msgid "The file '{filename}' already exists. Overwrite this file?"
+msgstr "الملف '{filename}' موجود بالفعل. هل تريد كتابة هذا الملف؟"
+
+#: jamovi/server/jamovi/server/compute/messages.py
+#, fuzzy
+msgid "The formula is mis-specified"
+msgstr "الصيغة غير محددة بشكل صحيح"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:140
+#, fuzzy
+msgid "The index of value in the provided values."
+msgstr "فهرس القيمة في القيم المقدمة"
+
+#: jamovi/client/resultsview/table.js:754
+#, fuzzy
+msgid "The interaction of {0} and {1}"
+msgstr "التفاعل بين {0} و {1}"
+
+#: jamovi/client/analysisui/formatdef.js:272
+#, fuzzy
+msgid "The interaction of {list}"
+msgstr "التفاعل بين {list}"
+
+#: jamovi/client/main/store.js:80
+#, fuzzy
+msgid "The jamovi library is not available to your session."
+msgstr "مكتبة jamovi غير متاحة لجلسة المستخدم."
+
+#: jamovi/client/main/vareditor/datavarwidget.js:116
+#, fuzzy
+msgid "The level value {r} is already in use."
+msgstr "قيمة المستوى {r} قيد الاستخدام بالفعل."
+
+#: jamovi/client/main/vareditor/datavarwidget.js:128
+#, fuzzy
+msgid "The level value cannot be blank."
+msgstr "لا يمكن أن تكون قيمة المستوى فارغة."
+
+#: jamovi/server/jamovi/server/instance.py
+#, fuzzy
+msgid "The library is disabled"
+msgstr "المكتبة معطلة"
+
+#: jamovi/server/jamovi/server/scheduler.py
+#, fuzzy
+msgid "The module for this analysis is not installed, or is unavailable"
+msgstr "الوحدة لهذا التحليل ليست مثبتة أو غير متاحة"
+
+#: jamovi/server/jamovi/server/syncs/http.py
+#, fuzzy
+msgid "The remote server could not be reached"
+msgstr "لم يتمكن الخادم عن بعد من الوصول"
+
+#: jamovi/server/jamovi/server/syncs/http.py
+#, fuzzy
+msgid "The remote server rejected the request"
+msgstr "رفض الخادم عن بعد للطلب"
+
+#: jamovi/server/jamovi/server/syncs/http.py
+#, fuzzy
+msgid "The remote server reported an error"
+msgstr "reported خادم بعيد خطأ"
+
+#: jamovi/server/jamovi/server/syncs/http.py
+#, fuzzy
+msgid "The remote server sent an unexpected response"
+msgstr "أرسل خادم عن بعد استجابة غير متوقعة"
+
+#: jamovi/server/jamovi/server/syncs/http.py
+#, fuzzy
+msgid "The resource doesn't exist, or has moved (404)"
+msgstr "المورد غير موجود أو تم نقله (404)"
+
+#: jamovi/client/main/vareditor/recodedvarwidget.js:284
+#, fuzzy
+msgid "The selected transform is in error and should be edited."
+msgstr "التحويل المحدد يحتوي على خطأ ويجب تعديله."
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:138
+#, fuzzy
+msgid "The value in the provided values at index."
+msgstr "القيمة في القيم المقدمة في الفهرس."
+
+#: jamovi/server/jamovi/server/engine.py
+#, fuzzy
+msgid "This analysis has exceeded the current time limits and has been terminated."
+msgstr "تجاوزت هذه التحليل الوقت المحدد وحُذفت."
+
+#: jamovi/server/jamovi/server/engine.py
+#, fuzzy
+msgid "This analysis has terminated, likely due to hitting a resource limit."
+msgstr "انتهت هذه التحليل، على الأرجح بسبب الوصول إلى حد الموارد."
+
+#: jamovi/client/main/main.ts:912
+#, fuzzy
+msgid "This data set could not be opened"
+msgstr "لم يتمكن من فتح مجموعة البيانات هذه"
+
+#: jamovi/server/jamovi/server/server.py
+#, fuzzy
+msgid "This data set is no longer available"
+msgstr "مجموعة البيانات هذه لم تعد متاحة"
+
+#: jamovi/client/main/backstage.js:1198
+#: jamovi/client/main/utils/pathtools.js:15
+#, fuzzy
+msgid "This Device"
+msgstr "هذا الجهاز"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:246
+#, fuzzy
+msgid "This is a data variable."
+msgstr "هذا متغير بيانات."
+
+#: jamovi/client/analysisui/main.ts:330
+#, fuzzy
+msgid "This module is either <em>missing or incompatible</em> with this version of jamovi."
+msgstr "هذا الوحد إما <em>مفقود أو غير متوافق</em> مع هذا الإصدار من jamovi."
+
+#: jamovi/client/main/backstage.js:1138
+#: jamovi/client/main/backstage.js:1273
+#: jamovi/client/main/backstage.js:1292
+#: jamovi/client/main/backstage.js:1320
+#: jamovi/client/main/backstage.js:1328
+#, fuzzy
+msgid "This PC"
+msgstr "هذا الكمبيوتر"
+
+#: jamovi/server/jamovi/server/instance.py
+#: jamovi/server/jamovi/server/instancemodel.py
+#, fuzzy
+msgid "This session is limited to {} columns"
+msgstr "تحدد هذه الجلسة إلى {} أعمدة"
+
+#: jamovi/server/jamovi/server/instance.py
+#: jamovi/server/jamovi/server/instancemodel.py
+#, fuzzy
+msgid "This session is limited to {} rows"
+msgstr "هذه الجلسة محدودة بـ {} صف"
+
+#: jamovi/client/main/notification.js:39
+#, fuzzy
+msgid "This session will end any moment now"
+msgstr "ستنتهي هذه الجلسة في أي لحظة الآن"
+
+#: jamovi/client/main/notification.js:35
+#, fuzzy
+msgid "This session will end in around {} minutes"
+msgstr "سيتم إنهاء هذا الجلسة في حوالي {} دقائق"
+
+#: jamovi/client/main/notification.js:37
+#, fuzzy
+msgid "This session will end in around 1 minute"
+msgstr "ستنتهي هذه الجلسة في حوالي دقيقة واحدة"
+
+#: jamovi/client/main/vareditor/recodedvarwidget.js:34
+#, fuzzy
+msgid "This transform is in error and should be edited."
+msgstr "هذا التحويل في خطأ ويجب تعديله."
+
+#: jamovi/client/main/tableview.js:105
+#, fuzzy
+msgid "Toggle filters visibility"
+msgstr "تبديل ظهور المرشحات"
+
+#: jamovi/client/main/ribbon.js:199
+#, fuzzy
+msgid "Toggle screen state"
+msgstr "تبديل حالة الشاشة"
+
+#: jamovi/client/main/main.ts:256
+#, fuzzy
+msgid "Toggle variable setup"
+msgstr "تبديل إعداد المتغير"
+
+#: jamovi/client/main/viewcontroller.js:357
+#, fuzzy
+msgid "Too much data, use import instead"
+msgstr "بيانات كثيرة ، استخدم الاستيراد بدلاً من ذلك"
+
+#: jamovi/client/main/editors/transformeditor.js:24
+#: jamovi/client/main/ribbon/datatab.js:31
+#: jamovi/client/main/ribbon/variablestab.js:25
+#, fuzzy
+msgid "Transform"
+msgstr "تحويل"
+
+#: jamovi/server/jamovi/server/instancemodel.py
+#, fuzzy
+msgid "Transform {}"
+msgstr "تحويل {}"
+
+#: jamovi/client/main/tableview.js:271
+#, fuzzy
+msgid "Transform: {name}"
+msgstr "تحويل: {name}"
+
+#: jamovi/client/main/tableview.js:276
+#, fuzzy
+msgid "Transform: None"
+msgstr "تحويل: لا شيء"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:81
+#, fuzzy
+msgid "Transform..."
+msgstr "تحويل..."
+
+#: jamovi/client/main/dataset.js:1319
+#, fuzzy
+msgid "Transformed"
+msgstr "محول"
+
+#: jamovi/client/main/contextmenu/contextmenus.js:100
+#: jamovi/client/main/contextmenu/contextmenus.js:66
+#: jamovi/client/main/ribbon/datatab.js:42
+#: jamovi/client/main/ribbon/variablestab.js:36
+#: jamovi/client/main/vareditor/editorwidget.js:242
+msgid "Transformed Variable"
+msgid_plural "Multiple Transformed Variables ({n})"
+msgstr[0] "أي متغير محوَّل"
+msgstr[1] "متغير محوَّل"
+msgstr[2] "متغيران محوَّلان"
+msgstr[3] "{n} متغيرات محوَّلة"
+msgstr[4] "{n} متغير محوَّل"
+msgstr[5] "{n} متغير محوَّل"
+
+#: jamovi/client/main/utils/headeralert.js:24
+#, fuzzy
+msgid "Try again"
+msgstr "حاول مرة أخرى"
+
+#: jamovi/server/jamovi/server/instance.py
+#, fuzzy
+msgid "Unable to access analysis"
+msgstr "تعذر الوصول إلى التحليل"
+
+#: jamovi/server/jamovi/server/instance.py
+#, fuzzy
+msgid "Unable to access library"
+msgstr "تعذر الوصول إلى المكتبة"
+
+#: jamovi/server/jamovi/server/downloader.py
+#, fuzzy
+msgid "Unable to access the internet (likely due to a captive portal)"
+msgstr "لا يمكن الوصول إلى الإنترنت (على الأرجح بسبب بوابة محتجزة)"
+
+#: jamovi/server/jamovi/server/instance.py
+#, fuzzy
+msgid "Unable to browse {}"
+msgstr "无法 تصفح {}"
+
+#: jamovi/client/main/main.js:768
+#, fuzzy
+msgid "Unable to connect to the server"
+msgstr "لا يمكن الاتصال بالخادم"
+
+#: jamovi/server/jamovi/server/instance.py
+#, fuzzy
+msgid "Unable to import {}"
+msgstr "无法 استيراد {}"
+
+#: jamovi/client/main/store/pagemodules.js:376
+#, fuzzy
+msgid "Unable to install {module}"
+msgstr "تعذر تثبيت {module}"
+
+#: jamovi/client/main/store/pagemodules.js:199
+#: jamovi/client/main/store/pagesideload.js:54
+#: jamovi/server/jamovi/server/instance.py
+#, fuzzy
+msgid "Unable to install module"
+msgstr "تعذر تثبيت الوحدة"
+
+#: jamovi/client/main/backstage.js:1752
+#: jamovi/client/main/instance.js:275
+#: jamovi/client/main/instance.js:278
+#: jamovi/client/main/instance.js:316
+#: jamovi/client/main/instance.js:322
+#: jamovi/client/main/main.js:730
+#, fuzzy
+msgid "Unable to open"
+msgstr "لا يمكن فتح"
+
+#: jamovi/client/main/viewcontroller.js:356
+#, fuzzy
+msgid "Unable to paste"
+msgstr "تعذر لصق"
+
+#: jamovi/server/jamovi/server/instance.py
+#, fuzzy
+msgid "Unable to perform import"
+msgstr "تعذر استيراد"
+
+#: jamovi/server/jamovi/server/instance.py
+#, fuzzy
+msgid "Unable to perform request"
+msgstr "تعذر تنفيذ الطلب"
+
+#: jamovi/server/jamovi/server/downloader.py
+#, fuzzy
+msgid "Unable to reach the library"
+msgstr "تعذر الوصول إلى المكتبة"
+
+#: jamovi/server/jamovi/server/instance.py
+#, fuzzy
+msgid "Unable to save"
+msgstr "تعذر الحفظ"
+
+#: jamovi/server/jamovi/server/instance.py
+#, fuzzy
+msgid "Unable to save {}"
+msgstr "无法 حفظ {}"
+
+#: jamovi/client/main/store/pagemodules.js:224
+#, fuzzy
+msgid "Unable to uninstall module"
+msgstr "تعذر إلغاء تثبيت الوحدة"
+
+#: jamovi/client/main/store/pagemodules.js:124
+#, fuzzy
+msgid "Unavailable"
+msgstr "غير متاح"
+
+#: jamovi/client/main/ribbon/annotationtab.js:123
+#, fuzzy
+msgid "Underline"
+msgstr "التسطير"
+
+#: jamovi/client/main/ribbon/annotationtab.js:115
+#: jamovi/client/main/ribbon/datatab.js:24
+#: jamovi/client/main/ribbon/variablestab.js:18
+#, fuzzy
+msgid "Undo Edit"
+msgstr "إلغاء تحرير"
+
+#: jamovi/client/main/instance.js:317
+#: jamovi/client/main/instance.js:324
+#: jamovi/client/main/notification.js:81
+#: jamovi/server/jamovi/server/compute/messages.py
+#, fuzzy
+msgid "Unexpected error"
+msgstr "خطأ غير متوقع"
+
+#: jamovi/server/jamovi/server/instance.py
+#, fuzzy
+msgid "Unrecognised file format"
+msgstr "تنسيق ملف غير معترف به"
+
+#: jamovi/server/jamovi/server/formatio/blank.py
+#, fuzzy
+msgid "Untitled"
+msgstr "عديم العنوان"
+
+#: jamovi/client/main/ribbon/appmenu.js:133
+#: jamovi/client/main/store/pagemodules.js:127
+#, fuzzy
+msgid "Update"
+msgstr "تحديث"
+
+#: jamovi/client/main/store/pagemodules.js:253
+#, fuzzy
+msgid "Update module {moduleName} to version {version}"
+msgstr "تحديث الوحدة {moduleName} إلى الإصدار {version}"
+
+#: jamovi/client/main/instance.js:199
+#: jamovi/client/main/instance.js:238
+#: jamovi/client/main/instance.js:241
+#, fuzzy
+msgid "Upload failed"
+msgstr "فشل التحميل"
+
+#: jamovi/client/main/instance.js:206
+#: jamovi/client/main/instance.js:210
+#, fuzzy
+msgid "Uploading"
+msgstr "تحميل"
+
+#: jamovi/client/main/editors/transformeditor.js:389
+#, fuzzy
+msgid "use"
+msgstr "استخدم"
+
+#: jamovi/client/main/editors/transformeditor.js:260
+#, fuzzy
+msgid "used by"
+msgstr "تمت بواسطة"
+
+#: jamovi/client/main/vareditor/recodedvarwidget.js:30
+#, fuzzy
+msgid "using transform"
+msgstr "باستخدام تحويل"
+
+#: jamovi/server/jamovi/server/instance.py
+#, fuzzy
+msgid "Value is too large for column '{}' of type integer"
+msgstr "القيمة كبيرة جدًا للعمود '{}' من نوع الصحيح"
+
+#: jamovi/client/analysisui/formatdef.js:107
+#, fuzzy
+msgid "Variable {0}"
+msgstr "متغير {0}"
+
+#: jamovi/client/main/vareditor/editorwidget.js:67
+#, fuzzy
+msgid "Variable Description"
+msgstr "وصف المتغير"
+
+#: jamovi/client/main/vareditor/editorwidget.js:53
+#, fuzzy
+msgid "Variable Name"
+msgstr "اسم المتغير"
+
+#: jamovi/client/main/ribbon/datatab.js:38
+#, fuzzy
+msgid "Variable setup"
+msgstr "إعداد المتغير"
+
+#: jamovi/client/main/editors/transformeditor.js:62
+#, fuzzy
+msgid "Variable suffix"
+msgstr "لاحقة المتغير"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:245
+#, fuzzy
+msgid "Variable: {v}"
+msgstr "متغير: {v}"
+
+#: jamovi/client/main/ribbon/datatab.js:28
+#: jamovi/client/main/ribbon/variablestab.js:13
+#: jamovi/client/main/ribbon/variablestab.js:22
+#: jamovi/client/main/vareditor/formulatoolbar.js:224
+#: jamovi/client/main/variablesview.js:62
+#, fuzzy
+msgid "Variables"
+msgstr "متغيرات"
+
+#: jamovi/client/analysisui/formatdef.js:117
+#, fuzzy
+msgid "Variables {list}"
+msgstr "المتغيرات {list}"
+
+#: jamovi/client/main/variablesview.js:41
+#, fuzzy
+msgid "Variables List View"
+msgstr "عرض قائمة المتغيرات"
+
+#: jamovi/client/main/variablesview.js:111
+#, fuzzy
+msgid "Variables View"
+msgstr "عرض المتغيرات"
+
+#: jamovi/client/main/ribbon/appmenu.js:176
+#, fuzzy
+msgid "Version {v}"
+msgstr "الإصدار {v}"
+
+#: jamovi/client/main/ribbon/appmenu.js:77
+#, fuzzy
+msgid "Visible"
+msgstr "مرئي"
+
+#: jamovi/client/main/backstage.js:1029
+#: jamovi/client/main/backstage.js:1052
+#: jamovi/client/main/resultspanel.js:743
+#, fuzzy
+msgid "Web Page {ext}"
+msgstr "صفحة ويب {ext}"
+
+#: jamovi/client/main/ribbon/datatab.js:18
+#: jamovi/client/main/ribbon/datatab.js:41
+#: jamovi/client/resultsview/main.js:334
+#: jamovi/server/jamovi/server/analyses/weights.py
+#, fuzzy
+msgid "Weights"
+msgstr "الأوزان"
+
+#: jamovi/client/main/vareditor/missingvaluelistitem.js:33
+#, fuzzy
+msgid "when"
+msgstr "عندما"
+
+#: jamovi/client/main/vareditor/formulatoolbar.js:122
+#, fuzzy
+msgid "When the variable contains a missing value, use the value, otherwise the else."
+msgstr "عندما يحتوي المتغير على قيمة مفقودة، استخدم القيمة، وإلا استخدم الخيار الآخر."
+
+#: jamovi/client/main/utils/clipboardprompt.js:22
+#, fuzzy
+msgid "Why is this additional step necessary?"
+msgstr "لماذا هذا الإجراء الإضافي ضروري؟"
+
+#: jamovi/server/jamovi/server/instance.py
+#, fuzzy
+msgid "You cannot delete rows while filtered rows are hidden"
+msgstr "لا يمكن حذف الصفوف أثناء إخفاء الصفوف المفلترة"
+
+#: jamovi/server/jamovi/server/instance.py
+#, fuzzy
+msgid "You cannot insert rows while filtered rows are hidden"
+msgstr "لا يمكنك إدراج صفوف أثناء إخفاء الصفوف"
+
+#: jamovi/server/jamovi/server/instance.py
+#, fuzzy
+msgid "You cannot modify columns that affect filters when filtered rows are hidden"
+msgstr "لا يمكن تعديل الأعمدة التي تؤثر على المرشحات عند إخفاء صفوف المرشح"
+
+#: jamovi/server/jamovi/server/instance.py
+#, fuzzy
+msgid "You cannot modify transforms that affect filters when filtered rows are hidden"
+msgstr "لا يمكن تعديل التحويلات التي تؤثر على المرشحات عند إخفاء الصفوف المفلترة"
+
+#: jamovi/server/jamovi/server/syncs/http.py
+#, fuzzy
+msgid "You do not have appropriate permissions (403)"
+msgstr "ليس لديك صلاحيات مناسبة (403)"
+
+#: jamovi/client/main/main.js:142
+msgid "Your connection has been lost. Please refresh the page to continue."
+msgstr "لقد فقد اتصالك. يرجى تحديث الصفحة للمتابعة."
+
+#: jamovi/client/main/utils/headeralert.js:32
+#, fuzzy
+msgid "Your web browser prevented jamovi from opening a new tab"
+msgstr "منع متصفح الويب jamovi من فتح علامة تبويب جديدة"
+
+#: jamovi/client/main/ribbon/appmenu.js:50
+msgid "Zoom"
+msgstr "التكبير"
+
+#: jamovi/client/main/ribbon/appmenu.js:65
+#, fuzzy
+msgid "Zoom in"
+msgstr "تمام الشاشة"
+
+#: jamovi/client/main/ribbon/appmenu.js:63
+#, fuzzy
+msgid "Zoom out"
+msgstr "تصغير"

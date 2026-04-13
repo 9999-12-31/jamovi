@@ -1,0 +1,83 @@
+
+.silky-option-text-input.silky-option-small-text {
+    width: 25px;
+}
+
+.silky-option-text-input.silky-option-normal-text {
+    width: 50px;
+}
+
+.silky-option-text-input.silky-option-large-text {
+    width: 100px;
+}
+
+.silky-option-text-input.silky-option-largest-text {
+    width: 200px;
+}
+
+.silky-option-text-input {
+    padding-inline-start: 3px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.silky-option-text-input.frameless-textbox {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 3px 3px 3px;
+  border: 1px solid transparent;
+  z-index: 98;
+  background-color: transparent
+}
+
+.silky-option-text-input.frameless-textbox:focus {
+  box-shadow: 0 0 5px rgba(181, 202, 239, 1);
+  border: 1px solid rgba(181, 202, 239, 1);
+  background-color: white;
+  z-index: 99;
+}
+
+.float-up {
+    z-index: 100;
+}
+
+.centre-text {
+    text-align: center
+}
+
+.jmv-option-text-input-suggested:not(.silky-option-text-start)  {
+    margin-inline-start: 1ex;
+}
+
+.jmv-option-text-input-suggested {
+    background-color: white;
+    border: 1px solid #bebebe;
+    min-width: 100px;
+    max-width: 300px;
+    max-height: 200px;
+}
+
+.jmv-option-text-input-suggested-option {
+    padding: 4px;
+    white-space: nowrap;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.jmv-option-text-input-suggested-option-label {
+    display: inline;
+    font-size: 80%;
+    color: #808080;
+    float: right;
+}
+
+.jmv-option-text-input-suggested-option-value {
+    display: inline;
+}
+
+.jmv-option-text-input-suggested-option:hover {
+    background-color: #F2F2F2;
+}

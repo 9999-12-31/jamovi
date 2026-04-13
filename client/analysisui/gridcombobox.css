@@ -1,0 +1,18 @@
+
+.silky-option-combo-input {
+    max-width: 350px;
+}
+
+
+.silky-layout-container > .first-cell > .silky-option-combo-label {
+    margin-inline-start: 0px;
+}
+
+.silky-layout-container > .last-cell > .silky-option-combo-input {
+    margin-inline-end: 0px;
+}
+
+.silky-option-combo-input, .silky-option-combo-input option {
+    padding-top: 3px;
+    padding-bottom: 2px;
+}

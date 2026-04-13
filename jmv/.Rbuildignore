@@ -1,0 +1,16 @@
+^renv$
+^renv\.lock$
+
+^\..*
+^.*\.Rproj$
+^.*\.jmo$
+
+^temp$
+^build/js$
+^build/R$
+^build/R.*$
+^jamovi$
+^package.json$
+^README.md$
+^\.Rproj\.user$
+^\.github$
