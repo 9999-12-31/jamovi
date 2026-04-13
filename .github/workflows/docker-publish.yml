@@ -101,7 +101,7 @@ jobs:
         with:
           registry: ${{ env.REGISTRY_GHCR }}
           username: ${{ github.repository_owner }}
-          password: ${{ github.token }}
+          password: ${{ secrets.GHCR_TOKEN }}
 
       - name: Extract metadata
         id: meta
