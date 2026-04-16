@@ -428,13 +428,6 @@ ready(async() => {
 
     let ribbon = new Ribbon(ribbonModel);
     document.querySelector<HTMLElement>('.silky-ribbon').append(ribbon);
-    //const backstageElement = document.querySelector('#backstage');
-    let backstage = new Backstage(backstageModel);
-    backstage.setAttribute('id', 'backstage');
-    backstage.setAttribute('role', "menu");
-    backstage.setAttribute('aria-label', "File");
-    backstage.setAttribute('aria-orientation', "vertical");
-    document.body.prepend(backstage);
 
     ribbon.model.on('analysisSelected', async function(analysis) {
         const translate = await instance.modules().getTranslator(analysis.ns);
@@ -458,8 +451,13 @@ ready(async() => {
 
     ribbon.addEventListener('tabSelected', function(event: CustomEvent<{tabName: keyof TabTypes, withMouse: boolean}>) {
         let {tabName, withMouse} = event.detail
-        if (tabName === 'file')
-            backstage.activate(withMouse);
+        if (tabName === 'file') {
+            backstage.deactivate(withMouse);
+            dataSetModel.set('editingVar', null);
+            if (splitPanel.mode === 'data')
+                splitPanel.setMode('results', true);
+            optionspanel.hideOptions();
+        }
         else if (tabName === 'data') {
             setMainTableMode('spreadsheet');
             if (splitPanel.mode === 'results')
