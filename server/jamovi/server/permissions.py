@@ -39,7 +39,7 @@ class Permissions:
             self.library.browseable = conf.get('permissions_library_browseable', '0') == '1'
             self.library.addRemove = conf.get('permissions_library_add_remove', '0') == '1'
             self.library.showHide = conf.get('permsissions_library_show_hide', '0') == '1'
-            self.library.sideLoad = False
+            self.library.sideLoad = conf.get('permissions_library_side_load', '0') == '1'
             self.browse.local = False
             self.browse.examples = True
             self.open.local = False

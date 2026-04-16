@@ -56,11 +56,18 @@ class Store extends HTMLElement {
         });
 
         let i = 0;
-        for (let tab of [
+        const tabs = [
             { name: 'installed', title: _('Installed') },
-            // { name: 'store', title: _('Available') },
-            { name: 'sideload', title: _('Sideload')} ]) {
+        ];
 
+        let browseable = settings.getSetting('permissions_library_browseable', true);
+        if (browseable) {
+            tabs.push({ name: 'store', title: _('Available') });
+        }
+
+        tabs.push({ name: 'sideload', title: _('Sideload') });
+
+        for (let tab of tabs) {
             let $tab = HTML.parse(`<div class="jmv-store-tab store-tabs-list-item store-tabs-auto-select" data-tab="${tab.name}" data-index="${i++}" tabindex="-1" role="tab"><div class="jmv-store-tab-inner">${tab.title}</div></div>`);
             $tabContainer.append($tab);
         }
@@ -93,6 +100,8 @@ class Store extends HTMLElement {
             }
             this.$pages = $pageContainer.querySelectorAll<HTMLElement>('.jmv-store-page');
         });
+
+        this.$pages = $pageContainer.querySelectorAll<HTMLElement>('.jmv-store-page');
 
         settings.on('change:permissions_library_side_load', () => {
             let sideLoad = settings.getSetting('permissions_library_side_load', false);
