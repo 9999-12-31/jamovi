@@ -1,6 +1,0 @@
-build/
-__pycache__/
-readstat.c
-librdata.c
-*.so
-*.pyd

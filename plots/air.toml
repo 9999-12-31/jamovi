@@ -1,8 +1,0 @@
-[format]
-line-width = 100
-indent-width = 4
-indent-style = "space"
-line-ending = "auto"
-persistent-line-breaks = true
-exclude = ["/R/*.h.R"]
-default-exclude = true
