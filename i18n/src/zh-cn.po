@@ -120,11 +120,11 @@ msgstr "已从 {list} 移除 {vars}."
 
 #: jamovi/client/main/ribbon/appmenu.js:255
 msgid "A change of language requires jamovi to be restarted"
-msgstr "更改语言需要重新启动 jamovi"
+msgstr "更改语言需要重新启动"
 
 #: jamovi/server/jamovi/server/formatio/omv.py
 msgid "A newer version of jamovi is required"
-msgstr "需要更新的 jamovi 版本"
+msgstr "需要更新版本"
 
 #: jamovi/client/main/ribbon/appmenu.js:99
 msgid "Accent"
@@ -216,7 +216,7 @@ msgstr "由 {hostname} 托管的在线数据集"
 
 #: jamovi/client/main/main.js:128
 msgid "An unexpected error has occured, and jamovi must now close."
-msgstr "发生了意外错误，jamovi 现在必须关闭。"
+msgstr "发生了意外错误，现在必须关闭。"
 
 #: jamovi/server/jamovi/server/syncs/http.py
 msgid "An unexpected error occurred"
@@ -1689,7 +1689,7 @@ msgstr "固定水平"
 #: jamovi/client/analysisui/main.ts:331
 #, fuzzy
 msgid "Please <em>install or update</em> this module from the jamovi library."
-msgstr "请 <em>安装或更新</em> 此模块从 jamovi 库。"
+msgstr "请 <em>安装或更新</em> 此模块。"
 
 #: jamovi/client/main/viewcontroller.js:355
 msgid "Please use ctrl-v to paste into the spreadsheet."
@@ -2347,7 +2347,7 @@ msgstr "这是一个数据变量。"
 #: jamovi/client/analysisui/main.ts:330
 #, fuzzy
 msgid "This module is either <em>missing or incompatible</em> with this version of jamovi."
-msgstr "此模块要么 <em>丢失或与</em> 此版本的 jamovi <em>不兼容</em>。"
+msgstr "此模块要么 <em>丢失或与</em> 此版本的系统 <em>不兼容</em>。"
 
 #: jamovi/client/main/backstage.js:1136
 #: jamovi/client/main/backstage.js:1271
@@ -2449,7 +2449,7 @@ msgstr "无法访问库"
 
 #: jamovi/server/jamovi/server/downloader.py
 msgid "Unable to access the internet (likely due to a captive portal)"
-msgstr "无法访问互联网（可能是由于captive portal）"
+msgstr "无法访问互联网"
 
 #: jamovi/server/jamovi/server/instance.py
 msgid "Unable to browse {}"

@@ -660,7 +660,7 @@ msgstr "一个不理想的方差分析数据集"
 
 #: package.title
 msgid "Analyses bundled with jamovi"
-msgstr "使用jamovi进行分析"
+msgstr "使用工具进行分析"
 
 #: package/analyses/ancova.title
 #: package/analyses/ancova.menuTitle
