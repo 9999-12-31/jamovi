@@ -1,0 +1,92 @@
+services:
+  jamovi-deps:
+    image: jamovi/jamovi-deps:2.7.11
+    build:
+      context: .
+      dockerfile: docker/deps-Dockerfile
+    profiles:
+      - donotstart
+
+  jamovi: &base
+    image: jamovi/jamovi:2.7.6
+    container_name: jamovi
+    profiles: [main]
+    build:
+      context: .
+      dockerfile: docker/jamovi-Dockerfile
+    ports:
+      - '41337:41337'
+      - '41338:41338'
+      - '41339:41339'
+    command: ["/usr/bin/python3 -u -m jamovi.server 41337 --if=*"]
+    stdin_open: true
+    stop_grace_period: 0.1s
+    environment: &base_env
+
+        # block Rj - don't enable unless you understand the risks!
+        JAMOVI_ALLOW_ARBITRARY_CODE: 'false'
+
+        # for security, jamovi runs across 3 origins
+        #
+        # # separate by port
+        JAMOVI_HOST_A: '127.0.0.1:41337'
+        JAMOVI_HOST_B: '127.0.0.1:41338'
+        JAMOVI_HOST_C: '127.0.0.1:41339'
+
+        # separate by host (RECOMMENDED)
+        # JAMOVI_HOST_A: 'jamovi.127.0.0.1.nip.io:41337'
+        # JAMOVI_HOST_B: 'a.jamovi.127.0.0.1.nip.io:41337'
+        # JAMOVI_HOST_C: 'r.jamovi.127.0.0.1.nip.io:41337'
+
+        # separate by path (NOT RECOMMENDED! REDUCES SECURITY!)
+        # JAMOVI_HOST_A: 'jamovi.127.0.0.1.nip.io:41337'
+        # JAMOVI_HOST_B: 'jamovi.127.0.0.1.nip.io:41337/analyses'
+        # JAMOVI_HOST_C: 'jamovi.127.0.0.1.nip.io:41337/results'
+
+        # prevent unauthorized access
+        # JAMOVI_ACCESS_KEY: 'yourpasswordhere'
+        # then access jamovi with ?access_key=yourpasswordhere added to the url
+        # i.e. 127.0.0.1:41337/?access_key=yourpasswordhere
+        # or alternatively, remove the password requirement:
+        JAMOVI_ACCESS_KEY: ''
+
+    volumes:
+      - $HOME/Documents:/root/Documents
+
+  jamovi-dev:
+    <<: *base
+    container_name: jamovi-dev
+    profiles: [dev]
+    environment:
+      <<: *base_env
+      JAMOVI_DEV_SERVER: "http://vite:5173"
+
+  test:
+    <<: *base
+    container_name: jamovi-tests
+    profiles: [tests]
+    command: ["/usr/bin/python3 -u -m pytest /usr/lib/jamovi/server/jamovi/tests"]
+
+  vite:
+      image: jonathonlove/vite:latest
+      container_name: vite
+      profiles: [dev]
+      privileged: true
+      command: [ 'mkdir -p /source/merged && unionfs-fuse -o cow /source/server:/source/client=RW /source/merged && cd /source/merged && echo installing npm deps && npm install && echo starting vite server && vite --host' ]
+      volumes:
+        - './client/main:/source/client/main'
+        - './client/resultsview:/source/client/resultsview'
+        - './client/analysisui:/source/client/analysisui'
+        - './client/lib:/source/client/lib'
+        - './client/assets:/source/client/assets'
+        - './client/common:/source/client/common'
+        - './client/index.html:/source/client/index.html'
+        - './client/resultsview.html:/source/client/resultsview.html'
+        - './client/analysisui.html:/source/client/analysisui.html'
+        - './client/tsconfig.json:/source/client/tsconfig.json'
+        - './client/vite.config.mts:/source/client/vite.config.mts'
+        - './client/package.json:/source/client/package.json'
+        - './server/jamovi/server/jamovi.proto:/source/server/assets/coms.proto'
+      ports:
+        - '5173:5173'
+        - '24678:24678'

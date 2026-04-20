@@ -1,0 +1,18 @@
+---
+name:  efa
+title: Exploratory Factor Analysis
+jrs:   "1.1"
+
+items:
+    - name:  text
+      title: Exploratory Factor Analysis
+      type:  Preformatted
+      clearWith:
+        - vars
+        - nFactorMethod
+        - nFactors
+        - hideLoadings
+        - rotation
+        - factorMethod
+
+...

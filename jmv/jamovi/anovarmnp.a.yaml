@@ -1,0 +1,97 @@
+---
+name: anovaRMNP
+title: Repeated Measures ANOVA (Non-parametric)
+
+menuGroup: ANOVA
+menuSubgroup: Non-Parametric
+menuTitle: Repeated Measures ANOVA
+menuSubtitle: Friedman
+
+version: '1.0.0'
+jas: '1.2'
+
+description:
+    main: >
+        The Friedman test is used to explore the relationship between a
+        continuous dependent variable and a categorical explanatory variable,
+        where the explanatory variable is 'within subjects' (where multiple
+        measurements are from the same subject). It is analogous to Repeated
+        Measures ANOVA, but with the advantage of being non-parametric, and not
+        requiring the assumptions of normality or homogeneity of variances.
+        However, it has the limitation that it can only test a single
+        explanatory variable at a time.
+
+    R:
+        dontrun: false
+        usage: |
+            data('bugs', package = 'jmv')
+
+            anovaRMNP(bugs, measures = vars(LDLF, LDHF, HDLF, HDHF))
+
+            #
+            #  REPEATED MEASURES ANOVA (NON-PARAMETRIC)
+            #
+            #  Friedman
+            #  ────────────────────────
+            #    χ²      df    p
+            #  ────────────────────────
+            #    55.8     3    < .001
+            #  ────────────────────────
+            #
+
+completeWhenFilled: true
+
+options:
+    - name: data
+      type: Data
+      description:
+          R: the data as a data frame
+
+    - name: measures
+      title: Measures
+      type: Variables
+      suggested:
+        - continuous
+      permitted:
+        - numeric
+      description:
+          R: a vector of strings naming the repeated measures variables
+
+    - name: pairs
+      title: Pairwise comparisons (Durbin-Conover)
+      type: Bool
+      default: false
+      description:
+          R: >
+            `TRUE` or `FALSE` (default), perform pairwise comparisons
+
+    - name: desc
+      title: Descriptives
+      type: Bool
+      default: false
+      description:
+          R: >
+            `TRUE` or `FALSE` (default), provide descriptive statistics
+
+    - name: plots
+      title: Descriptive plot
+      type: Bool
+      default: false
+      description:
+          R: >
+            `TRUE` or `FALSE` (default), provide a descriptive plot
+
+    - name: plotType
+      title: Plot Type
+      type: List
+      options:
+        - name: means
+          title: Means
+        - name: medians
+          title: Medians
+      default: means
+      description:
+          R: >
+            `'means'` (default) or `'medians'`, the error bars to use
+            in the plot
+...

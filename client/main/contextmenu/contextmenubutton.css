@@ -1,0 +1,49 @@
+
+
+body[dir="ltr"] .jmv-context-menu-arrow {
+    transform: rotate(180deg);
+}
+
+.jmv-context-menu-arrow {
+    width: 10px;
+    height: 10px;
+    background-image: url('../../assets/context-menu-arrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 0px;
+    margin-inline-end: 0px;
+    margin-bottom: 0px;
+    margin-inline-start: 20px;
+    justify-self: auto;
+}
+
+.jmv-ribbon-button-menu.context-menu {
+    margin-inline-start: 0px;
+    margin-top: -1px;
+    inset-inline-start: 100% ;
+    top: 0;
+    opacity: 1;
+    transition: .2s opacity, 0.2s visibility;
+    visibility: visible;
+}
+
+.jmv-ribbon-button-menu.context-menu.left {
+    inset-inline-start: auto ;
+    inset-inline-end: 100%;
+}
+
+.jmv-ribbon-button-menu.context-menu.right {
+    inset-inline-start: 100%;
+    inset-inline-end: auto;
+}
+
+.jmv-ribbon-button-menu.context-menu.up {
+    top: auto ;
+    bottom: 0;
+}
+
+.jmv-ribbon-button-menu.context-menu.down {
+    top: 0;
+    bottom: auto;
+}

@@ -1,0 +1,146 @@
+
+.silky-list-item .power-box .button-box .button {
+    width: 8px;
+    height: 8px;
+    filter: hue-rotate(40deg) saturate(5) grayscale(100%);
+}
+
+.silky-list-item .power-box .value {
+    cursor: text;
+}
+
+.silky-options-supplier-group .msg {
+    opacity: 0;
+    position: absolute;
+    bottom: 0px;
+    inset-inline-start: 0px;
+    inset-inline-end: 0px;
+    z-index: 300;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 3px;
+    line-height: 1.5em;
+    color: #484848;
+    transition: 0.5s opacity, 0.5s visibility;
+    animation: blinkingBackground 0.5s infinite;
+    visibility: hidden;
+}
+
+.silky-options-supplier-group .msg.active, .silky-options-supplier-group .msg.hovering {
+    opacity: 1;
+    visibility: visible;
+}
+
+@keyframes blinkingBackground {
+    0%    { background-color: #fffbe5; }
+    50%   { background-color: #fff5c0; }
+    100%  { background-color: #fffbe5; }
+}
+
+.silky-list-item .power-box .button-box .up {
+    background-image: url('../assets/filters-up-arrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 1px;
+}
+
+.silky-list-item .power-box .button-box .down {
+    background-image: url('../assets/filters-down-arrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 1px;
+}
+
+.silky-options-supplier-group.initialising * {
+    display: none;
+}
+
+.supplier-search {
+    height: 25px;
+    opacity: 1;
+    transition: 0.2s opacity, 0.2s visibility;
+    background: white;
+    border-bottom: 1px solid rgb(130, 130, 130);
+    z-index: 90;
+    visibility: visible;
+}
+
+.outer-text {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.outer-text .text {
+    /*user-select: text ;*/
+    /*-webkit-user-select: text;*/
+    /*-moz-user-select: text;*/
+    white-space: nowrap;
+    padding: 0;
+    outline: none;
+    margin-top: -1px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    text-indent: 5px;
+    font-size: 100%;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.outer-text .text::placeholder {
+  color: rgb(185, 185, 185);
+  font-size: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.search {
+    position: sticky;
+    background: none;
+    border: none;
+    padding-top: 0px;
+    padding-inline-end: 0px;
+    padding-bottom: 1px;
+    padding-inline-start: 0px;
+    top: 2px;
+    inset-inline-end: 2px;
+    inset-inline-start: 2px;
+    height: 0px;
+    z-index: 100;
+    justify-self: flex-end;
+    grid-area: 1 / 1 / span 1 / -1;
+}
+
+.search > .image {
+    width: 20px;
+    height: 20px;
+    filter: opacity(60%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-image: url('../assets/variable-search.svg');
+    border-radius: 3px;
+}
+
+.search > .image:hover {
+    background-color: #dadada;
+}
+
+.silky-list-item .power-box {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: opacity .2s, 0.2s visibility;
+    visibility: hidden;
+}
+
+.silky-list-item .power-box.power-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.silky-list-item .power-box .button-box {
+    margin-inline-end: 3px;
+    margin-inline-start: 3px;
+}

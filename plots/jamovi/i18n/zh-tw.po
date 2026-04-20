@@ -1,0 +1,1288 @@
+#
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2021-07-26 12:08:06+01000\n"
+"PO-Revision-Date: 2026-04-05 11:47+0000\n"
+"Last-Translator: 陳正昌 <chencc99@gmail.com>\n"
+"Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
+"projects/jamovi/jmvplots-i18n/zh_Hant/>\n"
+"Language: zh-tw\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17-dev\n"
+
+#: R/jmvbar.b.R
+msgid "{var} (mean{error})"
+msgstr "{var} (平均 {error})"
+
+#: jmvbar/ui/mode/continuous[1][0][0][0]/yAxisRangeType_ci/ciWidth.suffix
+#: jmvline/ui/mode/aggregate[0][1][0]/yAxisRangeType_ci/ciWidth.suffix
+msgid "%"
+msgstr "%"
+
+#: pareto/results/plot.description
+msgid "a Pareto chart"
+msgstr "柏拉圖"
+
+#: jmvline/options/aggregateType.title
+#: jmvline/ui/mode/aggregate[0][0][0][0].label
+msgid "Aggregate"
+msgstr "彙總"
+
+#: jmvline/ui/mode/aggregate[0].label
+msgid "Aggregate Options"
+msgstr "彙總選項"
+
+#: jmvline/options/mode/aggregate.title
+msgid "Aggregated data"
+msgstr "彙總資料"
+
+#: jmvbar/options/titleAlign.title
+#: jmvbar/options/subtitleAlign.title
+#: jmvbar/options/captionAlign.title
+#: jmvbar/options/xLabelAlign.title
+#: jmvbar/options/yLabelAlign.title
+#: jmvbox/options/titleAlign.title
+#: jmvbox/options/subtitleAlign.title
+#: jmvbox/options/captionAlign.title
+#: jmvbox/options/xLabelAlign.title
+#: jmvbox/options/yLabelAlign.title
+#: jmvhist/options/titleAlign.title
+#: jmvhist/options/subtitleAlign.title
+#: jmvhist/options/captionAlign.title
+#: jmvhist/options/xLabelAlign.title
+#: jmvhist/options/yLabelAlign.title
+#: jmvline/options/titleAlign.title
+#: jmvline/options/subtitleAlign.title
+#: jmvline/options/captionAlign.title
+#: jmvline/options/xLabelAlign.title
+#: jmvline/options/yLabelAlign.title
+#: pareto/options/titleAlign.title
+#: pareto/options/subtitleAlign.title
+#: pareto/options/captionAlign.title
+#: pareto/options/xLabelAlign.title
+#: pareto/options/yLabelAlign.title
+#: scat/options/titleAlign.title
+#: scat/options/subtitleAlign.title
+#: scat/options/captionAlign.title
+#: scat/options/xLabelAlign.title
+#: scat/options/yLabelAlign.title
+msgid "Align"
+msgstr "對齊"
+
+#: jmvbar/results/plot.description
+msgid "an image containing the bar plot"
+msgstr "包含長條圖的圖像"
+
+#: jmvbox/results/plot.description
+msgid "an image containing the box plot"
+msgstr "包含盒狀圖的圖像"
+
+#: jmvhist/results/plot.description
+msgid "an image containing the histogram"
+msgstr "包含直方圖的圖像"
+
+#: jmvline/results/plot.description
+msgid "an image containing the line plot"
+msgstr "包含折線圖的圖像"
+
+#: scat/results/plot.description
+msgid "an image containing the scatter plot"
+msgstr "包含散布圖的圖像"
+
+#: jmvbar/options/yAxisRangeType/auto.title
+#: jmvbox/options/yAxisRangeType/auto.title
+#: jmvhist/options/binWidthType/auto.title
+#: jmvhist/options/yAxisRangeType/auto.title
+#: jmvhist/options/xAxisRangeType/auto.title
+#: jmvline/options/yAxisRangeType/auto.title
+#: scat/options/yAxisRangeType/auto.title
+#: scat/options/xAxisRangeType/auto.title
+msgid "Auto"
+msgstr "自動"
+
+#: jmvbar/ui[4].label
+#: jmvbox/ui[3].label
+#: jmvhist/ui[3].label
+#: jmvline/ui[5].label
+#: pareto/ui[3].label
+#: scat/ui[3].label
+msgid "Axes"
+msgstr "軸"
+
+#: jmvbar/ui[1][0][0][0].label
+#: pareto/ui[1][0][0][0].label
+msgid "Bar"
+msgstr "長條"
+
+#: package/analyses/jmvbar.title
+#: package/analyses/jmvbar.menuTitle
+#: jmvbar/options.title
+#: jmvbar/ui.title
+#: jmvbar/results.title
+msgid "Bar Plot"
+msgstr "長條圖"
+
+#: jmvbar/options/groupBarType.title
+msgid "Bar type"
+msgstr "長條類型"
+
+#: jmvbar/ui[2][0][0][0].label
+msgid "Bar Type"
+msgstr "長條類型"
+
+#: jmvhist/options/binOpacity.title
+msgid "Bin opacity"
+msgstr "區間透明度"
+
+#: jmvhist/options/binWidth.title
+msgid "Bin width"
+msgstr "區間寬度"
+
+#: jmvhist/options/binWidthType.title
+#: jmvhist/ui[1][0][0][0].label
+msgid "Bin Width"
+msgstr "區間寬度"
+
+#: jmvbar/options/titleFontFace/bold.title
+#: jmvbar/options/subtitleFontFace/bold.title
+#: jmvbar/options/captionFontFace/bold.title
+#: jmvbar/options/xLabelFontFace/bold.title
+#: jmvbar/options/yLabelFontFace/bold.title
+#: jmvbar/options/legendTitleFontFace/bold.title
+#: jmvbar/options/legendLabelFontFace/bold.title
+#: jmvbox/options/titleFontFace/bold.title
+#: jmvbox/options/subtitleFontFace/bold.title
+#: jmvbox/options/captionFontFace/bold.title
+#: jmvbox/options/xLabelFontFace/bold.title
+#: jmvbox/options/yLabelFontFace/bold.title
+#: jmvbox/options/legendTitleFontFace/bold.title
+#: jmvbox/options/legendLabelFontFace/bold.title
+#: jmvhist/options/titleFontFace/bold.title
+#: jmvhist/options/subtitleFontFace/bold.title
+#: jmvhist/options/captionFontFace/bold.title
+#: jmvhist/options/xLabelFontFace/bold.title
+#: jmvhist/options/yLabelFontFace/bold.title
+#: jmvhist/options/legendTitleFontFace/bold.title
+#: jmvhist/options/legendLabelFontFace/bold.title
+#: jmvline/options/titleFontFace/bold.title
+#: jmvline/options/subtitleFontFace/bold.title
+#: jmvline/options/captionFontFace/bold.title
+#: jmvline/options/xLabelFontFace/bold.title
+#: jmvline/options/yLabelFontFace/bold.title
+#: jmvline/options/legendTitleFontFace/bold.title
+#: jmvline/options/legendLabelFontFace/bold.title
+#: pareto/options/titleFontFace/bold.title
+#: pareto/options/subtitleFontFace/bold.title
+#: pareto/options/captionFontFace/bold.title
+#: pareto/options/xLabelFontFace/bold.title
+#: pareto/options/yLabelFontFace/bold.title
+#: scat/options/titleFontFace/bold.title
+#: scat/options/subtitleFontFace/bold.title
+#: scat/options/captionFontFace/bold.title
+#: scat/options/xLabelFontFace/bold.title
+#: scat/options/yLabelFontFace/bold.title
+#: scat/options/legendTitleFontFace/bold.title
+#: scat/options/legendLabelFontFace/bold.title
+msgid "Bold"
+msgstr "粗體"
+
+#: jmvbar/options/titleFontFace/bold-italic.title
+#: jmvbar/options/subtitleFontFace/bold-italic.title
+#: jmvbar/options/captionFontFace/bold-italic.title
+#: jmvbar/options/xLabelFontFace/bold-italic.title
+#: jmvbar/options/yLabelFontFace/bold-italic.title
+#: jmvbar/options/legendTitleFontFace/bold-italic.title
+#: jmvbar/options/legendLabelFontFace/bold-italic.title
+#: jmvbox/options/titleFontFace/bold-italic.title
+#: jmvbox/options/subtitleFontFace/bold-italic.title
+#: jmvbox/options/captionFontFace/bold-italic.title
+#: jmvbox/options/xLabelFontFace/bold-italic.title
+#: jmvbox/options/yLabelFontFace/bold-italic.title
+#: jmvbox/options/legendTitleFontFace/bold-italic.title
+#: jmvbox/options/legendLabelFontFace/bold-italic.title
+#: jmvhist/options/titleFontFace/bold-italic.title
+#: jmvhist/options/subtitleFontFace/bold-italic.title
+#: jmvhist/options/captionFontFace/bold-italic.title
+#: jmvhist/options/xLabelFontFace/bold-italic.title
+#: jmvhist/options/yLabelFontFace/bold-italic.title
+#: jmvhist/options/legendTitleFontFace/bold-italic.title
+#: jmvhist/options/legendLabelFontFace/bold-italic.title
+#: jmvline/options/titleFontFace/bold-italic.title
+#: jmvline/options/subtitleFontFace/bold-italic.title
+#: jmvline/options/captionFontFace/bold-italic.title
+#: jmvline/options/xLabelFontFace/bold-italic.title
+#: jmvline/options/yLabelFontFace/bold-italic.title
+#: jmvline/options/legendTitleFontFace/bold-italic.title
+#: jmvline/options/legendLabelFontFace/bold-italic.title
+#: pareto/options/titleFontFace/bold-italic.title
+#: pareto/options/subtitleFontFace/bold-italic.title
+#: pareto/options/captionFontFace/bold-italic.title
+#: pareto/options/xLabelFontFace/bold-italic.title
+#: pareto/options/yLabelFontFace/bold-italic.title
+#: scat/options/titleFontFace/bold-italic.title
+#: scat/options/subtitleFontFace/bold-italic.title
+#: scat/options/captionFontFace/bold-italic.title
+#: scat/options/xLabelFontFace/bold-italic.title
+#: scat/options/yLabelFontFace/bold-italic.title
+#: scat/options/legendTitleFontFace/bold-italic.title
+#: scat/options/legendLabelFontFace/bold-italic.title
+msgid "Bold Italic"
+msgstr "粗斜體"
+
+#: jmvbar/options/legendPosition/bottom.title
+#: jmvbar/options/legendJustification/bottom.title
+#: jmvbox/options/legendPosition/bottom.title
+#: jmvbox/options/legendJustification/bottom.title
+#: jmvhist/options/legendPosition/bottom.title
+#: jmvhist/options/legendJustification/bottom.title
+#: jmvline/options/legendPosition/bottom.title
+#: jmvline/options/legendJustification/bottom.title
+#: scat/options/legendPosition/bottom.title
+#: scat/options/legendJustification/bottom.title
+msgid "Bottom"
+msgstr "底部"
+
+#: jmvbox/ui[1][0][0][0].label
+msgid "Box Element"
+msgstr "盒狀圖元素"
+
+#: package/analyses/jmvbox.title
+#: package/analyses/jmvbox.menuTitle
+#: jmvbox/options.title
+#: jmvbox/ui.title
+#: jmvbox/results.title
+msgid "Box Plot"
+msgstr "盒狀圖"
+
+#: jmvbar/options/mode/categorical.title
+msgid "Categorical"
+msgstr "類別型"
+
+#: jmvbar/options/catvar.title
+#: jmvbar/ui/mode/categorical[0][0].label
+msgid "Categorical Variable"
+msgstr "類別變項"
+
+#: jmvbar/options/titleAlign/center.title
+#: jmvbar/options/subtitleAlign/center.title
+#: jmvbar/options/captionAlign/center.title
+#: jmvbar/options/xLabelAlign/center.title
+#: jmvbar/options/yLabelAlign/center.title
+#: jmvbar/options/legendJustification/center.title
+#: jmvbox/options/titleAlign/center.title
+#: jmvbox/options/subtitleAlign/center.title
+#: jmvbox/options/captionAlign/center.title
+#: jmvbox/options/xLabelAlign/center.title
+#: jmvbox/options/yLabelAlign/center.title
+#: jmvbox/options/legendJustification/center.title
+#: jmvhist/options/titleAlign/center.title
+#: jmvhist/options/subtitleAlign/center.title
+#: jmvhist/options/captionAlign/center.title
+#: jmvhist/options/xLabelAlign/center.title
+#: jmvhist/options/yLabelAlign/center.title
+#: jmvhist/options/legendJustification/center.title
+#: jmvline/options/titleAlign/center.title
+#: jmvline/options/subtitleAlign/center.title
+#: jmvline/options/captionAlign/center.title
+#: jmvline/options/xLabelAlign/center.title
+#: jmvline/options/yLabelAlign/center.title
+#: jmvline/options/legendJustification/center.title
+#: pareto/options/titleAlign/center.title
+#: pareto/options/subtitleAlign/center.title
+#: pareto/options/captionAlign/center.title
+#: pareto/options/xLabelAlign/center.title
+#: pareto/options/yLabelAlign/center.title
+#: scat/options/titleAlign/center.title
+#: scat/options/subtitleAlign/center.title
+#: scat/options/captionAlign/center.title
+#: scat/options/xLabelAlign/center.title
+#: scat/options/yLabelAlign/center.title
+#: scat/options/legendJustification/center.title
+msgid "Center"
+msgstr "中央"
+
+#: jmvbar/options/errorBars/ci.title
+#: jmvline/options/errorBars/ci.title
+#: scat/options/lineSE.title
+msgid "Confidence interval"
+msgstr "信賴區間"
+
+#: jmvbar/options/mode/continuous.title
+msgid "Continuous"
+msgstr "連續"
+
+#: jmvbar/ui/mode/continuous[1].label
+msgid "Continuous Options"
+msgstr "連續選項"
+
+#: jmvbar/options/convar.title
+#: jmvbar/ui/mode/continuous[0][0].label
+msgid "Continuous Variable"
+msgstr "連續變項"
+
+#: jmvbar/options/mode/counts.title
+#: jmvbar/options/counts.title
+#: jmvbar/ui/mode/counts[0][0].label
+msgid "Counts"
+msgstr "次數"
+
+#: pareto/options/counts.title
+#: pareto/ui[0][1].label
+msgid "Counts (optional)"
+msgstr "次數 (可選)"
+
+#: package.description
+msgid "Create elegant and interactive plots built on 'ggplot2'. The package is designed to provide a convenience layer to 'ggplot2' within jamovi."
+msgstr "建立基於 'ggplot2' 的精美且互動式圖表。此套件旨在為 jamovi 中的 'ggplot2' 提供便捷的操作層。"
+
+#: R/pareto.b.R
+msgid "Cumulative Percentage"
+msgstr "累積百分比"
+
+#: jmvline/options/mode.title
+msgid "Data display"
+msgstr "資料顯示"
+
+#: jmvhist/ui[1][0][1][0].label
+msgid "Density"
+msgstr "密度"
+
+#: jmvhist/options/densityOpacity.title
+msgid "Density opacity"
+msgstr "密度透明度"
+
+#: jmvline/options/groupColor.title
+msgid "Different colors"
+msgstr "不同顏色"
+
+#: jmvline/options/groupLineType.title
+msgid "Different line types"
+msgstr "不同線型"
+
+#: jmvline/options/groupPointType.title
+msgid "Different point types"
+msgstr "不同點型"
+
+#: jmvbar/options/legendDirection.title
+#: jmvbox/options/legendDirection.title
+#: jmvhist/options/legendDirection.title
+#: jmvline/options/legendDirection.title
+#: scat/options/legendDirection.title
+msgid "Direction"
+msgstr "方向"
+
+#: jmvline/options/groupPositionDodge.title
+msgid "Dodge width"
+msgstr "錯開寬度"
+
+#: jmvbar/options/errorBarSize.title
+#: jmvline/options/errorBarSize.title
+msgid "Error bar line size"
+msgstr "誤差長條線寬"
+
+#: jmvbar/ui/mode/continuous[1][1][0].label
+#: jmvline/ui/mode/aggregate[0][1][1].label
+msgid "Error Bar Styling"
+msgstr "誤差長條樣式"
+
+#: jmvbar/options/errorBarWidth.title
+#: jmvline/options/errorBarWidth.title
+msgid "Error bar width"
+msgstr "誤差長條寬度"
+
+#: jmvbar/options/errorBars.title
+#: jmvline/options/errorBars.title
+msgid "Error bars"
+msgstr "誤差長條"
+
+#: jmvbar/ui/mode/continuous[1][0][0][0].label
+#: jmvline/ui/mode/aggregate[0][1][0].label
+msgid "Error Bars"
+msgstr "誤差長條"
+
+#: jmvbar/options/naOmit.title
+#: jmvbox/options/naOmit.title
+#: jmvline/options/naOmit.title
+msgid "Exclude cases listwise"
+msgstr "在所有分析中排除 (完全排除)"
+
+#: package/analyses/scat.menuGroup
+#: package/analyses/pareto.menuGroup
+msgid "Exploration"
+msgstr "探索"
+
+#: jmvbar/options/flipAxes.title
+#: jmvbox/options/flipAxes.title
+#: jmvhist/options/flipAxes.title
+#: jmvline/options/flipAxes.title
+#: scat/options/flipAxes.title
+msgid "Flip axes"
+msgstr "翻轉坐標軸"
+
+#: jmvbar/options/titleFontFace.title
+#: jmvbar/options/subtitleFontFace.title
+#: jmvbar/options/captionFontFace.title
+#: jmvbar/options/xLabelFontFace.title
+#: jmvbar/options/yLabelFontFace.title
+#: jmvbox/options/titleFontFace.title
+#: jmvbox/options/subtitleFontFace.title
+#: jmvbox/options/captionFontFace.title
+#: jmvbox/options/xLabelFontFace.title
+#: jmvbox/options/yLabelFontFace.title
+#: jmvhist/options/titleFontFace.title
+#: jmvhist/options/subtitleFontFace.title
+#: jmvhist/options/captionFontFace.title
+#: jmvhist/options/xLabelFontFace.title
+#: jmvhist/options/yLabelFontFace.title
+#: jmvline/options/titleFontFace.title
+#: jmvline/options/subtitleFontFace.title
+#: jmvline/options/captionFontFace.title
+#: jmvline/options/xLabelFontFace.title
+#: jmvline/options/yLabelFontFace.title
+#: pareto/options/titleFontFace.title
+#: pareto/options/subtitleFontFace.title
+#: pareto/options/captionFontFace.title
+#: pareto/options/xLabelFontFace.title
+#: pareto/options/yLabelFontFace.title
+#: scat/options/titleFontFace.title
+#: scat/options/subtitleFontFace.title
+#: scat/options/captionFontFace.title
+#: scat/options/xLabelFontFace.title
+#: scat/options/yLabelFontFace.title
+msgid "Font face"
+msgstr "字體"
+
+#: jmvbar/options/titleFontSize.title
+#: jmvbar/options/subtitleFontSize.title
+#: jmvbar/options/captionFontSize.title
+#: jmvbar/options/xLabelFontSize.title
+#: jmvbar/options/yLabelFontSize.title
+#: jmvbox/options/titleFontSize.title
+#: jmvbox/options/subtitleFontSize.title
+#: jmvbox/options/captionFontSize.title
+#: jmvbox/options/xLabelFontSize.title
+#: jmvbox/options/yLabelFontSize.title
+#: jmvhist/options/titleFontSize.title
+#: jmvhist/options/subtitleFontSize.title
+#: jmvhist/options/captionFontSize.title
+#: jmvhist/options/xLabelFontSize.title
+#: jmvhist/options/yLabelFontSize.title
+#: jmvline/options/titleFontSize.title
+#: jmvline/options/subtitleFontSize.title
+#: jmvline/options/captionFontSize.title
+#: jmvline/options/xLabelFontSize.title
+#: jmvline/options/yLabelFontSize.title
+#: pareto/options/titleFontSize.title
+#: pareto/options/subtitleFontSize.title
+#: pareto/options/captionFontSize.title
+#: pareto/options/xLabelFontSize.title
+#: pareto/options/yLabelFontSize.title
+#: scat/options/titleFontSize.title
+#: scat/options/subtitleFontSize.title
+#: scat/options/captionFontSize.title
+#: scat/options/xLabelFontSize.title
+#: scat/options/yLabelFontSize.title
+msgid "Font size"
+msgstr "字型大小"
+
+#: R/jmvbar.b.R
+#: R/jmvhist.b.R
+#: R/pareto.b.R
+msgid "Frequency (N)"
+msgstr "次數 (N)"
+
+#: jmvbar/ui[1].label
+#: jmvbox/ui[1].label
+#: jmvhist/ui[1].label
+#: jmvline/ui[2].label
+#: pareto/ui[1].label
+#: scat/ui[1].label
+msgid "General Options"
+msgstr "一般選項"
+
+#: jmvbar/ui[2].label
+#: jmvline/ui[3].label
+msgid "Group Options"
+msgstr "群組選項"
+
+#: jmvbar/options/groupBarType/grouped.title
+msgid "Grouped"
+msgstr "已分組"
+
+#: jmvbar/options/catgroup.title
+#: jmvbar/options/countsgroup.title
+#: jmvbar/ui/mode/categorical[0][1].label
+#: jmvbar/ui/mode/counts[0][2].label
+#: jmvhist/options/group.title
+#: jmvhist/ui[0][1].label
+#: jmvline/options/group.title
+#: jmvline/ui[0][2].label
+#: scat/options/group.title
+#: scat/ui[0][2].label
+msgid "Grouping Variable"
+msgstr "分組變項"
+
+#: jmvbar/options/congroup1.title
+#: jmvbar/ui/mode/continuous[0][1].label
+#: jmvbox/options/group1.title
+#: jmvbox/ui[0][1].label
+msgid "Grouping Variable 1"
+msgstr "分組變項 1"
+
+#: jmvbar/options/congroup2.title
+#: jmvbar/ui/mode/continuous[0][2].label
+#: jmvbox/options/group2.title
+#: jmvbox/ui[0][2].label
+msgid "Grouping Variable 2"
+msgstr "分組變項 2"
+
+#: jmvbar/options/legenPositionType/hide.title
+#: jmvbox/options/legenPositionType/hide.title
+#: jmvhist/options/legenPositionType/hide.title
+#: jmvline/options/legenPositionType/hide.title
+#: scat/options/legenPositionType/hide.title
+msgid "Hide"
+msgstr "隱藏"
+
+#: package/analyses/jmvhist.title
+#: package/analyses/jmvhist.menuTitle
+#: jmvhist/options.title
+#: jmvhist/ui.title
+#: jmvhist/ui[1][0][0][1].label
+#: jmvhist/results.title
+msgid "Histogram"
+msgstr "直方圖"
+
+#: jmvbar/options/legendDirection/horizontal.title
+#: jmvbox/options/legendDirection/horizontal.title
+#: jmvhist/options/legendDirection/horizontal.title
+#: jmvline/options/legendDirection/horizontal.title
+#: scat/options/legendDirection/horizontal.title
+msgid "Horizontal"
+msgstr "水平"
+
+#: jmvline/options/mode/individual.title
+msgid "Individual points"
+msgstr "個別資料點"
+
+#: jmvbar/options/legenPositionType/inside.title
+#: jmvbox/options/legenPositionType/inside.title
+#: jmvhist/options/legenPositionType/inside.title
+#: jmvline/options/legenPositionType/inside.title
+#: scat/options/legenPositionType/inside.title
+msgid "Inside"
+msgstr "內部"
+
+#: jmvbar/options/titleFontFace/italic.title
+#: jmvbar/options/subtitleFontFace/italic.title
+#: jmvbar/options/captionFontFace/italic.title
+#: jmvbar/options/xLabelFontFace/italic.title
+#: jmvbar/options/yLabelFontFace/italic.title
+#: jmvbar/options/legendTitleFontFace/italic.title
+#: jmvbar/options/legendLabelFontFace/italic.title
+#: jmvbox/options/titleFontFace/italic.title
+#: jmvbox/options/subtitleFontFace/italic.title
+#: jmvbox/options/captionFontFace/italic.title
+#: jmvbox/options/xLabelFontFace/italic.title
+#: jmvbox/options/yLabelFontFace/italic.title
+#: jmvbox/options/legendTitleFontFace/italic.title
+#: jmvbox/options/legendLabelFontFace/italic.title
+#: jmvhist/options/titleFontFace/italic.title
+#: jmvhist/options/subtitleFontFace/italic.title
+#: jmvhist/options/captionFontFace/italic.title
+#: jmvhist/options/xLabelFontFace/italic.title
+#: jmvhist/options/yLabelFontFace/italic.title
+#: jmvhist/options/legendTitleFontFace/italic.title
+#: jmvhist/options/legendLabelFontFace/italic.title
+#: jmvline/options/titleFontFace/italic.title
+#: jmvline/options/subtitleFontFace/italic.title
+#: jmvline/options/captionFontFace/italic.title
+#: jmvline/options/xLabelFontFace/italic.title
+#: jmvline/options/yLabelFontFace/italic.title
+#: jmvline/options/legendTitleFontFace/italic.title
+#: jmvline/options/legendLabelFontFace/italic.title
+#: pareto/options/titleFontFace/italic.title
+#: pareto/options/subtitleFontFace/italic.title
+#: pareto/options/captionFontFace/italic.title
+#: pareto/options/xLabelFontFace/italic.title
+#: pareto/options/yLabelFontFace/italic.title
+#: scat/options/titleFontFace/italic.title
+#: scat/options/subtitleFontFace/italic.title
+#: scat/options/captionFontFace/italic.title
+#: scat/options/xLabelFontFace/italic.title
+#: scat/options/yLabelFontFace/italic.title
+#: scat/options/legendTitleFontFace/italic.title
+#: scat/options/legendLabelFontFace/italic.title
+msgid "Italic"
+msgstr "斜體"
+
+#: jmvbar/options/legendJustification.title
+#: jmvbox/options/legendJustification.title
+#: jmvhist/options/legendJustification.title
+#: jmvline/options/legendJustification.title
+#: scat/options/legendJustification.title
+msgid "Justification"
+msgstr "對齊方式"
+
+#: jmvbar/options/legendKeyHeight.title
+#: jmvbox/options/legendKeyHeight.title
+#: jmvhist/options/legendKeyHeight.title
+#: jmvline/options/legendKeyHeight.title
+#: scat/options/legendKeyHeight.title
+msgid "Key height"
+msgstr "鍵高"
+
+#: jmvbar/options/legendKeyWidth.title
+#: jmvbox/options/legendKeyWidth.title
+#: jmvhist/options/legendKeyWidth.title
+#: jmvline/options/legendKeyWidth.title
+#: scat/options/legendKeyWidth.title
+msgid "Key width"
+msgstr "鍵寬"
+
+#: jmvbar/options/legendLabelFontFace.title
+#: jmvbox/options/legendLabelFontFace.title
+#: jmvhist/options/legendLabelFontFace.title
+#: jmvline/options/legendLabelFontFace.title
+#: scat/options/legendLabelFontFace.title
+msgid "Label font face"
+msgstr "標籤字體"
+
+#: jmvbar/options/yAxisLabelFontSize.title
+#: jmvbar/options/xAxisLabelFontSize.title
+#: jmvbar/options/legendLabelFontSize.title
+#: jmvbox/options/yAxisLabelFontSize.title
+#: jmvbox/options/xAxisLabelFontSize.title
+#: jmvbox/options/legendLabelFontSize.title
+#: jmvhist/options/yAxisLabelFontSize.title
+#: jmvhist/options/xAxisLabelFontSize.title
+#: jmvhist/options/legendLabelFontSize.title
+#: jmvline/options/yAxisLabelFontSize.title
+#: jmvline/options/xAxisLabelFontSize.title
+#: jmvline/options/legendLabelFontSize.title
+#: pareto/options/yAxisLabelFontSize.title
+#: pareto/options/xAxisLabelFontSize.title
+#: scat/options/yAxisLabelFontSize.title
+#: scat/options/xAxisLabelFontSize.title
+#: scat/options/legendLabelFontSize.title
+msgid "Label font size"
+msgstr "標籤字型大小"
+
+#: jmvbar/options/yAxisLabelRotation.title
+#: jmvbar/options/xAxisLabelRotation.title
+#: jmvbox/options/yAxisLabelRotation.title
+#: jmvbox/options/xAxisLabelRotation.title
+#: jmvhist/options/yAxisLabelRotation.title
+#: jmvhist/options/xAxisLabelRotation.title
+#: jmvline/options/yAxisLabelRotation.title
+#: jmvline/options/xAxisLabelRotation.title
+#: pareto/options/yAxisLabelRotation.title
+#: pareto/options/xAxisLabelRotation.title
+#: scat/options/yAxisLabelRotation.title
+#: scat/options/xAxisLabelRotation.title
+msgid "Label rotation"
+msgstr "標籤旋轉"
+
+#: jmvbar/options/countsLabels.title
+#: jmvbar/ui/mode/counts[0][1].label
+msgid "Labels"
+msgstr "標籤"
+
+#: jmvbar/options/titleAlign/left.title
+#: jmvbar/options/subtitleAlign/left.title
+#: jmvbar/options/captionAlign/left.title
+#: jmvbar/options/xLabelAlign/left.title
+#: jmvbar/options/yLabelAlign/left.title
+#: jmvbar/options/legendPosition/left.title
+#: jmvbar/options/legendJustification/left.title
+#: jmvbox/options/titleAlign/left.title
+#: jmvbox/options/subtitleAlign/left.title
+#: jmvbox/options/captionAlign/left.title
+#: jmvbox/options/xLabelAlign/left.title
+#: jmvbox/options/yLabelAlign/left.title
+#: jmvbox/options/legendPosition/left.title
+#: jmvbox/options/legendJustification/left.title
+#: jmvhist/options/titleAlign/left.title
+#: jmvhist/options/subtitleAlign/left.title
+#: jmvhist/options/captionAlign/left.title
+#: jmvhist/options/xLabelAlign/left.title
+#: jmvhist/options/yLabelAlign/left.title
+#: jmvhist/options/legendPosition/left.title
+#: jmvhist/options/legendJustification/left.title
+#: jmvline/options/titleAlign/left.title
+#: jmvline/options/subtitleAlign/left.title
+#: jmvline/options/captionAlign/left.title
+#: jmvline/options/xLabelAlign/left.title
+#: jmvline/options/yLabelAlign/left.title
+#: jmvline/options/legendPosition/left.title
+#: jmvline/options/legendJustification/left.title
+#: pareto/options/titleAlign/left.title
+#: pareto/options/subtitleAlign/left.title
+#: pareto/options/captionAlign/left.title
+#: pareto/options/xLabelAlign/left.title
+#: pareto/options/yLabelAlign/left.title
+#: scat/options/titleAlign/left.title
+#: scat/options/subtitleAlign/left.title
+#: scat/options/captionAlign/left.title
+#: scat/options/xLabelAlign/left.title
+#: scat/options/yLabelAlign/left.title
+#: scat/options/legendPosition/left.title
+#: scat/options/legendJustification/left.title
+msgid "Left"
+msgstr "左"
+
+#: jmvbar/ui[5].label
+#: jmvbox/ui[4].label
+#: jmvhist/ui[4].label
+#: jmvline/ui[6].label
+#: scat/ui[4].label
+msgid "Legend"
+msgstr "圖例"
+
+#: jmvbar/ui[5][0][1][0].label
+#: jmvbox/ui[4][0][1][0].label
+#: jmvhist/ui[4][0][1][0].label
+#: jmvline/ui[6][0][1][0].label
+#: scat/ui[4][0][1][0].label
+msgid "Legend Position"
+msgstr "圖例位置"
+
+#: jmvbar/ui[5][0][0][1].label
+#: jmvbox/ui[4][0][0][1].label
+#: jmvhist/ui[4][0][0][1].label
+#: jmvline/ui[6][0][0][1].label
+#: scat/ui[4][0][0][1].label
+msgid "Legend Style"
+msgstr "圖例樣式"
+
+#: jmvbar/ui[5][0][0][0].label
+#: jmvbox/ui[4][0][0][0].label
+#: jmvhist/ui[4][0][0][0].label
+#: jmvline/ui[6][0][0][0].label
+#: scat/ui[4][0][0][0].label
+msgid "Legend Title"
+msgstr "圖例標題"
+
+#: jmvline/ui[2][0][0][0].label
+msgid "Line"
+msgstr "線"
+
+#: jmvline/ui[3][0][0][0].label
+msgid "Line & Point Style"
+msgstr "線條與點的樣式"
+
+#: package/analyses/jmvline.title
+#: package/analyses/jmvline.menuTitle
+#: jmvline/options.title
+#: jmvline/ui.title
+#: jmvline/results.title
+msgid "Line Plot"
+msgstr "折線圖"
+
+#: jmvhist/options/lineSize.title
+#: jmvhist/options/densityLineSize.title
+#: jmvline/options/lineSize.title
+msgid "Line size"
+msgstr "線條粗細"
+
+#: scat/options/lineMethod/lm.title
+msgid "Linear"
+msgstr "線性"
+
+#: jmvbar/options/yAxisRangeType/manual.title
+#: jmvbox/options/yAxisRangeType/manual.title
+#: jmvhist/options/binWidthType/manual.title
+#: jmvhist/options/yAxisRangeType/manual.title
+#: jmvhist/options/xAxisRangeType/manual.title
+#: jmvline/options/yAxisRangeType/manual.title
+#: scat/options/yAxisRangeType/manual.title
+#: scat/options/xAxisRangeType/manual.title
+msgid "Manual"
+msgstr "手動"
+
+#: jmvbar/options/yAxisRangeMax.title
+#: jmvbox/options/yAxisRangeMax.title
+#: jmvhist/options/yAxisRangeMax.title
+#: jmvhist/options/xAxisRangeMax.title
+#: jmvline/options/yAxisRangeMax.title
+#: scat/options/yAxisRangeMax.title
+#: scat/options/xAxisRangeMax.title
+msgid "Max"
+msgstr "最大"
+
+#: jmvline/options/aggregateType/mean.title
+msgid "Mean"
+msgstr "平均數"
+
+#: jmvline/options/aggregateType/median.title
+msgid "Median"
+msgstr "中位數"
+
+#: scat/options/lineMethod.title
+msgid "Method"
+msgstr "方法"
+
+#: jmvbar/options/yAxisRangeMin.title
+#: jmvbox/options/yAxisRangeMin.title
+#: jmvhist/options/yAxisRangeMin.title
+#: jmvhist/options/xAxisRangeMin.title
+#: jmvline/options/yAxisRangeMin.title
+#: scat/options/yAxisRangeMin.title
+#: scat/options/xAxisRangeMin.title
+msgid "Min"
+msgstr "最小"
+
+#: jmvbar/ui[1][0][1][1].label
+#: jmvbox/ui[1][0][1][1].label
+#: jmvline/ui[2][0][1][1].label
+msgid "Missing Values"
+msgstr "缺失值"
+
+#: package/analyses/pareto.menuGroup
+#: pareto/options.menuGroup
+msgid "More"
+msgstr "更多"
+
+#: jmvbar/options/errorBars/none.title
+#: jmvline/options/errorBars/none.title
+msgid "None"
+msgstr "無"
+
+#: jmvbox/options/notch.title
+msgid "Notch"
+msgstr "缺口"
+
+#: jmvbar/options/legenPositionType/outside.title
+#: jmvbox/options/legenPositionType/outside.title
+#: jmvhist/options/legenPositionType/outside.title
+#: jmvline/options/legenPositionType/outside.title
+#: scat/options/legenPositionType/outside.title
+msgid "Outside"
+msgstr "外部"
+
+#: package/analyses/pareto.title
+#: package/analyses/pareto.menuTitle
+#: pareto/options.title
+#: pareto/ui.title
+#: pareto/results.title
+msgid "Pareto Plot"
+msgstr "柏拉圖"
+
+#: jmvbar/options/titleFontFace/plain.title
+#: jmvbar/options/subtitleFontFace/plain.title
+#: jmvbar/options/captionFontFace/plain.title
+#: jmvbar/options/xLabelFontFace/plain.title
+#: jmvbar/options/yLabelFontFace/plain.title
+#: jmvbar/options/legendTitleFontFace/plain.title
+#: jmvbar/options/legendLabelFontFace/plain.title
+#: jmvbox/options/titleFontFace/plain.title
+#: jmvbox/options/subtitleFontFace/plain.title
+#: jmvbox/options/captionFontFace/plain.title
+#: jmvbox/options/xLabelFontFace/plain.title
+#: jmvbox/options/yLabelFontFace/plain.title
+#: jmvbox/options/legendTitleFontFace/plain.title
+#: jmvbox/options/legendLabelFontFace/plain.title
+#: jmvhist/options/titleFontFace/plain.title
+#: jmvhist/options/subtitleFontFace/plain.title
+#: jmvhist/options/captionFontFace/plain.title
+#: jmvhist/options/xLabelFontFace/plain.title
+#: jmvhist/options/yLabelFontFace/plain.title
+#: jmvhist/options/legendTitleFontFace/plain.title
+#: jmvhist/options/legendLabelFontFace/plain.title
+#: jmvline/options/titleFontFace/plain.title
+#: jmvline/options/subtitleFontFace/plain.title
+#: jmvline/options/captionFontFace/plain.title
+#: jmvline/options/xLabelFontFace/plain.title
+#: jmvline/options/yLabelFontFace/plain.title
+#: jmvline/options/legendTitleFontFace/plain.title
+#: jmvline/options/legendLabelFontFace/plain.title
+#: pareto/options/titleFontFace/plain.title
+#: pareto/options/subtitleFontFace/plain.title
+#: pareto/options/captionFontFace/plain.title
+#: pareto/options/xLabelFontFace/plain.title
+#: pareto/options/yLabelFontFace/plain.title
+#: scat/options/titleFontFace/plain.title
+#: scat/options/subtitleFontFace/plain.title
+#: scat/options/captionFontFace/plain.title
+#: scat/options/xLabelFontFace/plain.title
+#: scat/options/yLabelFontFace/plain.title
+#: scat/options/legendTitleFontFace/plain.title
+#: scat/options/legendLabelFontFace/plain.title
+msgid "Plain"
+msgstr "標準"
+
+#: jmvbar/ui[3].label
+#: jmvbox/ui[2].label
+#: jmvhist/ui[2].label
+#: jmvline/ui[4].label
+#: pareto/ui[2].label
+#: scat/ui[2].label
+msgid "Plot & Axis Titles"
+msgstr "圖與軸標題"
+
+#: jmvbar/options/titleType/caption.title
+#: jmvbox/options/titleType/caption.title
+#: jmvhist/options/titleType/caption.title
+#: jmvline/options/titleType/caption.title
+#: pareto/options/titleType/caption.title
+#: scat/options/titleType/caption.title
+msgid "Plot Caption"
+msgstr "圖表標題"
+
+#: jmvbar/ui[1][0][1][0].label
+#: jmvbox/ui[1][0][1][0].label
+#: jmvhist/ui[1][0][1][1].label
+#: jmvline/ui[2][0][1][0].label
+#: scat/ui[1][0][1][0].label
+msgid "Plot Orientation"
+msgstr "圖表方向"
+
+#: jmvbar/options/titleType/subtitle.title
+#: jmvbox/options/titleType/subtitle.title
+#: jmvhist/options/titleType/subtitle.title
+#: jmvline/options/titleType/subtitle.title
+#: pareto/options/titleType/subtitle.title
+#: scat/options/titleType/subtitle.title
+msgid "Plot Subtitle"
+msgstr "圖表副標題"
+
+#: jmvbar/options/titleType/title.title
+#: jmvbox/options/titleType/title.title
+#: jmvhist/options/titleType/title.title
+#: jmvline/options/titleType/title.title
+#: pareto/options/titleType/title.title
+#: scat/options/titleType/title.title
+msgid "Plot Title"
+msgstr "圖表標題"
+
+#: package.title
+msgid "Plots bundled with jamovi"
+msgstr "jamovi 內建圖表"
+
+#: jmvline/ui[2][0][0][1].label
+msgid "Point"
+msgstr "點"
+
+#: jmvline/ui[3][0][1][0].label
+msgid "Point Dodging"
+msgstr "點位置錯開"
+
+#: jmvline/options/pointSize.title
+#: scat/options/pointSize.title
+msgid "Point size"
+msgstr "點大小"
+
+#: jmvbar/options/legendPosition.title
+#: jmvbox/options/legendPosition.title
+#: jmvhist/options/legendPosition.title
+#: jmvline/options/legendPosition.title
+#: scat/options/legendPosition.title
+msgid "Position"
+msgstr "位置"
+
+#: jmvbar/ui[4][0][1][1].label
+#: jmvbox/ui[3][0][1][1].label
+#: jmvhist/ui[3][0][0][1].label
+#: jmvhist/ui[3][0][1][1].label
+#: jmvline/ui[5][0][1][1].label
+#: scat/ui[3][0][0][1].label
+#: scat/ui[3][0][1][1].label
+msgid "Range"
+msgstr "全距"
+
+#: scat/ui[1][0][0][1].label
+msgid "Regression Line"
+msgstr "迴歸線"
+
+#: jmvbar/options/xAxisLabelFontSizeRevLabels.title
+#: jmvbox/options/xAxisLabelFontSizeRevLabels.title
+msgid "Reverse labels"
+msgstr "反轉標籤"
+
+#: jmvbar/options/titleAlign/right.title
+#: jmvbar/options/subtitleAlign/right.title
+#: jmvbar/options/captionAlign/right.title
+#: jmvbar/options/xLabelAlign/right.title
+#: jmvbar/options/yLabelAlign/right.title
+#: jmvbar/options/legendPosition/right.title
+#: jmvbar/options/legendJustification/right.title
+#: jmvbox/options/titleAlign/right.title
+#: jmvbox/options/subtitleAlign/right.title
+#: jmvbox/options/captionAlign/right.title
+#: jmvbox/options/xLabelAlign/right.title
+#: jmvbox/options/yLabelAlign/right.title
+#: jmvbox/options/legendPosition/right.title
+#: jmvbox/options/legendJustification/right.title
+#: jmvhist/options/titleAlign/right.title
+#: jmvhist/options/subtitleAlign/right.title
+#: jmvhist/options/captionAlign/right.title
+#: jmvhist/options/xLabelAlign/right.title
+#: jmvhist/options/yLabelAlign/right.title
+#: jmvhist/options/legendPosition/right.title
+#: jmvhist/options/legendJustification/right.title
+#: jmvline/options/titleAlign/right.title
+#: jmvline/options/subtitleAlign/right.title
+#: jmvline/options/captionAlign/right.title
+#: jmvline/options/xLabelAlign/right.title
+#: jmvline/options/yLabelAlign/right.title
+#: jmvline/options/legendPosition/right.title
+#: jmvline/options/legendJustification/right.title
+#: pareto/options/titleAlign/right.title
+#: pareto/options/subtitleAlign/right.title
+#: pareto/options/captionAlign/right.title
+#: pareto/options/xLabelAlign/right.title
+#: pareto/options/yLabelAlign/right.title
+#: scat/options/titleAlign/right.title
+#: scat/options/subtitleAlign/right.title
+#: scat/options/captionAlign/right.title
+#: scat/options/xLabelAlign/right.title
+#: scat/options/yLabelAlign/right.title
+#: scat/options/legendPosition/right.title
+#: scat/options/legendJustification/right.title
+msgid "Right"
+msgstr "右"
+
+#: package/analyses/scat.menuSubgroup
+#: package/analyses/pareto.menuSubgroup
+msgid "scatr"
+msgstr "scatr"
+
+#: scat/ui[1][0][0][0].label
+msgid "Scatter"
+msgstr "散布"
+
+#: package/analyses/scat.title
+#: package/analyses/scat.menuTitle
+#: scat/options.title
+#: scat/ui.title
+#: scat/results.title
+msgid "Scatter Plot"
+msgstr "散布圖"
+
+#: jmvhist/options/bins.title
+msgid "Show bins"
+msgstr "顯示區間"
+
+#: jmvhist/options/density.title
+msgid "Show density"
+msgstr "顯示密度"
+
+#: jmvhist/options/line.title
+#: scat/options/regLine.title
+msgid "Show line"
+msgstr "顯示線條"
+
+#: jmvline/options/line.title
+msgid "Show lines"
+msgstr "顯示線條"
+
+#: jmvbox/options/outliers.title
+msgid "Show outliers"
+msgstr "顯示離群值"
+
+#: jmvline/options/point.title
+msgid "Show points"
+msgstr "顯示資料點"
+
+#: scat/options/lineMethod/loess.title
+msgid "Smooth"
+msgstr "平滑"
+
+#: jmvbar/options/groupBarType/stacked.title
+msgid "Stacked"
+msgstr "堆疊"
+
+#: jmvbar/options/errorBars/sd.title
+#: jmvline/options/errorBars/sd.title
+msgid "Standard deviation"
+msgstr "標準差"
+
+#: jmvbar/options/errorBars/se.title
+#: jmvline/options/errorBars/se.title
+msgid "Standard error"
+msgstr "標準誤"
+
+#: R/jmvbar.b.R
+#: R/jmvbox.b.R
+#: R/jmvhist.b.R
+#: R/jmvline.b.R
+#: R/pareto.b.R
+#: R/scat.b.R
+msgid "Syntax mode for plots is not yet available."
+msgstr "圖表的語法模式尚不可用。"
+
+#: jmvbar/options/legendTitleFontFace.title
+#: jmvbox/options/legendTitleFontFace.title
+#: jmvhist/options/legendTitleFontFace.title
+#: jmvline/options/legendTitleFontFace.title
+#: scat/options/legendTitleFontFace.title
+msgid "Title font face"
+msgstr "標題字體"
+
+#: jmvbar/options/legendTitleFontSize.title
+#: jmvbox/options/legendTitleFontSize.title
+#: jmvhist/options/legendTitleFontSize.title
+#: jmvline/options/legendTitleFontSize.title
+#: scat/options/legendTitleFontSize.title
+msgid "Title font size"
+msgstr "標題字型大小"
+
+#: jmvbar/options/title.title
+#: jmvbar/options/subtitle.title
+#: jmvbar/options/caption.title
+#: jmvbar/options/xLabel.title
+#: jmvbar/options/yLabel.title
+#: jmvbar/options/legendTitle.title
+#: jmvbox/options/title.title
+#: jmvbox/options/subtitle.title
+#: jmvbox/options/caption.title
+#: jmvbox/options/xLabel.title
+#: jmvbox/options/yLabel.title
+#: jmvbox/options/legendTitle.title
+#: jmvhist/options/title.title
+#: jmvhist/options/subtitle.title
+#: jmvhist/options/caption.title
+#: jmvhist/options/xLabel.title
+#: jmvhist/options/yLabel.title
+#: jmvhist/options/legendTitle.title
+#: jmvline/options/title.title
+#: jmvline/options/subtitle.title
+#: jmvline/options/caption.title
+#: jmvline/options/xLabel.title
+#: jmvline/options/yLabel.title
+#: jmvline/options/legendTitle.title
+#: pareto/options/title.title
+#: pareto/options/subtitle.title
+#: pareto/options/caption.title
+#: pareto/options/xLabel.title
+#: pareto/options/yLabel.title
+#: scat/options/title.title
+#: scat/options/subtitle.title
+#: scat/options/caption.title
+#: scat/options/xLabel.title
+#: scat/options/yLabel.title
+#: scat/options/legendTitle.title
+msgid "Title text"
+msgstr "標題文字"
+
+#: jmvbar/options/legendPosition/top.title
+#: jmvbar/options/legendJustification/top.title
+#: jmvbox/options/legendPosition/top.title
+#: jmvbox/options/legendJustification/top.title
+#: jmvhist/options/legendPosition/top.title
+#: jmvhist/options/legendJustification/top.title
+#: jmvline/options/legendPosition/top.title
+#: jmvline/options/legendJustification/top.title
+#: scat/options/legendPosition/top.title
+#: scat/options/legendJustification/top.title
+msgid "Top"
+msgstr "頂端"
+
+#: jmvbar/options/valueLabels.title
+msgid "Value labels"
+msgstr "數值標籤"
+
+#: jmvbox/options/var.title
+#: jmvbox/ui[0][0].label
+#: jmvhist/options/var.title
+#: jmvhist/ui[0][0].label
+msgid "Variable"
+msgstr "變項"
+
+#: jmvbar/options/mode.title
+msgid "Variable type"
+msgstr "變項類型"
+
+#: jmvbar/options/legendDirection/vertical.title
+#: jmvbox/options/legendDirection/vertical.title
+#: jmvhist/options/legendDirection/vertical.title
+#: jmvline/options/legendDirection/vertical.title
+#: scat/options/legendDirection/vertical.title
+msgid "Vertical"
+msgstr "垂直"
+
+#: jmvbar/options/barWidth.title
+#: jmvbar/options/ciWidth.title
+#: jmvbox/options/boxWidth.title
+#: jmvline/options/ciWidth.title
+#: pareto/options/barWidth.title
+msgid "Width"
+msgstr "寬度"
+
+#: jmvbar/ui[4][0][0][0].label
+#: jmvbox/ui[3][0][0][0].label
+#: jmvhist/ui[3][0][0][0].label
+#: jmvline/options/x.title
+#: jmvline/ui[0][0].label
+#: jmvline/ui[5][0][0][0].label
+#: pareto/options/x.title
+#: pareto/ui[0][0].label
+#: pareto/ui[3][0][0][0].label
+#: scat/options/x.title
+#: scat/ui[0][0].label
+#: scat/ui[3][0][0][0].label
+msgid "X-Axis"
+msgstr "X 軸"
+
+#: jmvhist/options/xAxisRangeType.title
+#: scat/options/xAxisRangeType.title
+msgid "X-Axis Range"
+msgstr "X 軸範圍"
+
+#: jmvbar/options/titleType/xTitle.title
+#: jmvbox/options/titleType/xTitle.title
+#: jmvhist/options/titleType/xTitle.title
+#: jmvline/options/titleType/xTitle.title
+#: pareto/options/titleType/xTitle.title
+#: scat/options/titleType/xTitle.title
+msgid "X-Axis Title"
+msgstr "X 軸標題"
+
+#: jmvbar/options/legendPositionX.title
+#: jmvbox/options/legendPositionX.title
+#: jmvhist/options/legendPositionX.title
+#: jmvline/options/legendPositionX.title
+#: scat/options/legendPositionX.title
+msgid "X-position"
+msgstr "X 軸位置"
+
+#: jmvbar/ui[4][0][1][0].label
+#: jmvbox/ui[3][0][1][0].label
+#: jmvhist/ui[3][0][1][0].label
+#: jmvline/options/y.title
+#: jmvline/ui[0][1].label
+#: jmvline/ui[5][0][1][0].label
+#: pareto/ui[3][0][1][0].label
+#: scat/options/y.title
+#: scat/ui[0][1].label
+#: scat/ui[3][0][1][0].label
+msgid "Y-Axis"
+msgstr "Y 軸"
+
+#: jmvbar/options/yAxisRangeType.title
+#: jmvbox/options/yAxisRangeType.title
+#: jmvhist/options/yAxisRangeType.title
+#: jmvline/options/yAxisRangeType.title
+#: scat/options/yAxisRangeType.title
+msgid "Y-Axis Range"
+msgstr "Y 軸範圍"
+
+#: jmvbar/options/titleType/yTitle.title
+#: jmvbox/options/titleType/yTitle.title
+#: jmvhist/options/titleType/yTitle.title
+#: jmvline/options/titleType/yTitle.title
+#: pareto/options/titleType/yTitle.title
+#: scat/options/titleType/yTitle.title
+msgid "Y-Axis Title"
+msgstr "Y 軸標題"
+
+#: jmvbar/options/legendPositionY.title
+#: jmvbox/options/legendPositionY.title
+#: jmvhist/options/legendPositionY.title
+#: jmvline/options/legendPositionY.title
+#: scat/options/legendPositionY.title
+msgid "Y-position"
+msgstr "Y 軸位置"

@@ -1,0 +1,435 @@
+/*
+ * Copyright (C) 2016 Jonathon Love
+ */
+
+.jmv-variable-editor > .shortcut-key-tag {
+    top: 50px;
+    inset-inline-start: 20%;
+}
+
+.jmv-variable-editor .hover-header {
+    width: 100%;
+    top: 0px;
+    position: absolute;
+}
+
+.jmv-variable-editor {
+    background-color: #F8F8F8 ;
+    width: 100% ;
+    height: 300px ;
+    transition: height .2s, width .2s, border-top .2s, background-color .2s, opacity .2s, margin .2s, visibility .2s;
+    box-sizing: border-box;
+    border-top: 1px solid #CCCCCC ;
+    position: relative;
+    grid-area: 1 / 1 / span 1 / span 5;
+    border-bottom: 1px solid #CCCCCC;
+    margin-bottom: 6px;
+    visibility: visible;
+}
+
+.jmv-variable-editor.sub-editor-open {
+    background-color: #e0e0e0
+}
+
+.jmv-variable-editor.sub-editor-open.hover {
+    background-color: #cccccc
+}
+
+.jmv-variable-editor.hidden {
+    height: 0 ;
+    transition-timing-function: ease, step-end ;
+    border-top: 1px solid #F0F0F0 ;
+    opacity: 0;
+    margin-bottom: 0px;
+    visibility: hidden;
+}
+
+.jmv-variable-editor-main {
+    position: relative ;
+    margin: 0 auto ;
+    width: 800px ;
+    height: 100% ;
+    box-sizing: border-box;
+    overflow: hidden ;
+}
+
+.jmv-variable-editor-ok {
+    position: absolute ;
+    inset-inline-end: 12px ;
+    top: 12px ;
+    width: 40px ;
+    height: 40px ;
+    color: #BBBBBB ;
+    border: 4px solid #BBBBBB ;
+    border-radius: 20px ;
+    box-sizing: border-box;
+    font-size: 24px ;
+    text-align: center;
+    transition: color .2s, border-color .2s ;
+}
+
+.jmv-variable-editor-ok span.mif-checkmark {
+    color: #AAAAAA ;
+    border-color: #AAAAAA;
+}
+
+.jmv-variable-editor-ok.apply {
+    border-color: #AAAAAA;
+}
+
+.jmv-variable-editor-ok span {
+    position: absolute ;
+    inset-inline-start: 0 ;
+    top: 0;
+    width: 100% ;
+    line-height: 32px;
+    vertical-align: top;
+    transition: opacity .4s ;
+}
+
+.jmv-variable-editor-ok:not(.apply) span.mif-checkmark {
+    opacity: 0 ;
+}
+
+.jmv-variable-editor-ok.apply span.mif-arrow-up {
+    opacity: 0 ;
+}
+
+.jmv-variable-editor-button-left,
+.jmv-variable-editor-button-right {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 130px;
+    font-size: 40px;
+    color: #BBBBBB;
+    border: none;
+    background-color: inherit;
+    padding: 0px;
+    transition: opacity .2s;
+}
+
+.jmv-variable-editor-button-left span,
+.jmv-variable-editor-button-right span {
+    line-height: 40px;
+    vertical-align: top;
+}
+
+.jmv-variable-editor-button-left.hidden,
+.jmv-variable-editor-button-right.hidden {
+    opacity: 0 ;
+}
+
+.jmv-variable-editor-ok:hover,
+.jmv-variable-editor-button-left:hover,
+.jmv-variable-editor-button-right:hover {
+    color: #999999 ;
+    border-color: #999999 ;
+}
+
+.jmv-variable-editor-button-left {
+    inset-inline-start: 10px ;
+}
+
+.jmv-variable-editor-button-right {
+    inset-inline-end: 10px ;
+}
+
+.jmv-variable-editor-widget.multiple-variables .single-variable-support {
+    visibility: hidden;
+}
+
+.jmv-variable-editor-widget {
+    position: absolute ;
+    padding: 8px 100px 10px 100px ;
+    width: 100% ;
+    height: 300px;
+    box-sizing: border-box;
+    display: flex ;
+    flex-direction: column;
+}
+
+.jmv-variable-editor-widget:not(.inactive) {
+    transition: left .3s, inset-inline-start .3s, opacity .3s, visibility .3s ;
+}
+
+.jmv-variable-editor-widget .desc-box {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.jmv-variable-editor-widget .desc-box .multi-var-info {
+    display: flex;
+    flex-direction: row;
+    visibility: hidden;
+    position: absolute;
+    width: 500px;
+    border-bottom: 1px solid #dfdfdf;
+    align-items: center;
+}
+
+.jmv-variable-editor-widget.multiple-variables .desc-box .multi-var-info {
+    visibility: visible;
+}
+
+.jmv-variable-editor-main[data-type='none'] .jmv-variable-editor-widget.multiple-variables .desc-box .multi-var-info {
+    visibility: hidden;
+}
+
+.jmv-variable-editor-main[data-type='filter'] .jmv-variable-editor-widget.multiple-variables .desc-box .multi-var-info {
+    visibility: hidden;
+}
+
+.jmv-variable-editor-widget .desc-box .multi-var-info .scroll-wrapper {
+    box-sizing: content-box;
+    overflow: hidden;
+    height: 36px;
+}
+
+.jmv-variable-editor-widget .desc-box .multi-var-info .multi-var-info-list {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0 7px 0;
+    overflow-x: scroll;
+    padding-bottom: 100px;
+    align-items: center;
+}
+
+.jmv-variable-editor-widget .desc-box .multi-var-info .multi-var-info-list .jmv-variable-list-item {
+    background-color: #E8E8E8;
+    margin-inline-end: 3px;
+    min-width: unset;
+}
+
+.jmv-variable-editor-widget .desc-box .multi-var-info .multi-var-info-list .jmv-variable-list-item > .label {
+    margin-inline-end: 7px;
+    max-width: 77px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.jmv-variable-editor-widget .desc-box .multi-var-info .multi-var-info-label {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-inline-start: 2px;
+    margin-inline-end: 5px;
+    color: #888888;
+    font-weight: 100;
+}
+
+.jmv-variable-editor-widget-title {
+    font-size: 150% ;
+    color: #555555 ;
+    background-color: white;
+    padding: 3px 4px 3px 4px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 37px;
+    border: 1px solid #CCCCCC;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.jmv-variable-editor-widget-description {
+    font-size: 100% ;
+    color: #555555 ;
+    background-color: white;
+    padding: 3px 4px 3px 4px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 37px;
+    border: 1px solid #CCCCCC;
+    max-height: 3.2em;
+    overflow: auto;
+    cursor: text;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.label-box {
+    display: flex;
+    flex-direction: row;
+    margin-inline-end: 37px;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin-bottom: 3px;
+}
+
+.label-box .label-spacer {
+    flex: 1;
+    align-items: center;
+}
+
+.imported-as {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.label-box .imported-as > .label {
+    color: grey;
+    margin-inline-end: 5px;
+    font-weight: 100;
+    font-size: 90%;
+}
+
+.label-box .imported-as > .name {
+    color: grey;
+    margin-inline-end: 5px;
+    font-size: 90%;
+    font-weight: 500;
+}
+
+.label-box .jmv-variable-editor-widget-label {
+    font-size: 110%;
+    color: #555555;
+    padding-top: 0px;
+    padding-inline-end: 4px;
+    padding-bottom: 0px;
+    padding-inline-start: 2px;
+    margin: 0px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.jmv-variable-editor-widget-body {
+    flex-grow: 1;
+    display: flex;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-inline-end: 10px;
+    padding-bottom: 10px;
+    padding-inline-start: 0px;
+}
+
+.jmv-datavarwidget-body {
+    flex-grow: 1;
+    display: flex;
+}
+
+.jmv-variable-editor-widget-footer {
+    margin-inline-start: 2px;
+    margin-inline-end: 37px;
+}
+
+.jmv-variable-editor-main[data-type='output'] .jmv-variable-editor-widget-title {
+    margin-inline-end: 10px;
+}
+
+.jmv-variable-editor-main[data-type='output'] .jmv-variable-editor-widget-description {
+    margin-inline-end: 10px;
+}
+
+.jmv-variable-editor-main[data-type='computed'] .jmv-variable-editor-widget-footer {
+    margin-inline-end: 10px;
+}
+
+.jmv-variable-editor-main[data-type='computed'] .jmv-variable-editor-widget-title {
+    margin-inline-end: 10px;
+}
+
+.jmv-variable-editor-main[data-type='computed'] .jmv-variable-editor-widget-description {
+    margin-inline-end: 10px;
+}
+
+.jmv-variable-editor-main[data-type='computed'] .label-box {
+    margin-inline-end: 10px
+}
+
+.jmv-variable-editor-main[data-type='filter'] .label-box .jmv-variable-editor-widget-label {
+    margin-inline-start: 3px;
+}
+
+.jmv-variable-editor-widget-footer > .status-box {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    float: inline-end;
+}
+
+.jmv-variable-editor-widget-footer > .status-box > .status {
+    color: #757575;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-inline-start: 0px;
+    margin-inline-end: 3px;
+    padding-inline-end: 3px;
+    height: 18px;
+    line-height: 18px;
+    text-align: end;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    gap: 1ch;
+}
+
+
+.jmv-variable-editor-widget-footer .active {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.jmv-variable-editor-widget-footer .switch {
+    --offset: 2px;
+    --diameter: 10px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: content-box;
+    width: calc(var(--diameter) * 2 + var(--offset) * 2);
+    height: calc(var(--diameter) + var(--offset) * 2);
+    position: relative;
+    border-radius: 100vw;
+    background-color: #cccccc;
+    transition: background-color 0.1s ease-out, transform 0.1s ease-out;
+}
+
+.jmv-variable-editor-widget-footer .active.retain-levels + .switch {
+    background-color: #8cc18c;
+}
+
+.jmv-variable-editor-widget-footer .active.retain-levels + .switch::before {
+    transform: translate(100%, -50%);
+}
+
+.jmv-variable-editor-widget-footer .active:focus + .switch {
+    outline: 1px dotted #212121;
+    outline: 1px auto -webkit-focus-ring-color;
+    outline-offset: 2px;
+}
+
+.jmv-variable-editor-widget-footer .active:focus:not(:focus-visible) + .switch {
+    outline: 0;
+}
+
+.jmv-variable-editor-widget-footer .switch::before {
+    content: "";
+    position: absolute;
+    top: calc(var(--diameter) / 2 + var(--offset) / 2 + 0.5px);
+    inset-inline-start: var(--offset);
+    box-sizing: border-box;
+    width: var(--diameter);
+    height: var(--diameter);
+    border-radius: 50%;
+    background-color: white;
+    transform: translate(0, -50%);
+    will-change: transform;
+    transition: inherit;
+}
+
+.jmv-variable-editor-widget-footer .active + .switch:hover {
+    background-color: #bcbcbc;
+}
+
+.jmv-variable-editor-widget-footer .active.retain-levels + .switch:hover {
+    background-color: #659c65;
+}

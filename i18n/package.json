@@ -1,0 +1,26 @@
+{
+  "name": "jamovi-i18n",
+  "version": "0.0.1",
+  "description": "The jamovi i18n compiler",
+  "main": "index.js",
+  "bin": {
+    "ji8n": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamovi/jamovi-i18n.git"
+  },
+  "author": "Damian Dropmann <damiandropmann@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/jamovi/jamovi-i18n/issues"
+  },
+  "homepage": "https://github.com/jamovi/jamovi-i18n#readme",
+  "dependencies": {
+    "command-line-args": "^6.0.2",
+    "fs-extra": "^11.3.4",
+    "gettext-extractor": "^4.0.6",
+    "gettext-parser": "^9.0.2",
+    "glob": "^13.0.6",
+    "po2json": "^0.4.5"
+  }
+}

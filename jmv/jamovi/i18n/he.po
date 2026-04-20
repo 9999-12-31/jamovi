@@ -1,0 +1,6057 @@
+#
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2021-07-26 12:08:06+01000\n"
+"PO-Revision-Date: 2026-03-18 15:09+0000\n"
+"Last-Translator: Kfir Pshititsky <Kfir4321@gmail.com>\n"
+"Language-Team: Hebrew <https://hosted.weblate.org/projects/jamovi/jmv-i18n/"
+"he/>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
+"n % 10 == 0) ? 2 : 3));\n"
+"X-Generator: Weblate 5.17-dev\n"
+
+#: R/errors.R
+msgid "'{col}' contains infinite values"
+msgstr "”{col}“ מכילה אין־סוף ערכים"
+
+#: R/errors.R
+msgid "'{col}' contains missing values"
+msgstr "”{col}“ מכילה ערכים חסרים"
+
+#: R/errors.R
+msgid "'{col}' contains only missing values"
+msgstr "”{col}“ מכילה רק ערכים חסרים"
+
+#: R/errors.R
+msgid "'{col}' contains only one unique value"
+msgstr "”{col}“ מכילה ערך ייחודי אחד בלבד"
+
+#: R/pca.b.R
+msgid "'{method}' extraction method was used in combination with a '{rotation}' rotation"
+msgstr "שיטת החילוץ ”{method}“ הייתה בשילוב עם הרוטציה ”{rotation}“"
+
+#: R/pca.b.R
+msgid "'{rotation}' rotation was used"
+msgstr "נעשה שימוש ברוטציית ”{rotation}“"
+
+#: R/descriptives.b.R
+#: R/linreg.b.R
+msgid "'{var}' contains negative values. Negative weights are not permitted."
+msgstr "”{var}“ מכיל משתנים שליליים. משקלים שליליים אינם מורשים."
+
+#: R/corrpart.b.R
+msgid "{} - Kendall's Tau B"
+msgstr "{} – טאו B של קנדל"
+
+#: R/corrpart.b.R
+msgid "{} - Pearson's r"
+msgstr "{} – r של פירסון"
+
+#: R/corrpart.b.R
+msgid "{} - Spearman's rho"
+msgstr "{} – רו של ספירמן"
+
+#: R/corrmatrix.b.R
+msgid "{ciWidth}% CI Lower"
+msgstr "רווח סמך תחתון {ciWidth}%"
+
+#: R/descriptives.b.R
+msgid "{ciWidth}% CI mean {title}"
+msgstr "%{ciWidth} סטיית התקן של הממוצע {title}"
+
+#: R/corrmatrix.b.R
+msgid "{ciWidth}% CI Upper"
+msgstr "רווח סמך עליון {ciWidth}%"
+
+#: R/ancova.b.R
+#: R/anovarm.b.R
+#: R/cfa.b.R
+#: R/descriptives.b.R
+#: R/linreg.b.R
+#: R/loglinear.b.R
+#: R/logregbin.b.R
+#: R/logregmulti.b.R
+#: R/logregord.b.R
+#: R/proptest2.b.R
+#: R/ttestis.b.R
+#: R/ttestones.b.R
+#: R/ttestps.b.R
+msgid "{ciWidth}% Confidence Interval"
+msgstr "רווח סמך של {ciWidth}%"
+
+#: R/conttables.b.R
+msgid "{ciWidth}% Confidence Intervals"
+msgstr "רווחי סמך של {ciWidth}%"
+
+#: R/utils.R
+msgid "{item1} and {item2}"
+msgstr "{item1} וגם {item2}"
+
+#: R/utils.R
+msgid "{list}, {nextItem}"
+msgstr "{list}, {nextItem}"
+
+#: R/utils.R
+msgid "{list}, and {lastItem}"
+msgstr "{list}, וגם {lastItem}"
+
+#: R/ttestps.b.R
+msgid "{n} pair(s) of values were tied"
+msgstr "{n} זוג(ות) ערכים היו קשורים"
+
+#: R/reliability.b.R
+msgid "{type} score based on the variables {vars}"
+msgstr "ציון {type} לפי המשתנים {var}"
+
+#: R/reliability.b.R
+msgid "{varName} (reversed)"
+msgstr "{varName} (בסדר הפוך)"
+
+#: R/logregbin.b.R
+msgid "{varType} of binomial logistic regression model{modelNo}"
+msgstr "{varType} של מודל {modelNo} של רגרסיה לוגיסטית בינומית"
+
+#: R/linreg.b.R
+msgid "{varType} of linear regression model{modelNo}"
+msgstr "{varType} של מודל {modelNo} של רגרסיה ליניארית"
+
+#: R/corrmatrix.b.R
+#: R/corrpart.b.R
+msgid "* p < .05, ** p < .01, *** p < .001, one-tailed"
+msgstr "* p < .05, ** p < .01, *** p < .001, חד זנבי"
+
+#: ancova/ui[5][1][1]/postHocES_d[0]/postHocEsCi/postHocEsCiWidth.suffix
+#: ancova/ui[6][1][0][1]/ciWidthEmm.suffix
+#: anova/ui[5][1][1]/postHocES_d[0]/postHocEsCi/postHocEsCiWidth.suffix
+#: anova/ui[6][1][0][1]/ciWidthEmm.suffix
+#: anovaRM/ui[6][1][0][1]/ciWidthEmm.suffix
+#: cfa/ui[3][1][0]/ci/ciWidth.suffix
+#: contTables/ui[1][0][0][1][0]/ci/ciWidth.suffix
+#: corrMatrix/ui[1][1]/ci/ciWidth.suffix
+#: descriptives/ui[2][2][1][0]/ci/ciWidth.suffix
+#: linReg/ui[5][0][0][1]/ci/ciWidth.suffix
+#: linReg/ui[5][0][1][0]/ciStdEst/ciWidthStdEst.suffix
+#: linReg/ui[6][1][0][0]/ciEmm/ciWidthEmm.suffix
+#: logLinear/ui[4][0][0][1]/ci/ciWidth.suffix
+#: logLinear/ui[4][0][1][0]/ciRR/ciWidthRR.suffix
+#: logLinear/ui[5][1][0][0]/ciEmm/ciWidthEmm.suffix
+#: logRegBin/ui[5][0][0][1]/ci/ciWidth.suffix
+#: logRegBin/ui[5][0][1][0]/ciOR/ciWidthOR.suffix
+#: logRegBin/ui[6][1][0][0]/ciEmm/ciWidthEmm.suffix
+#: logRegMulti/ui[4][0][0][1]/ci/ciWidth.suffix
+#: logRegMulti/ui[4][0][1][0]/ciOR/ciWidthOR.suffix
+#: logRegMulti/ui[5][1][0][0]/ciEmm/ciWidthEmm.suffix
+#: logRegOrd/ui[4][0][1][0]/ci/ciWidth.suffix
+#: logRegOrd/ui[4][0][1][1]/ciOR/ciWidthOR.suffix
+#: propTest2/ui[1][1][0]/ci/ciWidth.suffix
+#: propTest2/ui[2][1][0]/ciBayes/ciBayesWidth.suffix
+#: ttestIS/ui[1][1][0]/meanDiff[0]/ci/ciWidth.suffix
+#: ttestIS/ui[1][1][0]/effectSize[0]/ciES/ciWidthES.suffix
+#: ttestOneS/ui[1][1][0]/meanDiff[0]/ci/ciWidth.suffix
+#: ttestOneS/ui[1][1][0]/effectSize[0]/ciES/ciWidthES.suffix
+#: ttestPS/ui[1][1][0]/meanDiff[0]/ci/ciWidth.suffix
+#: ttestPS/ui[1][1][0]/effectSize[0]/ciES/ciWidthES.suffix
+msgid "%"
+msgstr "%"
+
+#: R/logregbin.b.R
+msgid "% Correct"
+msgstr "% נכון"
+
+#: R/descriptives.b.R
+msgid "% of Total"
+msgstr "% מהכול"
+
+#: R/conttables.b.R
+msgid "% of total"
+msgstr "% מהכול"
+
+#: pca/results/factorStats/factorSummary.columns.title
+#: pca/results/eigen/initEigen.columns.title
+msgid "% of Variance"
+msgstr "% מהשונות"
+
+#: R/conttables.b.R
+#: R/conttablespaired.b.R
+msgid "% within column"
+msgstr "% מתוך העמודה"
+
+#: R/conttables.b.R
+#: R/conttablespaired.b.R
+msgid "% within row"
+msgstr "% מתוך השורה"
+
+#: ancova/results/main.title
+msgid "`ANCOVA - ${dep}`"
+msgstr "`ניתוח שונות משותפת – ${dep}`"
+
+#: anova/results/main.title
+msgid "`ANOVA - ${dep}`"
+msgstr "`ניתוח שונות – ${dep}`"
+
+#: linReg/results/models.template/coef.title
+msgid "`Model Coefficients - ${ dep }`"
+msgstr "`מקדמי המודל – ${ dep }`"
+
+#: logRegBin/results/models.template/coef.title
+#: logRegMulti/results/models.template/coef.title
+#: logRegOrd/results/models.template/coef.title
+msgid "`Model Coefficients - ${dep}`"
+msgstr "`מקדמי המודל – ${dep}`"
+
+#: propTestN/results/props.title
+msgid "`Proportions - ${var}`"
+msgstr "`יחסים – ${var}`"
+
+#: ttestIS/results/ttest.columns.title
+#: ttestOneS/results/ttest.columns.title
+#: ttestPS/results/ttest.columns.title
+msgid "±%"
+msgstr "±%"
+
+#: propTest2/ui[1][0][1]/hypothesis_less.label
+#: ttestOneS/ui[1][0][1]/hypothesis_lt.label
+msgid "< Test value"
+msgstr "< ערך המבחן"
+
+#: propTest2/ui[1][0][1]/hypothesis_notequal.label
+#: ttestOneS/ui[1][0][1]/hypothesis_dt.label
+msgid "≠ Test value"
+msgstr "≠ ערך המבחן"
+
+#: propTest2/ui[1][0][1]/hypothesis_greater.label
+#: ttestOneS/ui[1][0][1]/hypothesis_gt.label
+msgid "> Test value"
+msgstr "> ערך המבחן"
+
+#: R/linreg.b.R
+#: R/logregbin.b.R
+#: R/logregmulti.b.R
+msgid "⁻ mean - 1SD, <sup>μ</sup> mean, ⁺ mean + 1SD"
+msgstr "⁻ ממוצע - 1ס״ת, <sup>μ</sup> ממוצע, ⁺ ממוצע + 1ס״ת"
+
+#: R/logregbin.b.R
+msgid "1 - Specificity"
+msgstr "סגוליות - 1"
+
+#: package/analyses/logRegBin.menuTitle
+#: package/analyses/propTest2.menuTitle
+#: logRegBin/options.menuTitle
+#: propTest2/options.menuTitle
+msgid "2 Outcomes"
+msgstr "2 תוצאות"
+
+#: descriptives/options/pcValues.default
+msgid "25,50,75"
+msgstr "25,50,75"
+
+#: corrPart/results/matrix.description
+msgid "a (semi)partial correlation matrix table"
+msgstr "טבלת מטריצות למתאם חלק(י)"
+
+#: corrMatrix/results/plot.description
+msgid "a correlation matrix plot"
+msgstr "תרשים מטריצת מתאמים"
+
+#: corrMatrix/results/matrix.description
+msgid "a correlation matrix table"
+msgstr "טבלת מטריצת מתאמים"
+
+#: anovaRMNP/results/plot.description
+msgid "a descriptives plot"
+msgstr "תרשים המידע התיאורי"
+
+#: ttestIS/results/assum/eqv.notes.p
+msgid "A low p-value suggests a violation of the assumption of equal variances"
+msgstr "ערך p נמוך מעיד על הפרה של הנחת שוויון השונויות"
+
+#: anovaOneW/results/assump/norm.notes.p
+#: ttestIS/results/assum/norm.notes.p
+#: ttestOneS/results/normality.notes.p
+#: ttestPS/results/norm.notes.p
+msgid "A low p-value suggests a violation of the assumption of normality"
+msgstr "ערך p נמוך מעיד על הפרה של הנחת הנורמליות"
+
+#: package/datasets/Big5(Dolan,Oort,Stoel&Wicherts,2009).description
+msgid "A nice correlation data set"
+msgstr "מערך נתונים נחמד של מתאמים"
+
+#: propTest2/ui[2][0][0]/priorA.label
+msgid "a parameter"
+msgstr "פרמטר a"
+
+#: anovaOneW/results/postHoc.template.description
+msgid "a post-hoc table"
+msgstr "טבלת מבחני ההמשך"
+
+#: contTablesPaired/results/freqs.description
+msgid "a proportions table"
+msgstr "טבלת יחסים"
+
+#: ancova/results/assump/qq.description
+#: anova/results/assump/qq.description
+#: anovaRM/results/assump/qq.description
+msgid "a q-q plot"
+msgstr "תרשים q-q"
+
+#: package/datasets/Bugs(Ryan,Wilde&Crist,2013).description
+msgid "A repeated measures ANOVA data set"
+msgstr "מערך נתונים של ניתוח שונות למדידות חוזרות"
+
+#: anovaRM/results/groupSummary.description
+msgid "a summary of the groups"
+msgstr "סיכום הקבוצות"
+
+#: ancova/results/emm.template/emmTable.description
+#: anova/results/emm.template/emmTable.description
+#: anovaRM/results/emm.template/emmTable.description
+#: linReg/results/models.template/emm.template/emmTable.description
+#: logLinear/results/models.template/emm.template/emmTable.description
+#: logRegBin/results/models.template/emm.template/emmTable.description
+#: logRegMulti/results/models.template/emm.template/emmTable.description
+msgid "a table containing estimated marginal means"
+msgstr "טבלה המכילה את הממוצעים השוליים המשוערים"
+
+#: cfa/results/factorEst/factorCov.description
+msgid "a table containing factor covariances estimates"
+msgstr "טבלה המכילה את אומדני השונות המשותפת של הגורם"
+
+#: cfa/results/factorEst/factorIntercept.description
+msgid "a table containing factor intercept estimates"
+msgstr "טבלה המכילה את אומדני לכיד הגורם"
+
+#: cfa/results/modelFit/fitMeasures.description
+msgid "a table containing fit measures"
+msgstr "טבלה המכילה את אומדני ההתאמה"
+
+#: cfa/results/modelPerformance/modIndices/factorLoadingsMod.description
+msgid "a table containing modification indices for the factor loadings not included in the model"
+msgstr "טבלה המכילה מדדי שינוי לטעינויות הגורם שלא נכללו במודל"
+
+#: cfa/results/modelPerformance/modIndices/resCovMod.description
+msgid "a table containing modification indices for the residual covariances not included in the model"
+msgstr "טבלה המכילה מדדי שינוי של השונויות המשותפות השיוריות שלא נכללות במודל"
+
+#: cfa/results/resEst/resCov.description
+msgid "a table containing residual covariances estimates"
+msgstr "טבלה המכילה אומדנים של שונויות משותפות שיוריות"
+
+#: cfa/results/resEst/resIntercept.description
+msgid "a table containing residual intercept estimates"
+msgstr "טבלה המכילה את אומדני הלכיד השיורי"
+
+#: cfa/results/modelPerformance/corRes.description
+msgid "a table containing residuals for the observed correlation matrix"
+msgstr "טבלה המכילה את הנתונים השיוריים עבור מטריצת המתאמים הנצפית"
+
+#: cfa/results/modelFit/test.description
+msgid "a table containing the chi-square test for exact fit"
+msgstr "טבלה המכילה את מבחן כי בריבוע להתאמה מדויקת"
+
+#: logRegBin/results/models.template/assump/collin.description
+msgid "a table containing the collinearity statistics"
+msgstr "טבלה המכילה את סטטיסטיקת שיתוף הישר"
+
+#: anovaRMNP/results/desc.description
+#: ttestOneS/results/descriptives.description
+#: ttestPS/results/desc.description
+msgid "a table containing the descriptives"
+msgstr "טבלה המכילה את המידע התיאורי"
+
+#: cfa/results/factorLoadings.description
+msgid "a table containing the factor loadings"
+msgstr "טבלה המכילה את טעינויות הגורם"
+
+#: anovaOneW/results/desc.description
+#: ttestIS/results/desc.description
+msgid "a table containing the group descriptives"
+msgstr "טבלה המכילה את המידע התיאורי של הקבוצה"
+
+#: ttestIS/results/assum/eqv.description
+msgid "a table containing the homogeneity of variances tests"
+msgstr "טבלה המכילה את מבחני הומוגניות השונויות"
+
+#: ttestOneS/results/normality.description
+#: ttestPS/results/norm.description
+msgid "a table containing the normality test results"
+msgstr "טבלה המכילה את תוצאות מבחן הנורמליות"
+
+#: anovaOneW/results/assump/norm.description
+#: ttestIS/results/assum/norm.description
+msgid "a table containing the normality tests"
+msgstr "טבלה המכילה את מבחני הנורמליות"
+
+#: logRegBin/results/models.template/assump/boxTidwell.description
+msgid "a table containing the results from the Box-Tidwell test"
+msgstr "טבלה המכילה את תוצאות מבחן בוקס–טידוול"
+
+#: ttestIS/results/ttest.description
+#: ttestOneS/results/ttest.description
+#: ttestPS/results/ttest.description
+msgid "a table containing the t-test results"
+msgstr "טבלה המכילה את תוצאות מבחן t"
+
+#: ancova/results/main.description
+msgid "a table of ANCOVA results"
+msgstr "טבלת תוצאות ניתוח שונות משותפת (ANCOVA)"
+
+#: anova/results/main.description
+#: linReg/results/models.template/anova.description
+msgid "a table of ANOVA results"
+msgstr "טבלת תוצאות ניתוח שונות"
+
+#: contTables/results/odds.description
+msgid "a table of comparative measures"
+msgstr "טבלת מדדים השוואתיים"
+
+#: anovaOneW/results/assump/eqv.description
+msgid "a table of homogeneity of variances tests"
+msgstr "טבלת מבחני הומוגניות השונויות"
+
+#: ancova/results/assump/homo.description
+#: anova/results/assump/homo.description
+msgid "a table of homogeneity tests"
+msgstr "טבלת מבחני ההומוגניות"
+
+#: logLinear/results/models.template/lrt.description
+#: logRegBin/results/models.template/lrt.description
+#: logRegMulti/results/models.template/lrt.description
+#: logRegOrd/results/models.template/lrt.description
+msgid "a table of likelihood ratio tests"
+msgstr "טבלת מבחני יחס הנראות"
+
+#: logRegOrd/results/models.template/thres.description
+msgid "a table of model coefficient thresholds"
+msgstr "טבלת ספי מקדם המודל"
+
+#: linReg/results/models.template/coef.description
+#: logLinear/results/models.template/coef.description
+#: logRegBin/results/models.template/coef.description
+#: logRegMulti/results/models.template/coef.description
+#: logRegOrd/results/models.template/coef.description
+msgid "a table of model coefficients"
+msgstr "טבלת מקדמי המודל"
+
+#: ancova/results/assump/norm.description
+#: anova/results/assump/norm.description
+#: linReg/results/models.template/assump/norm.description
+msgid "a table of normality tests"
+msgstr "טבלת מבחני הנורמליות"
+
+#: contTables/results/postHoc.description
+msgid "a table of post-hoc residuals"
+msgstr "טבלת הנתונים השיוריים של ניתוחי ההמשך"
+
+#: logRegBin/results/models.template/pred/class.description
+msgid "a table of predicted classifications"
+msgstr "טבלת מיונים מצופים"
+
+#: logRegBin/results/models.template/pred/measures.description
+msgid "a table of predictive measures"
+msgstr "טבלת מדדים מנובאים"
+
+#: contTables/results/freqs.description
+msgid "a table of proportions"
+msgstr "טבלת יחסים"
+
+#: contTablesPaired/results/test.description
+msgid "a table of test results"
+msgstr "טבלת תוצאות המבחן"
+
+#: contTables/results/nom.description
+msgid "a table of the 'nominal' test results"
+msgstr "טבלת תוצאות המבחן ”השמני“"
+
+#: descriptives/results/descriptives.description
+#: descriptives/results/descriptivesT.description
+msgid "a table of the descriptive statistics"
+msgstr "טבלה של סטטיסטיקות המידע התיאורי"
+
+#: anovaRMNP/results/table.description
+msgid "a table of the Friedman test results"
+msgstr "טבלת תוצאות מבחן פרידמן"
+
+#: contTables/results/gamma.description
+msgid "a table of the gamma test results"
+msgstr "טבלת תוצאות מבחן גמא"
+
+#: contTables/results/taub.description
+msgid "a table of the Kendall's tau-b test results"
+msgstr "טבלת תוצאות מבחן טאו b של קנדל"
+
+#: contTables/results/mh.description
+msgid "a table of the Mantel-Haenszel test for trend"
+msgstr "טבלת מבחן מנטל–הנזל למגמה"
+
+#: anovaRMNP/results/comp.description
+msgid "a table of the pairwise comparisons"
+msgstr "טבלת השוואות זוגיות"
+
+#: propTestN/results/props.description
+msgid "a table of the proportions"
+msgstr "טבלת היחסים"
+
+#: propTest2/results/table.description
+msgid "a table of the proportions and test results"
+msgstr "טבלת היחסים ותוצאות המבחן"
+
+#: anovaNP/results/table.description
+#: anovaOneW/results/anova.description
+#: propTestN/results/tests.description
+msgid "a table of the test results"
+msgstr "טבלת תוצאות המבחן"
+
+#: contTables/results/chiSq.description
+msgid "a table of χ² test results"
+msgstr "טבלת תוצאות מבחן χ²"
+
+#: logRegBin/options/acc.title
+#: logRegBin/results/models.template/pred/measures.columns.title
+msgid "Accuracy"
+msgstr "דיוק"
+
+#: linReg/ui[1]/modelSupplier[0]/blocks.addButton
+#: logLinear/ui[1]/modelSupplier[0]/blocks.addButton
+#: logRegBin/ui[1]/modelSupplier[0]/blocks.addButton
+#: logRegMulti/ui[1]/modelSupplier[0]/blocks.addButton
+#: logRegOrd/ui[1]/modelSupplier[0]/blocks.addButton
+msgid "Add New Block"
+msgstr "הוספת בלוק חדש"
+
+#: cfa/ui[0][0]/factors.addButton
+msgid "Add New Factor"
+msgstr "הסופת גורם חדש"
+
+#: ancova/ui[6][0]/emMeansSupplier[0]/emMeans.addButton
+#: anova/ui[6][0]/emMeansSupplier[0]/emMeans.addButton
+#: anovaRM/ui[6][0]/emMeansSupplier[0]/emMeans.addButton
+#: linReg/ui[6][0]/emMeansSupplier[0]/emMeans.addButton
+#: logLinear/ui[5][0]/emMeansSupplier[0]/emMeans.addButton
+#: logRegBin/ui[6][0]/emMeansSupplier[0]/emMeans.addButton
+#: logRegMulti/ui[5][0]/emMeansSupplier[0]/emMeans.addButton
+msgid "Add New Term"
+msgstr "הוספת תנאי חדש"
+
+#: corrMatrix/ui[1][1].label
+#: corrPart/ui[1][3].label
+#: reliability/ui[1][0][1].label
+msgid "Additional Options"
+msgstr "אפשרויות נוספות"
+
+#: cfa/ui[5].label
+#: efa/ui[1][1][2].label
+#: pca/ui[1][1][2].label
+msgid "Additional Output"
+msgstr "פלט נוסף"
+
+#: anovaOneW/ui[1][1][0].label
+#: propTest2/ui[1][1][0].label
+#: ttestIS/ui[1][1][0].label
+#: ttestOneS/ui[1][1][0].label
+#: ttestPS/ui[1][1][0].label
+msgid "Additional Statistics"
+msgstr "סטטיסטיקה נוספת"
+
+#: linReg/options/r2Adj.title
+#: linReg/results/modelFit.columns.title
+msgid "Adjusted R²"
+msgstr "R² מתוקנן"
+
+#: cfa/options/fitMeasures/aic.title
+#: cfa/results/modelFit/fitMeasures.columns.title
+#: linReg/options/aic.title
+#: linReg/results/modelFit.columns.title
+#: logLinear/options/aic.title
+#: logLinear/results/modelFit.columns.title
+#: logRegBin/options/aic.title
+#: logRegBin/results/modelFit.columns.title
+#: logRegMulti/options/aic.title
+#: logRegMulti/results/modelFit.columns.title
+#: logRegOrd/options/aic.title
+#: logRegOrd/results/modelFit.columns.title
+msgid "AIC"
+msgstr "AIC"
+
+#: R/ttestis.b.R
+#: R/ttestones.b.R
+#: R/ttestps.b.R
+msgid "All observations are tied"
+msgstr "כל התצפיות קשורות"
+
+#: contTables/options/hypothesis.title
+#: ttestIS/options/hypothesis.title
+#: ttestOneS/options/hypothesis.title
+#: ttestPS/options/hypothesis.title
+msgid "Alternative hypothesis"
+msgstr "השערה חלופית"
+
+#: ancova/results/contrasts.description
+#: anova/results/contrasts.description
+msgid "an array of contrasts tables"
+msgstr "מערך טבלאות קונטרסטים"
+
+#: descriptives/results/plots.description
+msgid "an array of descriptive plots"
+msgstr "מערך של תרשימי מידע תיאורי"
+
+#: descriptives/results/extremeValues.description
+msgid "an array of extreme values tables"
+msgstr "מערך טבלאות של ערכים קיצוניים"
+
+#: descriptives/results/frequencies.description
+msgid "an array of frequency tables"
+msgstr "מערך של טבלאות שכיחות"
+
+#: anovaOneW/results/plots.description
+#: ttestIS/results/plots.description
+msgid "an array of groups of plots"
+msgstr "מערך של קבוצות תרשימים"
+
+#: linReg/results/models.description
+#: logLinear/results/models.description
+#: logRegBin/results/models.description
+#: logRegMulti/results/models.description
+#: logRegOrd/results/models.description
+msgid "an array of model specific results"
+msgstr "מערך של תוצאות הספציפיות למודל"
+
+#: anovaNP/results/comparisons.description
+#: anovaNP/results/comparisonsDunn.description
+msgid "an array of pairwise comparison tables"
+msgstr "מערך של טבלאות של השוואות זוגיות"
+
+#: ancova/results/postHoc.description
+#: anova/results/postHoc.description
+#: anovaOneW/results/postHoc.description
+msgid "an array of post-hoc tables"
+msgstr "מערך של טבלאות מבחני המשך"
+
+#: ttestOneS/results/qq.description
+msgid "an array of Q-Q plots"
+msgstr "מערך של תרשימי Q-Q"
+
+#: ttestPS/results/plots.description
+msgid "an array of the descriptive plots"
+msgstr "מערך של תרשימי המידע התיאורי"
+
+#: ancova/results/emm.description
+#: anova/results/emm.description
+#: anovaRM/results/emm.description
+#: linReg/results/models.template/emm.description
+#: logLinear/results/models.template/emm.description
+#: logRegBin/results/models.template/emm.description
+#: logRegMulti/results/models.template/emm.description
+msgid "an array of the estimated marginal means plots + tables"
+msgstr "מערך התרשימים והטבלאות של הממוצעים השוליים המשוערים"
+
+#: propTest2/results/postPlots.description
+msgid "an array of the posterior plots"
+msgstr "מערך של תרשימי הפוסטריורים"
+
+#: cfa/results/pathDiagram.description
+msgid "an image containing the model path diagram"
+msgstr "תמונה המכילה את דיאגרמת הנתיבים של המודל"
+
+#: ttestOneS/results/plots.description
+msgid "an image of the descriptive plots"
+msgstr "תמונה של תרשימי המידע התיאורי"
+
+#: package/datasets/ToothGrowth.description
+msgid "An uninspiring ANOVA data set"
+msgstr "מערך נתונים חסר ייחוד עבור ניתוח שונות"
+
+#: package.title
+msgid "Analyses bundled with jamovi"
+msgstr "הניתוחים הכלולים ב־jamovi"
+
+#: package/analyses/ancova.title
+#: package/analyses/ancova.menuTitle
+#: ancova/options.title
+#: ancova/ui.title
+#: ancova/results.title
+msgid "ANCOVA"
+msgstr "ניתוח שונות משותפת (ANCOVA)"
+
+#: efa/options/factorScoreMethod/Anderson.title
+msgid "Anderson & Rubin"
+msgstr "אנדרסון ורובין"
+
+#: package/datasets/Anderson'sIrisData.name
+msgid "Anderson's Iris Data"
+msgstr "נתוני האירוסים של אנדרסון"
+
+#: R/anova.b.R
+#: package/analyses/anovaOneW.menuGroup
+#: package/analyses/anova.title
+#: package/analyses/anova.menuGroup
+#: package/analyses/anova.menuTitle
+#: package/analyses/anovaRM.menuGroup
+#: package/analyses/ancova.menuGroup
+#: package/analyses/mancova.menuGroup
+#: package/analyses/anovaNP.menuGroup
+#: package/analyses/anovaRMNP.menuGroup
+#: ancova/options.menuGroup
+#: anova/options.title
+#: anova/options.menuGroup
+#: anova/ui.title
+#: anova/results.title
+#: anovaNP/options.menuGroup
+#: anovaOneW/options.menuGroup
+#: anovaRM/options.menuGroup
+#: anovaRMNP/options.menuGroup
+#: mancova/options.menuGroup
+msgid "ANOVA"
+msgstr "ניתוח שונות"
+
+#: linReg/options/anova.title
+msgid "ANOVA test"
+msgstr "מבחן ניתוח שונות"
+
+#: R/anovarm.b.R
+msgid "As there are no between subjects factors specified this assumption is always met."
+msgstr "מכיוון שלא צוינו אף גורמים בין נבדקיים, ההנחה תמיד מתקיימת."
+
+#: anovaOneW/options/fishers.title
+msgid "Assume equal (Fisher's)"
+msgstr "הנחת שוויון (של פישר)"
+
+#: ancova/ui[3].label
+#: ancova/results/assump.title
+#: anova/ui[3].label
+#: anova/results/assump.title
+#: anovaOneW/ui[1][1][1].label
+#: anovaOneW/results/assump.title
+#: anovaRM/ui[3].label
+#: efa/ui[1][1][0].label
+#: linReg/ui[3].label
+#: linReg/ui[3][0][0][0].label
+#: linReg/results/models.template/assump.title
+#: logRegBin/ui[3].label
+#: logRegBin/results/models.template/assump.title
+#: mancova/ui[1][1][0].label
+#: mancova/results/assump.title
+#: pca/ui[1][1][0].label
+#: pca/results/assump.title
+#: ttestIS/ui[1][1][1].label
+#: ttestOneS/ui[1][1][1].label
+#: ttestPS/ui[1][1][1].label
+msgid "Assumption Checks"
+msgstr "בדיקת ההנחות"
+
+#: anovaRM/results/assump.title
+#: ttestIS/results/assum.title
+msgid "Assumptions"
+msgstr "הנחות"
+
+#: R/conttables.b.R
+msgid "At least one variable must have two levels"
+msgstr "על משתנה אחד לפחות להכיל שתי רמות"
+
+#: logRegBin/options/auc.title
+#: logRegBin/results/models.template/pred/measures.columns.title
+msgid "AUC"
+msgstr "AUC"
+
+#: linReg/results/models.template/assump/durbin.columns.title
+msgid "Autocorrelation"
+msgstr "מתאם עצמי"
+
+#: linReg/options/durbin.title
+msgid "Autocorrelation test"
+msgstr "מבחן מתאם עצמי"
+
+#: R/conttables.b.R
+msgid "Available for 2x2 tables only"
+msgstr "זמין רק עבור טבלאות 2×2"
+
+#: propTest2/ui[2][0][0]/priorB.label
+msgid "b parameter"
+msgstr "פרמטר b"
+
+#: contTables/options/barplot.title
+msgid "Bar Plot"
+msgstr "תרשים עמודות"
+
+#: descriptives/options/bar.title
+msgid "Bar plot"
+msgstr "תרשים עמודות"
+
+#: descriptives/ui[3][0][2].label
+msgid "Bar Plots"
+msgstr "תרשימי עמודות"
+
+#: contTables/options/bartype.title
+#: contTables/ui[1][3][0][0][1].label
+msgid "Bar Type"
+msgstr "סוג העמודה"
+
+#: efa/options/factorScoreMethod/Bartlett.title
+msgid "Bartlett"
+msgstr "ברטלט"
+
+#: pca/results/assump/bartlett.title
+msgid "Bartlett's Test of Sphericity"
+msgstr "מבחן ברטלט לכדוריות"
+
+#: efa/options/bartlett.title
+#: pca/options/bartlett.title
+msgid "Bartlett's test of sphericity"
+msgstr "מבחן ברטלט לכדוריות"
+
+#: efa/options/nFactorMethod/eigen.title
+#: pca/ui[1][0][1]/nFactorMethod_eigen.label
+msgid "Based on eigenvalue"
+msgstr "בהתבסס על הערך העצמי"
+
+#: efa/options/nFactorMethod/parallel.title
+#: pca/ui[1][0][1]/nFactorMethod_parallel.label
+msgid "Based on parallel analysis"
+msgstr "בהתבסס על ניתוח מקביל"
+
+#: propTest2/options/bf.title
+#: ttestIS/options/bf.title
+#: ttestIS/ui[1][0][0]/students/bf.label
+#: ttestOneS/options/bf.title
+#: ttestOneS/ui[1][0][0]/students/bf.label
+#: ttestPS/options/bf.title
+#: ttestPS/ui[1][0][0]/students/bf.label
+msgid "Bayes factor"
+msgstr "מקדם בייס"
+
+#: propTest2/results/table.columns.title
+#: ttestIS/results/ttest.columns.content
+#: ttestOneS/results/ttest.columns.content
+#: ttestPS/results/ttest.columns.content
+msgid "Bayes factor₁₀"
+msgstr "מקדם בייס₁₀"
+
+#: propTest2/ui[2].label
+msgid "Bayesian Statistics"
+msgstr "סטטיסטיקה בייסיאנית"
+
+#: propTest2/options/priorA.title
+msgid "beta 'a' parameter"
+msgstr "פרמטר הבטא ”a“"
+
+#: propTest2/options/priorB.title
+msgid "beta 'b' parameter"
+msgstr "פרמטר הבטא ”b“"
+
+#: anovaRM/options/bs.title
+msgid "Between Subject Factors"
+msgstr "גורמים בין נבדקיים"
+
+#: anovaRM/ui[2]/bscModelSupplier.label
+msgid "Between Subjects Components"
+msgstr "רכיבים בין נבדקיים"
+
+#: anovaRM/results/bsTable.title
+msgid "Between Subjects Effects"
+msgstr "אפקטים בין נבדקיים"
+
+#: cfa/options/fitMeasures/bic.title
+#: cfa/results/modelFit/fitMeasures.columns.title
+#: linReg/options/bic.title
+#: linReg/results/modelFit.columns.title
+#: logLinear/options/bic.title
+#: logLinear/results/modelFit.columns.title
+#: logRegBin/options/bic.title
+#: logRegBin/results/modelFit.columns.title
+#: logRegMulti/options/bic.title
+#: logRegMulti/results/modelFit.columns.title
+#: logRegOrd/options/bic.title
+#: logRegOrd/results/modelFit.columns.title
+#: pca/results/modelFit/fit.columns.title
+msgid "BIC"
+msgstr "BIC"
+
+#: package/datasets/Big5(Dolan,Oort,Stoel&Wicherts,2009).name
+msgid "Big 5 (Dolan, Oort, Stoel & Wicherts, 2009)"
+msgstr "חמשת הגדולים (Dolan, Oort, Stoel & Wicherts, 2009)"
+
+#: package/analyses/logRegBin.menuSubtitle
+#: logRegBin/options.menuSubtitle
+msgid "Binomial"
+msgstr "בינומי"
+
+#: package/analyses/logRegBin.title
+#: package/analyses/logRegBin.description
+#: logRegBin/options.title
+#: logRegBin/options.description.main
+#: logRegBin/ui.title
+#: logRegBin/results.title
+msgid "Binomial Logistic Regression"
+msgstr "רגרסיה לוגיסטית בינומית"
+
+#: propTest2/results/table.title
+msgid "Binomial Test"
+msgstr "מבחן בינומי"
+
+#: package/analyses/propTest2.menuSubtitle
+#: propTest2/options.menuSubtitle
+msgid "Binomial test"
+msgstr "מבחן בינומי"
+
+#: jamovi/js/linreg.events.js:4
+#: jamovi/js/linreg.events.js:40
+#: jamovi/js/loglinear.events.js:4
+#: jamovi/js/loglinear.events.js:46
+#: jamovi/js/logregbin.events.js:4
+#: jamovi/js/logregbin.events.js:55
+#: jamovi/js/logregord.events.js:38
+#: jamovi/js/logregord.events.js:4
+msgid "Block {0}"
+msgstr "בלוק {0}"
+
+#: linReg/ui[1]/modelSupplier[0]/blocks.template/blockName.label
+#: logLinear/ui[1]/modelSupplier[0]/blocks.template/blockName.label
+#: logRegBin/ui[1]/modelSupplier[0]/blocks.template/blockName.label
+#: logRegMulti/ui[1]/modelSupplier[0]/blocks.template/blockName.label
+#: logRegOrd/ui[1]/modelSupplier[0]/blocks.template/blockName.label
+msgid "Block 1"
+msgstr "בלוק 1"
+
+#: linReg/options/blocks.title
+#: logLinear/options/blocks.title
+#: logRegBin/options/blocks.title
+#: logRegMulti/options/blocks.title
+#: logRegOrd/options/blocks.title
+msgid "Blocks"
+msgstr "בלוקים"
+
+#: ancova/options/postHocCorr/bonf.title
+#: anova/options/postHocCorr/bonf.title
+#: anovaRM/options/postHocCorr/bonf.title
+msgid "Bonferroni"
+msgstr "בונפרוני"
+
+#: descriptives/options/box.title
+msgid "Box plot"
+msgstr "תרשים קופסות"
+
+#: descriptives/ui[3][0][1].label
+msgid "Box Plots"
+msgstr "תרשימי קופסות"
+
+#: logRegBin/options/boxTidwell.title
+msgid "Box-Tidwell test"
+msgstr "מבחן בוקס–טידוול"
+
+#: logRegBin/results/models.template/assump/boxTidwell.title
+msgid "Box-Tidwell Test for Linearity of the Logit"
+msgstr "מבחן בוקס–טידוול לליניאריות של הלוג׳יט"
+
+#: mancova/results/assump/boxM.title
+msgid "Box's Homogeneity of Covariance Matrices Test"
+msgstr "מבחן מטריצות ההומוגניות של השונות המשותפת של בוקס"
+
+#: mancova/ui[1][1][0]/boxM.label
+msgid "Box's M test"
+msgstr "מבחן M של בוקס"
+
+#: mancova/options/boxM.title
+msgid "Box's M test for homogeneity of covariance matrices"
+msgstr "מבחן M של בוקס למטריצות הומוגניות השונות המשותפת"
+
+#: package/datasets/Bugs(Ryan,Wilde&Crist,2013).name
+msgid "Bugs (Ryan, Wilde & Crist, 2013)"
+msgstr "באגים (ריאן, ווילד וכריסט, 2013)"
+
+#: contTables/ui[1][1].label
+msgid "Cells"
+msgstr "תאים"
+
+#: descriptives/ui[2][1][0].label
+msgid "Central Tendency"
+msgstr "מדדי מרכז"
+
+#: cfa/options/fitMeasures/cfi.title
+#: cfa/results/modelFit/fitMeasures.columns.title
+msgid "CFI"
+msgstr "CFI"
+
+#: R/mancova.b.R
+msgid "Chi-Square Quantiles"
+msgstr "שברוני כי בריבוע"
+
+#: corrMatrix/results/matrix.columns.content
+msgid "CI Lower"
+msgstr "רווח סמך תחתון"
+
+#: corrMatrix/results/matrix.columns.content
+msgid "CI Upper"
+msgstr "רווח סמך עליון"
+
+#: logRegBin/results/models.template/pred/class.title
+msgid "Classification Table"
+msgstr "טבלת סיווג"
+
+#: logRegBin/options/class.title
+msgid "Classification table"
+msgstr "טבלת סיווג"
+
+#: R/logregbin.b.R
+msgid "Classification Table – {dep}"
+msgstr "טבלת סיווג – {dep}"
+
+#: R/ancova.b.R
+#: ancova/options/postHocES/d.title
+#: anova/options/postHocES/d.title
+#: ttestIS/results/ttest.columns.content
+#: ttestOneS/results/ttest.columns.content
+#: ttestPS/results/ttest.columns.content
+msgid "Cohen's d"
+msgstr "d של כהן"
+
+#: linReg/results/models.template/assump/collin.title
+#: logRegBin/results/models.template/assump/collin.title
+msgid "Collinearity Statistics"
+msgstr "סטטיסטיקת שיתוף הישר"
+
+#: linReg/options/collin.title
+#: logRegBin/options/collin.title
+msgid "Collinearity statistics"
+msgstr "סטטיסטיקת שיתוף הישר"
+
+#: contTables/options/pcCol.title
+#: contTablesPaired/options/pcCol.title
+msgid "Column"
+msgstr "עמודה"
+
+#: R/conttables.b.R
+#: R/conttablespaired.b.R
+msgid "Column variable '{var}' contains fewer than 2 levels"
+msgstr "עמודת המשתנה ”{var}“ מכילה פחות משתי רמות"
+
+#: contTables/options/cols.title
+#: contTables/options/xaxis/xcols.title
+#: contTablesPaired/options/cols.title
+msgid "Columns"
+msgstr "עמודות"
+
+#: contTables/options/compare/columns.title
+msgid "columns"
+msgstr "עמודות"
+
+#: R/conttables.b.R
+msgid "Columns compared"
+msgstr "העמודות המושוות"
+
+#: contTables/results/odds.title
+msgid "Comparative Measures"
+msgstr "מדדים השוואתיים"
+
+#: contTables/ui[1][0][0][1][0].label
+msgid "Comparative Measures (2x2 only)"
+msgstr "מדדים השוואתיים (2×2 בלבד)"
+
+#: contTables/options/compare.title
+msgid "Compare"
+msgstr "השוואת"
+
+#: R/ancova.b.R
+#: R/anovarm.b.R
+#: linReg/results/modelComp.columns.superTitle
+#: logLinear/results/modelComp.columns.superTitle
+#: logRegBin/results/modelComp.columns.superTitle
+#: logRegMulti/results/modelComp.columns.superTitle
+#: logRegOrd/results/modelComp.columns.superTitle
+msgid "Comparison"
+msgstr "השוואה"
+
+#: R/ancova.b.R
+msgid "Comparisons are based on estimated marginal means"
+msgstr "ההשוואות מבוססות על הממוצעים השוליים המשוערים"
+
+#: R/pca.b.R
+#: pca/results/loadings.columns.superTitle
+#: pca/results/factorStats/factorSummary.columns.title
+#: pca/results/eigen/initEigen.columns.title
+msgid "Component"
+msgstr "רכיב"
+
+#: pca/options/factorCor.title
+msgid "Component correlations"
+msgstr "מתאמי הרכיבים"
+
+#: pca/results/loadings.title
+msgid "Component Loadings"
+msgstr "טעינויות הרכיב"
+
+#: pca/options/factorScoresOV.title
+msgid "Component scores"
+msgstr "ציוני הרכיב"
+
+#: pca/results/factorStats.title
+msgid "Component Statistics"
+msgstr "סטטיסטיקות הרכיב"
+
+#: pca/options/factorSummary.title
+msgid "Component summary"
+msgstr "סיכום הרכיב"
+
+#: pca/ui[1][0][1]/nFactorMethod_fixed/nFactors.suffix
+msgid "component(s)"
+msgstr "רכיב(ים)"
+
+#: ancova/ui[2]/modelSupplier.label
+#: anova/ui[2]/modelSupplier.label
+msgid "Components"
+msgstr "רכיבים"
+
+#: R/pca.b.R
+msgid "components"
+msgstr "רכיבים"
+
+#: ancova/options/postHocEsCi.title
+#: anova/options/postHocEsCi.title
+#: descriptives/options/ci.title
+#: propTest2/results/table.columns.superTitle
+#: ttestIS/options/ci.title
+#: ttestIS/options/ciES.title
+#: ttestOneS/options/ci.title
+#: ttestOneS/options/ciES.title
+#: ttestPS/options/ci.title
+#: ttestPS/options/ciES.title
+msgid "Confidence Interval"
+msgstr "רווח סמך"
+
+#: ancova/options/emmPlotError/ci.title
+#: ancova/ui[5][1][1]/postHocES_d[0]/postHocEsCi.label
+#: ancova/ui[6][1][0][1]/ciWidthEmm.label
+#: anova/options/emmPlotError/ci.title
+#: anova/ui[5][1][1]/postHocES_d[0]/postHocEsCi.label
+#: anova/ui[6][1][0][1]/ciWidthEmm.label
+#: anovaRM/options/emmPlotError/ci.title
+#: anovaRM/ui[6][1][0][1]/ciWidthEmm.label
+#: cfa/options/ci.title
+#: linReg/options/ci.title
+#: linReg/options/ciStdEst.title
+#: linReg/options/ciEmm.title
+#: logLinear/options/ci.title
+#: logLinear/options/ciRR.title
+#: logLinear/options/ciEmm.title
+#: logRegBin/options/ci.title
+#: logRegBin/options/ciOR.title
+#: logRegBin/options/ciEmm.title
+#: logRegMulti/options/ci.title
+#: logRegMulti/options/ciOR.title
+#: logRegMulti/options/ciEmm.title
+#: logRegOrd/options/ci.title
+#: logRegOrd/options/ciOR.title
+#: ttestIS/ui[1][1][0]/meanDiff[0]/ci.label
+#: ttestIS/ui[1][1][0]/effectSize[0]/ciES.label
+#: ttestOneS/ui[1][1][0]/meanDiff[0]/ci.label
+#: ttestOneS/ui[1][1][0]/effectSize[0]/ciES.label
+#: ttestPS/ui[1][1][0]/meanDiff[0]/ci.label
+#: ttestPS/ui[1][1][0]/effectSize[0]/ciES.label
+msgid "Confidence interval"
+msgstr "רווח סמך"
+
+#: descriptives/ui[2][2][1][0]/ci.label
+msgid "Confidence interval for Mean"
+msgstr "רווח סמך של הממוצע"
+
+#: anova/options/ciWidthEmm.title
+#: corrMatrix/options/ciWidth.title
+msgid "Confidence interval width"
+msgstr "רוחב רווח הסמך"
+
+#: contTables/results/odds.columns.superTitle
+#: contTables/results/gamma.columns.superTitle
+msgid "Confidence Intervals"
+msgstr "רווחי סמך"
+
+#: contTables/options/ci.title
+#: corrMatrix/options/ci.title
+#: corrMatrix/ui[1][1]/ci.label
+#: propTest2/options/ci.title
+msgid "Confidence intervals"
+msgstr "רווחי סמך"
+
+#: ancova/options/postHocEsCiWidth.title
+#: ancova/options/ciWidthEmm.title
+#: anova/options/postHocEsCiWidth.title
+#: anovaRM/options/ciWidthEmm.title
+#: cfa/options/ciWidth.title
+#: descriptives/options/ciWidth.title
+#: linReg/options/ciWidth.title
+#: linReg/options/ciWidthStdEst.title
+#: linReg/options/ciWidthEmm.title
+#: logLinear/options/ciWidth.title
+#: logLinear/options/ciWidthRR.title
+#: logLinear/options/ciWidthEmm.title
+#: logRegBin/options/ciWidth.title
+#: logRegBin/options/ciWidthOR.title
+#: logRegBin/options/ciWidthEmm.title
+#: logRegMulti/options/ciWidth.title
+#: logRegMulti/options/ciWidthOR.title
+#: logRegMulti/options/ciWidthEmm.title
+#: logRegOrd/options/ciWidth.title
+#: logRegOrd/options/ciWidthOR.title
+#: ttestIS/options/ciWidth.title
+#: ttestIS/options/ciWidthES.title
+#: ttestOneS/options/ciWidth.title
+#: ttestOneS/options/ciWidthES.title
+#: ttestPS/options/ciWidth.title
+#: ttestPS/options/ciWidthES.title
+msgid "Confidence level"
+msgstr "רמת הביטחון"
+
+#: package/analyses/cfa.title
+#: package/analyses/cfa.menuTitle
+#: package/analyses/cfa.description
+#: cfa/options.title
+#: cfa/options.description.main
+#: cfa/ui.title
+#: cfa/results.title
+msgid "Confirmatory Factor Analysis"
+msgstr "ניתוח גורמים מאשש"
+
+#: cfa/options/constrain.title
+#: cfa/ui[2][1][0].label
+msgid "Constraints"
+msgstr "אילוצים"
+
+#: contTables/options/contCoef.title
+#: contTables/results/nom.columns.content
+msgid "Contingency coefficient"
+msgstr "מקדם הקריבות"
+
+#: package/analyses/contTables.title
+#: package/analyses/contTables.menuSubgroup
+#: package/analyses/contTablesPaired.menuSubgroup
+#: contTables/options.title
+#: contTables/options.menuSubgroup
+#: contTables/ui.title
+#: contTables/results.title
+#: contTables/results/freqs.title
+#: contTablesPaired/options.menuSubgroup
+#: contTablesPaired/results/freqs.title
+msgid "Contingency Tables"
+msgstr "טבלאות קריבות"
+
+#: ancova/options/contrasts.title
+#: ancova/ui[4].label
+#: ancova/results/contrasts.title
+#: anova/options/contrasts.title
+#: anova/ui[4].label
+#: anova/results/contrasts.title
+#: anovaRM/options/contrasts.title
+#: anovaRM/ui[4].label
+#: anovaRM/results/contrasts.title
+msgid "Contrasts"
+msgstr "קונטרסטים"
+
+#: ancova/results/contrasts.template.title
+#: anova/results/contrasts.template.title
+#: anovaRM/results/contrasts.template.title
+msgid "Contrasts - $key"
+msgstr "קונטרסטים – $key"
+
+#: corrPart/ui/variablesupplier[1].label
+msgid "Control Variables"
+msgstr "משתני בקרה"
+
+#: corrPart/options/controls.title
+msgid "Control variables"
+msgstr "משתני בקרה"
+
+#: R/corrpart.b.R
+msgid "controlling for {items}"
+msgstr "בקרה על {items}"
+
+#: linReg/results/models.template/dataSummary/cooks.title
+#: linReg/results/cooksOV.title
+#: logRegBin/results/models.template/dataSummary/cooks.title
+msgid "Cook's Distance"
+msgstr "מרחק קוק"
+
+#: R/linreg.b.R
+#: R/logregbin.b.R
+#: linReg/options/cooks.title
+#: linReg/options/cooksOV.title
+#: logRegBin/options/cooks.title
+#: logRegBin/options/cooksOV.title
+#: logRegBin/results/cooksOV.title
+msgid "Cook's distance"
+msgstr "מרחק קוק"
+
+#: ancova/options/postHocCorr.title
+#: ancova/ui[5][1][0].label
+#: anova/options/postHocCorr.title
+#: anova/ui[5][1][0].label
+msgid "Correction"
+msgstr "תיקון"
+
+#: anovaRM/options/postHocCorr.title
+#: anovaRM/ui[5][1][0].label
+msgid "Corrections"
+msgstr "תיקונים"
+
+#: corrMatrix/options/hypothesis/corr.title
+#: corrPart/options/hypothesis/corr.title
+msgid "Correlated"
+msgstr "יש מתאם"
+
+#: corrMatrix/options/hypothesis/neg.title
+#: corrPart/options/hypothesis/neg.title
+msgid "Correlated negatively"
+msgstr "מתאם שלילי"
+
+#: corrMatrix/options/hypothesis/pos.title
+#: corrPart/options/hypothesis/pos.title
+msgid "Correlated positively"
+msgstr "מתאם חיובי"
+
+#: R/corrpart.b.R
+#: corrPart/results/matrix.title
+msgid "Correlation"
+msgstr "מתאם"
+
+#: corrMatrix/ui[1][0].label
+#: corrPart/ui[1][0].label
+msgid "Correlation Coefficients"
+msgstr "מקדמי המתאם"
+
+#: reliability/options/corPlot.title
+#: reliability/results/corPlot.title
+msgid "Correlation Heatmap"
+msgstr "מפת חום של מתאם"
+
+#: reliability/ui[1][0][1]/corPlot.label
+msgid "Correlation heatmap"
+msgstr "מפת חום של מתאם"
+
+#: package/analyses/corrMatrix.description
+msgid "Correlation matrices are a way to examine linear relationships between\n"
+"two or more continuous variables."
+msgstr "מטריצות מתאם הן דרך לבחינת היחסים הליניאריים\n"
+"בין שני משתנים רציפים או יותר."
+
+#: corrMatrix/options.description.main
+msgid "Correlation matrices are a way to examine linear relationships between\n"
+"two or more continuous variables.\n"
+"\n"
+"For each pair of variables, a Pearson's r value indicates the strength\n"
+"and direction of the relationship between those two variables. A\n"
+"positive value indicates a positive relationship (higher values of one\n"
+"variable predict higher values of the other variable). A negative\n"
+"Pearson's r indicates a negative relationship (higher values of one\n"
+"variable predict lower values of the other variable, and vice-versa).\n"
+"A value of zero indicates no relationship (whether a variable is high\n"
+"or low, does not tell us anything about the value of the other\n"
+"variable).\n"
+"\n"
+"More formally, it is possible to test the null hypothesis that the\n"
+"correlation is zero and calculate a p-value. If the p-value is low, it\n"
+"suggests the correlation co-efficient is not zero, and there is a linear\n"
+"(or more complex) relationship between the two variables."
+msgstr "מטריצות מתאם הן דרך לבחינת היחסים הליניאריים בין שני משתנים רציפים או יותר.\n"
+"\n"
+"עבור כל צמד משתנים, r של פירסון מעיד על חוזק הקשר ביניהם ועל הכיוון שלו.\n"
+"ערך חיובי מעיד על קשר חיובי (ערכים גבוהים של משתנה אחד מנבאים ערכים גבוהים\n"
+"של המשתנה השני). ערך שלילי של r של פירסון מעיד על קשר שלילי (ערכים גבוהים\n"
+"של משתנה אחד מנבאים ערכים נמוכים של המשתנה השני, ולהפך). הערך אפס מעיד\n"
+"שאין קשר (בין אם הערך של המשתנה גבוה או נמוך, זה לא אומר דבר על המשתנה השני).\n"
+"\n"
+"באופן רשמי, ניתן לבחון את השערת האפס שהמתאם הוא אפס ולחשב את ערך ה־p.\n"
+"ערך p נמוך מעיד על מקדם המתאם שאינו שווה לאפס ושיש קשר ליניארי (או מורכב\n"
+"יותר) בין שני המשתנים."
+
+#: package/analyses/corrMatrix.title
+#: package/analyses/corrMatrix.menuTitle
+#: corrMatrix/options.title
+#: corrMatrix/ui.title
+#: corrMatrix/results.title
+#: corrMatrix/results/matrix.title
+msgid "Correlation Matrix"
+msgstr "מטריצת מתאמים"
+
+#: corrMatrix/options/plots.title
+#: corrMatrix/ui[1][3]/plots.label
+msgid "Correlation matrix"
+msgstr "מטריצת מתאמים"
+
+#: corrPart/ui[1][2].label
+msgid "Correlation Type"
+msgstr "סוג מתאם"
+
+#: corrPart/options/type.title
+msgid "Correlation type"
+msgstr "סוג מתאם"
+
+#: R/conttablespaired.b.R
+#: propTest2/results/table.columns.title
+#: propTestN/results/props.columns.title
+msgid "Count"
+msgstr "ספירה"
+
+#: R/conttables.b.R
+#: R/descriptives.b.R
+#: R/loglinear.b.R
+#: contTables/options/yaxis/ycounts.title
+#: contTables/ui[1][1][0][0][0].label
+#: descriptives/options/barCounts.title
+msgid "Counts"
+msgstr "ספירות"
+
+#: contTables/options/counts.title
+#: contTablesPaired/options/counts.title
+#: logLinear/options/counts.title
+#: logLinear/ui[0][1].label
+#: propTestN/options/counts.title
+msgid "Counts (optional)"
+msgstr "ספירות (רשות)"
+
+#: R/conttables.b.R
+#: R/conttablespaired.b.R
+msgid "Counts may not be infinite"
+msgstr "הספירות לא יכולות להיות אין־סופיות"
+
+#: R/conttables.b.R
+#: R/conttablespaired.b.R
+msgid "Counts may not be negative"
+msgstr "הספירות לא יכולות להיות שליליות"
+
+#: R/conttablespaired.b.R
+msgid "Counts must be non-negative and finite"
+msgstr "על ספירות להיות לא שליליות וסופיות"
+
+#: ancova/options/covs.title
+#: anovaRM/options/cov.title
+#: linReg/options/covs.title
+#: linReg/ui[0][1].label
+#: logRegBin/options/covs.title
+#: logRegBin/ui[0][1].label
+#: logRegMulti/options/covs.title
+#: logRegMulti/ui[0][1].label
+#: logRegOrd/options/covs.title
+#: logRegOrd/ui[0][1].label
+#: mancova/options/covs.title
+msgid "Covariates"
+msgstr "משתנים נלווים"
+
+#: logLinear/options/pseudoR2/r2cs.title
+#: logRegBin/options/pseudoR2/r2cs.title
+#: logRegMulti/options/pseudoR2/r2cs.title
+#: logRegOrd/options/pseudoR2/r2cs.title
+msgid "Cox & Snell's R²"
+msgstr "R² של קוקס וסנל"
+
+#: contTables/results/nom.columns.content
+msgid "Cramer's V"
+msgstr "V של קרמר"
+
+#: propTest2/results/table.columns.superTitle
+msgid "Credible Interval"
+msgstr "רווח בר מהימנות"
+
+#: propTest2/options/ciBayes.title
+msgid "Credible intervals"
+msgstr "רווחי מהימנות"
+
+#: reliability/options/alphaScale.title
+#: reliability/results/scale.columns.title
+#: reliability/results/items.columns.title
+msgid "Cronbach's α"
+msgstr "α של קרונבך"
+
+#: reliability/options/alphaItems.title
+msgid "Cronbach's α (if item is dropped)"
+msgstr "α של קרונבך (אם פריט מושמט)"
+
+#: R/utilsanova.R
+msgid "cubic"
+msgstr "קובייתי"
+
+#: R/descriptives.b.R
+#: pca/results/factorStats/factorSummary.columns.title
+#: pca/results/eigen/initEigen.columns.title
+msgid "Cumulative %"
+msgstr "% מצטבר"
+
+#: descriptives/options/pcNEqGr.title
+msgid "Cut point values"
+msgstr "ערכי נקודת חתך"
+
+#: descriptives/options/pcEqGr.title
+#: descriptives/ui[2][0][1][0]/pcEqGr.label
+msgid "Cut points for"
+msgstr "חיתוך לפי"
+
+#: R/logregbin.b.R
+#: logRegBin/ui[7][0][0][0].label
+msgid "Cut-Off"
+msgstr "חיתוך"
+
+#: logRegBin/results/models.template/pred/cutOffPlot.title
+msgid "Cut-Off Plot"
+msgstr "תרשים חיתוך"
+
+#: logRegBin/options/cutOffPlot.title
+msgid "Cut-off plot"
+msgstr "תרשים חיתוך"
+
+#: logRegBin/options/cutOff.title
+msgid "Cut-off value"
+msgstr "ערך חיתוך"
+
+#: R/pca.b.R
+#: descriptives/options/dot.title
+msgid "Data"
+msgstr "נתונים"
+
+#: package/analyses/pca.menuSubgroup
+#: package/analyses/efa.menuSubgroup
+#: package/analyses/cfa.menuSubgroup
+msgid "Data Reduction"
+msgstr "תמצות מידע"
+
+#: weights/results/text.content
+msgid "Data set is currently unweighted"
+msgstr "מערך הנתונים לא משוקלל כרגע"
+
+#: linReg/ui[3][0][1][0].label
+#: linReg/results/models.template/dataSummary.title
+#: logRegBin/results/models.template/dataSummary.title
+msgid "Data Summary"
+msgstr "סיכום הנתונים"
+
+#: R/utilsanova.R
+msgid "degree"
+msgstr "דרגה"
+
+#: corrMatrix/options/plotDens.title
+msgid "Densities for variables"
+msgstr "צפיפויות עבור המשתנים"
+
+#: R/proptest2.b.R
+#: descriptives/options/dens.title
+msgid "Density"
+msgstr "צפיפות"
+
+#: anovaRM/options/depLabel.default
+msgid "Dependent"
+msgstr "תלוי"
+
+#: ancova/options/dep.title
+#: anova/options/dep.title
+#: linReg/options/dep.title
+#: logRegBin/options/dep.title
+#: logRegMulti/options/dep.title
+#: logRegOrd/options/dep.title
+#: mancova/results/univar.columns.title
+msgid "Dependent Variable"
+msgstr "משתנה תלוי"
+
+#: R/ancova.b.R
+msgid "Dependent variable '{dep}' contains infinite values"
+msgstr "המשתנה התלוי ”{dep}“ מכיל אין־סוף ערכים"
+
+#: R/ancova.b.R
+msgid "Dependent variable '{dep}' contains no data (after removing rows with missing values)"
+msgstr "המשתנה התלוי ”{dep}“ אינו מכיל נתונים (לאחר הסרת שורות בעלות ערכים חסרים)"
+
+#: R/ancova.b.R
+msgid "Dependent variable '{dep}' contains only one unique value (after removing rows with missing values)"
+msgstr "המשתנה התלוי ”{dep}“ מכיל רק ערך ייחודי אחד (לאחר הסרת שורות בעלות ערכים חסרים)"
+
+#: R/ancova.b.R
+msgid "Dependent variable '{dep}' must be continuous"
+msgstr "על המשתנה התלוי ”{dep}“ להיות רציף"
+
+#: anovaRM/ui[1][1][0].label
+msgid "Dependent Variable Label"
+msgstr "תווית המשתנה התלוי"
+
+#: anovaNP/options/deps.title
+#: anovaOneW/options/deps.title
+#: anovaOneW/ui[0][0].label
+#: mancova/options/deps.title
+#: ttestIS/options/vars.title
+#: ttestOneS/options/vars.title
+msgid "Dependent Variables"
+msgstr "משתנים תלויים"
+
+#: R/mancova.b.R
+msgid "Dependent variables are very highly correlated"
+msgstr "בין המשתנים התלויים יש מתאם גבוה מאוד"
+
+#: ttestOneS/options/mann.description
+msgid "deprecated"
+msgstr "יצא משימוש"
+
+#: anovaRMNP/results/plot.title
+msgid "Descriptive Plot"
+msgstr "תרשים המידע התיאורי"
+
+#: anovaRMNP/options/plots.title
+msgid "Descriptive plot"
+msgstr "תרשים המידע התיאורי"
+
+#: package/analyses/descriptives.title
+#: package/analyses/descriptives.menuTitle
+#: anovaRMNP/options/desc.title
+#: anovaRMNP/results/desc.title
+#: descriptives/options.title
+#: descriptives/options/desc.title
+#: descriptives/ui.title
+#: descriptives/results.title
+#: descriptives/results/descriptives.title
+#: descriptives/results/descriptivesT.title
+#: ttestIS/ui[1][1][0]/desc.label
+#: ttestOneS/ui[1][1][0]/desc.label
+#: ttestOneS/results/descriptives.title
+#: ttestPS/ui[1][1][0]/desc.label
+#: ttestPS/results/desc.title
+msgid "Descriptives"
+msgstr "מידע תיאורי"
+
+#: package/analyses/descriptives.description
+#: descriptives/options.description.main
+msgid "Descriptives are an assortment of summarising statistics, and visualizations which allow exploring the shape and distribution of data. It is good practice to explore your data with descriptives before proceeding to more formal tests."
+msgstr "מידע תיאורי הוא אוסף של סטטיסטיקות מסכמות ושל דרכי הצגת מידע העוזרות לחקור את הצורה ואת ההתפלגות של הנתונים. מומלץ לחקור את הנתונים עם מידע תיאורי לפני שממשיכים למבחנים רשמיים יותר."
+
+#: anovaOneW/results/plots.template/desc.description
+#: ttestIS/results/plots.template/desc.description
+#: ttestPS/results/plots.template/desc.description
+msgid "descriptives plot"
+msgstr "תרשים מידע תיאורי"
+
+#: ttestIS/options/plots.title
+#: ttestOneS/options/plots.title
+#: ttestPS/options/plots.title
+msgid "Descriptives Plots"
+msgstr "תרשימי מידע תיאורי"
+
+#: anovaOneW/options/descPlot.title
+#: ttestIS/ui[1][1][0]/plots.label
+#: ttestOneS/ui[1][1][0]/plots.label
+#: ttestPS/ui[1][1][0]/plots.label
+msgid "Descriptives plots"
+msgstr "תרשימי מידע תיאורי"
+
+#: ttestIS/options/desc.title
+#: ttestOneS/options/desc.title
+#: ttestPS/options/desc.title
+msgid "Descriptives Table"
+msgstr "טבלת המידע התיאורי"
+
+#: anovaOneW/options/desc.title
+msgid "Descriptives table"
+msgstr "טבלת הנתונים התיאוריים"
+
+#: logLinear/options/dev.title
+#: logLinear/results/modelFit.columns.title
+#: logRegBin/options/dev.title
+#: logRegBin/results/modelFit.columns.title
+#: logRegMulti/options/dev.title
+#: logRegMulti/results/modelFit.columns.title
+#: logRegOrd/options/dev.title
+#: logRegOrd/results/modelFit.columns.title
+msgid "Deviance"
+msgstr "סטייה"
+
+#: R/conttables.b.R
+msgid "Deviance residuals"
+msgstr "הנתונים השיוריים של הסטייה"
+
+#: contTables/options/resA.title
+msgid "Deviance residuals (Poisson GLM)"
+msgstr "הנתונים השיוריים של הסטייה (GLM של פואסון)"
+
+#: R/conttables.b.R
+msgid "Deviance residuals are adjusted residuals from a Poisson GLM."
+msgstr "הנתונים השיוריים של הסטייה הם נתונים שיוריים מתוקננים מ־GLM של פואסון."
+
+#: ancova/options/contrasts.template/type/deviation.title
+#: anova/options/contrasts.template/type/deviation.title
+#: anovaRM/options/contrasts.template/type/deviation.title
+msgid "Deviation"
+msgstr "סטייה"
+
+#: R/ancova.b.R
+#: ancova/results/main.columns.title
+#: anovaNP/results/table.columns.title
+#: anovaOneW/results/postHoc.template.columns.content
+#: anovaRM/results/rmTable.columns.title
+#: anovaRM/results/bsTable.columns.title
+#: anovaRMNP/results/table.columns.title
+#: cfa/results/modelFit/test.columns.title
+#: contTables/results/chiSq.columns.title
+#: contTables/results/mh.columns.title
+#: contTablesPaired/results/test.columns.title
+#: corrMatrix/results/matrix.columns.content
+#: linReg/results/models.template/anova.columns.title
+#: logLinear/results/modelFit.columns.title
+#: logLinear/results/modelComp.columns.title
+#: logLinear/results/models.template/lrt.columns.title
+#: logRegBin/results/modelFit.columns.title
+#: logRegBin/results/modelComp.columns.title
+#: logRegBin/results/models.template/lrt.columns.title
+#: logRegMulti/results/modelFit.columns.title
+#: logRegMulti/results/modelComp.columns.title
+#: logRegMulti/results/models.template/lrt.columns.title
+#: logRegOrd/results/modelFit.columns.title
+#: logRegOrd/results/modelComp.columns.title
+#: logRegOrd/results/models.template/lrt.columns.title
+#: mancova/results/univar.columns.title
+#: mancova/results/assump/boxM.columns.title
+#: pca/results/modelFit/fit.columns.title
+#: pca/results/assump/bartlett.columns.title
+#: propTestN/results/tests.columns.title
+#: ttestIS/results/ttest.columns.title
+#: ttestOneS/results/ttest.columns.title
+#: ttestPS/results/ttest.columns.title
+msgid "df"
+msgstr "ד״ח"
+
+#: anovaOneW/results/anova.columns.title
+#: linReg/results/modelFit.columns.title
+#: linReg/results/modelComp.columns.title
+#: mancova/results/multivar.columns.title
+msgid "df1"
+msgstr "ד״ח1"
+
+#: anovaOneW/results/anova.columns.title
+#: linReg/results/modelFit.columns.title
+#: linReg/results/modelComp.columns.title
+#: mancova/results/multivar.columns.title
+msgid "df2"
+msgstr "ד״ח2"
+
+#: ancova/options/contrasts.template/type/difference.title
+#: anova/options/contrasts.template/type/difference.title
+#: anovaRM/options/contrasts.template/type/difference.title
+msgid "Difference"
+msgstr "הפרש"
+
+#: contTables/results/odds.columns.content
+msgid "Difference in 2 proportions"
+msgstr "הבדל בין שני יחסים"
+
+#: contTables/options/diffProp.title
+msgid "Difference in proportions"
+msgstr "הבדל בין יחסים"
+
+#: descriptives/ui[2][2][0].label
+msgid "Dispersion"
+msgstr "פיזור"
+
+#: descriptives/ui[2][3][0].label
+msgid "Distribution"
+msgstr "התפלגות"
+
+#: R/descriptives.b.R
+msgid "Does not support weighted data yet."
+msgstr "עדיין אין תמיכה בנתונים משוקללים."
+
+#: anovaOneW/options/welchs.title
+msgid "Don't assume equal (Welch's)"
+msgstr "ללא הנחת שוויון (של ולץ׳)"
+
+#: anovaRM/ui/variablesupplier[1]/rmCells.template[0].ghostText
+msgid "drag variable here"
+msgstr "יש לגרור לכאן משתנה"
+
+#: ancova/ui[6][0]/emMeansSupplier[0]/emMeans.template/blockList.ghostText
+#: anova/ui[6][0]/emMeansSupplier[0]/emMeans.template/blockList.ghostText
+#: anovaRM/ui[6][0]/emMeansSupplier[0]/emMeans.template/blockList.ghostText
+#: cfa/ui[0][0]/factors.template/blockList.ghostText
+#: linReg/ui[1]/modelSupplier[0]/blocks.template/blockList.ghostText
+#: linReg/ui[6][0]/emMeansSupplier[0]/emMeans.template/blockList.ghostText
+#: logLinear/ui[1]/modelSupplier[0]/blocks.template/blockList.ghostText
+#: logLinear/ui[5][0]/emMeansSupplier[0]/emMeans.template/blockList.ghostText
+#: logRegBin/ui[1]/modelSupplier[0]/blocks.template/blockList.ghostText
+#: logRegBin/ui[6][0]/emMeansSupplier[0]/emMeans.template/blockList.ghostText
+#: logRegMulti/ui[1]/modelSupplier[0]/blocks.template/blockList.ghostText
+#: logRegMulti/ui[5][0]/emMeansSupplier[0]/emMeans.template/blockList.ghostText
+#: logRegOrd/ui[1]/modelSupplier[0]/blocks.template/blockList.ghostText
+msgid "drag variables here"
+msgstr "יש לגרור לכאן משתנים"
+
+#: anovaNP/options/pairs.title
+msgid "DSCF pairwise comparisons"
+msgstr "השוואות זוגיות DSCF"
+
+#: anovaNP/options/pairsDunn.title
+#: anovaNP/results/comparisonsDunn.title
+msgid "Dunn's pairwise comparisons"
+msgstr "השוואות זוגיות של דאן"
+
+#: linReg/results/models.template/assump/durbin.title
+msgid "Durbin–Watson Test for Autocorrelation"
+msgstr "מבחן דורבין–וטסון למתאם עצמי"
+
+#: linReg/results/models.template/assump/durbin.columns.title
+msgid "DW Statistic"
+msgstr "הסטטיסטי של DW"
+
+#: anovaNP/results/comparisons.title
+msgid "Dwass-Steel-Critchlow-Fligner pairwise comparisons"
+msgstr "השוואות זוגיות של דוואס–סטיל–קריצ׳לו–פלינגר"
+
+#: ancova/options/effectSize.title
+#: ancova/ui[1][1].label
+#: ancova/ui[5][1][1].label
+#: anova/options/effectSize.title
+#: anova/ui[1][1].label
+#: anova/ui[5][1][1].label
+#: anovaNP/ui[1][0].label
+#: anovaRM/options/effectSize.title
+#: anovaRM/ui[1][0][0].label
+#: ttestIS/options/effectSize.title
+#: ttestIS/results/ttest.columns.title
+#: ttestOneS/results/ttest.columns.title
+#: ttestPS/options/effectSize.title
+#: ttestPS/results/ttest.columns.title
+msgid "Effect Size"
+msgstr "גודל האפקט"
+
+#: ancova/options/postHocES.title
+#: anova/options/postHocES.title
+#: ttestIS/ui[1][1][0]/effectSize.label
+#: ttestOneS/options/effectSize.title
+#: ttestOneS/ui[1][1][0]/effectSize.label
+#: ttestPS/ui[1][1][0]/effectSize.label
+msgid "Effect size"
+msgstr "גודל האפקט"
+
+#: R/pca.b.R
+#: pca/results/eigen/initEigen.columns.title
+msgid "Eigenvalue"
+msgstr "ערך עצמי"
+
+#: pca/results/eigen.title
+msgid "Eigenvalues"
+msgstr "ערכים עצמיים"
+
+#: efa/ui[1][0][1]/nFactorMethod_eigen/minEigen.label
+#: pca/ui[1][0][1]/nFactorMethod_eigen/minEigen.label
+msgid "Eigenvalues greater than"
+msgstr "ערכים עצמיים הגדולים מ־"
+
+#: R/anovarm.b.R
+msgid "Empty cells in between subject design: at least one combination of between subject factor levels has 0 observations"
+msgstr "תאים ריקים במערך בין נבדקי: לפחות לצירוף אחד של רמות הגורם הבין נבדקי יש 0 תצפיות"
+
+#: ancova/options/emmWeights.title
+#: anova/options/emmWeights.title
+#: anovaRM/options/emmWeights.title
+#: linReg/options/emmWeights.title
+#: logLinear/options/emmWeights.title
+#: logRegBin/options/emmWeights.title
+#: logRegMulti/options/emmWeights.title
+msgid "Equal cell weights"
+msgstr "משקלי תאים זהים"
+
+#: descriptives/ui[2][0][1][0]/pcEqGr/pcNEqGr.suffix
+msgid "equal groups"
+msgstr "קבוצות שוות"
+
+#: ttestIS/results/ttest.columns.title
+#: ttestOneS/results/ttest.columns.title
+#: ttestPS/results/ttest.columns.title
+msgid "error %"
+msgstr "% הטעות"
+
+#: ancova/options/emmPlotError.title
+#: anova/options/emmPlotError.title
+#: anovaRM/options/emmPlotError.title
+msgid "Error bars"
+msgstr "עמודות שגיאה"
+
+#: ancova/results/contrasts.template.columns.title
+#: anovaRM/results/contrasts.template.columns.title
+#: cfa/results/factorLoadings.columns.title
+#: cfa/results/factorEst/factorCov.columns.title
+#: cfa/results/factorEst/factorIntercept.columns.title
+#: cfa/results/resEst/resCov.columns.title
+#: cfa/results/resEst/resIntercept.columns.title
+#: linReg/ui[5][0][0][1].label
+#: linReg/results/models.template/coef.columns.title
+#: logLinear/results/models.template/coef.columns.title
+#: logRegBin/results/models.template/coef.columns.title
+#: logRegBin/results/models.template/assump/boxTidwell.columns.title
+#: logRegMulti/results/models.template/coef.columns.title
+#: logRegOrd/results/models.template/coef.columns.title
+#: logRegOrd/results/models.template/thres.columns.title
+msgid "Estimate"
+msgstr "אומדן"
+
+#: logRegBin/ui[5][0][0][1].label
+#: logRegMulti/ui[4][0][0][1].label
+#: logRegOrd/ui[4][0][1][0].label
+msgid "Estimate (Log Odds Ratio)"
+msgstr "אומדן (יחס הלוג של הסיכויים)"
+
+#: logLinear/ui[4][0][0][1].label
+msgid "Estimate (Log Rate Ratio)"
+msgstr "אומדן (לוג יחס השיעורים)"
+
+#: ancova/ui[6].label
+#: ancova/results/emm.title
+#: anova/ui[6].label
+#: anova/results/emm.title
+#: anovaRM/ui[6].label
+#: anovaRM/results/emm.title
+#: linReg/ui[6].label
+#: linReg/results/models.template/emm.title
+#: logLinear/ui[5].label
+#: logLinear/results/models.template/emm.title
+#: logRegBin/ui[6].label
+#: logRegBin/results/models.template/emm.title
+#: logRegMulti/ui[5].label
+#: logRegMulti/results/models.template/emm.title
+msgid "Estimated Marginal Means"
+msgstr "ממוצעים שוליים משוערים"
+
+#: R/ancova.b.R
+#: R/anovarm.b.R
+#: R/linreg.b.R
+#: R/loglinear.b.R
+#: R/logregbin.b.R
+#: R/logregmulti.b.R
+msgid "Estimated Marginal Means - {term}"
+msgstr "ממוצעים שוליים משוערים – {term}"
+
+#: cfa/ui[3].label
+msgid "Estimates"
+msgstr "אומדנים"
+
+#: R/logregbin.b.R
+msgid "Estimates represent the log odds of …"
+msgstr "אומדנים המייצגים את הלוג של הסיכויים של…"
+
+#: R/logregbin.b.R
+msgid "Estimates represent the log odds of \"{dep} = {level1}\" vs. \"{dep} = {level2}\""
+msgstr "אומדנים מייצגים את הלוג של הסיכויים של ”{dep} = {level1}“ מול ”{dep} = {level2}“"
+
+#: efa/options/factorScoreMethod.title
+msgid "Estimation method"
+msgstr "שיטת האומדן"
+
+#: anovaOneW/ui[1][0][1]/miss_perAnalysis.label
+#: ttestIS/ui[1][0][2]/miss_perAnalysis.label
+#: ttestOneS/ui[1][0][2]/miss_perAnalysis.label
+#: ttestPS/ui[1][0][2]/miss_perAnalysis.label
+msgid "Exclude cases analysis by analysis"
+msgstr "הוצאה בהתאם לכל ניתוח"
+
+#: anovaOneW/ui[1][0][1]/miss_listwise.label
+#: cfa/ui[2][0][0]/miss_listwise.label
+#: ttestIS/ui[1][0][2]/miss_listwise.label
+#: ttestOneS/ui[1][0][2]/miss_listwise.label
+#: ttestPS/ui[1][0][2]/miss_listwise.label
+msgid "Exclude cases listwise"
+msgstr "הוצאה בהתאם לרשימת המשתנים"
+
+#: anovaRM/results/groupSummary.columns.title
+msgid "Excluded"
+msgstr "הוצאו"
+
+#: R/conttables.b.R
+#: propTestN/results/props.columns.content
+msgid "Expected"
+msgstr "מצופה"
+
+#: contTables/options/exp.title
+#: propTestN/options/expected.title
+msgid "Expected counts"
+msgstr "הספירות הצפויות"
+
+#: propTestN/options/ratio.title
+#: propTestN/ui[2].label
+msgid "Expected Proportions"
+msgstr "היחסים המצופים"
+
+#: package/analyses/descriptives.menuGroup
+#: descriptives/options.menuGroup
+msgid "Exploration"
+msgstr "סקירה"
+
+#: R/efa.b.R
+#: package/analyses/efa.title
+#: package/analyses/efa.menuTitle
+#: package/analyses/efa.description
+#: efa/options.title
+#: efa/options.description.main
+#: efa/ui.title
+#: efa/results.title
+#: efa/results/text.title
+msgid "Exploratory Factor Analysis"
+msgstr "ניתוח גורמים מגשש"
+
+#: efa/options/extraction.title
+msgid "Extraction"
+msgstr "חילוץ"
+
+#: descriptives/options/extreme.title
+msgid "Extreme values"
+msgstr "ערכים קיצוניים"
+
+#: descriptives/results/extremeValues.title
+msgid "Extreme Values"
+msgstr "ערכים קיצוניים"
+
+#: descriptives/results/extremeValues.template.title
+msgid "Extreme values of $key"
+msgstr "ערכים קיצוניים של $key"
+
+#: linReg/options/modelTest.title
+msgid "F test"
+msgstr "מבחן F"
+
+#: R/ttestis.b.R
+msgid "F-statistic could not be calculated"
+msgstr "לא ניתן היה לחשב את הסטטיסטי F"
+
+#: R/efa.b.R
+#: package/analyses/reliability.menuGroup
+#: package/analyses/pca.menuGroup
+#: package/analyses/efa.menuGroup
+#: package/analyses/cfa.menuGroup
+#: cfa/options.menuGroup
+#: cfa/results/factorLoadings.columns.title
+#: efa/options.menuGroup
+#: pca/options.menuGroup
+#: reliability/options.menuGroup
+msgid "Factor"
+msgstr "גורם"
+
+#: R/loglinear.b.R
+msgid "Factor '{factor}' has less than two levels. Factors must have at least two levels"
+msgstr "לגורם ”{factor}“ יש פחות משתי רמות. לגורמים חייבות להיות לפחות שתי רמות"
+
+#: R/linreg.b.R
+msgid "Factor '{factor}' needs to have at least 2 levels"
+msgstr "הגורם ”{factor}“ צריך להיות בעל 2 רמות לפחות"
+
+#: R/ancova.b.R
+msgid "Factor '{factorName}' contains no data (after removing rows with missing values)"
+msgstr "הגורם ”{factorName}“ אינו מכיל נתונים (לאחר הסרת שורות בעלות ערכים חסרים)"
+
+#: R/ancova.b.R
+msgid "Factor '{factorName}' contains only a single level (after removing rows with missing values)"
+msgstr "הגורם ”{factorName}“ מכיל רק רמה יחידה (לאחר הסרת שורות בעלות ערכים חסרים)"
+
+#: R/ancova.b.R
+msgid "Factor '{factorName}' contains unused levels (after removing rows with missing values)"
+msgstr "הגורם ”{factorName}“ מכיל רמות שאינן בשימוש (לאחר הסרת שורות בעלות ערכים חסרים)"
+
+#: jamovi/js/cfa.events.js:40
+msgid "Factor {0}"
+msgstr "גורם {0}"
+
+#: cfa/options/factors.default[0].label
+msgid "Factor 1"
+msgstr "גורם 1"
+
+#: efa/options/factorCor.title
+msgid "Factor correlations"
+msgstr "מתאמים של הגורמים"
+
+#: cfa/results/factorEst/factorCov.title
+msgid "Factor Covariances"
+msgstr "השונויות המשותפות של הגורמים"
+
+#: cfa/options/factCovEst.title
+msgid "Factor covariances"
+msgstr "השונויות המשותפות של הגורמים"
+
+#: cfa/results/factorEst.title
+msgid "Factor Estimates"
+msgstr "אומדני הגורמים"
+
+#: cfa/results/factorEst/factorIntercept.title
+msgid "Factor Intercepts"
+msgstr "לכידי הגורמים"
+
+#: cfa/options/factInterceptEst.title
+msgid "Factor intercepts"
+msgstr "לכידי הגורמים"
+
+#: R/efa.b.R
+#: cfa/results/factorLoadings.title
+#: efa/ui[1][1][1].label
+#: pca/ui[1][1][1].label
+msgid "Factor Loadings"
+msgstr "טעינויות הגורמים"
+
+#: cfa/results/modelPerformance/modIndices/factorLoadingsMod.title
+msgid "Factor Loadings – Modification Indices"
+msgstr "טעינויות הגורמים – מדדי השינוי"
+
+#: efa/options/factorScoresOV.title
+#: pca/results/factorScoresOV.title
+msgid "Factor scores"
+msgstr "ציוני הגורמים"
+
+#: R/efa.b.R
+msgid "Factor Statistics"
+msgstr "סטטיסטיקות הגורמים"
+
+#: efa/options/factorSummary.title
+msgid "Factor summary"
+msgstr "סיכום הגורמים"
+
+#: cfa/ui[2][1][0]/constrain_facVar.label
+msgid "Factor variances = 1"
+msgstr "שונויות הגורם = 1"
+
+#: efa/ui[1][0][1]/nFactorMethod_fixed/nFactors.suffix
+msgid "factor(s)"
+msgstr "גורם(ים)"
+
+#: cfa/options/factors.title
+#: cfa/ui[0][0].label
+#: linReg/options/factors.title
+#: linReg/ui[0][2].label
+#: logLinear/options/factors.title
+#: logLinear/ui[0][0].label
+#: logRegBin/options/factors.title
+#: logRegBin/ui[0][2].label
+#: logRegMulti/options/factors.title
+#: logRegMulti/ui[0][2].label
+#: logRegOrd/options/factors.title
+#: logRegOrd/ui[0][2].label
+#: mancova/options/factors.title
+msgid "Factors"
+msgstr "גורמים"
+
+#: R/pca.b.R
+msgid "factors"
+msgstr "גורמים"
+
+#: anovaOneW/results/anova.columns.content
+msgid "Fisher's"
+msgstr "של פישר"
+
+#: contTables/options/fisher.title
+#: contTables/results/chiSq.columns.content
+msgid "Fisher's exact test"
+msgstr "המבחן המדויק של פישר"
+
+#: cfa/options/fitMeasures.title
+#: cfa/ui[4][1][0]/fitMeasures.label
+#: cfa/results/modelFit/fitMeasures.title
+#: linReg/ui[4][0][0][0].label
+#: logLinear/ui[3][0][0][0].label
+#: logRegBin/ui[4][0][0][0].label
+#: logRegMulti/ui[3][0][0][0].label
+#: logRegOrd/ui[3][0][0][0].label
+msgid "Fit Measures"
+msgstr "מדדי התאמה"
+
+#: R/linreg.b.R
+msgid "Fitted"
+msgstr "מתאים"
+
+#: ancova/options/factors.title
+#: anova/options/factors.title
+msgid "Fixed Factors"
+msgstr "גורמים קבועים"
+
+#: efa/options/nFactorMethod/fixed.title
+#: pca/ui[1][0][1]/nFactorMethod_fixed.label
+msgid "Fixed number"
+msgstr "מספר קבוע"
+
+#: R/cfa.b.R
+msgid "fixed parameter"
+msgstr "פרמטר קבוע"
+
+#: anovaOneW/options/phFlag.title
+msgid "Flag significant comparisons"
+msgstr "סימון ההשוואות המובהקות"
+
+#: corrMatrix/options/flag.title
+#: corrPart/options/flag.title
+msgid "Flag significant correlations"
+msgstr "סימון המתאמים המובהקים"
+
+#: corrMatrix/options/flag.description.ui
+#: corrPart/options/flag.description.ui
+msgid "flag significant correlations (p < .05) with symbols."
+msgstr "סימון המתאמים המובהקים (p < .05) בעזרת סימן."
+
+#: anovaOneW/options/phFlag.description.ui
+msgid "flag significant post-hoc comparisons."
+msgstr "סימון ההשוואות המובהקות של מבחני ההמשך."
+
+#: package/analyses/propTest2.menuGroup
+#: package/analyses/propTestN.menuGroup
+#: package/analyses/contTables.menuGroup
+#: package/analyses/contTablesPaired.menuGroup
+#: package/analyses/logLinear.menuGroup
+#: contTables/options.menuGroup
+#: contTablesPaired/options.menuGroup
+#: descriptives/results/frequencies.title
+#: logLinear/options.menuGroup
+#: propTest2/options.menuGroup
+#: propTestN/options.menuGroup
+msgid "Frequencies"
+msgstr "תדירויות"
+
+#: descriptives/results/frequencies.template.title
+msgid "Frequencies of $key"
+msgstr "תדירויות של $key"
+
+#: descriptives/options/freq.title
+#: descriptives/ui[1][1]/freq.label
+msgid "Frequency tables"
+msgstr "טבלאות שכיחות"
+
+#: package/analyses/anovaRMNP.menuSubtitle
+#: anovaRMNP/options.menuSubtitle
+#: anovaRMNP/results/table.title
+msgid "Friedman"
+msgstr "פרידמן"
+
+#: cfa/ui[2][0][0]/miss_fiml.label
+msgid "Full information maximum likelihood"
+msgstr "נראות מירבית של מידע מלא"
+
+#: anovaOneW/ui[2][0][0][0]/phMethod_gamesHowell.label
+msgid "Games-Howell (unequal variances)"
+msgstr "גיימס–האוול (אי־שוויון שונויות)"
+
+#: R/anovaonew.b.R
+msgid "Games-Howell Post-Hoc Test – {dep}"
+msgstr "מבחן ההמשך גיימס–האול – {dep}"
+
+#: contTables/options/gamma.title
+#: contTables/results/gamma.title
+#: contTables/results/gamma.columns.title
+msgid "Gamma"
+msgstr "גמה"
+
+#: ancova/ui[6][1][0][1].label
+#: anova/ui[6][1][0][1].label
+#: anovaRM/ui[6][1][0][1].label
+#: linReg/ui[6][1][0][0].label
+#: logLinear/ui[5][1][0][0].label
+#: logRegBin/ui[6][1][0][0].label
+#: logRegMulti/ui[5][1][0][0].label
+msgid "General Options"
+msgstr "אפשרויות כלליות"
+
+#: anovaRM/options/effectSize/ges.title
+msgid "Generalised η²"
+msgstr "η² מוכלל"
+
+#: linReg/ui[2][1]/intercept_grandMean.label
+msgid "Grand mean (simple coding)"
+msgstr "ממוצע כולל (קידוד פשוט)"
+
+#: anovaRM/options/spherCorr/GG.title
+#: anovaRM/results/rmTable.columns.content
+msgid "Greenhouse-Geisser"
+msgstr "גרינהאוס–גייסר"
+
+#: anovaRM/results/assump/spherTable.columns.title
+msgid "Greenhouse-Geisser ε"
+msgstr "ε של גרינהאוס–גייסר"
+
+#: ttestIS/results/desc.columns.title
+msgid "Group"
+msgstr "קבוצה"
+
+#: R/conttables.b.R
+msgid "Group 1"
+msgstr "קבוצה 1"
+
+#: contTables/options/hypothesis/twoGreater.title
+#: contTables/ui[1][0][0][0][1]/hypothesis_twoGreater.label
+#: ttestIS/options/hypothesis/twoGreater.title
+#: ttestIS/ui[1][0][1]/hypothesis_twoGreater.label
+msgid "Group 1 < Group 2"
+msgstr "קבוצה 1 < קבוצה 2"
+
+#: contTables/options/hypothesis/different.title
+#: contTables/ui[1][0][0][0][1]/hypothesis_different.label
+#: ttestIS/options/hypothesis/different.title
+#: ttestIS/ui[1][0][1]/hypothesis_different.label
+msgid "Group 1 ≠ Group 2"
+msgstr "קבוצה 1 ≠ קבוצה 2"
+
+#: contTables/options/hypothesis/oneGreater.title
+#: contTables/ui[1][0][0][0][1]/hypothesis_oneGreater.label
+#: ttestIS/options/hypothesis/oneGreater.title
+#: ttestIS/ui[1][0][1]/hypothesis_oneGreater.label
+msgid "Group 1 > Group 2"
+msgstr "קבוצה 1 > קבוצה 2"
+
+#: R/conttables.b.R
+msgid "Group 2"
+msgstr "קבוצה 2"
+
+#: anovaOneW/results/desc.title
+#: ttestIS/results/desc.title
+msgid "Group Descriptives"
+msgstr "מידע תיאורי של הקבוצה"
+
+#: anovaRM/results/groupSummary.title
+msgid "Group Summary"
+msgstr "סיכום הקבוצות"
+
+#: anovaRM/options/groupSumm.title
+msgid "Group summary"
+msgstr "סיכום הקבוצות"
+
+#: anovaNP/options/group.title
+#: anovaOneW/options/group.title
+#: anovaOneW/ui[0][1].label
+#: ttestIS/options/group.title
+msgid "Grouping Variable"
+msgstr "משתנה הקבצה"
+
+#: R/ttestis.b.R
+msgid "Grouping variable '{a}' has less than 2 levels after missing values are excluded"
+msgstr "למשתנה ההקבצה ”{a}“ יש פחות משתי רמות לאחר הוצאת הערכים החסרים"
+
+#: R/ttestis.b.R
+msgid "Grouping variable '{a}' must have exactly 2 levels"
+msgstr "למשתנה ההקבצה ”{a}“ צריכות להיות לפחות שתי רמות"
+
+#: R/ttestis.b.R
+msgid "Grouping variable '{a}' must not also be a dependent variable"
+msgstr "על המשתנה ההקבצה ”{a}“ גם לא להיות משתנה תלוי"
+
+#: R/corrmatrix.b.R
+#: R/corrpart.b.R
+msgid "Hₐ is negative correlation"
+msgstr "Hₐ הוא מתאם שלילי"
+
+#: R/corrmatrix.b.R
+#: R/corrpart.b.R
+msgid "Hₐ is positive correlation"
+msgstr "Hₐ הוא מתאם חיובי"
+
+#: R/proptest2.b.R
+msgid "Hₐ is proportion {direction} {testValue}"
+msgstr "Hₐ הוא יחס {direction} {testValue}"
+
+#: R/conttables.b.R
+msgid "Haldane-Anscombe correction applied"
+msgstr "תיקון הלדיין–אנסקומבי יושם"
+
+#: efa/options/factorScoreMethod/Harman.title
+msgid "Harman"
+msgstr "הרמן"
+
+#: ancova/options/contrasts.template/type/helmert.title
+#: anova/options/contrasts.template/type/helmert.title
+#: anovaRM/options/contrasts.template/type/helmert.title
+msgid "Helmert"
+msgstr "הלמרט"
+
+#: package/analyses/empty.menuGroup
+#: package/analyses/weights.menuGroup
+#: empty/options.menuGroup
+#: weights/options.menuGroup
+msgid "hidden"
+msgstr "מוסתרים"
+
+#: efa/options/hideLoadings.title
+#: pca/options/hideLoadings.title
+msgid "Hide loadings below"
+msgstr "הסתרת הטעינויות הקטנות מ־"
+
+#: R/descriptives.b.R
+msgid "Highest"
+msgstr "הגבוה ביותר"
+
+#: cfa/options/hlCorRes.title
+#: cfa/options/hlMI.title
+#: contTables/options/hlresP.title
+#: contTables/options/hlresS.title
+#: contTables/options/hlresA.title
+msgid "Highlight values above"
+msgstr "הדגשת הערכים הגבוהים מ־"
+
+#: descriptives/options/hist.title
+msgid "Histogram"
+msgstr "היסטוגרמה"
+
+#: descriptives/ui[3][0][0][0].label
+msgid "Histograms"
+msgstr "היסטוגרמות"
+
+#: ancova/options/postHocCorr/holm.title
+#: anova/options/postHocCorr/holm.title
+#: anovaRM/options/postHocCorr/holm.title
+msgid "Holm"
+msgstr "הולם"
+
+#: ancova/results/assump/homo.title
+#: anova/results/assump/homo.title
+#: anovaOneW/results/assump/eqv.title
+#: anovaRM/results/assump/leveneTable.title
+#: ttestIS/results/assum/eqv.title
+msgid "Homogeneity of Variances Test (Levene's)"
+msgstr "מבחן שוויון השונויות (של לוין)"
+
+#: ancova/options/homo.title
+#: anova/options/homo.title
+#: anovaOneW/options/eqv.title
+#: anovaRM/options/leveneTest.title
+#: ttestIS/options/eqv.title
+msgid "Homogeneity test"
+msgstr "מבחן שוויון שונויות"
+
+#: mancova/options/multivar/hotel.title
+#: mancova/results/multivar.columns.content
+msgid "Hotelling's Trace"
+msgstr "מסלול הוטלינג"
+
+#: anovaRM/options/spherCorr/HF.title
+#: anovaRM/results/rmTable.columns.content
+msgid "Huynh-Feldt"
+msgstr "ווין–פלט"
+
+#: anovaRM/results/assump/spherTable.columns.title
+msgid "Huynh-Feldt ε"
+msgstr "ε של ווין–פלט"
+
+#: contTables/ui[1][0][0][0][1].label
+#: corrMatrix/options/hypothesis.title
+#: corrMatrix/ui[1][2].label
+#: corrPart/options/hypothesis.title
+#: corrPart/ui[1][1].label
+#: propTest2/options/hypothesis.title
+#: propTest2/ui[1][0][1].label
+#: ttestIS/ui[1][0][1].label
+#: ttestOneS/ui[1][0][1].label
+#: ttestPS/ui[1][0][1].label
+msgid "Hypothesis"
+msgstr "השערה"
+
+#: reliability/results/items.columns.superTitle
+msgid "If item dropped"
+msgstr "אם הפריט הושמט"
+
+#: anovaRM/options/groupSumm.description.ui
+msgid "include a summary of the groups"
+msgstr "כולל סיכום הקבוצות"
+
+#: package/analyses/contTables.menuTitle
+#: contTables/options.menuTitle
+msgid "Independent Samples"
+msgstr "מדגמים בלתי תלויים"
+
+#: package/analyses/ttestIS.title
+#: package/analyses/ttestIS.menuTitle
+#: ttestIS/options.title
+#: ttestIS/ui.title
+#: ttestIS/results.title
+#: ttestIS/results/ttest.title
+msgid "Independent Samples T-Test"
+msgstr "מבחן T למדגמים בלתי תלויים"
+
+#: cfa/results/factorLoadings.columns.title
+msgid "Indicator"
+msgstr "מחוון"
+
+#: pca/results/eigen/initEigen.title
+msgid "Initial Eigenvalues"
+msgstr "ערכים עצמיים ראשוניים"
+
+#: efa/options/eigen.title
+#: pca/options/eigen.title
+msgid "Initial eigenvalues"
+msgstr "ערכים עצמיים ראשוניים"
+
+#: pca/results/factorStats/factorCor.title
+msgid "Inter-Component Correlations"
+msgstr "מתאמים בתוך הרכיבים"
+
+#: R/pca.b.R
+msgid "Inter-Factor Correlations"
+msgstr "מתאמים בתוך הגורמים"
+
+#: R/linreg.b.R
+#: R/loglinear.b.R
+#: R/logregbin.b.R
+#: R/logregmulti.b.R
+#: linReg/options/intercept.title
+#: linReg/ui[2][1].label
+msgid "Intercept"
+msgstr "לכיד"
+
+#: cfa/ui[3][1][0]/ci/ciWidth.label
+#: contTables/options/ciWidth.title
+#: corrMatrix/ui[1][1]/ci/ciWidth.label
+#: linReg/ui[5][0][0][1]/ci/ciWidth.label
+#: linReg/ui[5][0][1][0]/ciStdEst/ciWidthStdEst.label
+#: linReg/ui[6][1][0][0]/ciEmm/ciWidthEmm.label
+#: logLinear/ui[4][0][0][1]/ci/ciWidth.label
+#: logLinear/ui[4][0][1][0]/ciRR/ciWidthRR.label
+#: logLinear/ui[5][1][0][0]/ciEmm/ciWidthEmm.label
+#: logRegBin/ui[5][0][0][1]/ci/ciWidth.label
+#: logRegBin/ui[5][0][1][0]/ciOR/ciWidthOR.label
+#: logRegBin/ui[6][1][0][0]/ciEmm/ciWidthEmm.label
+#: logRegMulti/ui[4][0][0][1]/ci/ciWidth.label
+#: logRegMulti/ui[4][0][1][0]/ciOR/ciWidthOR.label
+#: logRegMulti/ui[5][1][0][0]/ciEmm/ciWidthEmm.label
+#: logRegOrd/ui[4][0][1][0]/ci/ciWidth.label
+#: logRegOrd/ui[4][0][1][1]/ciOR/ciWidthOR.label
+#: propTest2/ui[1][1][0]/ci/ciWidth.label
+#: propTest2/ui[2][1][0]/ciBayes/ciBayesWidth.label
+msgid "Interval"
+msgstr "רווח"
+
+#: R/descriptives.b.R
+#: descriptives/options/iqr.title
+msgid "IQR"
+msgstr "טווח בין רבעוני"
+
+#: R/utilsanova.R
+msgid "It appears that your model has a 'singularity' problem. This usually means that the model is having trouble distinguishing between certain effects because some variables are too closely related or there isn't enough data to estimate all the effects reliably. To resolve this, consider simplifying the model by removing some of the effects or checking if your data might have redundant or highly correlated variables."
+msgstr ""
+"נראה שלמודל יש בעיית סינגולריות. לרוב הכוונה שהמודל מתקשה להבחין בין אפקטים "
+"מסוימים, כיוון שכמה משתנים קשורים מדי זה לזה, או שאין מספיק נתונים כדי לאמוד "
+"את כל האפקטים באופן אמין. כדי לפתור את זה, יש לשקול את פישוט המודל בעזרת "
+"הסרת חלק מהאפקטים, או בעזרת בדיקה אם יש בנתונים משתנים מיותרים או משתנים "
+"הקשורים בקשר הדוק זה בזה."
+
+#: R/anovarm.b.R
+msgid "Item '{item}' consists of one level only"
+msgstr "הפריט ”{item}“ מכיל רמה אחת בלבד"
+
+#: R/anovarm.b.R
+#: R/reliability.b.R
+msgid "Item '{item}' contains infinite values"
+msgstr "הפריט ”{item}“ מכיל אין־סוף ערכים"
+
+#: R/anovarm.b.R
+#: R/reliability.b.R
+msgid "Item '{item}' contains only missing values"
+msgstr "הפריט ”{item}“ מכיל רק ערכים חסרים"
+
+#: R/reliability.b.R
+msgid "Item '{item}' has no variance"
+msgstr "לפריט ”{item}“ אין שונות"
+
+#: R/anovarm.b.R
+msgid "Item '{item}' needs to be numeric"
+msgstr "על הפריט ”{item}“ להיות מספרי"
+
+#: R/reliability.b.R
+msgid "item {item} correlates negatively with the total scale and probably should be reversed"
+msgstr "הפריט {item} קשור במתאם שלילי עם הסולם הכללי וכנראה צריך להיות בסדר הפוך"
+
+#: reliability/results/items.title
+msgid "Item Reliability Statistics"
+msgstr "סטטיסטיקת מהימנות פריט"
+
+#: reliability/ui[1][1][0].label
+msgid "Item Statistics"
+msgstr "סטטיסטיקת הפריט"
+
+#: reliability/options/itemRestCor.title
+#: reliability/results/items.columns.title
+msgid "Item-rest correlation"
+msgstr "מתאם פריט–השאר"
+
+#: reliability/options/vars.title
+msgid "Items"
+msgstr "פריטים"
+
+#: R/reliability.b.R
+msgid "items {items} correlate negatively with the total scale and probably should be reversed"
+msgstr "הפריטים {item} קשורים במתאם שלילי עם הסולם הכללי וכנראה צריכים להיות בסדר הפוך"
+
+#: descriptives/options/dotType/jitter.title
+msgid "Jittered"
+msgstr "מרוצד"
+
+#: corrMatrix/results/matrix.columns.content
+#: corrPart/results/matrix.columns.content
+msgid "Kendall's Tau B"
+msgstr "טאו B של קנדל"
+
+#: contTables/results/taub.columns.title
+msgid "Kendall's Tau-B"
+msgstr "טאו B של קנדל"
+
+#: contTables/results/taub.title
+msgid "Kendall's Tau-b"
+msgstr "טאו b של קנדל"
+
+#: contTables/options/taub.title
+#: corrMatrix/options/kendall.title
+#: corrPart/options/kendall.title
+msgid "Kendall's tau-b"
+msgstr "טאו b של קנדל"
+
+#: pca/results/assump/kmo.title
+msgid "KMO Measure of Sampling Adequacy"
+msgstr "מדד KMO להלימות הדגימה"
+
+#: efa/options/kmo.title
+#: pca/options/kmo.title
+msgid "KMO measure of sampling adequacy"
+msgstr "מדד KMO להלימות הדגימה"
+
+#: package/analyses/anovaNP.menuSubtitle
+#: anovaNP/options.menuSubtitle
+#: anovaNP/results/table.title
+msgid "Kruskal-Wallis"
+msgstr "קראסקל–ואליס"
+
+#: R/descriptives.b.R
+#: descriptives/options/kurt.title
+msgid "Kurtosis"
+msgstr "גבנוניות (Kurtosis)"
+
+#: descriptives/options/boxLabelOutliers.title
+msgid "Label outliers"
+msgstr "תיוג חריגות"
+
+#: contTables/options/layers.title
+msgid "Layers"
+msgstr "שכבות"
+
+#: propTest2/results/table.columns.title
+#: propTestN/ui[2]/ratio.columns.label
+#: propTestN/results/props.columns.title
+msgid "Level"
+msgstr "רמה"
+
+#: anovaRM/options/rm.default[0].levels[0]
+msgid "Level 1"
+msgstr "רמה 1"
+
+#: anovaRM/options/rm.default[0].levels[1]
+msgid "Level 2"
+msgstr "רמה 2"
+
+#: R/ttestis.b.R
+msgid "Levene's test is significant (p < .05), suggesting a violation of the assumption of equal variances"
+msgstr "תוצאת מבחן לוין יצאה מובהקת (p < .05) והיא מעידה על הפרה של הנחת שוויון השונויות"
+
+#: R/proptest2.b.R
+msgid "Likelihood"
+msgstr "נראות"
+
+#: contTables/options/likeRat.title
+#: contTables/results/chiSq.columns.content
+msgid "Likelihood ratio"
+msgstr "יחס הנראות"
+
+#: logLinear/options/omni.title
+#: logRegBin/options/omni.title
+#: logRegMulti/options/omni.title
+#: logRegOrd/options/omni.title
+msgid "Likelihood ratio tests"
+msgstr "מבחני יחס הנראות"
+
+#: R/utilsanova.R
+msgid "linear"
+msgstr "ליניארי"
+
+#: package/analyses/linReg.title
+#: package/analyses/linReg.menuTitle
+#: linReg/options.title
+#: linReg/ui.title
+#: linReg/results.title
+msgid "Linear Regression"
+msgstr "רגרסיה ליניארית"
+
+#: package/analyses/linReg.description
+#: linReg/options.description.main
+msgid "Linear regression is used to explore the relationship between a continuous dependent variable, and one or more continuous and/or categorical explanatory variables. Other statistical methods, such as ANOVA and ANCOVA, are in reality just forms of linear regression."
+msgstr "משתמשים ברגרסיה ליניארית כדי לבחון את הקשר שבין משתנה תלוי רציף ולפחות משתנה מסביר רציף ו/או איכותי אחד. שיטות סטטיסטיות אחרות, כמו ניתוח שונות וניתוח שונות משותפת, הן למעשה שיטות שונות של רגרסיה ליניארית."
+
+#: contTables/options/logOdds.title
+#: contTables/results/odds.columns.content
+msgid "Log odds ratio"
+msgstr "יחס הלוג של הסיכויים"
+
+#: contTablesPaired/options/exact.title
+#: contTablesPaired/results/test.columns.content
+msgid "Log odds ratio exact"
+msgstr "היחס המדויק של הלוג של הסיכויים"
+
+#: package/analyses/logLinear.title
+#: package/analyses/logLinear.menuTitle
+#: package/analyses/logLinear.description
+#: logLinear/options.title
+#: logLinear/options.menuTitle
+#: logLinear/options.description.main
+#: logLinear/ui.title
+#: logLinear/results.title
+msgid "Log-Linear Regression"
+msgstr "רגרסיה לוג–ליניארית"
+
+#: package/analyses/logRegBin.menuSubgroup
+#: package/analyses/logRegMulti.menuSubgroup
+#: package/analyses/logRegOrd.menuSubgroup
+#: logRegBin/options.menuSubgroup
+#: logRegMulti/options.menuSubgroup
+#: logRegOrd/options.menuSubgroup
+msgid "Logistic Regression"
+msgstr "רגרסיה לוגיסטית"
+
+#: R/ancova.b.R
+#: R/descriptives.b.R
+#: R/linreg.b.R
+#: R/loglinear.b.R
+#: R/logregbin.b.R
+#: R/logregmulti.b.R
+#: cfa/results/factorLoadings.columns.title
+#: cfa/results/factorEst/factorCov.columns.title
+#: cfa/results/factorEst/factorIntercept.columns.title
+#: cfa/results/resEst/resCov.columns.title
+#: cfa/results/resEst/resIntercept.columns.title
+#: cfa/results/modelFit/fitMeasures.columns.title
+#: contTables/results/odds.columns.title
+#: contTables/results/gamma.columns.title
+#: linReg/results/models.template/coef.columns.title
+#: logLinear/results/models.template/coef.columns.title
+#: logRegBin/results/models.template/coef.columns.title
+#: logRegMulti/results/models.template/coef.columns.title
+#: logRegOrd/results/models.template/coef.columns.title
+#: pca/results/modelFit/fit.columns.title
+#: propTest2/results/table.columns.title
+#: ttestIS/results/ttest.columns.title
+#: ttestOneS/results/ttest.columns.title
+#: ttestPS/results/ttest.columns.title
+msgid "Lower"
+msgstr "תחתון"
+
+#: R/descriptives.b.R
+msgid "lower bound"
+msgstr "חסם תחתון"
+
+#: R/descriptives.b.R
+msgid "Lowest"
+msgstr "הנמוך ביותר"
+
+#: R/linreg.b.R
+msgid "Mahalanobis ChiSq"
+msgstr "כי בריבוע של מהלנוביס"
+
+#: linReg/options/mahal.title
+#: linReg/options/mahalOV.title
+msgid "Mahalanobis distance"
+msgstr "מרחק מהלנוביס"
+
+#: linReg/results/models.template/dataSummary/mahal.title
+#: linReg/results/mahalOV.title
+msgid "Mahalanobis Distance"
+msgstr "מרחק מהלנוביס"
+
+#: R/linreg.b.R
+msgid "Mahalanobis distance (Chi sq.)"
+msgstr "מרחק מהלנוביס (כי בריבוע)"
+
+#: R/linreg.b.R
+msgid "Mahalanobis distance (p)"
+msgstr "מרחק מהלנוביס (p)"
+
+#: R/linreg.b.R
+msgid "Mahalanobis distance can only be calculated for models with two or more covariates"
+msgstr "ניתן לחשב מרחק מהלנוביס רק עבור מודלים בעלי לפחות שני משתנים נלווים"
+
+#: R/linreg.b.R
+msgid "Mahalanobis p"
+msgstr "P של מהלנוביס"
+
+#: package/analyses/mancova.title
+#: package/analyses/mancova.menuTitle
+#: mancova/options.title
+#: mancova/ui.title
+#: mancova/results.title
+msgid "MANCOVA"
+msgstr "ניתוח שונות משותפת רבת משתנים (MANCOVA)"
+
+#: ttestIS/options/mann.title
+#: ttestIS/results/ttest.columns.content
+msgid "Mann-Whitney U"
+msgstr "U של מאן–ויטני"
+
+#: contTables/options/mh.title
+msgid "Mantel-Haenszel"
+msgstr "מנטל–הנזל"
+
+#: contTables/results/mh.title
+msgid "Mantel-Haenszel Test for Trend"
+msgstr "מבחן מנטל–הנזל למגמה"
+
+#: R/linreg.b.R
+msgid "Marginal Mean"
+msgstr "הממוצע השולי"
+
+#: ancova/options/emMeans.title
+#: anova/options/emMeans.title
+#: anovaRM/options/emMeans.title
+#: linReg/options/emMeans.title
+#: logLinear/options/emMeans.title
+#: logRegBin/options/emMeans.title
+#: logRegMulti/options/emMeans.title
+msgid "Marginal Means"
+msgstr "ממוצעים שוליים"
+
+#: ancova/options/emmPlots.title
+#: anova/options/emmPlots.title
+#: anovaRM/options/emmPlots.title
+#: linReg/options/emmPlots.title
+#: logLinear/options/emmPlots.title
+#: logRegBin/options/emmPlots.title
+#: logRegMulti/options/emmPlots.title
+msgid "Marginal means plots"
+msgstr "תרשימי הממוצעים השוליים"
+
+#: ancova/options/emmTables.title
+#: anova/options/emmTables.title
+#: anovaRM/options/emmTables.title
+#: linReg/options/emmTables.title
+#: logLinear/options/emmTables.title
+#: logRegBin/options/emmTables.title
+#: logRegMulti/options/emmTables.title
+msgid "Marginal means tables"
+msgstr "טבלאות הממוצעים השוליים"
+
+#: anovaRM/results/assump/spherTable.columns.title
+msgid "Mauchly's W"
+msgstr "W של מוקלי"
+
+#: linReg/results/models.template/dataSummary/cooks.columns.title
+#: linReg/results/models.template/dataSummary/mahal.columns.title
+#: logRegBin/results/models.template/dataSummary/cooks.columns.title
+msgid "Max"
+msgstr "מקסימום"
+
+#: R/descriptives.b.R
+#: descriptives/options/max.title
+msgid "Maximum"
+msgstr "מקסימום"
+
+#: R/pca.b.R
+#: efa/options/extraction/ml.title
+msgid "Maximum likelihood"
+msgstr "נראות מרבית"
+
+#: reliability/options/omegaScale.title
+#: reliability/results/scale.columns.title
+#: reliability/results/items.columns.title
+msgid "McDonald's ω"
+msgstr "ω של מקדונלד"
+
+#: reliability/options/omegaItems.title
+msgid "McDonald's ω (if item is dropped)"
+msgstr "ω של מקדונלד (אם פריט מושמט)"
+
+#: logLinear/options/pseudoR2/r2mf.title
+#: logRegBin/options/pseudoR2/r2mf.title
+#: logRegMulti/options/pseudoR2/r2mf.title
+#: logRegOrd/options/pseudoR2/r2mf.title
+msgid "McFadden's R²"
+msgstr "R² של מקפאדן"
+
+#: R/conttablespaired.b.R
+msgid "McNemar requires a 2x2 table"
+msgstr "מקנמר צריך טבלת 2×2"
+
+#: contTablesPaired/results/test.title
+msgid "McNemar Test"
+msgstr "מבחן מקנמר"
+
+#: package/analyses/contTablesPaired.menuSubtitle
+#: package/analyses/contTablesPaired.description
+#: contTablesPaired/options.menuSubtitle
+#: contTablesPaired/options.description.main
+msgid "McNemar test"
+msgstr "מבחן מקנמר"
+
+#: R/ancova.b.R
+#: R/anovarm.b.R
+#: R/descriptives.b.R
+#: R/reliability.b.R
+#: anovaOneW/results/desc.columns.title
+#: anovaRMNP/results/desc.columns.title
+#: descriptives/options/boxMean.title
+#: descriptives/options/mean.title
+#: linReg/results/models.template/dataSummary/cooks.columns.title
+#: linReg/results/models.template/dataSummary/mahal.columns.title
+#: logRegBin/results/models.template/dataSummary/cooks.columns.title
+#: reliability/options/meanScale.title
+#: reliability/options/meanItems.title
+#: reliability/results/scale.columns.title
+#: reliability/results/items.columns.title
+#: ttestIS/results/desc.columns.title
+#: ttestOneS/results/descriptives.columns.title
+#: ttestPS/results/desc.columns.title
+msgid "Mean"
+msgstr "ממוצע"
+
+#: R/anovaonew.b.R
+#: R/ttestis.b.R
+#: R/ttestps.b.R
+msgid "Mean ({ciWidth}% CI)"
+msgstr "ממוצע (רווח סמך של {ciWidth}%)"
+
+#: R/ancova.b.R
+#: R/anovarm.b.R
+msgid "Mean Difference"
+msgstr "הפרש הממוצעים"
+
+#: anovaOneW/options/phMeanDif.title
+#: anovaOneW/results/postHoc.template.columns.content
+#: ttestIS/options/meanDiff.title
+#: ttestIS/ui[1][1][0]/meanDiff.label
+#: ttestIS/results/ttest.columns.title
+#: ttestOneS/options/meanDiff.title
+#: ttestOneS/ui[1][1][0]/meanDiff.label
+#: ttestOneS/results/ttest.columns.title
+#: ttestPS/options/meanDiff.title
+#: ttestPS/ui[1][1][0]/meanDiff.label
+#: ttestPS/results/ttest.columns.title
+msgid "Mean difference"
+msgstr "הפרש הממוצעים"
+
+#: descriptives/ui[2][2][1].label
+msgid "Mean Dispersion"
+msgstr "פיזור הממוצע"
+
+#: reliability/options/meanScoreOV.title
+#: reliability/results/meanScoreOV.title
+msgid "Mean score"
+msgstr "ציון ממוצע"
+
+#: ancova/results/main.columns.title
+#: anovaRM/results/rmTable.columns.title
+#: anovaRM/results/bsTable.columns.title
+#: linReg/results/models.template/anova.columns.title
+#: mancova/results/univar.columns.title
+msgid "Mean Square"
+msgstr "ממוצע הריבועים"
+
+#: anovaRMNP/options/plotType/means.title
+msgid "Means"
+msgstr "ממוצעים"
+
+#: R/anovarmnp.b.R
+msgid "Measure"
+msgstr "מדד"
+
+#: R/ttestps.b.R
+msgid "Measure 1 - Measure 2"
+msgstr "מדד 1 - מדד 2"
+
+#: ttestPS/ui[1][0][1]/hypothesis_twoGreater.label
+msgid "Measure 1 < Measure 2"
+msgstr "מדד 1 < מדד 2"
+
+#: ttestPS/ui[1][0][1]/hypothesis_different.label
+msgid "Measure 1 ≠ Measure 2"
+msgstr "מדד 1 ≠ מדד 2"
+
+#: ttestPS/ui[1][0][1]/hypothesis_oneGreater.label
+msgid "Measure 1 > Measure 2"
+msgstr "מדד 1 > מדד 2"
+
+#: anovaRMNP/options/measures.title
+msgid "Measures"
+msgstr "מדדים"
+
+#: R/descriptives.b.R
+#: R/ttestis.b.R
+#: R/ttestps.b.R
+#: anovaRMNP/results/desc.columns.title
+#: descriptives/options/median.title
+#: linReg/results/models.template/dataSummary/cooks.columns.title
+#: linReg/results/models.template/dataSummary/mahal.columns.title
+#: logRegBin/results/models.template/dataSummary/cooks.columns.title
+#: ttestIS/results/desc.columns.title
+#: ttestOneS/results/descriptives.columns.title
+#: ttestPS/results/desc.columns.title
+msgid "Median"
+msgstr "חציון"
+
+#: anovaRMNP/options/plotType/medians.title
+msgid "Medians"
+msgstr "חציונים"
+
+#: efa/ui[1][0][0].label
+#: pca/ui[1][0][0].label
+msgid "Method"
+msgstr "שיטה"
+
+#: linReg/results/models.template/dataSummary/cooks.columns.title
+#: linReg/results/models.template/dataSummary/mahal.columns.title
+#: logRegBin/results/models.template/dataSummary/cooks.columns.title
+msgid "Min"
+msgstr "מינימום"
+
+#: R/descriptives.b.R
+#: descriptives/options/min.title
+msgid "Minimum"
+msgstr "מינימום"
+
+#: R/pca.b.R
+msgid "Minimum residual"
+msgstr "הנתון השיורי המינימלי"
+
+#: efa/options/extraction/minres.title
+msgid "Minimum residuals"
+msgstr "נתונים שיוריים מינימליים"
+
+#: efa/options/minEigen.title
+#: pca/options/minEigen.title
+msgid "Minimum value"
+msgstr "הערך המינימלי"
+
+#: R/descriptives.b.R
+#: descriptives/options/missing.title
+msgid "Missing"
+msgstr "חסרים"
+
+#: anovaOneW/ui[1][0][1].label
+msgid "Missing Values"
+msgstr "ערכים חסרים"
+
+#: ttestIS/options/miss.title
+#: ttestIS/ui[1][0][2].label
+#: ttestOneS/options/miss.title
+#: ttestOneS/ui[1][0][2].label
+#: ttestPS/options/miss.title
+#: ttestPS/ui[1][0][2].label
+msgid "Missing values"
+msgstr "ערכים חסרים"
+
+#: anovaOneW/options/miss.title
+msgid "Missing values exclusion method"
+msgstr "שיטת הוצאת הערכים החסרים"
+
+#: cfa/options/miss.title
+#: cfa/ui[2][0][0].label
+msgid "Missing Values Method"
+msgstr "שיטת הערכים החסרים"
+
+#: R/descriptives.b.R
+#: descriptives/options/mode.title
+msgid "Mode"
+msgstr "שכיח"
+
+#: R/logregbin.b.R
+#: ancova/ui[2].label
+#: anova/ui[2].label
+#: anovaRM/ui[2].label
+#: linReg/results/modelFit.columns.title
+#: linReg/results/modelComp.columns.title
+#: logLinear/results/modelFit.columns.title
+#: logLinear/results/modelComp.columns.title
+#: logRegBin/results/modelFit.columns.title
+#: logRegBin/results/modelComp.columns.title
+#: logRegMulti/results/modelFit.columns.title
+#: logRegMulti/results/modelComp.columns.title
+#: logRegOrd/results/modelFit.columns.title
+#: logRegOrd/results/modelComp.columns.title
+msgid "Model"
+msgstr "מודל"
+
+#: linReg/ui[1].label
+#: logLinear/ui[1].label
+#: logRegBin/ui[1].label
+#: logRegMulti/ui[1].label
+#: logRegOrd/ui[1].label
+msgid "Model Builder"
+msgstr "בונה המודלים"
+
+#: linReg/ui[5].label
+#: logLinear/ui[4].label
+#: logLinear/results/models.template/coef.title
+#: logRegBin/ui[5].label
+#: logRegMulti/ui[4].label
+#: logRegOrd/ui[4].label
+msgid "Model Coefficients"
+msgstr "מקדם המודל"
+
+#: linReg/results/modelComp.title
+#: logLinear/results/modelComp.title
+#: logRegBin/results/modelComp.title
+#: logRegMulti/results/modelComp.title
+#: logRegOrd/results/modelComp.title
+msgid "Model Comparisons"
+msgstr "השוואות מודלים"
+
+#: ancova/ui[1][0].label
+#: anova/ui[1][0].label
+#: cfa/ui[4].label
+#: cfa/results/modelFit.title
+#: linReg/ui[4].label
+#: logLinear/ui[3].label
+#: logRegBin/ui[4].label
+#: logRegMulti/ui[3].label
+#: logRegOrd/ui[3].label
+#: pca/results/modelFit.title
+msgid "Model Fit"
+msgstr "התאמת המודל"
+
+#: R/utilsanova.R
+msgid "Model fit issue detected!"
+msgstr "נמצאה בעיה בהתאמת המודל!"
+
+#: linReg/results/modelFit.title
+#: logLinear/results/modelFit.title
+#: logRegBin/results/modelFit.title
+#: logRegMulti/results/modelFit.title
+#: logRegOrd/results/modelFit.title
+#: pca/results/modelFit/fit.title
+msgid "Model Fit Measures"
+msgstr "מדדי התאמת המודל"
+
+#: efa/options/modelFit.title
+msgid "Model fit measures"
+msgstr "מדדי התאמת המודל"
+
+#: linReg/results/models.title
+#: logLinear/results/models.title
+#: logRegBin/results/models.title
+#: logRegMulti/results/models.title
+#: logRegOrd/results/models.title
+msgid "Model Specific Results"
+msgstr "תוצאות יחסיות למודל"
+
+#: ancova/options/modelTerms.title
+#: anova/options/modelTerms.title
+#: anovaRM/options/rmTerms.title
+#: anovaRM/options/bsTerms.title
+msgid "Model Terms"
+msgstr "תנאי המודל"
+
+#: pca/results/modelFit/fit.columns.superTitle
+msgid "Model Test"
+msgstr "בדיקת המודל"
+
+#: logRegOrd/results/models.template/thres.title
+msgid "Model Thresholds"
+msgstr "ספי המודל"
+
+#: logRegOrd/options/thres.title
+msgid "Model thresholds"
+msgstr "ספי המודל"
+
+#: R/linreg.b.R
+#: R/logregbin.b.R
+#: R/logregmulti.b.R
+#: R/logregord.b.R
+msgid "Models estimated using sample size of N={n}"
+msgstr "המודל נאמד בעזרת גודל מדגם של N = {n}"
+
+#: cfa/results/modelPerformance/modIndices.title
+msgid "Modification Indices"
+msgstr "מדדי שינוי"
+
+#: cfa/options/mi.title
+msgid "Modification indices"
+msgstr "מדדי שינוי"
+
+#: R/conttables.b.R
+msgid "Monte Carlo simulation"
+msgstr "הדמיית מונטה קרלו"
+
+#: R/descriptives.b.R
+msgid "More than one mode exists, only the first is reported"
+msgstr "קיים יותר משכיח אחד. רק הראשון מדווח"
+
+#: descriptives/ui[2][3][2][0]/extreme.label
+msgid "Most extreme"
+msgstr "הכי קיצוניים"
+
+#: pca/results/assump/kmo.columns.title
+msgid "MSA"
+msgstr "MSA"
+
+#: package/analyses/logRegMulti.menuSubtitle
+#: logRegMulti/options.menuSubtitle
+msgid "Multinomial"
+msgstr "מולטינום"
+
+#: package/analyses/logRegMulti.title
+#: package/analyses/logRegMulti.description
+#: logRegMulti/options.title
+#: logRegMulti/options.description.main
+#: logRegMulti/ui.title
+#: logRegMulti/results.title
+msgid "Multinomial Logistic Regression"
+msgstr "רגרסיה לוגיסטית מולטינומית"
+
+#: package/analyses/mancova.description
+#: mancova/options.description.main
+msgid "Multivariate Analysis of (Co)Variance (MANCOVA) is used to explore the relationship between multiple dependent variables, and one or more categorical and/or continuous explanatory variables."
+msgstr "משתמשים בניתוח שונות (משותפת) רבת משתנים (MANCOVA) כדי לבחון את הקשר בין כמה משתנים תלויים ולפחות משתנה מסביר איכותי ו/או רציף אחד."
+
+#: mancova/options/multivar.title
+#: mancova/ui[1][0][0].label
+msgid "Multivariate Statistics"
+msgstr "סטטיסטיקה רבת משתנים"
+
+#: mancova/results/multivar.title
+msgid "Multivariate Tests"
+msgstr "מבחנים רבי משתנים"
+
+#: R/descriptives.b.R
+msgid "N"
+msgstr "N"
+
+#: package/analyses/logRegMulti.menuTitle
+#: package/analyses/propTestN.menuTitle
+#: logRegMulti/options.menuTitle
+#: propTestN/options.menuTitle
+msgid "N Outcomes"
+msgstr "N תוצאות"
+
+#: logLinear/options/pseudoR2/r2n.title
+#: logRegBin/options/pseudoR2/r2n.title
+#: logRegMulti/options/pseudoR2/r2n.title
+#: logRegOrd/options/pseudoR2/r2n.title
+msgid "Nagelkerke's R²"
+msgstr "R² נאגלקרקה"
+
+#: R/pca.b.R
+msgid "No components have an eigenvalue greater than {value}"
+msgstr "לאף אחד מהרכיבים אין ערך עצמי הגדול מ־{value}"
+
+#: ancova/options/postHocCorr/none.title
+#: anova/options/postHocCorr/none.title
+#: anovaRM/options/postHocCorr/none.title
+msgid "No correction"
+msgstr "ללא תיקון"
+
+#: R/mancova.b.R
+msgid "No factors defined. Box's M test is only relevant when model contains factors."
+msgstr "לא הוגדרו גורמים. מבחן M של בוקס מתאים רק כשיש גורמים במודל."
+
+#: contTables/ui[1][0][1][0][0].label
+#: contTables/results/nom.title
+msgid "Nominal"
+msgstr "שמני"
+
+#: package/analyses/anovaNP.menuSubgroup
+#: package/analyses/anovaRMNP.menuSubgroup
+#: anovaNP/options.menuSubgroup
+#: anovaRMNP/options.menuSubgroup
+msgid "Non-Parametric"
+msgstr "לא פרמטרי"
+
+#: ancova/options/contrasts.template/type/none.title
+#: ancova/options/emmPlotError/none.title
+#: anova/options/contrasts.template/type/none.title
+#: anova/options/emmPlotError/none.title
+#: anovaOneW/ui[2][0][0][0]/phMethod_none.label
+#: anovaRM/options/spherCorr/none.title
+#: anovaRM/options/contrasts.template/type/none.title
+#: anovaRM/options/emmPlotError/none.title
+#: anovaRM/results/rmTable.columns.content
+#: efa/options/rotation/none.title
+#: pca/options/rotation/none.title
+msgid "None"
+msgstr "כלום"
+
+#: R/pca.b.R
+msgid "none"
+msgstr "כלום"
+
+#: reliability/ui[2]/revItemsSupplier.label
+msgid "Normal Scaled Items"
+msgstr "הפריטים בסולם נורמלי"
+
+#: descriptives/ui[2][3][1].label
+msgid "Normality"
+msgstr "נורמליות"
+
+#: ancova/options/norm.title
+#: anova/options/norm.title
+#: anovaOneW/options/norm.title
+#: linReg/options/norm.title
+#: ttestIS/options/norm.title
+#: ttestOneS/options/norm.title
+#: ttestPS/options/norm.title
+msgid "Normality test"
+msgstr "מבחן נורמליות"
+
+#: ancova/results/assump/norm.title
+#: anova/results/assump/norm.title
+#: anovaOneW/results/assump/norm.title
+#: linReg/results/models.template/assump/norm.title
+#: ttestIS/results/assum/norm.title
+#: ttestOneS/results/normality.title
+#: ttestPS/results/norm.title
+msgid "Normality Test (Shapiro-Wilk)"
+msgstr "מבחן נורמליות (שפירו–וילק)"
+
+#: R/logregbin.b.R
+msgid "Not all coefficients could be estimated (likely due to singular fit)"
+msgstr "לא ניתן לאמוד את כל המקדמים (ככל הנראה בגלל התאמה בודדת)"
+
+#: R/descriptives.b.R
+msgid "Not all statistics support weighted data yet."
+msgstr "לא כל הסטטיסטיקות תומכות בנתונים משוקללים עדיין."
+
+#: R/mancova.b.R
+msgid "Not available due to too large number of cases (> 5000)."
+msgstr "לא זמין עקב מספר מקרים גדול מדי (> 5000)."
+
+#: R/mancova.b.R
+msgid "Not enough degrees of freedom to estimate all the model effects"
+msgstr "אין מספיק דרגות חופש כדי לאמוד את כל אפקטי המודל"
+
+#: pca/ui[1][0][1].label
+msgid "Number of Components"
+msgstr "מספר הרכיבים"
+
+#: pca/options/nFactorMethod.title
+msgid "Number of components"
+msgstr "מספר הרכיבים"
+
+#: descriptives/options/extremeN.title
+msgid "Number of extreme values"
+msgstr "כמות הערכים הקיצוניים"
+
+#: efa/ui[1][0][1].label
+msgid "Number of Factors"
+msgstr "מספר הגורמים"
+
+#: efa/options/nFactorMethod.title
+msgid "Number of factors"
+msgstr "מספר הגורמים"
+
+#: R/descriptives.b.R
+msgid "Number of requested extreme values is higher than the number of rows in the data."
+msgstr "כמות הערכים הקיצוניים המבוקשים גדול ממספר השורות בנתונים."
+
+#: efa/options/rotation/oblimin.title
+#: pca/options/rotation/oblimin.title
+msgid "Oblimin"
+msgstr "Oblimin"
+
+#: R/pca.b.R
+msgid "oblimin"
+msgstr "oblimin"
+
+#: R/conttables.b.R
+#: R/logregbin.b.R
+#: propTestN/results/props.columns.content
+msgid "Observed"
+msgstr "נצפה"
+
+#: contTables/options/obs.title
+msgid "Observed counts"
+msgstr "ספירות נצפות"
+
+#: ancova/options/emmPlotData.title
+#: anova/options/emmPlotData.title
+#: anovaRM/options/emmPlotData.title
+msgid "Observed scores"
+msgstr "ציונים נצפים"
+
+#: logRegBin/ui[5][0][1][0].label
+#: logRegMulti/ui[4][0][1][0].label
+#: logRegOrd/ui[4][0][1][1].label
+msgid "Odds Ratio"
+msgstr "יחס הסיכויים"
+
+#: contTables/options/odds.title
+#: contTables/results/odds.columns.content
+#: logRegBin/options/OR.title
+#: logRegBin/results/models.template/coef.columns.title
+#: logRegMulti/options/OR.title
+#: logRegMulti/results/models.template/coef.columns.title
+#: logRegOrd/options/OR.title
+#: logRegOrd/results/models.template/coef.columns.title
+#: logRegOrd/results/models.template/thres.columns.title
+msgid "Odds ratio"
+msgstr "יחס הסיכויים"
+
+#: contTables/options/yaxisPc/total_pc.title
+msgid "of total"
+msgstr "מהסך"
+
+#: linReg/results/models.template/anova.title
+msgid "Omnibus ANOVA Test"
+msgstr "מבחן ניתוח שונות כוללני"
+
+#: logLinear/results/models.template/lrt.title
+#: logRegBin/results/models.template/lrt.title
+#: logRegMulti/results/models.template/lrt.title
+#: logRegOrd/results/models.template/lrt.title
+msgid "Omnibus Likelihood Ratio Tests"
+msgstr "מבחני יחס נראות כוללניים"
+
+#: linReg/ui[5][0][0][0].label
+msgid "Omnibus Test"
+msgstr "מבחן כוללני"
+
+#: logLinear/ui[4][0][0][0].label
+#: logRegBin/ui[5][0][0][0].label
+#: logRegMulti/ui[4][0][0][0].label
+#: logRegOrd/ui[4][0][0][0].label
+msgid "Omnibus Tests"
+msgstr "מבחנים כוללניים"
+
+#: R/ttestis.b.R
+msgid "One or both groups do not contain enough observations"
+msgstr "לפחות אחת מהקבוצות לא מכילה מספיק תצפיות"
+
+#: R/ttestps.b.R
+msgid "One or both variables are not numeric"
+msgstr "לפחות משתנה אחד אינו מספרי"
+
+#: R/ttestps.b.R
+msgid "One or both variables contain infinite values"
+msgstr "לפחות משתנה אחד מכיל אין־סוף ערכים"
+
+#: R/ttestps.b.R
+msgid "One or both variables contain no observations"
+msgstr "לפחות משתנה אחד אינו מכיל תצפיות"
+
+#: R/ttestps.b.R
+msgid "One or both variables do not contain enough observations"
+msgstr "לפחות משתנה אחד אינו מכיל מספיק תצפיות"
+
+#: R/logregbin.b.R
+msgid "One or more coefficients in model '{modelNo}' could not be estimated due to perfect collinearity."
+msgstr "לפחות מקדם אחד במודל ”{modelNo}“ לא ניתן לאמוד עקב שיתוף ישר מושלם."
+
+#: package/analyses/propTest2.menuSubgroup
+#: package/analyses/propTestN.menuSubgroup
+#: propTest2/options.menuSubgroup
+#: propTestN/options.menuSubgroup
+msgid "One Sample Proportion Tests"
+msgstr "מבחני יחסים במדגם יחיד"
+
+#: package/analyses/ttestOneS.title
+#: package/analyses/ttestOneS.menuTitle
+#: ttestOneS/options.title
+#: ttestOneS/ui.title
+#: ttestOneS/results.title
+#: ttestOneS/results/ttest.title
+msgid "One Sample T-Test"
+msgstr "מבחן T למדגם יחיד"
+
+#: package/analyses/anovaOneW.title
+#: package/analyses/anovaOneW.menuTitle
+#: package/analyses/anovaNP.menuTitle
+#: anovaNP/options.menuTitle
+#: anovaOneW/options.title
+#: anovaOneW/ui.title
+#: anovaOneW/results.title
+#: anovaOneW/results/anova.title
+msgid "One-Way ANOVA"
+msgstr "ניתוח שונות חד כיווני"
+
+#: R/anovaonew.b.R
+msgid "One-Way ANOVA (Fisher's)"
+msgstr "ניתוח שונות חד כיווני (של פישר)"
+
+#: package/analyses/anovaNP.title
+#: anovaNP/options.title
+#: anovaNP/ui.title
+#: anovaNP/results.title
+msgid "One-Way ANOVA (Non-parametric)"
+msgstr "ניתוח שונות חד כיווני (לא פרמטרי)"
+
+#: R/anovaonew.b.R
+msgid "One-Way ANOVA (Welch's)"
+msgstr "ניתוח שונות חד כיווני (של ולץ׳)"
+
+#: anovaRM/ui[7].label
+#: cfa/ui[2].label
+msgid "Options"
+msgstr "אפשרויות"
+
+#: contTables/ui[1][0][1][1][0].label
+msgid "Ordinal"
+msgstr "סדר"
+
+#: package/analyses/logRegOrd.title
+#: package/analyses/logRegOrd.description
+#: logRegOrd/options.title
+#: logRegOrd/options.description.main
+#: logRegOrd/ui.title
+#: logRegOrd/results.title
+msgid "Ordinal Logistic Regression"
+msgstr "רגרסיית סדר לוגיסטית"
+
+#: package/analyses/logRegOrd.menuTitle
+#: logRegOrd/options.menuTitle
+msgid "Ordinal Outcomes"
+msgstr "תוצאות סדר"
+
+#: descriptives/ui[2][3][2].label
+msgid "Outliers"
+msgstr "חריגות"
+
+#: ancova/ui[6][1][0][0].label
+#: anova/ui[6][1][0][0].label
+#: anovaRM/ui[6][1][0][0].label
+#: linReg/ui[6][1][1][0].label
+#: logLinear/ui[5][1][1][0].label
+#: logRegBin/ui[6][1][1][0].label
+#: logRegMulti/ui[5][1][1][0].label
+msgid "Output"
+msgstr "פלט"
+
+#: R/pca.b.R
+msgid "Overall"
+msgstr "כולל"
+
+#: R/ancova.b.R
+msgid "Overall model"
+msgstr "המודל הכולל"
+
+#: linReg/ui[4][0][1][0].label
+#: linReg/results/modelFit.columns.superTitle
+#: logLinear/results/modelFit.columns.superTitle
+#: logRegBin/results/modelFit.columns.superTitle
+#: logRegMulti/results/modelFit.columns.superTitle
+#: logRegOrd/results/modelFit.columns.superTitle
+msgid "Overall Model Test"
+msgstr "בדיקה כוללת של המודל"
+
+#: ancova/options/modelTest.title
+#: anova/options/modelTest.title
+#: logLinear/options/modelTest.title
+#: logRegBin/options/modelTest.title
+#: logRegMulti/options/modelTest.title
+#: logRegOrd/options/modelTest.title
+msgid "Overall model test"
+msgstr "בדיקה כוללת של המודל"
+
+#: R/ancova.b.R
+#: R/descriptives.b.R
+msgid "p"
+msgstr "p"
+
+#: linReg/ui[3][0][1][0]/mahal/mahalp.label
+msgid "p <"
+msgstr "p <"
+
+#: anovaOneW/results/postHoc.template.columns.content
+#: corrMatrix/results/matrix.columns.content
+#: corrPart/results/matrix.columns.content
+msgid "p-value"
+msgstr "ערך p"
+
+#: anovaNP/results/comparisonsDunn.template.columns.title
+msgid "p<sub>(Bonferroni)</sub>"
+msgstr "p<sub>(בונפרוני)</sub>"
+
+#: anovaNP/results/comparisonsDunn.template.columns.title
+msgid "p<sub>(unadj)</sub>"
+msgstr "p<sub>(לא מתוקנן)</sub>"
+
+#: R/ancova.b.R
+msgid "p<sub>bonferroni</sub>"
+msgstr "p<sub>בונפרוני</sub>"
+
+#: R/ancova.b.R
+msgid "p<sub>holm</sub>"
+msgstr "p<sub>הולם</sub>"
+
+#: R/ancova.b.R
+msgid "p<sub>scheffe</sub>"
+msgstr "p<sub>שפה</sub>"
+
+#: R/ancova.b.R
+msgid "p<sub>tukey</sub>"
+msgstr "p<sub>טוקי</sub>"
+
+#: package/analyses/contTablesPaired.menuTitle
+#: contTablesPaired/options.menuTitle
+msgid "Paired Samples"
+msgstr "מדגמים מזווגים"
+
+#: package/analyses/contTablesPaired.title
+#: contTablesPaired/options.title
+#: contTablesPaired/ui.title
+#: contTablesPaired/results.title
+msgid "Paired Samples Contingency Tables"
+msgstr "טבלאות קריבות למדגמים מזווגים"
+
+#: package/analyses/ttestPS.title
+#: package/analyses/ttestPS.menuTitle
+#: ttestPS/options.title
+#: ttestPS/ui.title
+#: ttestPS/results.title
+#: ttestPS/results/ttest.title
+msgid "Paired Samples T-Test"
+msgstr "מבחן T למדגמים מזווגים"
+
+#: ttestPS/options/pairs.title
+msgid "Paired Variables"
+msgstr "משתנים מזווגים"
+
+#: anovaNP/results/comparisons.template.title
+#: anovaNP/results/comparisonsDunn.template.title
+msgid "Pairwise comparisons - $key"
+msgstr "השוואות זוגיות – $key"
+
+#: anovaRMNP/results/comp.title
+msgid "Pairwise Comparisons (Durbin-Conover)"
+msgstr "השוואות זוגיות (דורבין–קונובר)"
+
+#: anovaRMNP/options/pairs.title
+msgid "Pairwise comparisons (Durbin-Conover)"
+msgstr "השוואות זוגיות (דורבין–קונובר)"
+
+#: corrPart/options/type/part.title
+msgid "Partial"
+msgstr "חלקי"
+
+#: R/corrpart.b.R
+#: package/analyses/corrPart.title
+#: package/analyses/corrPart.menuTitle
+#: corrPart/options.title
+#: corrPart/ui.title
+#: corrPart/results.title
+msgid "Partial Correlation"
+msgstr "מתאם חלקי"
+
+#: package/analyses/corrPart.description
+msgid "Partial correlation matrices are a way to examine linear relationships\n"
+"between two or more continuous variables while controlling for other\n"
+"variables"
+msgstr "מטריצות מתאם חלקי הן דרך לבחון יחסים ליניאריים\n"
+"בין שני משתנים רציפים או יותר תוך בקרה על משתנים אחרים"
+
+#: corrPart/options.description.main
+msgid "Partial correlation matrices are a way to examine linear relationships\n"
+"between two or more continuous variables while controlling for other\n"
+"variables\n"
+"\n"
+"For each pair of variables, a Pearson's r value indicates the strength\n"
+"and direction of the relationship between those two variables. A\n"
+"positive value indicates a positive relationship (higher values of one\n"
+"variable predict higher values of the other variable). A negative\n"
+"Pearson's r indicates a negative relationship (higher values of one\n"
+"variable predict lower values of the other variable, and vice-versa).\n"
+"A value of zero indicates no relationship (whether a variable is high\n"
+"or low, does not tell us anything about the value of the other\n"
+"variable).\n"
+"\n"
+"More formally, it is possible to test the null hypothesis that the\n"
+"correlation is zero and calculate a p-value. If the p-value is low, it\n"
+"suggests the correlation co-efficient is not zero, and there is a linear\n"
+"(or more complex) relationship between the two variables."
+msgstr "מטריצות מתאם חלקי הן דרך לבחון יחסים ליניאריים\n"
+"בין שני משתנים רציפים או יותר תוך בקרה על משתנים אחרים\n"
+"\n"
+"עבור כל צמד משתנים, r של פירסון מעיד על חוזק הקשר ביניהם ועל הכיוון שלו.\n"
+"ערך חיובי מעיד על קשר חיובי (ערכים גבוהים של משתנה אחד מנבאים ערכים גבוהים\n"
+"של המשתנה השני). ערך שלילי של r של פירסון מעיד על קשר שלילי (ערכים גבוהים\n"
+"של משתנה אחד מנבאים ערכים נמוכים של המשתנה השני, ולהפך). הערך אפס מעיד\n"
+"שאין קשר (בין אם הערך של המשתנה גבוה או נמוך, זה לא אומר דבר על המשתנה השני).\n"
+"\n"
+"באופן רשמי, ניתן לבחון את השערת האפס שהמתאם הוא אפס ולחשב את ערך ה־p.\n"
+"ערך p נמוך מעיד על מקדם המתאם שאינו שווה לאפס ושיש קשר ליניארי (או מורכב\n"
+"יותר) בין שני המשתנים."
+
+#: anovaRM/options/effectSize/partEta.title
+msgid "Partial η²"
+msgstr "η² חלקי"
+
+#: ancova/options/effectSize/partEta.title
+#: anova/options/effectSize/partEta.title
+msgid "partial η²"
+msgstr "η² חלקי"
+
+#: linReg/results/models.template/dataSummary/mahal.columns.title
+msgid "Participants (rows) below p-threshold"
+msgstr "המשתתפים (שורות) מתחת לסף ה־p"
+
+#: cfa/results/pathDiagram.title
+msgid "Path Diagram"
+msgstr "דיאגרמת נתיבים"
+
+#: cfa/options/pathDiagram.title
+msgid "Path diagram"
+msgstr "דיאגרמת נתיבים"
+
+#: corrMatrix/options/pearson.title
+#: corrMatrix/ui[1][0]/pearson.label
+#: corrPart/options/pearson.title
+#: corrPart/ui[1][0]/pearson.label
+msgid "Pearson"
+msgstr "פירסון"
+
+#: R/corrmatrix.b.R
+msgid "Pearson correlation cannot be calculated for non-numeric values"
+msgstr "אי אפשר לחשב מתאם פירסון לערכים לא מספריים"
+
+#: R/conttables.b.R
+#: contTables/options/resP.title
+msgid "Pearson residuals"
+msgstr "נתונים שיוריים של פירסון"
+
+#: corrMatrix/results/matrix.columns.content
+#: corrPart/results/matrix.columns.content
+msgid "Pearson's r"
+msgstr "r של פירסון"
+
+#: R/reliability.b.R
+msgid "Pearson{}Correlation"
+msgstr "מתאם{}פירסון"
+
+#: contTables/options/yaxis/ypc.title
+#: contTables/ui[1][1][0][1][0].label
+#: contTablesPaired/ui[2][0].label
+msgid "Percentages"
+msgstr "אחוזים"
+
+#: R/conttables.b.R
+msgid "Percentages of total"
+msgstr "אחוזים מהכול"
+
+#: R/conttables.b.R
+msgid "Percentages within {var}"
+msgstr "אחוזים בתוך {var}"
+
+#: descriptives/options/pc.title
+msgid "Percentile"
+msgstr "אחוזון"
+
+#: descriptives/ui[2][0][1].label
+msgid "Percentile Values"
+msgstr "ערכי אחוזונים"
+
+#: descriptives/options/pcValues.title
+msgid "Percentile values"
+msgstr "ערכי אחוזונים"
+
+#: R/descriptives.b.R
+#: descriptives/ui[2][0][1][1]/pc.label
+msgid "Percentiles"
+msgstr "אחוזונים"
+
+#: ttestIS/options/mann.description.ui
+msgid "perform a Mann-Whitney U test."
+msgstr "ביצוע מבחן U של מאן–ויטני."
+
+#: ttestOneS/options/norm.description.ui
+msgid "perform a Shapiro-Wilk test of normality. A low p-value suggests the data is not from a normal distribution."
+msgstr "ביצוע מבחן שפירו–וילק לנורמליות. ערך p נמוך מעיד על הנתונים שהם אינם מהתפלגות נורמלית."
+
+#: ancova/options/modelTest.description.ui
+#: anova/options/modelTest.description.ui
+msgid "perform an overall model test."
+msgstr "ביצוע בדיקה כוללת של המודל."
+
+#: anovaOneW/options/fishers.description.ui
+msgid "perform Fisher's (or what might be call 'normal') ANOVAs."
+msgstr "ביצוע ניתוחי שונות של פישר (הניתוחים הנקראים ”רגילים“)."
+
+#: ttestIS/options/norm.description.ui
+#: ttestPS/options/norm.description.ui
+msgid "perform Shapiro-Wilk tests of normality. A low p-value suggests the data is not from a normal distribution."
+msgstr "ביצוע מבחני שפירו–וילק לנורמליות. ערך p נמוך מעיד על הנתונים שהם אינם מהתפלגות נורמלית."
+
+#: ancova/options/norm.description.ui
+#: anova/options/norm.description.ui
+msgid "perform Shapiro-Wilk tests of normality. A low p-value suggests the residuals are not normally distributed."
+msgstr "ביצוע מבחני שפירו–וילק לנורמליות. ערך p נמוך מעיד על הנתונים השיוריים שהם אינם מתפלגים נורמלי."
+
+#: ttestIS/options/students.description.ui
+msgid "perform Student's independent samples t-tests."
+msgstr "ביצוע מבחני t של סטודנט למדגמים בלתי תלויים."
+
+#: ttestOneS/options/students.description.ui
+msgid "perform Student's one-sample t-tests."
+msgstr "ביצוע מבחני t של סטודנט למדגם יחיד."
+
+#: ttestPS/options/students.description.ui
+msgid "perform Student's paired samples t-tests."
+msgstr "ביצוע מבחני t של סטודנט למדגמים מזווגים."
+
+#: anovaOneW/options/welchs.description.ui
+msgid "perform Welch's ANOVAs."
+msgstr "ביצוע ניתוחי שונות של ולץ׳."
+
+#: ttestIS/options/welchs.description.ui
+msgid "perform Welch's tests."
+msgstr "ביצוע מבחני ולץ׳."
+
+#: ttestOneS/options/wilcoxon.description.ui
+#: ttestPS/options/wilcoxon.description.ui
+msgid "perform Wilcoxon signed rank tests."
+msgstr "ביצוע מבחן הדרגות המסומנות של וילקוקסון."
+
+#: contTables/options/phiCra.title
+msgid "Phi and Cramer's V"
+msgstr "פי ו־V של קרמר"
+
+#: contTables/results/nom.columns.content
+msgid "Phi-coefficient"
+msgstr "מקדם פי"
+
+#: mancova/options/multivar/pillai.title
+#: mancova/results/multivar.columns.content
+msgid "Pillai's Trace"
+msgstr "מסלול פילאי"
+
+#: ancova/ui[6][1][1][0].label
+#: anova/ui[6][1][1][0].label
+#: anovaRM/ui[6][1][1][0].label
+#: corrMatrix/ui[1][3].label
+#: corrMatrix/results/plot.title
+msgid "Plot"
+msgstr "תרשים"
+
+#: corrMatrix/options/plotDens.description.ui
+msgid "plot densities along the diagonal of the correlation matrix plot."
+msgstr "צפיפות התרשים לאורך האלכסון של תרשים מטריצת המתאמים."
+
+#: ancova/options/emmPlotData.description.ui
+#: anova/options/emmPlotData.description.ui
+#: anovaRM/options/emmPlotData.description.ui
+msgid "plot the data along with the marginal means."
+msgstr "רישום הנתונים יחד עם הממוצעים השוליים."
+
+#: anovaRMNP/options/plotType.title
+msgid "Plot Type"
+msgstr "סוג התרשים"
+
+#: anovaOneW/results/plots.title
+#: cfa/ui[5][1][0].label
+#: contTables/ui[1][3].label
+#: contTables/ui[1][3][0][0][0].label
+#: contTables/results/barplot.title
+#: descriptives/ui[3].label
+#: descriptives/results/plots.title
+#: propTest2/ui[2][0][1].label
+#: ttestIS/results/plots.title
+#: ttestOneS/results/plots.title
+#: ttestPS/results/plots.title
+msgid "Plots"
+msgstr "תרשימים"
+
+#: R/descriptives.b.R
+msgid "Plots are not yet supported for weighted descriptives."
+msgstr "תרשימים עדיין אינם תומכים במידע תיאורי משוקלל."
+
+#: ancova/options/contrasts.template/type/polynomial.title
+#: anova/options/contrasts.template/type/polynomial.title
+#: anovaRM/options/contrasts.template/type/polynomial.title
+msgid "Polynomial"
+msgstr "רב־איבר"
+
+#: R/anovarm.b.R
+msgid "Polynomials limited to degree 6"
+msgstr ""
+
+#: R/ancova.b.R
+#: R/anovarm.b.R
+msgid "Post Hoc Comparisons - {term}"
+msgstr "השוואות המשך – {term}"
+
+#: R/conttables.b.R
+msgid "Post Hoc Test"
+msgstr "מבחן המשך"
+
+#: R/conttables.b.R
+msgid "Post Hoc Test ({title})"
+msgstr "מבחן המשך ({title})"
+
+#: ancova/options/postHoc.title
+#: ancova/ui[5].label
+#: ancova/results/postHoc.title
+#: anova/options/postHoc.title
+#: anova/ui[5].label
+#: anova/results/postHoc.title
+#: anovaNP/ui[1][1].label
+#: anovaOneW/results/postHoc.title
+#: anovaRM/options/postHoc.title
+#: anovaRM/ui[5].label
+#: anovaRM/results/postHoc.title
+#: contTables/ui[1][2].label
+#: contTables/ui[1][2][0][0][0].label
+#: contTables/results/postHoc.title
+msgid "Post Hoc Tests"
+msgstr "מבחני המשך (Post Hoc)"
+
+#: anovaOneW/results/postHoc.template.title
+msgid "Post Hoc Tests – $key"
+msgstr "מבחני המשך – $key"
+
+#: cfa/ui[5][0][0].label
+#: cfa/results/modelPerformance.title
+msgid "Post-Hoc Model Performance"
+msgstr "ביצועי מודל מבחן ההמשך"
+
+#: anovaOneW/ui[2][0][0][0].label
+msgid "Post-Hoc Test"
+msgstr "מבחן המשך"
+
+#: anovaOneW/options/phMethod.title
+#: anovaOneW/ui[2].label
+msgid "Post-Hoc Tests"
+msgstr "מבחני המשך"
+
+#: R/proptest2.b.R
+msgid "Posterior"
+msgstr "פוסטריור"
+
+#: propTest2/options/postPlots.title
+msgid "Posterior plot"
+msgstr "תרשים הפוסטריור"
+
+#: propTest2/results/postPlots.title
+msgid "Posterior Plots"
+msgstr "תרשימי הפוסטריור"
+
+#: R/logregbin.b.R
+msgid "Predicted"
+msgstr "מנובא"
+
+#: R/logregbin.b.R
+msgid "Predicted probability of … = … (vs … = …)"
+msgstr "הסתברות המנובאת של … = … (לעומת … = …)"
+
+#: R/logregbin.b.R
+msgid "Predicted probability of {dep} = {level1} (vs {dep} = {level2})"
+msgstr "הסתברות המנובאת של {dep} = {level1} (לעומת {dep} = {level2})"
+
+#: R/linreg.b.R
+#: linReg/options/predictOV.title
+#: linReg/results/predictOV.title
+#: logRegBin/options/predictOV.title
+#: logRegBin/results/predictOV.title
+msgid "Predicted values"
+msgstr "ערכים מנובאים"
+
+#: logRegBin/ui[7].label
+#: logRegBin/results/models.template/pred.title
+msgid "Prediction"
+msgstr "ניבוי"
+
+#: logRegBin/ui[7][0][1][0].label
+#: logRegBin/results/models.template/pred/measures.title
+msgid "Predictive Measures"
+msgstr "מדדי ניבוי"
+
+#: linReg/results/models.template/coef.columns.title
+#: logLinear/results/models.template/lrt.columns.title
+#: logLinear/results/models.template/coef.columns.title
+#: logRegBin/results/models.template/lrt.columns.title
+#: logRegBin/results/models.template/coef.columns.title
+#: logRegBin/results/models.template/assump/boxTidwell.columns.title
+#: logRegMulti/results/models.template/lrt.columns.title
+#: logRegMulti/results/models.template/coef.columns.title
+#: logRegOrd/results/models.template/lrt.columns.title
+#: logRegOrd/results/models.template/coef.columns.title
+msgid "Predictor"
+msgstr "מנבא"
+
+#: linReg/ui[1]/modelSupplier.label
+#: logLinear/ui[1]/modelSupplier.label
+#: logRegBin/ui[1]/modelSupplier.label
+#: logRegMulti/ui[1]/modelSupplier.label
+#: logRegOrd/ui[1]/modelSupplier.label
+msgid "Predictors"
+msgstr "מנבאים"
+
+#: efa/options/extraction/pa.title
+msgid "Principal axis"
+msgstr "הציר המרכזי"
+
+#: R/pca.b.R
+msgid "Principal axis factoring"
+msgstr "פירוק הציר המרכזי"
+
+#: package/analyses/pca.title
+#: package/analyses/pca.menuTitle
+#: package/analyses/pca.description
+#: pca/options.title
+#: pca/options.description.main
+#: pca/ui.title
+#: pca/results.title
+msgid "Principal Component Analysis"
+msgstr "ניתוח רכיבים עיקריים"
+
+#: R/proptest2.b.R
+#: propTest2/ui[2][0][0].label
+#: ttestIS/ui[1][0][0]/students/bf/bfPrior.label
+#: ttestOneS/ui[1][0][0]/students/bf/bfPrior.label
+#: ttestPS/ui[1][0][0]/students/bf/bfPrior.label
+msgid "Prior"
+msgstr "פריורי"
+
+#: ttestIS/options/bfPrior.title
+#: ttestOneS/options/bfPrior.title
+#: ttestPS/options/bfPrior.title
+msgid "Prior width"
+msgstr "רוחב הפריורי"
+
+#: R/logregbin.b.R
+#: R/logregmulti.b.R
+msgid "Probability"
+msgstr "הסתברות"
+
+#: efa/options/rotation/promax.title
+#: pca/options/rotation/promax.title
+msgid "Promax"
+msgstr "Promax"
+
+#: R/pca.b.R
+msgid "promax"
+msgstr "promax"
+
+#: R/proptest2.b.R
+#: propTest2/results/table.columns.title
+#: propTestN/ui[2]/ratio.columns.label
+#: propTestN/results/props.columns.title
+msgid "Proportion"
+msgstr "יחס"
+
+#: package/analyses/propTest2.title
+#: propTest2/options.title
+#: propTest2/ui.title
+#: propTest2/results.title
+msgid "Proportion Test (2 Outcomes)"
+msgstr "מבחן יחסים (שתי תוצאות)"
+
+#: package/analyses/propTestN.title
+#: propTestN/options.title
+#: propTestN/ui.title
+#: propTestN/results.title
+msgid "Proportion Test (N Outcomes)"
+msgstr "מבחן יחסים (N תוצאות)"
+
+#: ancova/options/postHocES.description.ui
+#: anova/options/postHocES.description.ui
+msgid "provide a Cohen's d measure of effect size for the post-hoc tests."
+msgstr "מדד d של כהן לגודל האפקט לצורך ניתוחי ההמשך."
+
+#: ttestOneS/options/ci.description.ui
+msgid "provide a confidence interval for the difference between the mean estimate and the test value."
+msgstr "רווח סמך עבור ההפרש בין הממוצע המשוער וערך המבחן."
+
+#: corrMatrix/options/plots.description.ui
+msgid "provide a correlation matrix plot."
+msgstr "תרשים מטריצת מתאמים."
+
+#: corrMatrix/options/kendall.description.ui
+#: corrPart/options/kendall.description.ui
+msgid "provide a Kendall's tau-b for each combination of variables."
+msgstr "טאו b של קנדל עבור כל צירוף של משתנים."
+
+#: corrMatrix/options/sig.description.ui
+#: corrPart/options/sig.description.ui
+msgid "provide a p-value for each correlation co-efficient."
+msgstr "ערך p לכל מקדם מתאם."
+
+#: corrMatrix/options/pearson.description.ui
+#: corrPart/options/pearson.description.ui
+msgid "provide a Pearson's r for each combination of variables."
+msgstr "r של פירסון עבור כל צירוף של משתנים."
+
+#: ttestOneS/options/qq.description.ui
+msgid "provide a Q-Q plot of residuals -- a plot of the actual residuals against what would be expected if the data were <i>perfectly</i> normally distributed. Large deviations from the diagonal line suggest the data is not from a normal distribution."
+msgstr "תרשים Q-Q של הנתונים השיוריים – תרשים של הנתונים השיוריים האמתיים מול אלו המצופים אם הנתונים היו מתפלגים נורמלית באופן <i>מושל</i>. סטייה גדולה מהאלכסון מרמזת שהנתונים אינם מהתפלגות נורמלית."
+
+#: corrMatrix/options/spearman.description.ui
+#: corrPart/options/spearman.description.ui
+msgid "provide a Spearman's rho for each combination of variables."
+msgstr "רו של ספירמן עבור כל צירוף של משתנים."
+
+#: ttestOneS/options/desc.description.ui
+msgid "provide a table of descriptives for each variable."
+msgstr "טבלת המידע התיאורי של כל משתנה."
+
+#: ancova/options/emmTables.description.ui
+#: anova/options/emmTables.description.ui
+#: anovaRM/options/emmTables.description.ui
+msgid "provide a table of the estimated marginal means."
+msgstr "טבלה של הממוצעים השוליים המשוערים."
+
+#: ttestIS/options/bf.description.ui
+msgid "provide Bayes factors for the Student's independent samples t-tests."
+msgstr "מקדמי בייס למבחני t למדגמים בלתי תלויים של סטודנט."
+
+#: ttestOneS/options/bf.description.ui
+msgid "provide Bayes factors for the Student's one-sample t-tests."
+msgstr "מקדמי בייס למבחני t למדגם יחיד של סטודנט."
+
+#: ttestPS/options/bf.description.ui
+msgid "provide Bayes factors for the Student's paired samples t-tests."
+msgstr "מקדמי בייס למבחני t למדגמים מזווגים של סטודנט."
+
+#: corrMatrix/options/ci.description.ui
+msgid "provide confidence intervals for Pearson's r."
+msgstr "רווחי סמך עבור r של פירסון."
+
+#: ttestIS/options/ciES.description.ui
+#: ttestOneS/options/ciES.description.ui
+#: ttestPS/options/ciES.description.ui
+msgid "provide confidence intervals for the effect-sizes"
+msgstr "רווחי סמך לגודלי האפקטים"
+
+#: ttestIS/options/ci.description.ui
+#: ttestPS/options/ci.description.ui
+msgid "provide confidence intervals for the mean differences."
+msgstr "רווחי סמך עבור הפרשי הממוצעים."
+
+#: ancova/options/postHocEsCi.description.ui
+#: anova/options/postHocEsCi.description.ui
+msgid "provide confidence intervals for the post-hoc effect sizes."
+msgstr "רווחי סמך לגודלי האפקט של ניתוחי ההמשך."
+
+#: corrMatrix/options/plotStats.description.ui
+msgid "provide correlation co-efficients in the correlation matrix plot."
+msgstr "מקדמי המתאם בתרשים מטריצת המתאמים."
+
+#: anovaOneW/options/descPlot.description.ui
+msgid "provide descriptive plots for each group."
+msgstr "תרשימי המידע התיאורי עבור כל קבוצה."
+
+#: ttestOneS/options/plots.description.ui
+msgid "provide descriptive plots for each variable."
+msgstr "תרשימי המידע התיאורי עבור כל משתנה."
+
+#: ttestPS/options/plots.description.ui
+msgid "provide descriptives for each group of measurements."
+msgstr "מידע תיאורי עבור כל קבוצה של מדדים."
+
+#: anovaOneW/options/desc.description.ui
+#: ttestIS/options/desc.description.ui
+msgid "provide descriptives for each group."
+msgstr "מידע תיאורי עבור כל קבוצה."
+
+#: ttestIS/options/plots.description.ui
+msgid "provide descriptives plots."
+msgstr "תרשימי המידע התיאורי."
+
+#: ttestIS/options/effectSize.description.ui
+#: ttestOneS/options/effectSize.description.ui
+#: ttestPS/options/effectSize.description.ui
+msgid "provide effect-sizes (Cohen's d)."
+msgstr "גודלי האפקט (d של כהן)."
+
+#: ancova/options/homo.description.ui
+#: anova/options/homo.description.ui
+#: anovaRM/options/leveneTest.description.ui
+msgid "provide Levene's test for homogeneity of variances. A low p-value suggests the groups have unequal variances."
+msgstr "מבחן לוין לשוויון שונויות. ערך p נמוך מעיד על אי־שוויון שונויות של הקבוצות."
+
+#: anovaOneW/options/eqv.description.ui
+#: ttestIS/options/eqv.description.ui
+msgid "provide Levene's tests for the homogeneity of variances. A low p-value suggests the groups have unequal variances."
+msgstr "מבחני לוין לשוויון שונויות. ערך p נמוך מעיד על אי־שוויון שונויות של הקבוצות."
+
+#: ttestIS/options/meanDiff.description.ui
+#: ttestPS/options/meanDiff.description.ui
+msgid "provide mean differences and standard errors of the mean differences."
+msgstr "הפרשי הממוצעים וטעויות התקן של הפרשי הממוצעים."
+
+#: anovaOneW/options/phMeanDif.description.ui
+msgid "provide mean differences with the post-hoc tests."
+msgstr "הפרשי הממוצעים עם מבחני ההמשך."
+
+#: ttestOneS/options/meanDiff.description.ui
+msgid "provide mean differences, and standard errors of the mean differences, between the mean estimate, and the test value."
+msgstr "הפרשי הממוצעים וטעויות התקן של הפרשי הממוצעים בין הממוצע המשוער וערך המבחן."
+
+#: ancova/options/effectSize.description.ui
+#: anova/options/effectSize.description.ui
+#: anovaRM/options/effectSize.description.ui
+msgid "provide measures of effect size; η², partial η², or ω²."
+msgstr "מדדי גודל האפקט: η², η² חלקי או ω²."
+
+#: anovaRM/options/spherCorr.description.ui
+msgid "provide p-value corrections for sphericity."
+msgstr "תיקוני ערך ה־p עבור כדוריות."
+
+#: ancova/options/emmPlots.description.ui
+#: anova/options/emmPlots.description.ui
+#: anovaRM/options/emmPlots.description.ui
+msgid "provide plots of the estimated marginal means."
+msgstr "תרשימי הממוצעים השוליים המשוערים."
+
+#: ancova/options/postHoc.description.ui
+#: anova/options/postHoc.description.ui
+#: anovaOneW/options/phMethod.description.ui
+#: anovaRM/options/postHoc.description.ui
+msgid "provide post-hoc tests."
+msgstr "מבחני ההמשך."
+
+#: anovaOneW/options/qq.description.ui
+#: ttestIS/options/qq.description.ui
+#: ttestPS/options/qq.description.ui
+msgid "provide Q-Q plots of residuals -- a plot of the actual residuals against what would be expected if the data were <i>perfectly</i> normally distributed. Large deviations from the diagonal line suggest the data is not from a normal distribution."
+msgstr "תרשימי Q-Q של הנתונים השיוריים – תרשים של הנתונים השיוריים האמתיים מול אלו המצופים אם הנתונים היו מתפלגים נורמלית באופן <i>מושלם</i>. סטייה גדולה מהאלכסון מרמזת שהנתונים אינם מהתפלגות נורמלית."
+
+#: ancova/options/qq.description.ui
+#: anova/options/qq.description.ui
+#: anovaRM/options/qq.description.ui
+msgid "provide Q-Q plots of residuals -- a plot of the actual residuals against what would be expected if the data were <i>perfectly</i> normally distributed. Large deviations from the diagonal line suggest the residuals are not normally distributed."
+msgstr "תרשמי Q-Q של הנתונים השיוריים – תרשים של הנתונים השיוריים האמתיים מול אלו המצופים אם הנתונים היו מתפלגים נורמלית באופן <i>מושלם</i>. סטייה גדולה מהאלכסון מרמזת שהנתונים השיוריים אינם מתפלגים נורמלי."
+
+#: anovaOneW/options/phSig.description.ui
+msgid "provide significance levels for the post-hoc tests."
+msgstr "רמות מובהקות עבור מבחני ההמשך."
+
+#: anovaRM/options/spherTests.description.ui
+msgid "provide sphericity tests."
+msgstr "מבחני כדוריות."
+
+#: anovaOneW/options/phTest.description.ui
+msgid "provide test results (t-value and degrees of freedom) for post-hoc tests."
+msgstr "תוצאות המבחן (ערך t ודרגות החופש) עבור מבחני ההמשך."
+
+#: corrMatrix/options/n.description.ui
+#: corrPart/options/n.description.ui
+msgid "provide the number of cases."
+msgstr "מספר המקרים."
+
+#: logLinear/options/pseudoR2.title
+#: logLinear/ui[3][0][1]/pseudoR2.label
+#: logRegBin/options/pseudoR2.title
+#: logRegBin/ui[4][0][1]/pseudoR2.label
+#: logRegMulti/options/pseudoR2.title
+#: logRegMulti/ui[3][0][1]/pseudoR2.label
+#: logRegOrd/options/pseudoR2.title
+#: logRegOrd/ui[3][0][1]/pseudoR2.label
+msgid "Pseudo R²"
+msgstr "R² מדומה"
+
+#: descriptives/ui[3][0][0][1]/qq.label
+msgid "Q-Q"
+msgstr "Q-Q"
+
+#: ancova/options/qq.title
+#: ancova/results/assump/qq.title
+#: anova/options/qq.title
+#: anova/results/assump/qq.title
+#: anovaOneW/options/qq.title
+#: anovaRM/options/qq.title
+#: anovaRM/results/assump/qq.title
+#: linReg/results/models.template/assump/qqPlot.title
+#: ttestOneS/options/qq.title
+#: ttestPS/options/qq.title
+msgid "Q-Q Plot"
+msgstr "תרשים Q-Q"
+
+#: anovaOneW/results/plots.template/qq.description
+#: descriptives/options/qq.title
+#: ttestIS/options/qq.title
+#: ttestIS/results/plots.template/qq.description
+#: ttestOneS/results/qq.template.description
+#: ttestPS/results/plots.template/qq.description
+msgid "Q-Q plot"
+msgstr "תרשים Q-Q"
+
+#: mancova/results/assump/qqPlot.title
+msgid "Q-Q Plot Assessing Multivariate Normality"
+msgstr "תרשים Q-Q להערכת נורמליות רבת משתנים"
+
+#: mancova/options/qqPlot.title
+msgid "Q-Q plot of multivariate normality"
+msgstr "תרשים Q-Q של נורמליות רבת משתנים"
+
+#: linReg/options/qqPlot.title
+msgid "Q-Q plot of residuals"
+msgstr "תרשים Q-Q של נתונים שיוריים"
+
+#: descriptives/ui[3][0][0][1].label
+msgid "Q-Q Plots"
+msgstr "תרשימי Q-Q"
+
+#: ttestOneS/results/qq.title
+msgid "Q-Q plots"
+msgstr "תרשימי Q-Q"
+
+#: R/utilsanova.R
+msgid "quadratic"
+msgstr "ריבועי"
+
+#: R/utilsanova.R
+msgid "quartic"
+msgstr "בחזקת ארבע"
+
+#: efa/options/rotation/quartimax.title
+#: pca/options/rotation/quartimax.title
+msgid "Quartimax"
+msgstr "Quartimax"
+
+#: R/pca.b.R
+msgid "quartimax"
+msgstr "quartimax"
+
+#: linReg/options/r2.title
+#: linReg/results/modelFit.columns.title
+msgid "R²"
+msgstr "R²"
+
+#: logLinear/results/modelFit.columns.title
+#: logRegBin/results/modelFit.columns.title
+#: logRegMulti/results/modelFit.columns.title
+#: logRegOrd/results/modelFit.columns.title
+msgid "R²<sub>CS</sub>"
+msgstr "R²<sub>CS</sub>"
+
+#: logLinear/results/modelFit.columns.title
+#: logRegBin/results/modelFit.columns.title
+#: logRegMulti/results/modelFit.columns.title
+#: logRegOrd/results/modelFit.columns.title
+msgid "R²<sub>McF</sub>"
+msgstr "R²<sub>McF</sub>"
+
+#: logLinear/results/modelFit.columns.title
+#: logRegBin/results/modelFit.columns.title
+#: logRegMulti/results/modelFit.columns.title
+#: logRegOrd/results/modelFit.columns.title
+msgid "R²<sub>N</sub>"
+msgstr "R²<sub>N</sub>"
+
+#: logRegBin/results/modelFit.columns.title
+msgid "R²<sub>T</sub>"
+msgstr "R²<sub>T</sub>"
+
+#: R/descriptives.b.R
+#: descriptives/options/range.title
+#: linReg/results/models.template/dataSummary/cooks.columns.superTitle
+#: linReg/results/models.template/dataSummary/mahal.columns.superTitle
+#: logRegBin/results/models.template/dataSummary/cooks.columns.superTitle
+msgid "Range"
+msgstr "טווח"
+
+#: ttestIS/results/ttest.columns.content
+#: ttestOneS/results/ttest.columns.content
+#: ttestPS/results/ttest.columns.content
+msgid "Rank biserial correlation"
+msgstr "המתאם הדו־סדרתי של הדרגות"
+
+#: logLinear/ui[4][0][1][0].label
+msgid "Rate Ratio"
+msgstr "יחס השיעורים"
+
+#: logLinear/options/RR.title
+#: logLinear/results/models.template/coef.columns.title
+msgid "Rate ratio"
+msgstr "יחס השיעורים"
+
+#: propTestN/ui[2]/ratio.columns.label
+msgid "Ratio"
+msgstr "יחס"
+
+#: linReg/ui[2]/refLevels.columns.label
+#: logLinear/ui[2]/refLevels.columns.label
+#: logRegBin/ui[2]/refLevels.columns.label
+#: logRegMulti/ui[2]/refLevels.columns.label
+#: logRegOrd/ui[2]/refLevels.columns.label
+msgid "Reference Level"
+msgstr "רמת ייחוס"
+
+#: linReg/ui[2][1]/intercept_refLevel.label
+msgid "Reference level (dummy coding)"
+msgstr "רמת ייחוס (קידוד מציין)"
+
+#: linReg/options/refLevels.title
+#: linReg/ui[2].label
+#: logLinear/options/refLevels.title
+#: logLinear/ui[2].label
+#: logRegBin/options/refLevels.title
+#: logRegBin/ui[2].label
+#: logRegMulti/options/refLevels.title
+#: logRegMulti/ui[2].label
+#: logRegOrd/options/refLevels.title
+#: logRegOrd/ui[2].label
+msgid "Reference Levels"
+msgstr "רמות ייחוס"
+
+#: package/analyses/corrMatrix.menuGroup
+#: package/analyses/corrPart.menuGroup
+#: package/analyses/linReg.menuGroup
+#: package/analyses/logRegBin.menuGroup
+#: package/analyses/logRegMulti.menuGroup
+#: package/analyses/logRegOrd.menuGroup
+#: corrMatrix/options.menuGroup
+#: corrPart/options.menuGroup
+#: linReg/options.menuGroup
+#: logRegBin/options.menuGroup
+#: logRegMulti/options.menuGroup
+#: logRegOrd/options.menuGroup
+msgid "Regression"
+msgstr "רגרסיה"
+
+#: contTables/options/relRisk.title
+#: contTables/results/odds.columns.content
+msgid "Relative risk"
+msgstr "סיכון יחסי"
+
+#: package/analyses/reliability.title
+#: package/analyses/reliability.menuTitle
+#: package/analyses/reliability.description
+#: reliability/options.title
+#: reliability/options.description.main
+#: reliability/ui.title
+#: reliability/results.title
+msgid "Reliability Analysis"
+msgstr "ניתוח מהימנות"
+
+#: ancova/options/contrasts.template/type/repeated.title
+#: anova/options/contrasts.template/type/repeated.title
+#: anovaRM/options/contrasts.template/type/repeated.title
+msgid "Repeated"
+msgstr "חוזרות"
+
+#: package/analyses/anovaRM.title
+#: package/analyses/anovaRM.menuTitle
+#: package/analyses/anovaRMNP.menuTitle
+#: anovaRM/options.title
+#: anovaRM/ui.title
+#: anovaRM/results.title
+#: anovaRMNP/options.menuTitle
+msgid "Repeated Measures ANOVA"
+msgstr "ניתוח שונות למדידות חוזרות"
+
+#: package/analyses/anovaRMNP.title
+#: anovaRMNP/options.title
+#: anovaRMNP/ui.title
+#: anovaRMNP/results.title
+msgid "Repeated Measures ANOVA (Non-parametric)"
+msgstr "ניתוח שונות למדידות חוזרות (לא פרמטרי)"
+
+#: anovaRM/options/rmCells.title
+msgid "Repeated Measures Cells"
+msgstr "תאי המדידות החוזרות"
+
+#: anovaRM/ui[2]/rmcModelSupplier.label
+msgid "Repeated Measures Components"
+msgstr "רכיבי מדידות חוזרות"
+
+#: anovaRM/options/rm.title
+#: anovaRM/ui/variablesupplier/rm.label
+msgid "Repeated Measures Factors"
+msgstr "גורמי המדידות החוזרות"
+
+#: anovaOneW/options/phSig.title
+#: corrMatrix/options/sig.title
+#: corrPart/options/sig.title
+msgid "Report significance"
+msgstr "דיווח מובהקות"
+
+#: R/linreg.b.R
+msgid "Represents grand mean"
+msgstr "מייצג ממוצע כולל"
+
+#: R/linreg.b.R
+msgid "Represents reference level"
+msgstr "מייצג את רמת הייחוס"
+
+#: R/anovarm.b.R
+msgid "Residual"
+msgstr "שיורי"
+
+#: cfa/options/resCov.title
+#: cfa/ui[1].label
+#: cfa/ui[1]/resCovSupplier[0].label
+#: cfa/results/resEst/resCov.title
+msgid "Residual Covariances"
+msgstr "שונויות משותפות שיוריות"
+
+#: cfa/options/resCovEst.title
+msgid "Residual covariances"
+msgstr "שונויות משותפות שיוריות"
+
+#: cfa/results/modelPerformance/modIndices/resCovMod.title
+msgid "Residual Covariances – Modification Indices"
+msgstr "שונויות שיוריות משותפות – מדדי שינוי"
+
+#: cfa/results/resEst.title
+msgid "Residual Estimates"
+msgstr "אומדנים שיוריים"
+
+#: cfa/results/resEst/resIntercept.title
+msgid "Residual Intercepts"
+msgstr "לכידים שיוריים"
+
+#: cfa/options/resInterceptEst.title
+msgid "Residual intercepts"
+msgstr "לכידים שיוריים"
+
+#: linReg/options/resPlots.title
+msgid "Residual plots"
+msgstr "תרשימי הנתונים שיוריים"
+
+#: R/ancova.b.R
+msgid "Residual sum of squares and/or degrees of freedom are zero, indicating a perfect fit"
+msgstr "סכום הריבועים השיורי או דרגות החופש או שניהם הוא אפס. הדבר מעיד על התאמה מושלמת"
+
+#: R/ancova.b.R
+#: R/linreg.b.R
+#: R/logregbin.b.R
+#: R/mancova.b.R
+#: ancova/options/residsOV.title
+#: ancova/results/residsOV.title
+#: anova/options/residsOV.title
+#: anova/results/residsOV.title
+#: linReg/options/residsOV.title
+#: linReg/results/residsOV.title
+#: logRegBin/options/residsOV.title
+#: logRegBin/results/residsOV.title
+msgid "Residuals"
+msgstr "נתונים שיוריים"
+
+#: cfa/results/modelPerformance/corRes.title
+msgid "Residuals for Observed Correlation Matrix"
+msgstr "נתונים שיוריים עבור מטריצת מתאמים נצפית"
+
+#: R/anova.b.R
+msgid "Residuals from ANOVA"
+msgstr "נתונים שיוריים מניתוח שונות"
+
+#: cfa/options/corRes.title
+msgid "Residuals observed correlation matrix"
+msgstr "נתונים שיוריים עבור מטריצת מתאמים נצפית"
+
+#: linReg/results/models.template/assump/resPlots.title
+msgid "Residuals Plots"
+msgstr "תרשימי הנתונים שיוריים"
+
+#: package/analyses/empty.title
+#: package/analyses/empty.menuTitle
+#: cfa/ui[3][0][0].label
+#: empty/options.title
+#: empty/ui.title
+#: empty/results.title
+msgid "Results"
+msgstr "תוצאות"
+
+#: R/reliability.b.R
+msgid "reverse scaled item"
+msgstr "פריט בסולם מהופך"
+
+#: reliability/options/revItems.title
+#: reliability/ui[2].label
+#: reliability/ui[2]/revItemsSupplier[0].label
+msgid "Reverse Scaled Items"
+msgstr "פריטים בסולם מהופך"
+
+#: anovaRM/options/rm.default[0].label
+msgid "RM Factor 1"
+msgstr "גורם מ״ח 1"
+
+#: linReg/options/rmse.title
+#: linReg/results/modelFit.columns.title
+msgid "RMSE"
+msgstr "RMSE"
+
+#: cfa/options/fitMeasures/rmsea.title
+#: cfa/results/modelFit/fitMeasures.columns.title
+#: pca/results/modelFit/fit.columns.title
+msgid "RMSEA"
+msgstr "RMSEA"
+
+#: cfa/results/modelFit/fitMeasures.columns.superTitle
+#: pca/results/modelFit/fit.columns.superTitle
+msgid "RMSEA 90% CI"
+msgstr "רווח סמך של 90% של RMSEA"
+
+#: logRegBin/ui[7][0][2][0].label
+msgid "ROC"
+msgstr "ROC"
+
+#: logRegBin/results/models.template/pred/rocPlot.title
+msgid "ROC Curve"
+msgstr "עקומת ROC"
+
+#: logRegBin/options/rocPlot.title
+msgid "ROC curve"
+msgstr "עקומת ROC"
+
+#: efa/options/rotation.title
+#: pca/options/rotation.title
+msgid "Rotation"
+msgstr "רוטציה"
+
+#: contTables/options/pcRow.title
+#: contTablesPaired/options/pcRow.title
+msgid "Row"
+msgstr "שורה"
+
+#: descriptives/results/extremeValues.template.columns.title
+msgid "Row number"
+msgstr "מספר השורה"
+
+#: R/conttables.b.R
+#: R/conttablespaired.b.R
+msgid "Row variable '{var}' contains fewer than 2 levels"
+msgstr "משתנה השורה ”{var}“ מכיל פחות משתי רמות"
+
+#: contTables/options/rows.title
+#: contTables/options/xaxis/xrows.title
+#: contTablesPaired/options/rows.title
+msgid "Rows"
+msgstr "שורות"
+
+#: contTables/options/compare/rows.title
+msgid "rows"
+msgstr "שורות"
+
+#: R/conttables.b.R
+msgid "Rows compared"
+msgstr "השורות המושוות"
+
+#: mancova/options/multivar/roy.title
+#: mancova/results/multivar.columns.content
+msgid "Roy's Largest Root"
+msgstr "השורש הגדול ביותר של רוי"
+
+#: descriptives/ui[2][0][0].label
+msgid "Sample Size"
+msgstr "גודל המדגם"
+
+#: ancova/ui[7].label
+#: anova/ui[7].label
+#: efa/ui[2].label
+#: linReg/ui[7].label
+#: logRegBin/ui[8].label
+#: pca/ui[2].label
+#: reliability/ui[3].label
+msgid "Save"
+msgstr "שמירה"
+
+#: reliability/results/scale.columns.content
+msgid "scale"
+msgstr "סולם"
+
+#: package/analyses/reliability.menuSubgroup
+msgid "Scale Analysis"
+msgstr "ניתוח סולם"
+
+#: cfa/ui[2][1][0]/constrain_facInd.label
+msgid "Scale factor = scale first indicator"
+msgstr "גורם הסולם = המחוון הראשון של הסולם"
+
+#: reliability/results/scale.title
+msgid "Scale Reliability Statistics"
+msgstr "סטטיסטיקות מהימנות הסולם"
+
+#: reliability/ui[1][0][0].label
+msgid "Scale Statistics"
+msgstr "סטטיסטיקות הסולם"
+
+#: ancova/options/postHocCorr/scheffe.title
+#: anova/options/postHocCorr/scheffe.title
+#: anovaRM/options/postHocCorr/scheffe.title
+msgid "Scheffe"
+msgstr "שפה"
+
+#: R/pca.b.R
+msgid "Score Component"
+msgstr "רכיב הציון"
+
+#: R/pca.b.R
+msgid "Score Factor"
+msgstr "גורם הציון"
+
+#: R/pca.b.R
+msgid "Score for component"
+msgstr "ציון הרכיב"
+
+#: R/pca.b.R
+msgid "Score for factor {i}. Estimated using the '{fsMethod}' method."
+msgstr "ציון לגורם {i}. נאמד בעזרת השיטה ”{fsMethod}“."
+
+#: pca/results/eigen/screePlot.title
+msgid "Scree Plot"
+msgstr "גרף מפולת אבנים"
+
+#: efa/options/screePlot.title
+#: pca/options/screePlot.title
+msgid "Scree plot"
+msgstr "גרף מפולת אבנים"
+
+#: R/descriptives.b.R
+#: anovaOneW/results/desc.columns.title
+#: linReg/results/models.template/dataSummary/cooks.columns.title
+#: linReg/results/models.template/dataSummary/mahal.columns.title
+#: logRegBin/results/models.template/dataSummary/cooks.columns.title
+#: reliability/results/scale.columns.title
+#: reliability/results/items.columns.title
+#: ttestIS/results/desc.columns.title
+#: ttestOneS/results/descriptives.columns.title
+#: ttestPS/results/desc.columns.title
+msgid "SD"
+msgstr "ס״ת"
+
+#: R/ancova.b.R
+#: R/descriptives.b.R
+#: R/linreg.b.R
+#: R/loglinear.b.R
+#: R/logregbin.b.R
+#: R/logregmulti.b.R
+#: ancova/results/contrasts.template.columns.title
+#: anovaOneW/results/desc.columns.title
+#: anovaRM/results/contrasts.template.columns.title
+#: cfa/results/factorLoadings.columns.title
+#: cfa/results/factorEst/factorCov.columns.title
+#: cfa/results/factorEst/factorIntercept.columns.title
+#: cfa/results/resEst/resCov.columns.title
+#: cfa/results/resEst/resIntercept.columns.title
+#: linReg/results/models.template/coef.columns.title
+#: logLinear/results/models.template/coef.columns.title
+#: logRegBin/results/models.template/coef.columns.title
+#: logRegBin/results/models.template/assump/boxTidwell.columns.title
+#: logRegMulti/results/models.template/coef.columns.title
+#: logRegOrd/results/models.template/coef.columns.title
+#: logRegOrd/results/models.template/thres.columns.title
+#: ttestIS/results/desc.columns.title
+#: ttestOneS/results/descriptives.columns.title
+#: ttestPS/results/desc.columns.title
+msgid "SE"
+msgstr "ט״ת"
+
+#: ttestIS/results/ttest.columns.title
+#: ttestPS/results/ttest.columns.title
+msgid "SE difference"
+msgstr "הפרש ט״ת"
+
+#: corrPart/options/type/semi.title
+msgid "Semipartial"
+msgstr "חלק"
+
+#: R/corrpart.b.R
+msgid "Semipartial Correlation"
+msgstr "מתאם חלק"
+
+#: R/logregbin.b.R
+#: logRegBin/options/sens.title
+#: logRegBin/results/models.template/pred/measures.columns.title
+msgid "Sensitivity"
+msgstr "רגישות"
+
+#: R/descriptives.b.R
+#: ancova/results/assump/norm.columns.content
+#: descriptives/options/sw.title
+#: linReg/results/models.template/assump/norm.columns.content
+msgid "Shapiro-Wilk"
+msgstr "שפירו–וילק"
+
+#: mancova/results/assump/shapiro.title
+msgid "Shapiro-Wilk Multivariate Normality Test"
+msgstr "מבחן שפירו–וילק לנורמליות רבת משתנים"
+
+#: R/descriptives.b.R
+msgid "Shapiro-Wilk p"
+msgstr "p של שפירו–וילק"
+
+#: mancova/ui[1][1][0]/shapiro.label
+msgid "Shapiro-Wilk test"
+msgstr "מבחן שפירו–וילק"
+
+#: mancova/options/shapiro.title
+msgid "Shapiro-Wilk test for multivariate normality"
+msgstr "מבחן שפירו–וילק לנורמליות רבת משתנים"
+
+#: R/descriptives.b.R
+msgid "Shapiro-Wilk W"
+msgstr "W של שפירו–וילק"
+
+#: contTables/options/bartype/dodge.title
+msgid "Side by side"
+msgstr "זה לצד זה"
+
+#: ancova/options/contrasts.template/type/simple.title
+#: anova/options/contrasts.template/type/simple.title
+#: anovaRM/options/contrasts.template/type/simple.title
+#, fuzzy
+msgid "Simple (vs. First)"
+msgstr "פשוט (מול ראשון)"
+
+#: ancova/options/contrasts.template/type/simple_k.title
+#: anova/options/contrasts.template/type/simple_k.title
+#: anovaRM/options/contrasts.template/type/simple_k.title
+#, fuzzy
+msgid "Simple (vs. Last)"
+msgstr "פשוט (מול אחרון)"
+
+#: efa/options/rotation/simplimax.title
+#: pca/options/rotation/simplimax.title
+msgid "Simplimax"
+msgstr "Simplimax"
+
+#: R/pca.b.R
+msgid "simplimax"
+msgstr "simplimax"
+
+#: R/pca.b.R
+msgid "Simulations"
+msgstr "הדמייה"
+
+#: R/ancova.b.R
+msgid "Singular fit encountered; one or more predictor variables are a linear combination of other predictor variables."
+msgstr "נמצאה התאמה בודדת. לפחות משתנה מנבא אחד הוא צירוף לינארי של משתנים מנבאים אחרים."
+
+#: R/anovarm.b.R
+msgid "Singularity error. Sphericity corrections are not available"
+msgstr "שגיאת סינגולריות. תיקוני הכדוריות אינם זמינים"
+
+#: R/anovarm.b.R
+msgid "Singularity error. Sphericity tests are not available"
+msgstr "שגיאת סינגולריות. מבחני כדוריות אינם זמינים"
+
+#: R/descriptives.b.R
+#: descriptives/options/skew.title
+msgid "Skewness"
+msgstr "צידוד (Skewness)"
+
+#: efa/options/sortLoadings.title
+#: pca/options/sortLoadings.title
+msgid "Sort loadings by size"
+msgstr "סידור הטעינויות לפי גודלם"
+
+#: corrMatrix/options/spearman.title
+#: corrMatrix/ui[1][0]/spearman.label
+#: corrPart/options/spearman.title
+#: corrPart/ui[1][0]/spearman.label
+msgid "Spearman"
+msgstr "ספירמן"
+
+#: corrMatrix/results/matrix.columns.content
+#: corrPart/results/matrix.columns.content
+msgid "Spearman's rho"
+msgstr "רו של ספירמן"
+
+#: R/pca.b.R
+msgctxt "specific factor"
+msgid "Factor"
+msgstr "גורם"
+
+#: R/logregbin.b.R
+#: logRegBin/options/spec.title
+#: logRegBin/results/models.template/pred/measures.columns.title
+msgid "Specificity"
+msgstr "סגוליות"
+
+#: anovaRM/results/rmTable.columns.title
+msgid "Sphericity Correction"
+msgstr "תיקון כדוריות"
+
+#: anovaRM/options/spherCorr.title
+#: anovaRM/ui[3][1][0].label
+msgid "Sphericity corrections"
+msgstr "תיקוני כדוריות"
+
+#: anovaRM/options/spherTests.title
+msgid "Sphericity tests"
+msgstr "מבחני כדוריות"
+
+#: descriptives/options/splitBy.title
+#: descriptives/ui[0][1].label
+msgid "Split by"
+msgstr "חלוקה לפי"
+
+#: R/mancova.b.R
+msgid "Squared Mahalanobis Distance"
+msgstr "מרחק מהלנוביס בריבוע"
+
+#: cfa/options/fitMeasures/srmr.title
+#: cfa/results/modelFit/fitMeasures.columns.title
+msgid "SRMR"
+msgstr "SRMR"
+
+#: pca/results/factorStats/factorSummary.columns.title
+msgid "SS Loadings"
+msgstr "טעינויות סכום הריבועים"
+
+#: contTables/options/bartype/stack.title
+#: descriptives/options/dotType/stack.title
+msgid "Stacked"
+msgstr "מעורם"
+
+#: cfa/results/factorLoadings.columns.title
+#: cfa/results/factorEst/factorCov.columns.title
+#: cfa/results/factorEst/factorIntercept.columns.title
+#: cfa/results/resEst/resCov.columns.title
+#: cfa/results/resEst/resIntercept.columns.title
+#: linReg/results/models.template/coef.columns.title
+msgid "Stand. Estimate"
+msgstr "אומדן מתוקנן"
+
+#: R/descriptives.b.R
+#: descriptives/options/sd.title
+#: reliability/options/sdScale.title
+#: reliability/options/sdItems.title
+msgid "Standard deviation"
+msgstr "סטיית תקן"
+
+#: anova/options/emmPlotError/se.title
+#: contTables/results/gamma.columns.title
+msgid "Standard Error"
+msgstr "טעות תקן"
+
+#: ancova/options/emmPlotError/se.title
+#: anovaRM/options/emmPlotError/se.title
+#: descriptives/options/se.title
+msgid "Standard error"
+msgstr "טעות תקן"
+
+#: linReg/ui[5][0][1][0].label
+msgid "Standardized Estimate"
+msgstr "אומדן מתוקנן"
+
+#: cfa/options/stdEst.title
+#: linReg/options/stdEst.title
+msgid "Standardized estimate"
+msgstr "אומדן מתוקנן"
+
+#: R/ancova.b.R
+#: R/anovaonew.b.R
+#: R/anovarm.b.R
+#: R/descriptives.b.R
+#: R/linreg.b.R
+#: R/ttestis.b.R
+#: R/ttestones.b.R
+#: R/ttestps.b.R
+msgid "Standardized Residuals"
+msgstr "נתונים שיוריים מתוקננים"
+
+#: R/conttables.b.R
+msgid "Standardized residuals"
+msgstr "נתונים שיוריים מתוקננים"
+
+#: contTables/options/resS.title
+msgid "Standardized residuals (adjusted Pearson)"
+msgstr "נתונים שיוריים מתוקננים (פירסון מתוקנן)"
+
+#: ancova/results/assump/norm.columns.title
+#: anovaRMNP/results/comp.columns.title
+#: linReg/results/models.template/assump/norm.columns.title
+#: ttestIS/results/ttest.columns.title
+#: ttestOneS/results/ttest.columns.title
+#: ttestPS/results/ttest.columns.title
+msgid "Statistic"
+msgstr "סטטיסטי"
+
+#: ttestPS/results/ttest.columns.title
+msgid "statistic"
+msgstr "סטטיסטי"
+
+#: anovaOneW/ui[2][0][1][0].label
+#: cfa/ui[3][1][0].label
+#: contTables/ui[1][0].label
+#: corrMatrix/options/plotStats.title
+#: descriptives/ui[2].label
+#: propTest2/ui[2][1][0].label
+msgid "Statistics"
+msgstr "סטטיסטיקה"
+
+#: descriptives/ui[2][2][0][0]/sd.label
+msgid "Std. deviation"
+msgstr "סטיית תקן"
+
+#: R/descriptives.b.R
+msgid "Std. error kurtosis"
+msgstr "גבנוניות טעות התקן"
+
+#: R/descriptives.b.R
+msgid "Std. error mean"
+msgstr "ממוצע טעות תקן"
+
+#: descriptives/ui[2][2][1][0]/se.label
+msgid "Std. error of Mean"
+msgstr "טעות תקן של הממוצע"
+
+#: R/descriptives.b.R
+msgid "Std. error skewness"
+msgstr "צידוד טעות התקן"
+
+#: ttestIS/options/students.title
+#: ttestOneS/ui[1][0][0]/students.label
+#: ttestPS/ui[1][0][0]/students.label
+msgid "Student's"
+msgstr "של סטודנט"
+
+#: ttestIS/results/ttest.columns.content
+#: ttestOneS/results/ttest.columns.content
+#: ttestPS/results/ttest.columns.content
+msgid "Student's t"
+msgstr "t של סטודנט"
+
+#: ttestOneS/options/students.title
+#: ttestPS/options/students.title
+msgid "Student's test"
+msgstr "מבחן t של סטודנט"
+
+#: R/descriptives.b.R
+#: R/reliability.b.R
+#: descriptives/options/sum.title
+msgid "Sum"
+msgstr "סכום"
+
+#: ancova/results/main.columns.title
+#: anovaRM/results/rmTable.columns.title
+#: anovaRM/results/bsTable.columns.title
+#: linReg/results/models.template/anova.columns.title
+#: mancova/results/univar.columns.title
+msgid "Sum of Squares"
+msgstr "סכום הריבועים"
+
+#: ancova/options/ss.title
+#: anova/options/ss.title
+#: anovaRM/options/ss.title
+msgid "Sum of squares"
+msgstr "סכום הריבועים"
+
+#: reliability/options/sumScoreOV.title
+#: reliability/results/sumScoreOV.title
+msgid "Sum score"
+msgstr "סכום הציונים"
+
+#: pca/results/factorStats/factorSummary.title
+msgid "Summary"
+msgstr "סיכום"
+
+#: R/ancova.b.R
+msgid "t"
+msgstr "t"
+
+#: package/analyses/ttestIS.menuGroup
+#: package/analyses/ttestPS.menuGroup
+#: package/analyses/ttestOneS.menuGroup
+#: ttestIS/options.menuGroup
+#: ttestOneS/options.menuGroup
+#: ttestPS/options.menuGroup
+msgid "T-Tests"
+msgstr "מבחני T"
+
+#: anovaOneW/results/postHoc.template.columns.content
+msgid "t-value"
+msgstr "ערך t"
+
+#: efa/options/factorScoreMethod/tenBerge.title
+msgid "ten Berge"
+msgstr "ten Berge"
+
+#: jamovi/js/ancova.events.js:51
+#: jamovi/js/ancova.events.js:7
+#: jamovi/js/anova.js:45
+#: jamovi/js/anova.js:9
+#: jamovi/js/anovarm.js:15
+#: jamovi/js/anovarm.js:98
+#: jamovi/js/linreg.events.js:10
+#: jamovi/js/linreg.events.js:47
+#: jamovi/js/loglinear.events.js:10
+#: jamovi/js/loglinear.events.js:52
+#: jamovi/js/logregbin.events.js:10
+#: jamovi/js/logregbin.events.js:61
+msgid "Term {0}"
+msgstr "תנאי {0}"
+
+#: ancova/ui[6][0]/emMeansSupplier[0]/emMeans.template/blockName.label
+#: anova/ui[6][0]/emMeansSupplier[0]/emMeans.template/blockName.label
+#: anovaRM/ui[6][0]/emMeansSupplier[0]/emMeans.template/blockName.label
+#: linReg/ui[6][0]/emMeansSupplier[0]/emMeans.template/blockName.label
+#: logLinear/ui[5][0]/emMeansSupplier[0]/emMeans.template/blockName.label
+#: logRegBin/ui[6][0]/emMeansSupplier[0]/emMeans.template/blockName.label
+#: logRegMulti/ui[5][0]/emMeansSupplier[0]/emMeans.template/blockName.label
+msgid "Term 1"
+msgstr "תנאי 1"
+
+#: cfa/ui[4][0][0][0].label
+#: cfa/results/modelFit/test.title
+msgid "Test for Exact Fit"
+msgstr "בדיקת התאמה מדויקת"
+
+#: anovaOneW/options/phTest.title
+msgid "Test results (t and df)"
+msgstr "תוצאות המבחן (t וד״ח)"
+
+#: cfa/options/estTest.title
+msgid "Test statistics"
+msgstr "סטטיסטיקות המבחן"
+
+#: ttestOneS/options/testValue.title
+msgid "Test Value"
+msgstr "ערך המבחן"
+
+#: propTest2/options/testValue.title
+#: ttestOneS/ui[1][0][1][0]/testValue.label
+msgid "Test value"
+msgstr "ערך המבחן"
+
+#: contTables/ui[1][0][0][0][0].label
+#: ttestIS/ui[1][0][0].label
+#: ttestOneS/ui[1][0][0].label
+#: ttestPS/ui[1][0][0].label
+msgid "Tests"
+msgstr "מבחנים"
+
+#: anovaRM/results/assump/spherTable.title
+msgid "Tests of Sphericity"
+msgstr "מבחני כדוריות"
+
+#: R/descriptives.b.R
+msgid "th percentile"
+msgstr "האחוזון"
+
+#: package/datasets/Anderson'sIrisData.description
+msgid "The 'iris' data set from R"
+msgstr "מערך הנתונים ”iris“ מ־R"
+
+#: R/descriptives.b.R
+msgid "The 'split by' variable '{var}' contains no data."
+msgstr "משתנה ה”חלוקה“ ”{var}“ אינו מכיל מידע."
+
+#: ttestOneS/options/hypothesis.description.ui
+msgid "the alternative and null hypotheses;\n"
+"\n"
+"|              | Alternative (Hₐ)  | Null (H₀)          |\n"
+"|--------------|-------------------|--------------------|\n"
+"| ≠ Test value | Mean ≠ Test value | Mean = Test value  |\n"
+"| > Test value | Mean > Test value | Mean <= Test value |\n"
+"| < Test value | Mean < Test value | Mean >= Test value |"
+msgstr "ההשערה החלופית והשערת האפס;\n"
+"\n"
+"|             | חלופית (Hₐ)       | אפס (H₀)           |\n"
+"|-------------|-------------------|--------------------|\n"
+"| ≠ ערך המבחן | ממוצע ≠ ערך המבחן | ממוצע = ערך המבחן  |\n"
+"| > ערך המבחן | ממוצע > ערך המבחן | ממוצע <= ערך המבחן |\n"
+"| < ערך המבחן | ממוצע < ערך המבחן | ממוצע >= ערך המבחן |"
+
+#: contTables/options/hypothesis.description.ui
+#: ttestIS/options/hypothesis.description.ui
+#: ttestPS/options/hypothesis.description.ui
+msgid "the alternative hypothesis."
+msgstr "ההשערה החלופית."
+
+#: corrMatrix/options/hypothesis.description.ui
+#: corrPart/options/hypothesis.description.ui
+msgid "the alternative hypothesis. Allows for one-tailed tests."
+msgstr "ההשערה החלופית. מאפשרת מבחנים חד זנביים."
+
+#: package/analyses/ancova.description
+#: ancova/options.description.main
+msgid "The Analysis of Covariance (ANCOVA) is used to explore the relationship\n"
+"between a continuous dependent variable, one or more categorical\n"
+"explanatory variables, and one or more continuous explanatory variables\n"
+"(or covariates). It is essentially the same analysis as ANOVA, but\n"
+"with the addition of covariates."
+msgstr "משתמשים בניתוח שונות משותפת (ANCOVA) כדי לבחון את הקשר שבין משתנה\n"
+"תלוי רציף, לפחות משתנה מסביר איכותי אחד ולפחות משתנה מסביר רציף אחד,\n"
+"(או משתנים נלווים). בעיקרון הניתוח זהה לניתוח שונות, מלבד התוספת של\n"
+"המשתנים הנלווים."
+
+#: package/analyses/anova.description
+msgid "The Analysis of Variance (ANOVA) is used to explore the relationship\n"
+"between a continuous dependent variable, and one or more categorical\n"
+"explanatory variables."
+msgstr "משתמשים בניתוח השונות (ANOVA) כדי לבחון את הקשר\n"
+"שבין משתנה תלוי רציף ולפחות משתנה מסביר איכותי אחד."
+
+#: anova/options.description.main
+msgid "The Analysis of Variance (ANOVA) is used to explore the relationship\n"
+"between a continuous dependent variable, and one or more categorical\n"
+"explanatory variables.\n"
+"\n"
+"ANOVA assumes that the residuals are normally distributed, and that the\n"
+"variances of all groups are equal. If one is unwilling to assume that\n"
+"the variances are equal, then a Welch's test can be used instead\n"
+"(However, the Welch's test does not support more than one explanatory\n"
+"factor). Alternatively, if one is unwilling to assume that the data is\n"
+"normally distributed, a non-parametric approach (such as Kruskal-Wallis)\n"
+"can be used."
+msgstr "משתמשים בניתוח השונות (ANOVA) כדי לבחון את הקשר\n"
+"שבין משתנה תלוי רציף ולפחות משתנה מסביר איכותי אחד.\n"
+"\n"
+"ניתוח שונות מניח שהנתונים השיוריים מתפלגים נורמלית ושהשונויות\n"
+"של כל הקבוצות שוות. אם לא מניחים שוויון שונויות ניתן להשתמש\n"
+"במבחן ולץ׳ במקום (עם זאת, מבחן ולץ׳ אינו תומך ביותר מגורם מסביר אחד).\n"
+"לחילופין, אם לא מניחים שהנתונים מתפלגים נורמלית ניתן להשתמש\n"
+"במבחן לא פרמטרי (כמו קראסקל–ואליס)."
+
+#: package/analyses/anovaOneW.description
+msgid "The Analysis of Variance (ANOVA) is used to explore the relationship\n"
+"between a continuous dependent variable, and one or more categorical\n"
+"explanatory variables. This 'One-Way ANOVA' is a simplified version of\n"
+"the 'normal' ANOVA, allowing only a single explanatory factor, however\n"
+"also providing a Welch's ANOVA. The Welch's ANOVA has the advantage that\n"
+"it need not assume that the variances of all groups are equal."
+msgstr "משתמשים בניתוח השונות (ANOVA) כדי לבחון את הקשר\n"
+"שבין משתנה תלוי רציף ולפחות משתנה מסביר איכותי אחד.\n"
+"ניתוח השונות למדגם יחיד זה הוא פישוט של ניתוח השונות ה”רגיל“,\n"
+"שבו ניתן להשתמש רק בגורם מסביר אחד. אולם הוא גם מאפשר את\n"
+"השימוש בניתוח השונות של ולץ׳. לניתוח השונות של ולץ׳ יש את היתרון\n"
+"שהוא אינו צריך להניח שהשונויות של כל הקבוצות שוות."
+
+#: anovaOneW/options.description.main
+msgid "The Analysis of Variance (ANOVA) is used to explore the relationship\n"
+"between a continuous dependent variable, and one or more categorical\n"
+"explanatory variables. This 'One-Way ANOVA' is a simplified version of\n"
+"the 'normal' ANOVA, allowing only a single explanatory factor, however\n"
+"also providing a Welch's ANOVA. The Welch's ANOVA has the advantage that\n"
+"it need not assume that the variances of all groups are equal.\n"
+"\n"
+"For convenience, this method allows specifying multiple dependent\n"
+"variables, resulting in multiple independent tests.\n"
+"\n"
+"Note that the Welch's ANOVA is the same procedure as the Welch's\n"
+"independent samples t-test."
+msgstr "משתמשים בניתוח השונות (ANOVA) כדי לבחון את הקשר\n"
+"שבין משתנה תלוי רציף ולפחות משתנה מסביר איכותי אחד.\n"
+"ניתוח השונות למדגם יחיד זה הוא פישוט של ניתוח השונות ”הרגיל“,\n"
+"שבו ניתן להשתמש רק בגורם מסביר אחד. אולם הוא גם מאפשר את\n"
+"השימוש בניתוח השונות של ולץ׳. לניתוח השונות של ולץ׳ יש את היתרון\n"
+"שהוא אינו צריך להניח שהשונויות של כל הקבוצות שוות.\n"
+"\n"
+"לשם הנוחות, שיטה זו מאפשרת לציין כמה משתנים תלויים\n"
+"שייבחנו בכמה מבחנים בלתי תלויים.\n"
+"\n"
+"יש לשים לב שניתוח השונות של ולץ׳ עובד באותה הצורה\n"
+"כמו מבחן t למדגמים בלתי תלויים של ולץ׳."
+
+#: anovaRM/options/bs.description.ui
+msgid "the between subjects factors (optional)."
+msgstr "הגורמים הבין נבדקיים (רשות)."
+
+#: anovaRM/options/bsTerms.description.ui
+msgid "the between subjects terms of the model."
+msgstr "התנאים הבין נבדקיים של המודל."
+
+#: package/analyses/propTest2.description
+#: propTest2/options.description.main
+msgid "The Binomial test is used to test the Null hypothesis that the proportion of observations match some expected value. If the p-value is low, this suggests that the Null hypothesis is false, and that the true proportion must be some other value."
+msgstr "משתמשים במבחן הבינומי לבחינת השערת האפס שיחסי התצפיות מתאימים לערך מצופה כלשהו. ערך ה־p נמוך מעיד שהשערת האפס אינה נכונה ושהיחסים האמיתיים הם ערך אחר."
+
+#: ancova/options/factors.description.ui
+msgid "the categorical explanatory (or independent) variables."
+msgstr "המשתנים המסבירים (או הבלתי תלויים) האיכותיים."
+
+#: R/descriptives.b.R
+msgid "The CI of the mean assumes sample means follow a t-distribution with N - 1 degrees of freedom"
+msgstr "רווחה הסמך של הממוצע מניח שממוצע המדגם מתאים להתפלגות t בעלת N - 1 דרגות חופש"
+
+#: ttestIS/options/ciWidthES.description.ui
+#: ttestOneS/options/ciWidthES.description.ui
+#: ttestPS/options/ciWidthES.description.ui
+msgid "the confidence interval width for the effect-sizes."
+msgstr "רוחב רווח הסמך של גודלי האפקט."
+
+#: ancova/options/postHocEsCiWidth.description.ui
+#: anova/options/postHocEsCiWidth.description.ui
+msgid "the confidence interval width for the post-hoc effect sizes."
+msgstr "רוחב רווח הסמך של גודלי האפקט של ניתוחי ההמשך."
+
+#: corrMatrix/options/ciWidth.description.ui
+#: ttestIS/options/ciWidth.description.ui
+#: ttestOneS/options/ciWidth.description.ui
+#: ttestPS/options/ciWidth.description.ui
+msgid "the confidence interval width."
+msgstr "רוחב רווח הסמך."
+
+#: ancova/options/covs.description.ui
+msgid "the continuous explanatory (or independent) variables, also known as covariates."
+msgstr "המשתנים המסבירים (או התלויים) הרציפים. מוכרים גם בשם משתנים נלווים."
+
+#: ancova/options/contrasts.description.ui
+#: anova/options/contrasts.description.ui
+#: anovaRM/options/contrasts.description.ui
+msgid "the contrasts to use."
+msgstr "הקונטרסטים בהם יש להשתמש."
+
+#: corrPart/options/controls.description.ui
+msgid "the control variables of interest."
+msgstr "משתני הבקרה של העניין."
+
+#: anovaRM/options/cov.description.ui
+msgid "the covariates (specifying these makes this an ANCOVA)"
+msgstr "המשתנים הנלווים (ציון שלהם הוא מה שהופך את זה לניתוח שונות משותפת)"
+
+#: R/logregbin.b.R
+msgid "The cut-off value is set to {}"
+msgstr "ערך החיתוך הוגדר ל־{}"
+
+#: R/ancova.b.R
+#: R/mancova.b.R
+msgid "The dataset contains 0 rows (after removing rows with missing values)"
+msgstr "מערך הנתונים מכיל 0 שורות (לאחר הסרת שורות בעלות ערכים חסרים)"
+
+#: R/loglinear.b.R
+msgid "The dataset contains 0 rows (or all rows contain missing values)"
+msgstr "מערך הנתונים מכיל 0 שורות (או שכל השורות מכילות ערכים חסרים)"
+
+#: R/logregbin.b.R
+msgid "The dependent variable '{}' has more than two levels; binomial logistic regression can only be performed on dependent variables with two levels."
+msgstr "למשתנה התלוי ”{}“ יש יותר משתי רמות. ניתן לבצע רגרסיה לוגיסטית בינומית רק על משתנים תלויים בעלי שתי רמות."
+
+#: R/logregord.b.R
+msgid "The dependent variable '{dep}' has the following order: {orderedLevels}"
+msgstr "המשתנה התלוי ”{dep}“ מסודר לפי הסדר הבא: {orderedLevels}"
+
+#: R/logregmulti.b.R
+#: R/logregord.b.R
+msgid "The dependent variable \"{dep}\" has only two levels, consider doing a binomial logistic regression."
+msgstr "יש למשתנה התלוי ”{dep}“ רק שתי רמות. יש לשקול להשתמש ברגרסיה לוגיסטית בינומית."
+
+#: ancova/options/dep.description.ui
+msgid "the dependent variable. For ANCOVA, these will be continuous."
+msgstr "המשתנה התלוי. בניתוח שונות משותפת הוא יהיה רציף."
+
+#: anova/options/dep.description.ui
+msgid "the dependent variable. For ANOVA, these will be continuous."
+msgstr "המשתנה התלוי. בניתוח שונות הוא יהיה רציף."
+
+#: ttestIS/options/vars.description.ui
+msgid "the dependent variables -- a separate t-test is performed for each dependent variable specified."
+msgstr "המשתנה התלוי. מבחן t נפרד יבוצע לכל משתנה תלוי שצוין."
+
+#: anovaOneW/options/deps.description.ui
+msgid "the dependent variables. For ANOVA, these will be continuous."
+msgstr "המשתנים התלויים. בניתוח שונות הם יהיו רציף."
+
+#: ancova/options/emmPlotError.description.ui
+#: anova/options/emmPlotError.description.ui
+#: anovaRM/options/emmPlotError.description.ui
+msgid "the error bars to plot on the marginal means."
+msgstr "עמודות השגיאה שישמשו לתרשים שעל הממוצעים השוליים."
+
+#: anovaOneW/options/group.description.ui
+msgid "the explanatory or independent variable. For ANOVA this will be categorical."
+msgstr "המשתנה המסביר או הבלתי תלוי. בניתוח שונות הוא יהיה איכותי."
+
+#: anova/options/factors.description.ui
+msgid "the explanatory or independent variables. For ANOVA these will be categorical."
+msgstr "המשתנים המסבירים או הבלתי תלויים. בניתוח שונות הם יהיו איכותיים."
+
+#: package/analyses/anovaRMNP.description
+#: anovaRMNP/options.description.main
+msgid "The Friedman test is used to explore the relationship between a continuous dependent variable and a categorical explanatory variable, where the explanatory variable is 'within subjects' (where multiple measurements are from the same subject). It is analogous to Repeated Measures ANOVA, but with the advantage of being non-parametric, and not requiring the assumptions of normality or homogeneity of variances. However, it has the limitation that it can only test a single explanatory variable at a time."
+msgstr "משתמשים במבחן פרידמן כדי לבחון את הקשר שבין משתנה תלוי רציף ומשתנה מסביר איכותי כשהמשתנה המסביר הוא ”תוך נבדקי“ (ישנם כמה מדדים למשתתף יחיד). הוא מקביל לניתוח שונות למדידות חוזרות, אבל יש לו יתרונות שהוא לא פרמטרי ושאין לו צורך בהנחות נורמליות ושוויון שונויות. עם זאת, יש לו מגבלה שהוא אינו יכול לבחון יותר ממשתנה מסביר אחד בכל פעם."
+
+#: package/analyses/anovaNP.description
+#: anovaNP/options.description.main
+msgid "The Kruskal-Wallis test is used to explore the relationship between a continuous dependent variable, and a categorical explanatory variable. It is analogous to ANOVA, but with the advantage of being non-parametric and having fewer assumptions. However, it has the limitation that it can only test a single explanatory variable at a time."
+msgstr "משתמשים במבחן קראסקל–ואליס כדי לבחון את הקשר שבין משתנה תלוי רציף ומשתנה מסביר איכותי. הוא מקביל לניתוח שונות, אבל יש לו יתרונות שהוא לא פרמטרי ושיש לו פחות הנחות. עם זאת, הוא מוגבל לבחינת משתנה מסביר אחד בכל פעם."
+
+#: anovaRM/options/depLabel.description.ui
+msgid "the label to use for the dependent variable."
+msgstr "התווית בה יש להשתמש עבור המשתנה התלוי."
+
+#: cfa/results/modelSyntax.description
+msgid "the lavaan syntax used to fit the model"
+msgstr "תחביר לבאן שבעזרתו הותאם המודל"
+
+#: anovaOneW/options/miss.description.ui
+#: ttestIS/options/miss.description.ui
+#: ttestPS/options/miss.description.ui
+msgid "the missing value exclusion method. `Analysis by analysis` excludes missing values from each analysis. `Listwise` excludes a row from all analyses if one of its values is missing."
+msgstr "שיטת הוצאת הערכים החסרים. ”בהתאם לכל ניתוח“ מוציאה ערכים חסרים מכל ניתוח. ”בהתאם לרשימת המשתנים“ מוציאה שורה מכל הניתוחים אם אחד מערכיה חסר."
+
+#: ttestOneS/options/miss.description.ui
+msgid "the missing value exclusion method. `Analysis by analysis` excludes missing values from each variable. `Listwise` excludes a row from all analyses if one of its values is missing."
+msgstr "שיטת הוצאת הערכים החסרים. ”בהתאם לכל ניתוח“ מוציאה ערכים חסרים מכל ניתוח. ”בהתאם לרשימת המשתנים“ מוציאה שורה מכל הניתוחים אם אחד מערכיה חסר."
+
+#: ancova/options/modelTerms.description.ui
+msgid "the model terms which make up the model."
+msgstr "תנאי המודל שמהם מורכב המודל."
+
+#: anova/options/modelTerms.description.ui
+msgid "the model terms which make up the model. By default a full factorial model is created, but here the exact terms making up the model can be adjusted."
+msgstr "תנאי המודל שמהם מורכב המודל. ברירת המחדל היא שייווצר מודל גורמי מלא, אבל כאן ניתן לשנות את התנאים המדויקים המרכיבים את המודל."
+
+#: ttestPS/options/pairs.description.ui
+msgid "the pairs of measurements -- a separate t-test is performed for each pair of measurements."
+msgstr "זוגות המדדים – נערך מבחן t שונה עבור כל זוג של מדדים."
+
+#: ancova/options/postHocCorr.description.ui
+#: anova/options/postHocCorr.description.ui
+#: anovaRM/options/postHocCorr.description.ui
+msgid "the post-hoc multiple comparisons corrections to use."
+msgstr "התיקונים מרובי ההשוואות שיש לערוך למבחני ההמשך."
+
+#: ttestIS/options/bfPrior.description.ui
+msgid "the prior width for the Student's t-test's Bayes factors. Requires a value between 0.01 and 2.0, default 0.707."
+msgstr "הרוחב הפריורי לגורמי בייס במבחן t של סטודנט. יש צורך בערך בין 0.01 ל־2.0. ברירת המחדל היא 0.707."
+
+#: ttestOneS/options/bfPrior.description.ui
+#: ttestPS/options/bfPrior.description.ui
+msgid "the prior width for the Student's t-test's Bayes factors. Requires a value between 0.5 and 2.0, default 0.707."
+msgstr "הרוחב הפריורי לגורמי בייס במבחן t של סטודנט. יש צורך בערך בין 0.5 ל־2.0. ברירת המחדל היא 0.707."
+
+#: package/analyses/anovaRM.description
+msgid "The Repeated Measures ANOVA is used to explore the relationship\n"
+"between a continuous dependent variable and one or more categorical\n"
+"explanatory variables, where one or more of the explanatory variables\n"
+"are 'within subjects' (where multiple measurements are from the same\n"
+"subject). Additionally, this analysis allows the inclusion of\n"
+"covariates, allowing for repeated measures ANCOVAs as well."
+msgstr "משתמשים בניתוח שונות למדידות חוזרות כדי לבחון את הקשר שבין משתנה\n"
+"תלוי רציף ולפחות משתנה מסביר איכותי אחד, כאשר לפחות אחד\n"
+"מהמשתנים המסבירים הם ”תוך נבדקיים“ (ישנם כמה מדדים למשתתף יחיד).\n"
+"בנוסף, ניתוח זה מאפשר להשתמש במשתנים נלווים כך שניתן לבצע גם\n"
+"ניתוחי שונות משותפת למדידות חוזרות (repeated measures ANCOVA)."
+
+#: anovaRM/options.description.main
+msgid "The Repeated Measures ANOVA is used to explore the relationship\n"
+"between a continuous dependent variable and one or more categorical\n"
+"explanatory variables, where one or more of the explanatory variables\n"
+"are 'within subjects' (where multiple measurements are from the same\n"
+"subject). Additionally, this analysis allows the inclusion of\n"
+"covariates, allowing for repeated measures ANCOVAs as well.\n"
+"\n"
+"This analysis requires that the data be in 'wide format', where each\n"
+"row represents a subject (as opposed to long format, where each\n"
+"measurement of the dependent variable is represented as a row).\n"
+"\n"
+"A non-parametric equivalent of the repeated measures ANOVA also exists;\n"
+"the Friedman test. However, it has the limitation of only being able to\n"
+"test a single factor."
+msgstr "משתמשים בניתוח שונות למדידות חוזרות כדי לבחון את הקשר שבין משתנה\n"
+"תלוי רציף ולפחות משתנה מסביר איכותי אחד, כאשר לפחות משתנה מסביר\n"
+"אחד הוא ”תוך נבדקי“ (ישנם כמה מדדים למשתתף יחיד).\n"
+"בנוסף, ניתוח זה מאפשר להשתמש במשתנים נלווים כך שניתן לבצע גם\n"
+"ניתוחי שונות משותפת למדידות חוזרות (repeated measures ANCOVA).\n"
+"\n"
+"ניתוח זה מחייב את הנתונים להיות ”בתבנית רחבה“ שבה כל שורה מייצגת\n"
+"נבדק (בניגוד לתבנית ארוכה שבה כל שורה מייצגת מדד של המשתנה התלוי).\n"
+"\n"
+"כמו כן, קיימת חלופה לא פרמטרית של ניתוח השונות למדידות חוזרות: מבחן\n"
+"פרידמן. אבל הוא מוגבל לבחינת גורם אחד בלבד."
+
+#: anovaRM/options/rm.description.ui
+msgid "the repeated measures design."
+msgstr "מערך המדידות החוזרות."
+
+#: R/anovarm.b.R
+msgid "The repeated measures has only two levels. The assumption of sphericity is always met when the repeated measures has only two levels."
+msgstr "למדידות החוזרות יש רק שתי רמות. כשיש רק שתי רמות למדידות החוזרות הנחת הכדוריות תמיד מתקיימת."
+
+#: anovaRM/options/rmCells.description.ui
+msgid "the repeated measures measurements."
+msgstr "מדדי המדידות החוזרות."
+
+#: anovaRM/options/rmTerms.description.ui
+msgid "the repeated measures terms of the model."
+msgstr "תנאי המדידות החוזרות של המודל."
+
+#: R/utilsreg.R
+msgid "The specified reference level was not found for the following variable(s): {vars}. Defaulting to the first available level. To use a custom reference level, ensure the defined reference level is available in the data."
+msgstr "רמת הייחוס המסוימת לא נמצאה עבור המשתנים הבאים: {vars}. ברירת המחדל תיקבע על פי הרמה הראשונה הזמינה. כדי להשתמש ברמת ייחוס מותאמת אישית יש להגדיר רמת ייחוס הזמינה עבור הנתונים."
+
+#: package/analyses/ttestIS.description
+msgid "The Student's Independent samples t-test (sometimes called a two-samples\n"
+"t-test) is used to test the null hypothesis that two groups have the\n"
+"same mean. A low p-value suggests that the null hypothesis is not true,\n"
+"and therefore the group means are different."
+msgstr "משתמשים במבחן t של סטודנט למדגמים בלתי תלויים (הנקרא לעיתים\n"
+"מבחן t לשני מדגמים) לבחינת השערת האפס שלשתי קבוצות יש את\n"
+"אותו הממוצע. ערך p נמוך מעיד על אי נכונותה של השערת האפס\n"
+"ושממוצעי הקבוצות שונים."
+
+#: ttestIS/options.description.main
+msgid "The Student's Independent samples t-test (sometimes called a two-samples\n"
+"t-test) is used to test the null hypothesis that two groups have the\n"
+"same mean. A low p-value suggests that the null hypothesis is not true,\n"
+"and therefore the group means are different.\n"
+"\n"
+"The Student's independent t-test assumes that the data from each group\n"
+"are from a normal distribution, and that the variances of these groups\n"
+"are equal. If unwilling to assume the groups have equal variances, the\n"
+"Welch's t-test can be used in it's place. If one is additionally\n"
+"unwilling to assume the data from each group are from a normal\n"
+"distribution, the non-parametric Mann-Whitney U test can be used instead\n"
+"(However, note that the Mann-Whitney U test has a slightly different\n"
+"null hypothesis; that the distributions of each group is equal)."
+msgstr "משתמשים במבחן t של סטודנט למדגמים בלתי תלויים (הנקרא לעיתים\n"
+"מבחן t לשני מדגמים) לבחינת השערת האפס שלשתי קבוצות יש את\n"
+"אותו הממוצע. ערך p נמוך מעיד על אי נכונותה של השערת האפס\n"
+"ושממוצעי הקבוצות שונים.\n"
+"\n"
+"מבחן t של סטודנט למדגמים בלתי תלויים מניח שהנתונים מכל קבוצה\n"
+"מגיעים מהתפלגות נורמלית ושהשונויות של הקבוצות הללו שוות. אם\n"
+"לא מניחים שלקבוצות יש שוויון שונויות משתמשים במבחן t של ולץ׳ במקום.\n"
+"אם בנוסף לא מניחים שהנתונים מגיעים מהתפלגות נורמלית, ניתן להשתמש\n"
+"במקום במבחן הלא פרמטרי – U של מאן–ויטני (עם זאת, יש לשים לב שלמבחן\n"
+"U של מאן–ויטני השערת אפס שונה במקצת – שההתפלגויות של כל קבוצה זהות)."
+
+#: package/analyses/ttestOneS.description
+msgid "The Student's One-sample t-test is used to test the null hypothesis that\n"
+"the true mean is equal to a particular value (typically zero). A low\n"
+"p-value suggests that the null hypothesis is not true, and therefore\n"
+"the true mean must be different from the test value."
+msgstr "משתמשים במבחן t של סטודנט למדגם יחיד לבחינת השערת האפס\n"
+"שהממוצע האמיתי שווה לערך מסוים (לרוב 0). ערך p נמוך מעיד על אי נכונותה\n"
+"של השערת האפס ולכן על הממוצע האמיתי להיות שונה מערך המבחן."
+
+#: ttestOneS/options.description.main
+msgid "The Student's One-sample t-test is used to test the null hypothesis that\n"
+"the true mean is equal to a particular value (typically zero). A low\n"
+"p-value suggests that the null hypothesis is not true, and therefore\n"
+"the true mean must be different from the test value.\n"
+"\n"
+"The Student's One-sample t-test assumes that the data are from a normal\n"
+"distribution -- in the case that one is unwilling to assume this, the\n"
+"non-parametric Wilcoxon signed-rank can be used in it's place (However,\n"
+"note that the Wilcoxon signed-rank has a slightly different null\n"
+"hypothesis; that the <i>median</i> is equal to the test value)."
+msgstr "משתמשים במבחן t של סטודנט למדגם יחיד לבחינת השערת האפס\n"
+"שהממוצע האמיתי שווה לערך מסוים (לרוב 0). ערך p נמוך מעיד על אי נכונותה\n"
+"של השערת האפס ולכן על הממוצע האמיתי להיות שונה מערך המבחן.\n"
+"\n"
+"מבחן t של סטודנט למדגם יחיד מניח שהתנתונים מגיעים מהתפלגות נורמלית.\n"
+"אם לא מניחים זאת, ניתן להשתמש במקום במבחן הלא פרמטרי – הדרגות\n"
+"המסומנות של וילקוקסון (עם זאת, יש לשים לב שלמבחן הדרגות המסומנות של\n"
+"וילקוקסון השערת אפס שונה במקצת – החציון הוא זה ששווה לערך המבחן)."
+
+#: package/analyses/ttestPS.description
+msgid "The Student's paired samples t-test (sometimes called a\n"
+"dependent-samples t-test) is used to test the null hypothesis that the\n"
+"difference between pairs of measurements is equal to zero. A low p-value\n"
+"suggests that the null hypothesis is not true, and that the\n"
+"difference between the measurement pairs is not zero."
+msgstr "משתמשים במבחן t של סטודנט למדגמים מזווגים (הנקרא לעיתים מבחן\n"
+"t למדגמים תלויים) לבחינת השערת האפס שההפרש בין זוגות מדדים\n"
+"שווה לאפס. ערך p נמוך מעיד על אי נכונותה של השערת האפס ושההפרש\n"
+"בין זוגות המדדים שונה מאפס."
+
+#: ttestPS/options.description.main
+msgid "The Student's paired samples t-test (sometimes called a\n"
+"dependent-samples t-test) is used to test the null hypothesis that the\n"
+"difference between pairs of measurements is equal to zero. A low p-value\n"
+"suggests that the null hypothesis is not true, and that the\n"
+"difference between the measurement pairs is not zero.\n"
+"\n"
+"The Student's paired samples t-test assumes that pair differences follow\n"
+"a normal distribution -- in the case that one is unwilling to assume\n"
+"this, the non-parametric Wilcoxon signed-rank can be used in it's place\n"
+"(However, note that the Wilcoxon signed-rank has a slightly different\n"
+"null hypothesis; that the two groups of measurements follow the same\n"
+"distribution)."
+msgstr "משתמשים במבחן t של סטודנט למדגמים מזווגים (הנקרא לעיתים מבחן\n"
+"t למדגמים תלויים) לבחינת השערת האפס שההפרש בין זוגות מדדים\n"
+"שווה לאפס. ערך p נמוך מעיד על אי נכונותה של השערת האפס ושההפרש\n"
+"בין זוגות המדדים שונה מאפס.\n"
+"\n"
+"מבחן t של סטודנט למדגמים מזווגים מניח שזוגות ההפרשים מתאימים\n"
+"להתפלגות נורמלית. אם לא מניחים זאת, ניתן להשתמש במקום במבחן הלא\n"
+"פרמטרי – הדרגות המסומנות של וילקוקסון (עם זאת, יש לשים לב שלמבחן\n"
+"הדרגות המסומנות של וילקוקסון השערת אפס שונה במקצת – שקבוצות שני\n"
+"המדדים מתאימות לאותה ההתפלגות)."
+
+#: ancova/options/emMeans.description.ui
+#: anova/options/emMeans.description.ui
+#: anovaRM/options/emMeans.description.ui
+msgid "the terms to provide estimated marginal means for. Here you can specify multiple terms."
+msgstr "התנאים כדי לספק ממוצעים שוליים משוערים. כאן ניתן לציין כמה תנאים."
+
+#: ttestOneS/options/testValue.description.ui
+msgid "the test value to test against (typically zero)."
+msgstr "ערך המבחן שיש לבחון לפיו (בדרך כלל 0)."
+
+#: corrPart/options/type.description.ui
+msgid "the type of correlation to calculate"
+msgstr "סוג המתאם שיש לחשב"
+
+#: ancova/options/ss.description.ui
+#: anova/options/ss.description.ui
+msgid "the type of sums of squares to use; Type 1, 2, or 3."
+msgstr "סוג הסכומים הריבועיים לשימוש: סוג 1, 2 או 3."
+
+#: anovaRM/options/ss.description.ui
+msgid "the type of sums of squares to use; Type 2, or 3."
+msgstr "סוג הסכומים הריבועיים לשימוש: סוג 2 או 3."
+
+#: ancova/results/model.description
+#: anova/results/model.description
+msgid "The underlying `aov` object"
+msgstr "אובייקט הבסיס `aov`"
+
+#: R/descriptives.b.R
+msgid "The variable {var} cannot be treated as numeric. Plots that expect numeric data will not be created for this variable."
+msgstr "אי אפשר להתייחס למשתנה {var} כמספרי. תרשימים הזקוקים לנתונים מספריים לא יווצרו עבור משתנה זה."
+
+#: ttestIS/options/group.description.ui
+msgid "the variable specifying the groups; must have 2 levels."
+msgstr "המשתנה המציין את הקבוצות. צריכות להיות לו שתי רמות."
+
+#: R/descriptives.b.R
+msgid "The variables {vars} cannot be treated as numeric. Plots that expect numeric data will not be created for these variables."
+msgstr "אי אפשר להתייחס למשתנים {vars} כמספריים. תרשימים הזקוקים לנתונים מספריים לא יווצרו עבור משתנים אלו."
+
+#: ttestOneS/options/vars.description.ui
+msgid "the variables of interest -- a separate t-test is performed for each variable specified."
+msgstr "משתני העניין – מבחן t נפרד בוצע עבור כל משתנה שצוין."
+
+#: corrMatrix/options/vars.description.ui
+#: corrPart/options/vars.description.ui
+msgid "the variables of interest."
+msgstr "משתני העניין."
+
+#: ancova/options/ciWidthEmm.description.ui
+#: anova/options/ciWidthEmm.description.ui
+#: anovaRM/options/ciWidthEmm.description.ui
+msgid "the width for the Confidence intervals."
+msgstr "הרווח עבור רווח הסמך."
+
+#: package/analyses/propTestN.description
+#: propTestN/options.description.main
+msgid "The χ² Goodness of fit test (not to be confused with the χ² test of independence), tests the Null hypothesis that the proportions of observations match some expected proportions. If the p-value is low, this suggests that the Null hypothesis is false, and that the true proportions are different to those tested."
+msgstr "מבחן χ² לטיב התאמה (אין לבלבל עם מבחן χ² לאי תלות) בוחן את השערת האפס שהיחסים בין התצפיות מתאימים ליחסים צפויים כלשהם. ערך p נמוך מעיד שהשערת האפס אינה נכונה ושהיחסים האמיתיים שונים מאלו שנבחנו."
+
+#: package/analyses/contTables.description
+#: contTables/options.description.main
+msgid "The χ² test of association (not to be confused with the χ² goodness of fit) is used to test whether two categorical variables are independent or associated. If the p-value is low, it suggests the variables are not independent, and that there is a relationship between the two variables."
+msgstr "משתמשים במבחן χ² לאי תלות (אין לבלבל עם χ² לטיב התאמה) כדי לבחון אם שני משתנים איכותיים בלתי תלויים או קשורים. ערך p נמוך מעיד על כך שהמשתנים אינם בלתי תלויים ושיש קשר ביניהם."
+
+#: R/ancova.b.R
+#: R/anovaonew.b.R
+#: R/anovarm.b.R
+#: R/descriptives.b.R
+#: R/linreg.b.R
+#: R/ttestis.b.R
+#: R/ttestones.b.R
+#: R/ttestps.b.R
+msgid "Theoretical Quantiles"
+msgstr "שברונים תיאורטיים"
+
+#: R/linreg.b.R
+msgid "There were no Mahalanobis distances with a threshold below p < {p}."
+msgstr "אין מרחק מהלנוביס בעל סף הנמוך מ־p < {p}."
+
+#: package.description
+msgid "This module represents the analyses included with jamovi. It contains many common analyses (such as t-tests, ANOVAs, regression, correlation matrices, proportion tests, contingency tables, factor analysis, etc)."
+msgstr "מודול זה מייצג את הניתוחים הכלולים ב־jamovi. הוא מכיל הרבה ניתוחים שכיחים (כמו מבחני t, ניתוחי שונות, רגרסיה, מטריצות מתאם, מבחני יחסים, טבלאות קריבות, ניתוח גורמים וכו׳)."
+
+#: logRegOrd/results/models.template/thres.columns.title
+msgid "Threshold"
+msgstr "סף"
+
+#: logRegOrd/ui[4][0][0][1].label
+msgid "Thresholds"
+msgstr "ספים"
+
+#: efa/options/factorScoreMethod/Thurstone.title
+msgid "Thurstone"
+msgstr "ת׳רסטון"
+
+#: logRegBin/options/pseudoR2/r2t.title
+msgid "Tjur's R²"
+msgstr "R² של טיור"
+
+#: cfa/options/fitMeasures/tli.title
+#: cfa/results/modelFit/fitMeasures.columns.title
+#: pca/results/modelFit/fit.columns.title
+msgid "TLI"
+msgstr "מדד טאקר–לואיס (TLI)"
+
+#: linReg/results/models.template/assump/collin.columns.title
+#: logRegBin/results/models.template/assump/collin.columns.title
+msgid "Tolerance"
+msgstr "סבילות"
+
+#: R/ttestones.b.R
+#: R/ttestps.b.R
+msgid "Too few observations (N < 3) to compute statistic"
+msgstr "התצפיות מעטות (N < 3) מכדי שאפשר יהיה לחשב עליהן את הסטטיסטי"
+
+#: R/mancova.b.R
+msgid "Too few observations to calculate statistic. Each (sub)group must have at least as many observations as there are dependent variables."
+msgstr "יש מעט מדי תצפיות כדי לחשב את הסטטיסטי. לכל (תת)קבוצה צריכה להיות כמות תצפיות לפחות כמו כמות המשתנים התלויים."
+
+#: R/anovaonew.b.R
+msgid "Too few samples to compute statistic (N < {n})"
+msgstr "המדגמים מעטים מכדי שאפשר יהיה לחשב עליהם את הסטטיסטי (N < {n})"
+
+#: R/ttestis.b.R
+msgid "Too few samples to compute statistic (N < 3)"
+msgstr "המדגמים מעטים מכדי שאפשר יהיה לחשב עליהם את הסטטיסטי (N < 3)"
+
+#: R/ttestones.b.R
+#: R/ttestps.b.R
+msgid "Too many observations (N > 5000) to compute statistic"
+msgstr "התצפיות רבות (N > 5000) מכדי שאפשר יהיה לחשב עליהן את הסטטיסטי"
+
+#: R/anovaonew.b.R
+msgid "Too many samples to compute statistic (N > {n})"
+msgstr "המדגמים רבים מכדי שאפשר יהיה לחשב עליהם את הסטטיסטי (N > {n})"
+
+#: R/ttestis.b.R
+msgid "Too many samples to compute statistic (N > 5000)"
+msgstr "המדגמים רבים מכדי שאפשר יהיה לחשב עליהם את הסטטיסטי (N > 5000)"
+
+#: package/datasets/ToothGrowth.name
+msgid "Tooth Growth"
+msgstr "צמיחת שיניים"
+
+#: R/conttables.b.R
+#: R/conttablespaired.b.R
+#: contTables/options/pcTot.title
+#: propTest2/results/table.columns.title
+msgid "Total"
+msgstr "סה״כ"
+
+#: ancova/options/postHocCorr/tukey.title
+#: anova/options/postHocCorr/tukey.title
+#: anovaRM/options/postHocCorr/tukey.title
+msgid "Tukey"
+msgstr "טוקי"
+
+#: anovaOneW/ui[2][0][0][0]/phMethod_tukey.label
+msgid "Tukey (equal variances)"
+msgstr "טוקי (שוויון שונויות)"
+
+#: R/anovaonew.b.R
+msgid "Tukey Post-Hoc Test – {dep}"
+msgstr "מבחן ההמשך של טוקי – {dep}"
+
+#: R/anovarm.b.R
+msgid "Type {ssType} Sums of Squares"
+msgstr "הסכומים הריבועיים מסוג {ssType}"
+
+#: ancova/options/ss/1.title
+#: anova/options/ss/1.title
+msgid "Type 1"
+msgstr "סוג 1"
+
+#: ancova/options/ss/2.title
+#: anova/options/ss/2.title
+#: anovaRM/options/ss/2.title
+msgid "Type 2"
+msgstr "סוג 2"
+
+#: ancova/options/ss/3.title
+#: anova/options/ss/3.title
+#: anovaRM/options/ss/3.title
+msgid "Type 3"
+msgstr "סוג 3"
+
+#: R/linreg.b.R
+msgid "Type 3 sum of squares"
+msgstr "סוג 3 של סכום הריבועים"
+
+#: R/descriptives.b.R
+msgid "Unable to split by a continuous variable"
+msgstr "לא ניתן לחלק לפי משתנה רציף"
+
+#: pca/results/loadings.columns.title
+msgid "Uniqueness"
+msgstr "ייחודיות"
+
+#: mancova/results/univar.title
+msgid "Univariate Tests"
+msgstr "מבחנים חד־גורמיים"
+
+#: R/conttables.b.R
+#: contTables/options/resU.title
+msgid "Unstandardized residuals"
+msgstr "נתונים שיוריים לא מתוקננים"
+
+#: R/ancova.b.R
+#: R/descriptives.b.R
+#: R/linreg.b.R
+#: R/loglinear.b.R
+#: R/logregbin.b.R
+#: R/logregmulti.b.R
+#: cfa/results/factorLoadings.columns.title
+#: cfa/results/factorEst/factorCov.columns.title
+#: cfa/results/factorEst/factorIntercept.columns.title
+#: cfa/results/resEst/resCov.columns.title
+#: cfa/results/resEst/resIntercept.columns.title
+#: cfa/results/modelFit/fitMeasures.columns.title
+#: contTables/results/odds.columns.title
+#: contTables/results/gamma.columns.title
+#: linReg/results/models.template/coef.columns.title
+#: logLinear/results/models.template/coef.columns.title
+#: logRegBin/results/models.template/coef.columns.title
+#: logRegMulti/results/models.template/coef.columns.title
+#: logRegOrd/results/models.template/coef.columns.title
+#: pca/results/modelFit/fit.columns.title
+#: propTest2/results/table.columns.title
+#: ttestIS/results/ttest.columns.title
+#: ttestOneS/results/ttest.columns.title
+#: ttestPS/results/ttest.columns.title
+msgid "Upper"
+msgstr "עליון"
+
+#: R/descriptives.b.R
+msgid "upper bound"
+msgstr "חסם עליון"
+
+#: R/anovarmnp.b.R
+#: contTables/results/chiSq.columns.title
+#: contTables/results/odds.columns.title
+#: contTables/results/nom.columns.title
+#: contTablesPaired/results/test.columns.title
+#: descriptives/results/extremeValues.template.columns.title
+msgid "Value"
+msgstr "ערך"
+
+#: mancova/results/multivar.columns.title
+msgid "value"
+msgstr "ערך"
+
+#: descriptives/ui[2][3][2][0]/extreme/extremeN.suffix
+msgid "values"
+msgstr "ערכים"
+
+#: propTest2/options/areCounts.title
+msgid "Values are counts"
+msgstr "הערכים הם ספירות"
+
+#: linReg/ui[2]/refLevels.columns.label
+#: logLinear/ui[2]/refLevels.columns.label
+#: logRegBin/ui[2]/refLevels.columns.label
+#: logRegMulti/ui[2]/refLevels.columns.label
+#: logRegOrd/ui[2]/refLevels.columns.label
+#: propTestN/options/var.title
+msgid "Variable"
+msgstr "משתנה"
+
+#: R/proptest2.b.R
+msgid "Variable '{var}' contains no data"
+msgstr "המשתנה ”{var}“ אינו מכיל נתונים"
+
+#: R/ttestis.b.R
+#: R/ttestones.b.R
+msgid "Variable contains infinite values"
+msgstr "המשתנה מכיל אין־סוף ערכים"
+
+#: R/ttestones.b.R
+msgid "Variable does not contain enough observations"
+msgstr "המתנה לא מכיל מספיק תצפיות"
+
+#: R/ttestis.b.R
+#: R/ttestones.b.R
+msgid "Variable is not numeric"
+msgstr "המשתנה אינו מספרי"
+
+#: corrMatrix/options/vars.title
+#: corrPart/options/vars.title
+#: corrPart/ui/variablesupplier[0].label
+#: descriptives/options/vars.title
+#: descriptives/ui[0][0].label
+#: efa/options/vars.title
+#: pca/options/vars.title
+#: propTest2/options/vars.title
+msgid "Variables"
+msgstr "משתנים"
+
+#: descriptives/options/desc/columns.title
+msgid "Variables across columns"
+msgstr "המשתנים בעמודות"
+
+#: descriptives/options/desc/rows.title
+msgid "Variables across rows"
+msgstr "המשתנים בשורות"
+
+#: R/conttables.b.R
+msgid "Variables must have at least two levels"
+msgstr "למשתנים צריכות להיות לפחות שתי רמות"
+
+#: R/descriptives.b.R
+#: descriptives/options/variance.title
+msgid "Variance"
+msgstr "שונות"
+
+#: anovaOneW/ui[1][0][0].label
+msgid "Variances"
+msgstr "שונויות"
+
+#: R/corrpart.b.R
+msgid "variation from the control variables is only removed from the variables in the columns"
+msgstr "השוני ממשתני הבקרה הוסר רק מהמשתנים שבעמודות"
+
+#: efa/options/rotation/varimax.title
+#: pca/options/rotation/varimax.title
+msgid "Varimax"
+msgstr "Varimax"
+
+#: R/pca.b.R
+msgid "varimax"
+msgstr "varimax"
+
+#: linReg/results/models.template/assump/collin.columns.title
+#: logRegBin/results/models.template/assump/collin.columns.title
+msgid "VIF"
+msgstr "VIF"
+
+#: descriptives/options/violin.title
+msgid "Violin"
+msgstr "כינור"
+
+#: R/descriptives.b.R
+msgid "W"
+msgstr "W"
+
+#: ancova/options/emmWeights.description.ui
+#: anova/options/emmWeights.description.ui
+#: anovaRM/options/emmWeights.description.ui
+msgid "weigh each cell equally. (Cells are weighed according to the cell frequency by default.)"
+msgstr "שקלול כל תא באופן שווה. (על פי ברירת המחדל תאים משוקללים לפי תדירות התא.)"
+
+#: weights/options/weights.title
+#: weights/ui[0][0].label
+msgid "Weight Variable"
+msgstr "משתנה משקל"
+
+#: R/linreg.b.R
+msgid "Weighted by '{varName}'"
+msgstr "משוקלל לפי ”{VarName}“"
+
+#: package/analyses/weights.title
+#: package/analyses/weights.menuTitle
+#: weights/options.title
+#: weights/ui.title
+#: weights/results.title
+msgid "Weights"
+msgstr "משקלים"
+
+#: linReg/options/weights.title
+msgid "Weights (optional)"
+msgstr "משקלים (רשות)"
+
+#: R/logregbin.b.R
+#: R/logregmulti.b.R
+#: R/logregord.b.R
+msgid "Weights contains negative values. Negative weights are not permitted."
+msgstr "המשקלים מכילים ערכים שליליים. משקלים שליליים אינם מורשים."
+
+#: anovaOneW/results/anova.columns.content
+#: ttestIS/options/welchs.title
+msgid "Welch's"
+msgstr "של ולץ׳"
+
+#: ttestIS/results/ttest.columns.content
+msgid "Welch's t"
+msgstr "t של ולץ׳"
+
+#: ttestOneS/ui[1][0][0]/wilcoxon.label
+#: ttestPS/ui[1][0][0]/wilcoxon.label
+msgid "Wilcoxon rank"
+msgstr "דרגות וילקוקסון"
+
+#: ttestOneS/options/wilcoxon.title
+#: ttestPS/options/wilcoxon.title
+msgid "Wilcoxon signed rank test"
+msgstr "מבחן הדרגות המסומנות של וילקוקסון"
+
+#: ttestOneS/results/ttest.columns.content
+#: ttestPS/results/ttest.columns.content
+msgid "Wilcoxon W"
+msgstr "W של וילקוקסון"
+
+#: mancova/options/multivar/wilks.title
+#: mancova/results/multivar.columns.content
+msgid "Wilks' Lambda"
+msgstr "למדה של וילק"
+
+#: contTables/options/yaxisPc/column_pc.title
+msgid "within column"
+msgstr "בתוך העמודה"
+
+#: contTables/options/yaxisPc/row_pc.title
+msgid "within rows"
+msgstr "בתוך השורות"
+
+#: anovaRM/results/rmTable.title
+msgid "Within Subjects Effects"
+msgstr "אפקטים תוך נבדקיים"
+
+#: contTables/ui[1][3][0][1][1].label
+msgid "X-Axis"
+msgstr "ציר X"
+
+#: contTables/options/xaxis.title
+msgid "X-axis"
+msgstr "ציר X‫"
+
+#: contTables/ui[1][3][0][1][0].label
+msgid "Y-Axis"
+msgstr "ציר Y"
+
+#: contTables/options/yaxis.title
+msgid "Y-axis"
+msgstr "ציר Y"
+
+#: contTables/results/chiSq.columns.content
+msgid "z test difference in 2 proportions"
+msgstr "מבחן z להבדל בין שני יחסים"
+
+#: contTables/options/zProp.title
+msgid "z test for difference in 2 proportions"
+msgstr "מבחן z להבדל בין שני יחסים"
+
+#: R/conttables.b.R
+msgid "z test only available for 2x2 tables"
+msgstr "מבחן z זמין רק עבור טבלאות 2×2"
+
+#: linReg/results/modelComp.columns.title
+msgid "ΔR²"
+msgstr "ΔR²"
+
+#: anovaNP/options/es.title
+#: anovaNP/results/table.columns.title
+msgid "ε²"
+msgstr "ε²"
+
+#: ancova/options/effectSize/eta.title
+#: ancova/results/main.columns.title
+#: anova/options/effectSize/eta.title
+#: anovaRM/options/effectSize/eta.title
+#: anovaRM/results/rmTable.columns.title
+#: anovaRM/results/bsTable.columns.title
+msgid "η²"
+msgstr "η²"
+
+#: anovaRM/results/rmTable.columns.title
+#: anovaRM/results/bsTable.columns.title
+msgid "η²<sub>G</sub>"
+msgstr "η²<sub>G</sub>"
+
+#: anovaRM/results/rmTable.columns.title
+#: anovaRM/results/bsTable.columns.title
+msgid "η²<sub>p</sub>"
+msgstr "η²<sub>p</sub>"
+
+#: ancova/results/main.columns.title
+msgid "η²p"
+msgstr "η²p"
+
+#: contTables/options/chiSqCorr.title
+#: contTables/results/chiSq.columns.content
+#: contTablesPaired/options/chiSqCorr.title
+#: contTablesPaired/results/test.columns.content
+msgid "χ² continuity correction"
+msgstr "תיקון רציפות χ²"
+
+#: propTestN/results/tests.title
+msgid "χ² Goodness of Fit"
+msgstr "χ² לטיב התאמה"
+
+#: package/analyses/propTestN.menuSubtitle
+#: propTestN/options.menuSubtitle
+msgid "χ² Goodness of fit"
+msgstr "χ² לטיב התאמה"
+
+#: cfa/options/modelTest.title
+msgid "χ² test"
+msgstr "מבחן χ²"
+
+#: package/analyses/contTables.menuSubtitle
+#: contTables/options.menuSubtitle
+msgid "χ² test of association"
+msgstr "χ² לאי תלות"
+
+#: contTables/results/chiSq.title
+msgid "χ² Tests"
+msgstr "מבחני χ²"
+
+#: ancova/options/effectSize/omega.title
+#: ancova/results/main.columns.title
+#: anova/options/effectSize/omega.title
+#: anovaRM/options/effectSize/omega.title
+#: anovaRM/results/rmTable.columns.title
+#: anovaRM/results/bsTable.columns.title
+msgid "ω²"
+msgstr "ω²"

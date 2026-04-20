@@ -1,0 +1,124 @@
+
+.jmv-results {
+    margin: 0 ;
+    padding: 0 ;
+}
+
+.jmv-results-panel {
+    width: 100% ;
+    height: 100% ;
+    box-sizing: border-box;
+    position: absolute ;
+    top: 0 ;
+    overflow: scroll ;
+    transition: all .2s ;
+    background-color: white ;
+    padding-top: 2px;
+    padding-inline-end: 0;
+    padding-bottom: 0;
+    padding-inline-start: 2px;
+}
+
+.jmv-results-container[data-analysis-name='weights'] {
+    margin: 10px 0px;
+}
+
+.jmv-welcome-panel {
+    width: 100% ;
+    height: 100% ;
+    background-color: white ;
+    position: relative ; /* this is necessary, but not sure why */
+}
+
+.jmv-welcome-iframe {
+    box-sizing: border-box;
+    border: none;
+    width: 100% ;
+    height: 100% ;
+    overflow: scroll ;
+    background-color: white ;
+}
+
+.jmv-results-panel.jmv-results-panel-hidden, .jmv-welcome-panel.jmv-welcome-panel-hidden {
+    width: 0 ;
+    overflow: hidden ;
+    padding-inline-end: 0 ;
+}
+
+.jmv-results-panel[data-analysis-selected] {
+    background-color: #E8E8E8 ;
+}
+
+.jmv-results-panel.all-selected {
+    background-color: #B5CAEF;
+}
+
+@media (forced-colors: active) {
+    .jmv-results-panel iframe {
+        background-color: Canvas !important;
+    }
+}
+
+.jmv-results-panel iframe {
+    overflow: hidden ;
+    background-color: inherit ;
+    transition: 0.3s background-color, 0.2s height, 0.2s width;
+}
+
+.jmv-results-panel iframe::-webkit-scrollbar {
+    display: none;
+}
+
+.jmv-results-panel:not(.all-selected) .jmv-results-container[data-selected] iframe,
+.jmv-results-panel:not(.all-selected) jmv-references[data-selected] {
+    background-color: white ;
+}
+
+.jmv-results-panel:not(.all-selected) .jmv-results-container.empty-analysis iframe.hover {
+    background-color: #f1f1f1 ;
+}
+
+.jmv-results-container[data-selected] .jmv-results-cover {
+    display: none ;
+}
+
+.jmv-results-container {
+    position: relative ;
+}
+
+.jmv-results-container:not([data-analysis-name='empty']) {
+    transition: 0.5s height ;
+}
+
+.jmv-results-cover {
+    position: absolute ;
+    top: 0;
+    inset-inline-end: 0 ;
+    inset-inline-start: 0;
+    bottom: 0;
+    opacity: 0 ;
+    background-color: white ;
+    z-index: 1 ;
+    border: 1px dash transparent;
+}
+
+.jmv-results-cover:hover {
+    border: 1px dash black;
+}
+
+jmv-references {
+    margin-top: 50px ;
+    margin-bottom: 20px ;
+    border: 2px solid transparent ;
+    max-width: 1000px ;
+}
+
+.jmv-results-panel[data-mode='text'] jmv-references {
+    /* prevents it from concertina-ing when sliding in and out */
+    width: 700px ;
+}
+
+jmv-references.activated {
+    background-color: #B5CAEF ;
+    border: 2px solid #8BA4D6;
+}

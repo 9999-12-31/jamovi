@@ -1,0 +1,109 @@
+---
+name: propTestN
+title: Proportion Test (N Outcomes)
+
+menuGroup: Frequencies
+menuSubgroup: One Sample Proportion Tests
+menuTitle: N Outcomes
+menuSubtitle: χ² Goodness of fit
+
+version: '1.0.0'
+jas: '1.2'
+
+description:
+    main: >
+        The χ² Goodness of fit test (not to be confused with the χ² test of
+        independence), tests the Null hypothesis that the proportions of
+        observations match some expected proportions. If the p-value is low,
+        this suggests that the Null hypothesis is false, and that the
+        true proportions are different to those tested.
+
+    R:
+        dontrun: false
+        usage: |
+            data('HairEyeColor')
+            dat <- as.data.frame(HairEyeColor)
+
+            propTestN(formula = Freq ~ Eye, data = dat, ratio = c(1,1,1,1))
+
+            #
+            #  PROPORTION TEST (N OUTCOMES)
+            #
+            #  Proportions
+            #  ────────────────────────────────
+            #    Level    Count    Proportion
+            #  ────────────────────────────────
+            #    Brown      220         0.372
+            #    Blue       215         0.363
+            #    Hazel       93         0.157
+            #    Green       64         0.108
+            #  ────────────────────────────────
+            #
+            #
+            #  χ² Goodness of Fit
+            #  ───────────────────────
+            #    χ²     df    p
+            #  ───────────────────────
+            #    133     3    < .001
+            #  ───────────────────────
+            #
+
+completeWhenFilled: true
+
+formula:
+    counts:
+        from: lhs
+        subset: 1
+    var:
+        from: rhs
+        subset: 1
+
+options:
+    - name: data
+      type: Data
+      description:
+          R: the data as a data frame
+
+    - name: var
+      title: Variable
+      type: Variable
+      suggested:
+        - nominal
+        - ordinal
+      permitted:
+        - factor
+      description:
+          R: >
+            the variable of interest in `data` (not necessary when using a
+            formula, see the examples)
+
+    - name: counts
+      title: Counts (optional)
+      type: Variable
+      default:
+      permitted:
+        - numeric
+      description:
+          R: >
+            the counts in `data`
+
+    - name: expected
+      title: Expected counts
+      type: Bool
+      default: false
+      description:
+          R: >
+            `TRUE` or `FALSE` (default), whether expected counts should be displayed
+
+    - name: ratio
+      title: Expected Proportions
+      type: Array
+      template:
+          type: Number
+          min: 0
+          default: 1
+      default:
+      description:
+          R: >
+            a vector of numbers: the expected proportions
+...

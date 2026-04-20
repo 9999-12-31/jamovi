@@ -1,0 +1,65 @@
+
+.rma-delete-button {
+    font-size: 11px ;
+    width: 19px ;
+    height: 15px ;
+    color: #555555 ;
+    box-sizing: border-box ;
+    text-align: center ;
+    vertical-align: middle ;
+    cursor: default ;
+    margin-inline-end: 4px ;
+    margin-inline-start: 4px ;
+    padding-inline-start: 4px;
+}
+
+.rma-delete-button:hover {
+    color: #c15050;
+}
+
+.rma-delete-button:hover {
+    color: #c15050;
+}
+
+.silky-option-listitem, .rma-factor-label {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: inherit;
+    /*line-height: 1.1;*/
+    font-weight: 400;
+    font-style: normal;
+}
+
+.mac-scroll-fix {
+    overflow-y: hidden;
+}
+
+.rma-factor-label {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-inline-start: 0px;
+    margin-inline-end: 1px;
+    font-weight: bold;
+}
+
+.rma-new-factor-level {
+    color: #AAAAAA ;
+}
+
+.rma-new-factor {
+    color: #AAAAAA ;
+}
+
+.rmanova-factors-control {
+    border: 1px solid rgb(130, 130, 130);
+    background-color: rgb(255, 255, 255);
+    height: 160px;
+    overflow-x: hidden;
+}
+
+.silky-rmanova-factors-header {
+    margin-bottom: 2px;
+}
+
+.silky-layout-container:not(.silky-control-body) > .first-row > .silky-rmanova-factors-header {
+    margin-top: 0px;
+}

@@ -1,0 +1,302 @@
+.jmv-ribbon-temp-button {
+    padding: 6px 3px !important;
+    min-width: 74px;
+    width: auto;
+}
+
+.end-temp-button {
+    position: absolute;
+    inset-inline-end: 0px;
+}
+
+
+.jmv-ribbon-button {
+    position: relative;
+    border: 0;
+    width: 74px;
+    padding: 0px 5px 0px 5px;
+    text-align: center;
+    border-radius: 1px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+    opacity: 1;
+    visibility: visible;
+    background-color: inherit;
+    font: inherit;
+}
+
+.display-in-menu {
+    margin-top: 0px;
+    margin-inline-end: 30px;
+    margin-bottom: 0px;
+    margin-inline-start: 10px;
+
+}
+
+.jmv-ribbon[mode=cloud] .display-in-menu {
+    color: #CCCCCC;
+}
+
+.jmv-ribbon-menu-group:not(.menu-item-hidden):first-child {
+    margin-top: 0px ;
+}
+
+.jmv-menu.analysis-menu {
+    padding-top: 6px ;
+}
+
+.jmv-menu.analysis-menu > .jmv-ribbon-menu-group > .jmv-group-items, .jmv-menu.analysis-menu .module-analysis-list {
+    overflow: auto ;
+}
+
+.jmv-group-items {
+    max-height: 500px;
+    padding-top: 6px;
+}
+
+.jmv-analyses-button {
+    padding: 6px 3px;
+    min-width: 74px;
+    width: auto;
+    transition: 0.2s width, 0.1s opacity, .2s visibility, 0.2s background-color, 0.2s min-width;
+    transition-delay: .01s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.jmv-analyses-button:focus {
+  z-index: 100;
+}
+
+.jmv-analysis-button:focus {
+    z-index: 100;
+}
+
+.jmv-ribbon-button-label {
+    color: #555555 ;
+}
+
+.jmv-analyses-button > .jmv-ribbon-button-label, .jmv-ribbon-temp-button > .jmv-ribbon-button-label {
+    font-size: 90% ;
+}
+
+.jmv-ribbon-button[aria-disabled] {
+    -webkit-filter: grayscale(100%) opacity(50%);
+    filter: grayscale(100%) opacity(50%);
+}
+
+@-webkit-keyframes pulsate {
+    0% {background: rgba(199, 216, 242, 0);}
+    50% {background: rgba(199, 216, 242, 1);}
+    100% {background: rgba(199, 216, 242, 0);}
+}
+
+.jmv-ribbon-button.contains-new {
+    -webkit-animation: pulsate 2s ease-out;
+    -webkit-animation-iteration-count: infinite;
+}
+
+[focusmode="default"] .jmv-ribbon-button:not([aria-disabled]):not(.maintain-color):hover {
+    background-color: #d5dfeb;
+}
+
+[focusmode="hover"] .jmv-ribbon-button:not([aria-disabled]):not(.maintain-color):hover {
+    background-color: #d5dfeb;
+}
+
+.jmv-ribbon-button.maintain-color:not([aria-disabled]):hover {
+    border: 1px solid black;
+}
+
+.jmv-ribbon-button:not([aria-disabled]):active {
+    background-color: #CCCCCC ;
+}
+
+.jmv-ribbon-button:not([aria-disabled]).checked {
+    background-color: #CCCCCC ;
+}
+
+
+.jmv-ribbon-button-icon {
+    width: 45px;
+    height: 20px ;
+    padding: 4px ;
+    background-repeat: no-repeat ;
+    background-size: contain;
+    background-position: center;
+}
+
+.jmv-ribbon-button-label {
+    margin-top: 5px ;
+    margin-bottom: 0px ;
+    white-space: nowrap;
+}
+
+.jmv-ribbon-button.right .jmv-ribbon-button-menu {
+    inset-inline-start: unset ;
+    inset-inline-end: 0px ;
+}
+
+.jmv-ribbon-menu-item > .description {
+    font-size: 88% ;
+    text-align: start;
+}
+
+.jmv-ribbon-menu-item {
+    padding: 8px 18px 8px 18px ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: 0.2s background-color;
+    width: 100%;
+    border: none;
+    background-color: inherit;
+    font: inherit;
+}
+
+.jmv-ribbon-menu-item.new {
+    background-color: #C7D8F2 ;
+}
+
+.jmv-analyses-button .jmv-ribbon-button-menu {
+    inset-inline-start: 0px;
+    top: 100%;
+    margin-inline-start: 0;
+    padding: 6px 0px;
+}
+
+.jmv-ribbon-menu-item-sub {
+    font-size: 85% ;
+    padding-top: 3px ;
+    padding-inline-start: 60px ;
+    pointer-events: none ;
+}
+
+.module .jmv-ribbon-menu-item-sub {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-inline-start: 0px;
+    width: 200px;
+}
+
+body[dir='rtl'] .to-analyses-arrow {
+    transform: rotate(180deg);
+}
+
+.to-analyses-arrow {
+    background-image: url('../../assets/context-menu-arrow.svg');
+    width: 10px;
+    height: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-inline-end: 2px;
+    margin-inline-start: 8px;
+    filter: opacity(80%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.module-analysis-list {
+
+}
+
+.side-panel input {
+    margin-top: 10px;
+    margin-inline-end: 5px;
+    margin-bottom: 10px;
+    margin-inline-start: 20px;
+}
+
+.side-panel {
+    position: absolute;
+    background-color: white;
+    line-height: 1.4em;
+    padding: 0;
+    box-sizing: border-box;
+    opacity: 0;
+    box-shadow: 0px 0px 5px #c1c1c1;
+    border: 1px solid #c1c1c1;
+    min-width: 250px;
+    visibility: hidden;
+}
+
+.side-panel-heading {
+    font-size: 16px;
+    margin: 10px;
+    font-weight: 100;
+}
+
+.side-panel-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.jmv-ribbon-menu-item.module {
+    padding-top: 8px;
+    padding-inline-end: 18px;
+    padding-bottom: 8px;
+    padding-inline-start: 0px;
+}
+
+[keyboardfocus="true"] .jmv-ribbon-menu-item.module:focus .to-analyses-arrow,
+[focusmode="hover"] .jmv-ribbon-menu-item.module:hover .to-analyses-arrow,
+.jmv-ribbon-menu-item.module[aria-expanded="true"] .to-analyses-arrow {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-item-hiding:not(.jmv-ribbon-button) {
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu-item-hiding {
+    opacity: 0;
+    width: 0px;
+    visibility: hidden;
+    padding-inline-start: 0px;
+    padding-inline-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    min-width: 0px;
+}
+
+.jmv-ribbon-menu-heading {
+    background-color: #E8E8E8 ;
+    color: #555555 ;
+    font-size: 72% ;
+    padding: 6px 8px ;
+    display: block;
+}
+
+.jmv-ribbon-menu-heading:empty {
+    padding: 4px 8px ;
+}
+
+.jmv-ribbon-menu-item.module .description {
+    margin-inline-start: 8px;
+}
+
+[focusmode="hover"] .jmv-ribbon-menu-item:hover {
+    background-color: #d5dfeb;
+}
+
+[keyboardfocus="true"] .jmv-ribbon-menu-item:focus {
+    background-color: #d5dfeb;
+}
+
+/*.jmv-ribbon-menu-item:focus-within {
+    background-color: #3e6da93b ;
+}*/
+
+/*.jmv-ribbon-menu-item.open {
+    background-color: #CCCCCC ;
+}*/

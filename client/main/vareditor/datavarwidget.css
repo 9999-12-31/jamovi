@@ -1,0 +1,330 @@
+
+
+.jmv-variable-editor-datavarwidget {
+    flex: 1;
+    display: flex;
+    max-height: 167px;
+}
+
+.jmv-variable-editor-widget-left {
+    display: flex ;
+    flex-direction: column ;
+    padding-top: 3px;
+    min-width: 215px;
+}
+
+.jmv-variable-editor-autotype {
+    display: inline-block ;
+    margin-top: 0px;
+    margin-inline-end: 0px;
+    margin-bottom: 0px;
+    margin-inline-start: 4px;
+}
+
+.jmv-variable-editor-widget input {
+    vertical-align: middle ;
+}
+
+.jmv-vareditor-datatype {
+    display: flex ;
+    align-items: baseline;
+    margin-bottom: 12px;
+}
+
+.jmv-vareditor-transform {
+    display: flex ;
+    align-items: baseline;
+}
+
+.jmv-vareditor-datatype select{
+    flex-grow: 1;
+    margin-inline-start: 5px;
+}
+
+.jmv-variable-editor-levels-control .container {
+    flex-grow: 1;
+    display: flex ;
+    flex-direction: column;
+}
+
+.transform-type option {
+    display: none;
+}
+
+.super-focus {
+    box-shadow: 0px 0px 15px 0px #949494;
+    z-index: 300;
+}
+
+.super-focus * {
+}
+
+.jmv-variable-editor-levels-control .title {
+    background-color: #E8E8E8;
+    border: 1px solid #CCCCCC;
+    border-bottom-style: none;
+    text-align: center;
+    padding: 3px 0px;
+}
+
+.jmv-variable-editor-levels-control .levels {
+    background-color: white ;
+    border: 1px solid #CCCCCC ;
+    box-sizing: border-box ;
+    padding-top: 4px ;
+    padding-bottom: 4px ;
+    overflow-y: auto ;
+    overflow-x: hidden ;
+    flex: 1;
+}
+
+.jmv-variable-editor-level.selected,
+.jmv-variable-editor-level.selected > .jmv-variable-editor-level-label:not(:focus):not(:hover) {
+    background-color: #B5CAEF ;
+}
+
+.jmv-variable-editor-widget-move {
+    display: inline-block ;
+    vertical-align: top ;
+    font-size: 150% ;
+    padding: 0 5px ;
+    color: #BBBBBB ;
+    background: #f8f8f8;
+}
+
+.jmv-variable-editor-levels-control.menu-level:focus {
+    outline: auto;
+}
+
+.jmv-variable-editor-levels-control {
+    display: flex;
+    flex-grow: 1;
+    margin-inline-start: 15px;
+    transition: box-shadow 0.15s;
+    position: relative;
+}
+
+.jmv-variable-editor-levels-control .add-level {
+    width: 25px;
+    height: 25px;
+    padding: 0px;
+    position: absolute;
+    bottom: 0px;
+    inset-inline-end: 0px;
+    background: inherit;
+    border: none;
+    font-size: 15px;
+    color: #BBBBBB;
+    text-align: center;
+    margin: 0px 5px 5px 5px;
+    border-radius: 3px;
+}
+
+.jmv-variable-editor-widget-move-up,
+.jmv-variable-editor-widget-move-down {
+    width: 25px;
+    margin-bottom: 4px;
+    background-color: inherit;
+    border: none;
+    padding: 0px;
+    display: block;
+    text-align: center;
+    font: inherit;
+    transition: opacity .2s;
+    height: 25px;
+}
+
+.jmv-variable-editor-widget-move-up.disabled,
+.jmv-variable-editor-widget-move-down.disabled,
+.add-level.disabled {
+    opacity: 0.4 ;
+}
+
+.jmv-variable-editor-widget-move-up:not(.disabled):hover,
+.jmv-variable-editor-widget-move-down:not(.disabled):hover,
+.add-level:not(.disabled):hover {
+    color: #999999 ;
+}
+
+.jmv-variable-editor-level {
+    position: relative;
+    padding-top: 5px;
+    padding-inline-end: 0px;
+    padding-bottom: 5px;
+    padding-inline-start: 25px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column-reverse;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.jmv-variable-editor-level-value {
+    padding-inline-start: 4px;
+    padding-top: 2px;
+    font-size: 80%;
+    text-align: end;
+    margin-inline-end: 10px;
+}
+
+.jmv-variable-editor-level[data-changed=false] > .jmv-variable-editor-level-value {
+    display: none
+}
+
+.jmv-variable-editor-level-label {
+    padding: 0;
+    padding-inline-start: 4px;
+    border-bottom-style: none;
+    border-right-style: none;
+    border-top-style: none;
+    border-left-style: none;
+    border-width: 1px;
+    border-color: #e6e6e6;
+    height: 100%;
+    outline: none;
+    margin-inline-end: 0 5px;
+    border: 1px solid transparent;
+    transition: .2s background-color, .2s border-color, .2s border-radius;
+    height: 1.4em;
+}
+
+.jmv-variable-editor-level-label:focus, .jmv-variable-editor-level-label:not(.read-only):hover {
+    background-color: rgb(230, 241, 255);
+    border-color: rgb(62, 109, 169);
+    border-radius: 3px;
+    border: 1px solid rgb(62, 109, 169);
+}
+
+.jmv-variable-editor-level-label.read-only:hover {
+    cursor: default;
+}
+
+.missing-values {
+    display: flex;
+    align-items: center;
+}
+
+.missing-values .label {
+    display: inline;
+    margin-inline-end: 10px;
+    white-space: nowrap;
+}
+
+.missing-values .list {
+    padding-inline-start: 0px;
+    line-height: 1.6em;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    transition: .2s background-color, .2s border-color, .2s border-radius;
+    height: 1.6em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    vertical-align: baseline;
+    margin-inline-start: 5px;
+}
+
+.missing-values .list:empty {
+    background-color: #ffffff;
+    border: 1px solid rgb(219, 219, 219);
+    min-width: 100px;
+    flex-grow: 1;
+    vertical-align: middle;
+}
+
+.missing-values .list:hover {
+    background-color: rgb(230, 241, 255);
+    border-color: rgb(62, 109, 169);
+    border-radius: 3px;
+    border: 1px solid rgb(62, 109, 169);
+}
+
+.missing-values .list span {
+    background-color: rgba(145, 145, 145, 0.13);
+    margin: 0 0 0 3px;
+    padding: 0 5px;
+    border-inline-end: 1px solid #d7d7d7;
+    border-inline-start: 1px solid #d7d7d7;
+    border: 1px solid #d7d7d7;
+}
+
+.missing-values .list span:first-child {
+    margin: 0 0 0 1px;
+}
+
+
+.jmv-variable-editor-datavarwidget .measure-box {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 12px;
+}
+
+.jmv-variable-editor-datavarwidget .measure-box .label {
+    white-space: nowrap;
+}
+
+.jmv-variable-editor-datavarwidget .measure-box #type {
+    margin-inline-start: 5px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.jmv-variable-editor-datavarwidget .measure-box .icon {
+    width: 16px;
+    height: 16px;
+    margin-inline-start: 8px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    align-self: center;
+}
+
+.jmv-variable-editor-datavarwidget .measure-box .icon[measure-type='id'] {
+    background-image: url('../../assets/variable-id.svg');
+}
+
+.jmv-variable-editor-datavarwidget .measure-box .icon[measure-type='continuous'] {
+    background-image: url('../../assets/variable-continuous.svg');
+}
+
+.jmv-variable-editor-datavarwidget .measure-box .icon[measure-type='nominal'] {
+    background-image: url('../../assets/variable-nominal.svg');
+}
+
+.jmv-variable-editor-datavarwidget .measure-box .icon[measure-type='ordinal'] {
+    background-image: url('../../assets/variable-ordinal.svg');
+}
+
+.jmv-variable-editor-level .pin {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    inset-inline-start: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px 15px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 3px;
+    background-color: inherit;
+    border: none;
+    filter: opacity(0.5);
+    visibility: hidden;
+}
+
+.jmv-variable-editor-level:not(.pinned):hover .pin, .jmv-variable-editor-level:not(.pinned).selected .pin {
+    opacity: 1;
+    background-image: url('../../assets/levels-pin-2.svg');
+    visibility: visible;
+}
+
+.jmv-variable-editor-level .pin:hover {
+    background-color: #eeeeee
+}
+
+.jmv-variable-editor-level.pinned .pin {
+    opacity: 1;
+    background-image: url('../../assets/levels-pin-1.svg');
+    visibility: visible;
+}

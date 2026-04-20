@@ -1,0 +1,11 @@
+{
+  "name": "jamovi-app",
+  "version": "0.1.0",
+  "scripts": {
+    "prepublish": "asar pack app default_app.asar",
+    "deploy": "asar pack app ../../../bin/resources/default_app.asar"
+  },
+  "devDependencies": {
+    "@electron/asar": "^4.2.0"
+  }
+}

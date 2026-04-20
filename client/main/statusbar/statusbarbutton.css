@@ -1,0 +1,34 @@
+
+.jmv-status-bar .jmv-statusbar-button {
+    height: 100%;
+    width: 26px;
+    margin: 0 0;
+    border: none;
+
+    background-position: center center;
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+}
+
+.jmv-status-bar .jmv-statusbar-button.gray {
+    filter: grayscale(100%);
+}
+
+.jmv-status-bar .jmv-statusbar-button:not([aria-disabled]):hover {
+    background-color: #c1c1c1;
+}
+
+.jmv-statusbar-button[data-name=editfilters] {
+    background-image: url('../../assets/menu-data-filter.svg');
+}
+
+.jmv-statusbar-button[data-name=togglefiltervisible] {
+    background-image: url('../../assets/filters-hidden.svg');
+}
+.jmv-statusbar-button[data-name=togglefiltervisible].hide-filter-columns {
+    background-image: url('../../assets/filters-visible.svg');
+}
+
+.jmv-statusbar-button[aria-disabled] {
+    filter: grayscale(100%);
+}

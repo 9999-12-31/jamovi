@@ -1,0 +1,22 @@
+{
+    "globalstrict": true,
+    "browserify": true,
+    "laxbreak": true,
+    "esversion" : 11,
+    "multistr": true,
+    "mocha": true,
+    "globals": {
+        "console" : true
+    },
+    "predef": [
+        "WeakRef",
+        "customElements",
+        "DataTransfer",
+        "ResizeObserver",
+        "_",
+        "s_",
+        "n_",
+        "ClipboardItem",
+        "ReadableStream"
+    ]
+}

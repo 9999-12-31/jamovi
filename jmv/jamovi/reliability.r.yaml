@@ -1,0 +1,103 @@
+---
+name: reliability
+title: Reliability Analysis
+jrs: '1.0'
+
+items:
+    - name: scale
+      title: Scale Reliability Statistics
+      type: Table
+      rows: 1
+      refs: psych
+      clearWith:
+        - vars
+        - revItems
+
+      columns:
+        - name: name
+          title: ''
+          type: 'text'
+          content: scale
+
+        - name: mean
+          title: Mean
+          visible: (meanScale)
+
+        - name: sd
+          title: SD
+          visible: (sdScale)
+
+        - name: alpha
+          title: Cronbach's α
+          visible: (alphaScale)
+
+        - name: omega
+          title: McDonald's ω
+          visible: (omegaScale)
+
+    - name: items
+      title: Item Reliability Statistics
+      type: Table
+      visible: (meanItems || sdItems || itemRestCor || alphaItems || omegaItems)
+      rows: (vars)
+      clearWith:
+        - vars
+        - revItems
+
+      columns:
+        - name: name
+          title: ''
+          type: 'text'
+          content: ($key)
+
+        - name: mean
+          title: Mean
+          visible: (meanItems)
+
+        - name: sd
+          title: SD
+          visible: (sdItems)
+
+        - name: itemRestCor
+          title: Item-rest correlation
+          visible: (itemRestCor)
+
+        - name: alpha
+          title: Cronbach's α
+          superTitle: 'If item dropped'
+          visible: (alphaItems)
+
+        - name: omega
+          title: McDonald's ω
+          superTitle: 'If item dropped'
+          visible: (omegaItems)
+
+    - name: corPlot
+      title: Correlation Heatmap
+      visible: (corPlot)
+      type: Image
+      width: 400
+      height: 400
+      renderFun: .corPlot
+      clearWith:
+        - vars
+        - revItems
+
+    - name: meanScoreOV
+      title: Mean score
+      type: Output
+      varTitle: Mean Score
+      measureType: continuous
+      clearWith:
+        - vars
+        - revItems
+
+    - name: sumScoreOV
+      title: Sum score
+      type: Output
+      varTitle: Sum Score
+      measureType: continuous
+      clearWith:
+        - vars
+        - revItems
+

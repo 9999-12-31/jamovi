@@ -1,0 +1,90 @@
+---
+name:  anovaRMNP
+title: Repeated Measures ANOVA (Non-parametric)
+jrs: '1.0'
+
+items:
+    - name: table
+      title: Friedman
+      type: Table
+      description: a table of the Friedman test results
+      rows: 1
+      clearWith:
+        - measures
+
+      columns:
+        - name: stat
+          title: χ²
+          type: number
+
+        - name: df
+          title: df
+          type: integer
+
+        - name: p
+          title: p
+          type: number
+          format: zto,pvalue
+
+    - name: comp
+      title: Pairwise Comparisons (Durbin-Conover)
+      type: Table
+      description: a table of the pairwise comparisons
+      visible: (pairs)
+      clearWith:
+        - measures
+
+      columns:
+        - name: i1
+          title: ""
+          type: text
+
+        - name: sep
+          title: ""
+          content: '-'
+          type: text
+          format: narrow
+
+        - name: i2
+          title: ""
+          type: text
+
+        - name: stat
+          title: Statistic
+          type: number
+
+        - name: p
+          title: p
+          type: number
+          format: zto,pvalue
+
+    - name: desc
+      title: Descriptives
+      type: Table
+      description: a table containing the descriptives
+      visible: (desc)
+      clearWith:
+        - measures
+
+      columns:
+        - name: level
+          title: ""
+          type: text
+
+        - name: mean
+          title: Mean
+          type: number
+
+        - name: median
+          title: Median
+          type: number
+
+    - name: plot
+      title: Descriptive Plot
+      visible: (plots)
+      description: a descriptives plot
+      type: Image
+      renderFun: .plot
+      clearWith:
+        - plotType
+        - measures
