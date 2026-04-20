@@ -31,3 +31,12 @@ __pycache__
 /server/jamovi/hydra/
 /modules/
 /bin/
+
+# WorkBuddy workspace data
+.workbuddy/
+
+# pnpm lock (project uses npm)
+client/pnpm-lock.yaml
+
+# Temporary files
+tmp_check.py
