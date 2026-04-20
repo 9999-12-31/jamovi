@@ -327,6 +327,32 @@ export class BackstageModel extends EventMap<IBackstageModel> {
             this.set('operation', 'open');
         });
 
+        ActionHub.get('new').on('request', () => {
+            this.requestOpen();
+        });
+
+        ActionHub.get('import').on('request', () => {
+            this.set('activated', true);
+            this.set('operation', 'import');
+        });
+
+        ActionHub.get('export').on('request', () => {
+            this.set('activated', true);
+            this.set('operation', 'export');
+        });
+
+        ActionHub.get('openThisPC').on('request', () => {
+            this.set('activated', true);
+            this.set('operation', 'open');
+            this.set('place', 'thispc');
+        });
+
+        ActionHub.get('openExamples').on('request', () => {
+            this.set('activated', true);
+            this.set('operation', 'open');
+            this.set('place', 'examples');
+        });
+
         this.attributes.ops = [
 
         ];
@@ -1434,7 +1460,9 @@ export class BackstageView  extends EventDistributor {
 
         document.body.querySelectorAll('.app-dragable').forEach(el => el.classList.add('ignore'));
         document.getElementById('main').setAttribute('aria-hidden', 'true');
-        document.querySelector('.jmv-ribbon-tab.file-tab').setAttribute('aria-expanded', 'true');
+        let fileTabEl = document.querySelector('.jmv-ribbon-tab[data-tabname="file"]');
+        if (fileTabEl)
+            fileTabEl.setAttribute('aria-expanded', 'true');
 
         this.menuSelection.selectElement(this.opPanel.querySelector('.silky-bs-back-button'), false, true);
 
@@ -1468,7 +1496,9 @@ export class BackstageView  extends EventDistributor {
 
         document.body.querySelectorAll('.app-dragable').forEach(el => el.classList.remove('ignore'));
         document.getElementById('main').setAttribute('aria-hidden', 'false');
-        document.querySelector('.jmv-ribbon-tab.file-tab').setAttribute('aria-expanded', 'false');
+        let fileTabEl = document.querySelector('.jmv-ribbon-tab[data-tabname="file"]');
+        if (fileTabEl)
+            fileTabEl.setAttribute('aria-expanded', 'false');
 
 
         focusLoop.leaveFocusLoop(this, fromMouse);

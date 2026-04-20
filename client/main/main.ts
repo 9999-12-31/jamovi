@@ -295,11 +295,11 @@ ready(async() => {
         ribbonModel.set('selectedTab', 'variables');
         Keyboard.setFocusMode('default');
     }, _('Focus on variable list'));
-    Keyboard.addKeyboardListener('Alt+KeyF', () => { // navigate to file menu
+    Keyboard.addKeyboardListener('Alt+KeyF', () => { // navigate to file tab
         Keyboard.setFocusMode('keyboard');
         optionspanel.hideOptions();
-        ribbon.openFileMenu(false);
-    }, _('Open the main menu'));
+        ribbonModel.set('selectedTab', 'file');
+    }, _('Open the File tab'));
     Keyboard.addKeyboardListener('F3', () => { // toggle variable setup
         viewController._toggleVariableEditor();
     }, _('Toggle variable setup'));
@@ -313,6 +313,10 @@ ready(async() => {
         Keyboard.setFocusMode('keyboard');
         ribbon.appMenu.toggleMenu(false);
     }, _('Open application menu'));
+
+    ActionHub.get('prefs').on('request', () => {
+        ribbon.appMenu.toggleMenu(false);
+    });
     Keyboard.addKeyboardListener('Alt+KeyL', () => { // navigate to Modules library
         Keyboard.setFocusMode('keyboard');
         ribbonModel.getTab('analyses').store.show(1);
@@ -458,9 +462,7 @@ ready(async() => {
 
     ribbon.addEventListener('tabSelected', function(event: CustomEvent<{tabName: keyof TabTypes, withMouse: boolean}>) {
         let {tabName, withMouse} = event.detail
-        if (tabName === 'file')
-            backstage.activate(withMouse);
-        else if (tabName === 'data') {
+        if (tabName === 'data') {
             setMainTableMode('spreadsheet');
             if (splitPanel.mode === 'results')
                 splitPanel.setMode('data', true);
@@ -522,6 +524,7 @@ ready(async() => {
             switch (tab) {
                 case 'variables':
                 case 'data':
+                case 'file':
                     splitPanel.setMode('data');
                     break;
                 case 'plots':

@@ -29,6 +29,13 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
       watch: {
         usePolling: true,
       },
+      proxy: {
+        '/': {
+          target: 'http://127.0.0.1:41337',
+          changeOrigin: true,
+          ws: true,
+        },
+      },
     },
   }
 

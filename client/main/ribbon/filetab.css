@@ -1,0 +1,62 @@
+
+
+/* ===== File Tab Button Icons ===== */
+
+.jmv-ribbon-button[data-name=new] > .jmv-ribbon-button-icon {
+    background-image: url('../../assets/menu-file-new.svg');
+}
+
+.jmv-ribbon-button[data-name=open] > .jmv-ribbon-button-icon {
+    background-image: url('../../assets/menu-file-open.svg');
+}
+
+.jmv-ribbon-button[data-name=save] > .jmv-ribbon-button-icon {
+    background-image: url('../../assets/menu-file-save.svg');
+}
+
+.jmv-ribbon-button[data-name=saveas] > .jmv-ribbon-button-icon {
+    background-image: url('../../assets/menu-file-save-as.svg');
+}
+
+.jmv-ribbon-button[data-name=import] > .jmv-ribbon-button-icon {
+    background-image: url('../../assets/menu-file-import.svg');
+}
+
+.jmv-ribbon-button[data-name=export] > .jmv-ribbon-button-icon {
+    background-image: url('../../assets/menu-file-export.svg');
+}
+
+.jmv-ribbon-button[data-name=openthispc] > .jmv-ribbon-button-icon {
+    background-image: url('../../assets/menu-file-open.svg');
+}
+
+.jmv-ribbon-button[data-name=openexamples] > .jmv-ribbon-button-icon {
+    background-image: url('../../assets/menu-file-open.svg');
+}
+
+/* ===== File Tab Specific Button Styling ===== */
+
+/* File tab buttons - slightly larger icons for visual emphasis */
+.jmv-ribbon-tab[data-tabname="file"] .jmv-ribbon-button-size-large .jmv-ribbon-button-icon {
+    height: 28px;
+    width: 28px;
+    border-radius: 4px;
+}
+
+/* Subtle hover state for file tab buttons */
+.jmv-ribbon-tab[data-tabname="file"] .jmv-ribbon-button:not([aria-disabled="true"]):hover {
+    background-color: #e0e6ee;
+    border-radius: 3px;
+}
+
+/* Active/pressed state */
+.jmv-ribbon-tab[data-tabname="file"] .jmv-ribbon-button:not([aria-disabled="true"]):active {
+    background-color: #cdd5df;
+    border-radius: 3px;
+}
+
+/* Keyboard focus state - matches global focus style */
+[keyboardfocus="true"] .jmv-ribbon-tab[data-tabname="file"] .jmv-ribbon-button:focus {
+    background-color: #d5dfeb;
+    border-radius: 3px;
+}

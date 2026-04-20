@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="1600" viewBox="0 0 1600 1600" width="1600">
+ <rect ry="80" height="1600" width="1600" y="0" x="0" fill="#ed7d31"/>
+ <g fill="#fff">
+  <rect ry="20" height="700" width="900" y="200" x="350"/>
+  <path d="m350 200 l0 200 l400 0 l80 -200 z" fill="#c55a11"/>
+  <rect ry="20" height="700" width="1100" y="500" x="250"/>
+ </g>
+ <g fill="#f4b183">
+  <rect rx="10" height="60" width="700" y="620" x="450"/>
+  <rect rx="10" height="60" width="500" y="740" x="450"/>
+  <rect rx="10" height="60" width="300" y="860" x="450"/>
+ </g>
+</svg>

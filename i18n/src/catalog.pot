@@ -584,6 +584,10 @@ msgstr ""
 msgid "Create New Transform..."
 msgstr ""
 
+#: jamovi/client/main/ribbon/filetab.ts:20
+msgid "Create new project"
+msgstr ""
+
 #: jamovi/client/main/backstage.ts:164
 #: jamovi/client/main/backstage.ts:221
 #: jamovi/client/main/backstage.ts:245
@@ -1180,6 +1184,10 @@ msgstr ""
 msgid "Import"
 msgstr ""
 
+#: jamovi/client/main/ribbon/filetab.ts:38
+msgid "Import data"
+msgstr ""
+
 #: jamovi/client/main/instance.ts:266
 msgid "Import successful"
 msgstr ""
@@ -1598,6 +1606,10 @@ msgstr ""
 msgid "Open"
 msgstr ""
 
+#: jamovi/client/main/ribbon/filetab.ts:24
+msgid "Open a data file"
+msgstr ""
+
 #: jamovi/client/main/main.ts:308
 msgid "Open application menu"
 msgstr ""
@@ -1681,6 +1693,10 @@ msgstr ""
 
 #: jamovi/client/main/vareditor/datavarlevelwidget.ts:34
 msgid "Pin level"
+msgstr ""
+
+#: jamovi/client/main/ribbon/filetab.ts:25
+msgid "Places"
 msgstr ""
 
 #: jamovi/client/analysisui/main.ts:331
@@ -2034,6 +2050,10 @@ msgstr ""
 
 #: jamovi/client/main/main.ts:275
 msgid "Save project"
+msgstr ""
+
+#: jamovi/client/main/ribbon/filetab.ts:34
+msgid "Save project as"
 msgstr ""
 
 #: jamovi/client/main/instance.ts:534
@@ -2400,6 +2420,10 @@ msgid "Too much data, use import instead"
 msgstr ""
 
 #: jamovi/client/main/editors/transformeditor.ts:84
+#: jamovi/client/main/ribbon/filetab.ts:37
+msgid "Transfer"
+msgstr ""
+
 #: jamovi/client/main/ribbon/datatab.ts:41
 #: jamovi/client/main/ribbon/variablestab.ts:26
 msgid "Transform"

@@ -588,6 +588,10 @@ msgstr "对非缺失值计数"
 msgid "Create New Transform..."
 msgstr "创建新的转换..."
 
+#: jamovi/client/main/ribbon/filetab.ts:20
+msgid "Create new project"
+msgstr "创建新项目"
+
 #: jamovi/client/main/backstage.js:1029
 #: jamovi/client/main/backstage.js:1052
 #: jamovi/client/main/backstage.js:976
@@ -1180,6 +1184,10 @@ msgstr "图像已调整大小至 {width} x {height}"
 msgid "Import"
 msgstr "导入"
 
+#: jamovi/client/main/ribbon/filetab.ts:38
+msgid "Import data"
+msgstr "导入数据"
+
 #: jamovi/client/main/instance.js:134
 msgid "Import successful"
 msgstr "导入成功"
@@ -1594,6 +1602,10 @@ msgstr "在线数据集"
 msgid "Open"
 msgstr "打开"
 
+#: jamovi/client/main/ribbon/filetab.ts:24
+msgid "Open a data file"
+msgstr "打开数据文件"
+
 #: jamovi/client/main/main.ts:266
 msgid "Open application menu"
 msgstr "打开应用程序菜单"
@@ -1677,6 +1689,10 @@ msgstr "PDF 文档 {ext}"
 #: jamovi/client/main/vareditor/datavarlevelwidget.js:19
 msgid "Pin level"
 msgstr "固定水平"
+
+#: jamovi/client/main/ribbon/filetab.ts:25
+msgid "Places"
+msgstr "位置"
 
 #: jamovi/client/analysisui/main.ts:331
 msgid "Please <em>install or update</em> this module from the jamovi library."
@@ -2024,6 +2040,10 @@ msgstr "保存失败"
 #: jamovi/client/main/main.ts:233
 msgid "Save project"
 msgstr "保存项目"
+
+#: jamovi/client/main/ribbon/filetab.ts:34
+msgid "Save project as"
+msgstr "项目另存为"
 
 #: jamovi/client/main/instance.js:404
 msgid "Saved to '{filename}'"
@@ -2387,6 +2407,10 @@ msgid "Too much data, use import instead"
 msgstr "数据太多，请改用导入"
 
 #: jamovi/client/main/editors/transformeditor.js:24
+#: jamovi/client/main/ribbon/filetab.ts:37
+msgid "Transfer"
+msgstr "传输"
+
 #: jamovi/client/main/ribbon/datatab.js:31
 #: jamovi/client/main/ribbon/variablestab.js:25
 msgid "Transform"

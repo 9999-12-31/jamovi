@@ -8,6 +8,7 @@ import AnnotationTab from './ribbon/annotationtab';
 import AnalyseTab from './ribbon/analysetab';
 import { EventDistributor, EventMap } from '../common/eventmap';
 import PlotsTab from './ribbon/plotstab';
+import FileTab from './ribbon/filetab';
 import RibbonTab from './ribbon/ribbontab';
 import SelectionLoop from '../common/selectionloop';
 import Notifs, { NotifData } from './ribbon/notifs';
@@ -18,7 +19,7 @@ import Settings from './settings';
 import Store from './store';
  
 
-type AnyTab = DataTab | VariablesTab | AnnotationTab | AnalyseTab | PlotsTab;
+type AnyTab = FileTab | DataTab | VariablesTab | AnnotationTab | AnalyseTab | PlotsTab;
 
 export type TabTypes = {
   analyses: AnalyseTab;
@@ -26,7 +27,7 @@ export type TabTypes = {
   data: DataTab;
   plots: PlotsTab;
   variables: VariablesTab;
-  file: null;
+  file: FileTab;
 };
 
 interface IRibbonModelData {
@@ -36,6 +37,7 @@ interface IRibbonModelData {
 
 export class RibbonModel extends EventMap<IRibbonModelData>{
 
+    _fileTab: FileTab;
     _variablesTab: VariablesTab;
     _dataTab: DataTab;
     _analysesTab: AnalyseTab;
@@ -53,6 +55,7 @@ export class RibbonModel extends EventMap<IRibbonModelData>{
         this._modules = modules;
         this._settings = settings;
 
+        this._fileTab = new FileTab();
         this._variablesTab = new VariablesTab();
         this._dataTab = new DataTab();
         this._analysesTab = new AnalyseTab(this._modules, settings, store);
@@ -61,6 +64,7 @@ export class RibbonModel extends EventMap<IRibbonModelData>{
         
 
         this.set('tabs', [
+            this._fileTab,
             this._variablesTab,
             this._dataTab,
             this._analysesTab,
@@ -121,7 +125,6 @@ export class RibbonView extends EventDistributor {
     $header: HTMLElement;
     $ribbonTabs: HTMLElement;
     $body: HTMLElement;
-    $fileButton: HTMLElement;
     $fullScreen: HTMLElement;
     tabSelection: SelectionLoop;
     $tabs: NodeListOf<HTMLElement>;
@@ -178,7 +181,6 @@ export class RibbonView extends EventDistributor {
 
         this.append(HTML.parse(`
             <div class="jmv-ribbon-header app-dragable" role="group" aria-orientation="horizontal">
-                <button class="jmv-ribbon-tab file-tab" data-tabname="file" role="toolbaritem"  aria-label="${_('File')}" aria-haspopup="true" aria-expanded="false"><span style="font-size: 150%; pointer-events: none;" class="mif-menu"></span></button>
                 <div class="ribbon-tabs" role="tablist"></div>
                 <div id="jmv-user-button"></div>
                 <button class="jmv-ribbon-fullscreen" aria-label="${_('Enable/disable full screen mode')}"></button>
@@ -200,38 +202,7 @@ export class RibbonView extends EventDistributor {
         this.$ribbonTabs.classList.add('block-focus-left', 'block-focus-right');
 
         this.$body   = this.querySelector<HTMLElement>('.jmv-ribbon-body');
-        this.$fileButton = this.querySelector<HTMLElement>('.jmv-ribbon-tab[data-tabname="file"]');
         this.$fullScreen = this.querySelector<HTMLElement>('.jmv-ribbon-fullscreen');
-
-        this.$fileButton.addEventListener('click', (event) => {
-            let newEvent = new CustomEvent<{tabName: keyof TabTypes, withMouse: boolean}>('tabSelected', { detail: { tabName: 'file', withMouse: event.detail > 0 }});
-            this.dispatchEvent(newEvent);
-            //this.trigger('tabSelected', 'file', event.detail > 0);
-        });
-
-        this.$fileButton.addEventListener('keydown', (event) => {
-            switch (event.code) {
-                case "ArrowDown":
-                    let newEvent = new CustomEvent<{tabName: keyof TabTypes, withMouse: boolean}>('tabSelected', { detail: { tabName: 'file', withMouse: false }});
-                    this.dispatchEvent(newEvent);
-                    //this.trigger('tabSelected', 'file', false);
-                    event.stopPropagation();
-                    event.preventDefault();
-                    break;
-            }
-        });
-
-        focusLoop.applyShortcutOptions(this.$fileButton, {
-                key: 'F',
-                position: { x: '50%', y: '75%' },
-                action: (event) => {
-                    let newEvent = new CustomEvent<{tabName: keyof TabTypes, withMouse: boolean}>('tabSelected', { detail: { tabName: 'file', withMouse: false }});
-                    this.dispatchEvent(newEvent);
-                    //this.trigger('tabSelected', 'file', false);
-                },
-                label: _('File menu')
-            } 
-        );
 
         this.tabSelection.on('selected-index-changed', (data) => {
             let tabs = Array.from(this.$tabs); // Convert NodeList object to array
@@ -299,7 +270,7 @@ export class RibbonView extends EventDistributor {
             tab.el = $tab;
         }
 
-        this.$tabs = this.$header.querySelectorAll<HTMLElement>('.jmv-ribbon-tab:not(.file-tab)');
+        this.$tabs = this.$header.querySelectorAll<HTMLElement>('.jmv-ribbon-tab');
 
         focusLoop.applyShortcutOptions(this.appMenu, {
             key: 'M',
@@ -310,15 +281,11 @@ export class RibbonView extends EventDistributor {
             }
         );
 
-        
-
         this._refresh();
     }
 
     openFileMenu(usingMouse?: boolean) {
-        let newEvent = new CustomEvent<{tabName: keyof TabTypes, withMouse: boolean}>('tabSelected', { detail: { tabName: 'file', withMouse: usingMouse }});
-        this.dispatchEvent(newEvent);
-        //this.trigger('tabSelected', 'file', usingMouse);
+        this.model.set('selectedTab', 'file');
     }
 
     notify(options: Partial<NotifData>) {

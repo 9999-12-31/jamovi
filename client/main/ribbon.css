@@ -140,8 +140,8 @@ body.windows.electron .jmv-ribbon-appmenu {
 }
 
 .jmv-ribbon-tab[data-tabname="file"] {
-    padding: 7px 20px;
-    min-width: 60px ;
+    padding: 10px 20px;
+    font-weight: 600;
 }
 
 .jmv-ribbon-body {
