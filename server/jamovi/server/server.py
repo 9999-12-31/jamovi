@@ -564,6 +564,42 @@ class EndHandler(SessHandler):
         self._session.stop()
 
 
+class ModuleUploadHandler(SessHandler):
+
+    async def post(self):
+        if 'file' not in self.request.files:
+            self.set_status(400)
+            self.write(json.dumps({ 'error': 'No file uploaded' }))
+            return
+
+        file_info = self.request.files['file'][-1]
+        filename = file_info.filename
+
+        if not filename.lower().endswith('.jmo') and not filename.lower().endswith('.zip'):
+            self.set_status(400)
+            self.write(json.dumps({ 'error': 'Only .jmo or .zip files are supported' }))
+            return
+
+        ext = os.path.splitext(filename)[1]
+        temp_file = NamedTemporaryFile(suffix=ext, delete=False)
+        try:
+            with open(temp_file.name, 'wb') as writer:
+                writer.write(file_info.body)
+
+            await self._session.modules.install_from_file(temp_file.name)
+
+            self.write(json.dumps({ 'success': True }))
+        except Exception as e:
+            log.exception(e)
+            self.set_status(500)
+            self.write(json.dumps({ 'error': str(e) }))
+        finally:
+            try:
+                os.remove(temp_file.name)
+            except OSError:
+                pass
+
+
 class ConfigJSHandler(RequestHandler):
     def initialize(self, roots):
         self._roots = roots
@@ -810,6 +846,7 @@ class Server:
             (fr'{ path_a }/([a-f0-9-]+)/save', SaveHandler, { 'session': self._session }),
             (fr'{ path_a }/([a-f0-9-]+)/coms', ClientConnection, { 'session': self._session }),
             (fr'{ path_a }/([a-f0-9-]+/dl/.*)', DownloadFileHandler, { 'path': self._session.session_path }),
+            (fr'{ path_a }/modules/upload', ModuleUploadHandler, { 'session': self._session }),
             (fr'{ path_a }/modules/([0-9a-zA-Z]+)', ModuleDescriptor, { 'session': self._session }),
             (fr'{ path_a }/modules/([0-9a-zA-Z]+)/i18n/([a-z]{{2}}(?:-[a-z]{{2}})?)', ModuleI18nDescriptor, { 'session': self._session }),
             (fr'{ path_a }/analyses/([0-9a-zA-Z]+)/([0-9a-zA-Z]+)/([.0-9a-zA-Z]+)', AnalysisDescriptor, { 'session': self._session }),
