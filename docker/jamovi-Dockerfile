@@ -183,9 +183,7 @@ RUN jmc --install . --to /usr/lib/jamovi/modules --rhome $R_HOME --rlibs /usr/li
 
 FROM base AS i18n
 
-RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-    nodejs \
-    npm
+COPY --from=node-bin /node /usr/local
 
 RUN mkdir -p /usr/lib/jamovi/i18n/json
 
@@ -194,7 +192,7 @@ ARG JAMOVI_ROOT=.
 COPY $JAMOVI_ROOT/i18n /tmp/source/i18n
 WORKDIR /tmp/source/i18n
 RUN npm install
-RUN nodejs /tmp/source/i18n/index.js --build src --dest /usr/lib/jamovi/i18n/json
+RUN node /tmp/source/i18n/index.js --build src --dest /usr/lib/jamovi/i18n/json
 
 
 ##### FINAL #####
