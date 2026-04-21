@@ -2,31 +2,31 @@ version: '3.8'
 
 services:
   jamovi:
-    image: ghcr.io/9999-12-31/jamovi:latest          # Docker 镜像（GitHub Container Registry）
-    container_name: jamovi                             # 容器名称
+    image: ${REGISTRY:-ghcr.io/9999-12-31}/jamovi:latest                  # Docker 镜像（GitHub Container Registry）
+    container_name: jamovi                                                # 容器名称
     ports:
-      - '41337:41337'                                  # 主服务端口（41338/41339 由系统自动分配）
+      - '41337:41337'                                                     # 主服务端口（41338/41339 由系统自动分配）
     command: ['python3', '-u', '-m', 'jamovi.server', '41337', '--if=*']  # 启动命令
-    stdin_open: true                                   # 保持 STDIN 打开
-    stop_grace_period: 0.1s                            # 快速停止容器
-    restart: unless-stopped                            # 除非手动停止，否则自动重启
+    stdin_open: true                                                      # 保持 STDIN 打开
+    stop_grace_period: 0.1s                                               # 快速停止容器
+    restart: unless-stopped                                               # 除非手动停止，否则自动重启
     environment:
-      JAMOVI_HOSTNAME: '0.0.0.0'                       # 监听所有网络接口，允许所有IP访问
-      JAMOVI_HOST_A: 'localhost:41337'                 # 主应用端口（必须指定，否则使用随机端口）
-      JAMOVI_HOST_B: 'localhost:41338'                 # 分析 UI 端口
-      JAMOVI_HOST_C: 'localhost:41339'                 # 结果视图端口
-      JAMOVI_ALLOW_ARBITRARY_CODE: 'false'             # 禁止执行任意R代码，防止代码注入攻击
-      JAMOVI_ACCESS_KEY: ''                            # 访问密钥（留空=禁用认证）
+      JAMOVI_HOSTNAME: '0.0.0.0'                                          # 监听所有网络接口，允许所有IP访问
+      JAMOVI_HOST_A: 'localhost:41337'                                    # 主应用端口（必须指定，否则使用随机端口）
+      JAMOVI_HOST_B: 'localhost:41338'                                    # 分析 UI 端口
+      JAMOVI_HOST_C: 'localhost:41339'                                    # 结果视图端口
+      JAMOVI_ALLOW_ARBITRARY_CODE: 'false'                                # 禁止执行任意R代码，防止代码注入攻击
+      JAMOVI_ACCESS_KEY: ''                                               # 访问密钥（留空=禁用认证）
       # 模块库权限控制（normal 模式）
-      JAMOVI_PERMISSIONS_LIBRARY_BROWSEABLE: '0'       # 禁用在线模块库浏览（隐藏 Available tab）
-      JAMOVI_PERMISSIONS_LIBRARY_ADD_REMOVE: '1'       # 启用安装/卸载模块
-      JAMOVI_PERMISSIONS_LIBRARY_SHOW_HIDE: '1'        # 启用显示/隐藏模块
-      JAMOVI_PERMISSIONS_LIBRARY_SIDE_LOAD: '1'        # 启用本地上传模块（.jmo 文件）
+      JAMOVI_PERMISSIONS_LIBRARY_BROWSEABLE: '0'                          # 禁用在线模块库浏览（隐藏 Available tab）
+      JAMOVI_PERMISSIONS_LIBRARY_ADD_REMOVE: '1'                          # 启用安装/卸载模块
+      JAMOVI_PERMISSIONS_LIBRARY_SHOW_HIDE: '1'                           # 启用显示/隐藏模块
+      JAMOVI_PERMISSIONS_LIBRARY_SIDE_LOAD: '1'                           # 启用本地上传模块（.jmo 文件）
     volumes:
-      - ./documents:/root/Documents                    # 文档持久化存储
+      - ./documents:/root/Documents                                       # 文档持久化存储
     networks:
-      - jamovi-net                                     # 自定义桥接网络
+      - jamovi-net                                                        # 自定义桥接网络
 
 networks:
   jamovi-net:
-    driver: bridge                                     # 桥接网络模式
+    driver: bridge                                                        # 桥接网络模式
