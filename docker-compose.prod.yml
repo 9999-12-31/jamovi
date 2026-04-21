@@ -12,6 +12,9 @@ services:
     restart: unless-stopped                            # 除非手动停止，否则自动重启
     environment:
       JAMOVI_HOSTNAME: '0.0.0.0'                       # 监听所有网络接口，允许所有IP访问
+      JAMOVI_HOST_A: 'localhost:41337'                 # 主应用端口（必须指定，否则使用随机端口）
+      JAMOVI_HOST_B: 'localhost:41338'                 # 分析 UI 端口
+      JAMOVI_HOST_C: 'localhost:41339'                 # 结果视图端口
       JAMOVI_ALLOW_ARBITRARY_CODE: 'false'             # 禁止执行任意R代码，防止代码注入攻击
       JAMOVI_ACCESS_KEY: ''                            # 访问密钥（留空=禁用认证）
       # 模块库权限控制（normal 模式）
