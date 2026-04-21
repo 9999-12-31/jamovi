@@ -101,6 +101,8 @@ class Store extends HTMLElement {
                 if ($storeTab === null) {
                     $storeTab = HTML.parse(`<div class="jmv-store-tab store-tabs-list-item store-tabs-auto-select" data-tab="store" data-index="${i++}" tabindex="-1" role="tab"><div class="jmv-store-tab-inner">${_('Available')}</div></div>`);
                     $tabContainer.append($storeTab);
+                    // Re-query tabs to include the new one
+                    this.$tabs = $tabContainer.querySelectorAll<HTMLElement>(".jmv-store-tab");
                 }
                 $storeTab.style.display = '';
             }
@@ -114,6 +116,7 @@ class Store extends HTMLElement {
                     $storeTab.style.display = 'none';
                 }
             }
+            // Re-query pages to include newly created ones
             this.$pages = $pageContainer.querySelectorAll<HTMLElement>('.jmv-store-page');
         });
 
@@ -130,6 +133,8 @@ class Store extends HTMLElement {
                 if ($sideloadTab === null) {
                     $sideloadTab = HTML.parse(`<div class="jmv-store-tab store-tabs-list-item store-tabs-auto-select" data-tab="sideload" data-index="${i++}" tabindex="-1" role="tab"><div class="jmv-store-tab-inner">${_('Sideload')}</div></div>`);
                     $tabContainer.append($sideloadTab);
+                    // Re-query tabs to include the new one
+                    this.$tabs = $tabContainer.querySelectorAll<HTMLElement>(".jmv-store-tab");
                 }
                 $sideloadTab.style.display = '';
             }
@@ -143,6 +148,7 @@ class Store extends HTMLElement {
                     $sideloadTab.style.display = 'none';
                 }
             }
+            // Re-query pages to include newly created ones
             this.$pages = $pageContainer.querySelectorAll<HTMLElement>('.jmv-store-page');
         });
 
