@@ -235,5 +235,4 @@ ENV JAMOVI_SESSION_EXPIRES 0
 ENV JAMOVI_ALLOW_ARBITRARY_CODE false
 
 EXPOSE 41337
-ENTRYPOINT ["/bin/sh", "-c"]
-CMD ["/usr/bin/python3 -m jamovi.server 41337 --if=*"]
+CMD ["python3", "-u", "-m", "jamovi.server", "41337", "--if=*"]
