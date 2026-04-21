@@ -194,7 +194,7 @@ ARG JAMOVI_ROOT=.
 COPY $JAMOVI_ROOT/i18n /tmp/source/i18n
 WORKDIR /tmp/source/i18n
 RUN npm install
-RUN node /tmp/source/i18n/index.js --build src --dest /usr/lib/jamovi/i18n/json
+RUN nodejs /tmp/source/i18n/index.js --build src --dest /usr/lib/jamovi/i18n/json
 
 
 ##### FINAL #####
