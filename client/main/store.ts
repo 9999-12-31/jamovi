@@ -96,11 +96,23 @@ class Store extends HTMLElement {
                 pageStore.classList.add('jmv-store-page', 'jmv-store-page-store', 'right');
                 pageStore.setAttribute('aria-hidden', 'true');
                 $pageContainer.append(pageStore);
+                // Ensure the 'store' tab exists and is visible
+                let $storeTab = $tabContainer.querySelector<HTMLElement>('[data-tab="store"]');
+                if ($storeTab === null) {
+                    $storeTab = HTML.parse(`<div class="jmv-store-tab store-tabs-list-item store-tabs-auto-select" data-tab="store" data-index="${i++}" tabindex="-1" role="tab"><div class="jmv-store-tab-inner">${_('Available')}</div></div>`);
+                    $tabContainer.append($storeTab);
+                }
+                $storeTab.style.display = '';
             }
             else {
                 const $pageStore = HTML.parse('<div class="jmv-store-page jmv-store-page-store" aria-hidden="true"></div>');
                 $pageContainer.append($pageStore);
                 $pageStore.append(HTML.parse(`<div class="mode-msg">${_('The library is not available to your session.')}</div>`));
+                // Hide the 'store' tab when library is not browseable
+                let $storeTab = $tabContainer.querySelector<HTMLElement>('[data-tab="store"]');
+                if ($storeTab !== null) {
+                    $storeTab.style.display = 'none';
+                }
             }
             this.$pages = $pageContainer.querySelectorAll<HTMLElement>('.jmv-store-page');
         });
@@ -113,11 +125,23 @@ class Store extends HTMLElement {
                 pageSideload.setAttribute('aria-hidden', 'true');
                 $pageContainer.append(pageSideload);
                 pageSideload.addEventListener('close', () => this.hide());
+                // Ensure the 'sideload' tab exists and is visible
+                let $sideloadTab = $tabContainer.querySelector<HTMLElement>('[data-tab="sideload"]');
+                if ($sideloadTab === null) {
+                    $sideloadTab = HTML.parse(`<div class="jmv-store-tab store-tabs-list-item store-tabs-auto-select" data-tab="sideload" data-index="${i++}" tabindex="-1" role="tab"><div class="jmv-store-tab-inner">${_('Sideload')}</div></div>`);
+                    $tabContainer.append($sideloadTab);
+                }
+                $sideloadTab.style.display = '';
             }
             else {
                 const $pageSideload = HTML.parse('<div class="jmv-store-page jmv-store-page-sideload right" aria-hidden="true"></div>');
                 $pageContainer.append($pageSideload);
                 $pageSideload.append(HTML.parse(`<div class="mode-msg">${_('Side-loading modules is not available.')}</div>`));
+                // Hide the 'sideload' tab when side loading is not allowed
+                let $sideloadTab = $tabContainer.querySelector<HTMLElement>('[data-tab="sideload"]');
+                if ($sideloadTab !== null) {
+                    $sideloadTab.style.display = 'none';
+                }
             }
             this.$pages = $pageContainer.querySelectorAll<HTMLElement>('.jmv-store-page');
         });
