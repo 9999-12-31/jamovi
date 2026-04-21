@@ -33,6 +33,7 @@
 @import "editors/transformeditor.css";
 @import "editors/missingvalueeditor.css";
 @import "variableeditor.css";
+@import "filepanel.css";
 @import "vareditor/datavarwidget.css";
 @import "vareditor/outputvarwidget.css";
 @import "vareditor/computedvarwidget.css";

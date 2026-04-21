@@ -305,8 +305,7 @@ export class BackstageModel extends EventMap<IBackstageModel> {
         this._savePromiseResolve = null;
 
         ActionHub.get('saveAs').on('request', () => {
-            this.set('activated', true);
-            this.set('operation', 'saveAs');
+            this.trigger('filePanel:show', { op: 'saveAs' });
             return true;
         });
 
@@ -316,15 +315,13 @@ export class BackstageModel extends EventMap<IBackstageModel> {
             }
             catch (e) {
                 if ( ! this.instance.attributes.saveFormat) {
-                    this.set('activated', true);
-                    this.set('operation', 'saveAs');
+                    this.trigger('filePanel:show', { op: 'saveAs' });
                 }
             }
         });
 
         ActionHub.get('open').on('request', async () => {
-            this.set('activated', true);
-            this.set('operation', 'open');
+            this.trigger('filePanel:show', { op: 'open' });
         });
 
         ActionHub.get('new').on('request', () => {
@@ -332,25 +329,19 @@ export class BackstageModel extends EventMap<IBackstageModel> {
         });
 
         ActionHub.get('import').on('request', () => {
-            this.set('activated', true);
-            this.set('operation', 'import');
+            this.trigger('filePanel:show', { op: 'import' });
         });
 
         ActionHub.get('export').on('request', () => {
-            this.set('activated', true);
-            this.set('operation', 'export');
+            this.trigger('filePanel:show', { op: 'export' });
         });
 
         ActionHub.get('openThisPC').on('request', () => {
-            this.set('activated', true);
-            this.set('operation', 'open');
-            this.set('place', 'thispc');
+            this.trigger('filePanel:show', { op: 'open', place: 'thispc' });
         });
 
         ActionHub.get('openExamples').on('request', () => {
-            this.set('activated', true);
-            this.set('operation', 'open');
-            this.set('place', 'examples');
+            this.trigger('filePanel:show', { op: 'open', place: 'examples' });
         });
 
         this.attributes.ops = [
@@ -763,8 +754,7 @@ export class BackstageModel extends EventMap<IBackstageModel> {
         }
         catch (e) {
             if ( ! this.instance.attributes.saveFormat) {
-                this.set('activated', true);
-                this.set('operation', 'saveAs');
+                this.trigger('filePanel:show', { op: 'saveAs' });
             }
         }
     }
@@ -775,8 +765,7 @@ export class BackstageModel extends EventMap<IBackstageModel> {
             await this.requestSave(options);
         }
         catch(e) {
-            this.set('activated', true);
-            this.set('operation', 'export');
+            this.trigger('filePanel:show', { op: 'export' });
         }
     }
 
@@ -1037,10 +1026,13 @@ export class BackstageModel extends EventMap<IBackstageModel> {
                 if ( ! deactivated) {
                     deactivated = true;
                     this.set('activated', false);
+                    this.trigger('filePanel:hide');
                 }
             }
-            if ( ! deactivated)
+            if ( ! deactivated) {
                 this.set('activated', false);
+                this.trigger('filePanel:hide');
+            }
 
             let status = await stream;
             let iid = status.url.match(/([a-z0-9-]+)\/$/)[1];
@@ -1072,6 +1064,7 @@ export class BackstageModel extends EventMap<IBackstageModel> {
         let deactivate = () => {
             if ( ! deactivated) {
                 this.set('activated', false);
+                this.trigger('filePanel:hide');
                 deactivated = true;
             }
         };
@@ -1129,31 +1122,21 @@ export class BackstageModel extends EventMap<IBackstageModel> {
 
         if (options === null) {
             if (this.instance.attributes.saveFormat) {
-                // saveFormat is typically either empty, or 'jamovi'
-                // empty means the user hasn't saved it as a .omv file yet, and
-                // they need to be prompted where to save.
-                // saveFormat can have other values when the data set is loaded
-                // from an url, and it needs to be saved back to that url in a
-                // particular format
-                // it follows that when saveFormat isn't empty, the saveAs
-                // shouldn't appear either on save, or on save failure
                 options = { path: this.instance.attributes.path, overwrite: true };
             }
             else {
-                // shouldn't get here
                 throw undefined;
             }
         }
 
         try {
             this.setSavingState(true);
-            // instance.save() itself triggers notifications about the save
-            // being successful (if you were wondering why it's not here.)
             let status = await this.instance.save(options);
             this.setSavingState(false);
             if (this._savePromiseResolve !== null)
                 this._savePromiseResolve();
             this.set('activated', false);
+            this.trigger('filePanel:hide');
             this.trigger('saved');
 
             if (status.download) {
@@ -1224,7 +1207,10 @@ export class BackstageView  extends EventDistributor {
         this.model = model;
 
         this.addEventListener('preferredWidthChanged', (event: CustomEvent<string>) => {
-            this.style.width = event.detail;
+            // Only apply width when BackstageView is activated;
+            // when FilePanel is open instead, we must keep width at 0
+            if (this.classList.contains('activated'))
+                this.style.width = event.detail;
         });
 
         this.setEventMap({
@@ -1665,7 +1651,7 @@ export class BackstageChoices extends EventDistributor {
             this.current.refresh?.();
 
             if (this.current.preferredWidth)
-                this.parent.style.width = this.current.preferredWidth();
+                this.parent.style.width = this.parent.classList.contains('activated') ? this.current.preferredWidth() : '';
             else
                 this.parent.style.width = '';
 

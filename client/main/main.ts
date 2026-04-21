@@ -20,6 +20,8 @@ import Notifications from './notifications';
 import OptionsPanel from './optionspanel';
 import './variableeditor';
 import type { VariableEditor } from './variableeditor';
+import './filepanel';
+import type { FilePanel } from './filepanel';
 import ActionHub from './actionhub';
 import I18ns from '../common/i18n';
 
@@ -282,7 +284,13 @@ ready(async() => {
     Keyboard.addKeyboardListener('Ctrl+KeyS', () => ActionHub.get('save').do(), _('Save project'));
     Keyboard.addKeyboardListener('Ctrl+KeyO', () => ActionHub.get('open').do(), _('Open data file'));
     Keyboard.addKeyboardListener('Escape', () => {
-        if (splitPanel.getSection(0).width < 100 && Keyboard.focusMode === 'default')
+        if (filePanel.isOpen()) {
+            filePanel.hide();
+            setTimeout(() => {
+                splitPanel.onTransitioning();
+            }, 200);
+        }
+        else if (splitPanel.getSection(0).width < 100 && Keyboard.focusMode === 'default')
             optionspanel.hideOptions();
     }, _('Hide analysis options'));
     Keyboard.addKeyboardListener('Alt+KeyS', () => { // navigate to spreadsheet
@@ -467,27 +475,32 @@ ready(async() => {
             if (splitPanel.mode === 'results')
                 splitPanel.setMode('data', true);
             optionspanel.hideOptions();
+            filePanel.hide();
         }
         else if (tabName === 'variables') {
             setMainTableMode('variables');
             if (splitPanel.mode === 'results')
                 splitPanel.setMode('data', true);
             optionspanel.hideOptions();
+            filePanel.hide();
         }
         else if (tabName === 'analyses') {
             dataSetModel.set('editingVar', null);
             if (splitPanel.mode === 'data')
                 splitPanel.setMode('results', true);
+            filePanel.hide();
         }
         else if (tabName === 'plots') {
             dataSetModel.set('editingVar', null);
             if (splitPanel.mode === 'data')
                 splitPanel.setMode('results', true);
+            filePanel.hide();
         }
         else if (tabName === 'annotation') {
             resultsView.hideWelcome();
             if (splitPanel.mode === 'data')
                 splitPanel.setMode('results', true);
+            filePanel.hide();
         }
         if (instance.get('editState') && tabName !== 'annotation')
             _annotationReturnTab = null;
@@ -700,14 +713,16 @@ ready(async() => {
                 if (Keyboard.inAccessibilityMode())
                     ribbonModel.getSelectedTab().el.focus();
             }
+            else {
+                // Backstage activated (e.g. by showDialog) — close FilePanel
+                filePanel.hide();
+            }
         }
     });
 
     splitPanel.addEventListener('form-changed', () => {
         mainTable.dispatchEvent(new CustomEvent('resized'));
     });
-
- 
 
     resultsView.intialise(host.resultsViewUrl, instance);
 
@@ -878,6 +893,40 @@ ready(async() => {
     let editor = document.querySelector('#variable-editor') as VariableEditor; //new VariableEditor({ el : '#variable-editor', model : dataSetModel, controller: viewController });
     editor.init(dataSetModel, viewController);
 
+    let filePanel = document.querySelector('#file-panel') as FilePanel;
+    filePanel.setup(backstageModel);
+
+    // BackstageModel triggers these events from ActionHub handlers
+    backstageModel.on('filePanel:show', (event: any) => {
+        // Close variable editor if open
+        dataSetModel.set('editingVar', null);
+        // Close options panel
+        optionspanel.hideOptions();
+        // Show file panel with the requested operation
+        let op = event.op;
+        if (event.place) {
+            // Set place first, then show
+            filePanel.show(op);
+            backstageModel.set('place', event.place);
+        } else {
+            filePanel.show(op);
+        }
+        // Ensure File tab is selected
+        ribbonModel.set('selectedTab', 'file');
+        // Notify splitPanel of transition
+        setTimeout(() => {
+            splitPanel.onTransitioning();
+        }, 200);
+    });
+
+    backstageModel.on('filePanel:hide', () => {
+        filePanel.hide();
+        setTimeout(() => {
+            splitPanel.onTransitioning();
+        }, 200);
+    });
+
+
     let notifications = new Notifications(document.querySelector('#notifications'));
     instance.on( 'notification', note => notifications.notify(note));
     viewController.on('notification', note => notifications.notify(note));
@@ -897,8 +946,10 @@ ready(async() => {
                 splitPanel.onTransitioning();
             }, 200);
         }
-        else
+        else {
             optionspanel.hideOptions();
+            filePanel.hide();
+        }
     });
 
     host.on('close', async (event) => {

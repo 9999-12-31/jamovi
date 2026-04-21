@@ -1,0 +1,189 @@
+/*
+ * FilePanel — SplitPanel 内嵌文件操作面板
+ * 参照 variableeditor.css 的 grid-area 定位方式
+ *
+ * FilePanel 创建自己的 FSEntryBrowserView 实例（不与 BackstageView 共享 DOM），
+ * 所以只需要覆盖 FSEntryBrowserView 的 CSS。
+ */
+
+.jmv-file-panel {
+    background-color: #F8F8F8;
+    width: 100%;
+    height: 450px;
+    transition: height .2s, border-top .2s, background-color .2s, opacity .2s, margin .2s, visibility .2s;
+    box-sizing: border-box;
+    border-top: 1px solid #CCCCCC;
+    position: relative;
+    grid-area: 1 / 1 / span 1 / span 5;
+    border-bottom: 1px solid #CCCCCC;
+    margin-bottom: 6px;
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.jmv-file-panel.hidden {
+    height: 0;
+    transition-timing-function: ease, step-end;
+    border-top: 1px solid #F0F0F0;
+    opacity: 0;
+    margin-bottom: 0px;
+    visibility: hidden;
+}
+
+/* ─── Header ─── */
+
+.jmv-file-panel-header {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    min-height: 40px;
+    padding: 0 12px;
+    border-bottom: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
+    gap: 12px;
+}
+
+.jmv-file-panel-title {
+    font-size: 130%;
+    color: #3E6DA9;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.jmv-file-panel-place-tabs {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    margin-inline-start: 20px;
+}
+
+.jmv-file-panel-place-tab {
+    padding: 4px 14px;
+    font-size: 100%;
+    border: 1px solid #CCCCCC;
+    border-bottom: none;
+    background-color: #F0F0F0;
+    color: #555555;
+    cursor: pointer;
+    border-radius: 4px 4px 0 0;
+    transition: background-color .15s, color .15s;
+    font-family: inherit;
+}
+
+.jmv-file-panel-place-tab:hover {
+    background-color: #E1E9F4;
+}
+
+.jmv-file-panel-place-tab.active {
+    background-color: #FFFFFF;
+    color: #3E6DA9;
+    font-weight: 600;
+    border-bottom: 1px solid #FFFFFF;
+    margin-bottom: -1px;
+}
+
+.jmv-file-panel-close {
+    margin-inline-start: auto;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #BBBBBB;
+    border-radius: 16px;
+    background-color: transparent;
+    color: #BBBBBB;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: color .2s, border-color .2s;
+    flex-shrink: 0;
+}
+
+.jmv-file-panel-close:hover {
+    color: #999999;
+    border-color: #999999;
+}
+
+/* ─── Content area ─── */
+
+.jmv-file-panel-content {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+/* ─── FSEntryBrowserView overrides ─── */
+/* FSEntryBrowserView (jmv-browser) is a custom element with classes:
+ *   .silky-bs-choices-list .silky-bs-fslist
+ * We need to override the absolute positioning and hidden opacity from backstage.css */
+
+.jmv-file-panel jmv-browser,
+.jmv-file-panel .jmv-file-panel-browser {
+    position: relative !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    height: 100% !important;
+    width: 100% !important;
+    padding: 8px 16px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    min-height: 0 !important;
+    min-width: 0 !important;
+    top: auto !important;
+    inset-inline-start: auto !important;
+    flex: 1 1 auto !important;
+    transition: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+}
+
+/* Hide the place-title bar (non-Electron) — we have our own header */
+.jmv-file-panel .title-bar {
+    display: none !important;
+}
+
+/* File entries: wider layout for inline panel */
+.jmv-file-panel .silky-bs-fslist-entry {
+    width: auto;
+    max-width: 350px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* File list: wrap items into grid-like layout */
+.jmv-file-panel .silky-bs-fslist-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 4px;
+}
+
+/* Path browser: full width */
+.jmv-file-panel .silky-bs-fslist-path-browser {
+    width: 100%;
+}
+
+/* Save/import footer: full width */
+.jmv-file-panel .silky-bs-fslist-footer {
+    width: 100%;
+}
+
+/* Header area */
+.jmv-file-panel .silky-bs-fslist-header {
+    width: 100%;
+}
+
+/* Search box */
+.jmv-file-panel .searchbox {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* fslist base */
+.jmv-file-panel .silky-bs-fslist {
+    padding-inline-start: 0;
+    width: 100%;
+}

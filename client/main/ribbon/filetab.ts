@@ -21,12 +21,7 @@ export class FileTab extends RibbonTab {
             ]}),
             new RibbonSeparator(),
             new RibbonGroup({ title: _('Open'), margin: 'large', items: [
-                new RibbonButton({ title: _('Open'), ariaLabel: _('Open a data file'), name: 'open', margin: 'large', size: 'large', shortcutKey: 'o', shortcutPosition: { x: '50%', y: '90%' }, subItems: [
-                    new RibbonGroup({ title: _('Places'), orientation: 'vertical', titlePosition: 'top', items: [
-                        new RibbonButton({ title: _('This PC'), name: 'openThisPC', shortcutKey: 'p', shortcutPosition: { x: '25px', y: '55%' } }),
-                        new RibbonButton({ title: _('Data Library'), name: 'openExamples', shortcutKey: 'l', shortcutPosition: { x: '25px', y: '55%' } }),
-                    ]}),
-                ]}),
+                new RibbonButton({ title: _('Open'), ariaLabel: _('Open a data file'), name: 'open', margin: 'large', size: 'large', shortcutKey: 'o', shortcutPosition: { x: '50%', y: '90%' } }),
             ]}),
             new RibbonSeparator(),
             new RibbonGroup({ title: _('Save'), margin: 'large', items: [
