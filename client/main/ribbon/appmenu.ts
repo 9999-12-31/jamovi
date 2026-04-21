@@ -348,7 +348,7 @@ export class AppMenuButton extends EventDistributor {
         this.$nFormatList.value = nf;
         this.$pFormatList.value = pf;
 
-        let refsMode = settings.getSetting('refsMode', 'bottom');
+        let refsMode = settings.getSetting('refsMode', 'hidden');
         this.$refsModeList.value = refsMode;
 
         let theme = settings.getSetting('theme', Theme.DEFAULT);

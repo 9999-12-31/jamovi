@@ -172,7 +172,7 @@ class ResultsPanel extends EventDistributor {
         if ( ! this._ready)
             return;
         this._updateAllRefNumbers();
-        let refsMode = this.model.settings().getSetting('refsMode', 'bottom');
+        let refsMode = this.model.settings().getSetting('refsMode', 'hidden');
         if (refsMode === 'bottom')
             this._refsTable.style.display = '';
         else
@@ -426,7 +426,7 @@ class ResultsPanel extends EventDistributor {
             type: 'reftablechanged',
             data: {
                 refs: this._refsTable.getNumbers(analysis.ns),
-                refsMode: this.model.settings().getSetting('refsMode', 'bottom'),
+                refsMode: this.model.settings().getSetting('refsMode', 'hidden'),
             }
         };
         resources.iframe.contentWindow.postMessage(event, this.iframeUrl);
@@ -488,7 +488,7 @@ class ResultsPanel extends EventDistributor {
                 devMode: this.model.settings().get('devMode'),
                 format: format,
                 refs: this._refsTable.getNumbers(analysis.ns),
-                refsMode: this.model.settings().getSetting('refsMode', 'bottom'),
+                refsMode: this.model.settings().getSetting('refsMode', 'hidden'),
                 isEmpty: resources.isEmpty,
                 hasTitle: resources.hasTitle,
                 selected: newSelected === null ? null : newSelected === analysis,
