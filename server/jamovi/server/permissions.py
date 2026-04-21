@@ -38,7 +38,7 @@ class Permissions:
         elif app_mode == 'cloud':
             self.library.browseable = conf.get('permissions_library_browseable', '0') == '1'
             self.library.addRemove = conf.get('permissions_library_add_remove', '0') == '1'
-            self.library.showHide = conf.get('permsissions_library_show_hide', '0') == '1'
+            self.library.showHide = conf.get('permissions_library_show_hide', '0') == '1'
             self.library.sideLoad = False
             self.browse.local = False
             self.browse.examples = True
