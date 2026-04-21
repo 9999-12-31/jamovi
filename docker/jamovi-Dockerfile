@@ -230,7 +230,7 @@ COPY --from=server  /usr/lib/jamovi/ /usr/lib/jamovi/
 ENV LD_LIBRARY_PATH $R_HOME/lib
 ENV JAMOVI_HOME /usr/lib/jamovi
 ENV PYTHONPATH /usr/lib/jamovi/server
-ENV R_LIBS $R_HOME/library:/usr/lib/jamovi/modules
+ENV R_LIBS $R_HOME/library:/usr/lib/jamovi/modules/base/R:/usr/lib/jamovi/modules/jmv/R
 ENV JAMOVI_SESSION_EXPIRES 0
 ENV JAMOVI_ALLOW_ARBITRARY_CODE false
 
