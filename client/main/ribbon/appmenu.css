@@ -49,10 +49,7 @@ body.windows.electron .jmv-ribbon-appmenu-menu-panel {
 
 .jmv-ribbon-appmenu-icon {
     width: 45px;
-    background-image: url('../../assets/logo-v-naked.svg');
-    background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: none;
 }
 
 .jmv-ribbon-appmenu-back {

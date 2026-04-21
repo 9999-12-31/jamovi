@@ -212,7 +212,7 @@ coms.on('broadcast', (message) => {
 if (window.navigator.platform === 'MacIntel') {
     host.constructMenu([
         {
-            label: 'jamovi',
+            label: '',
             submenu: [
                 { role: 'about' },
                 { type: 'separator' },
@@ -254,14 +254,11 @@ const highContrast = new HighContrast(document.body, document.body, () => {
         .measure-type-icon,
         .silky-bs-flist-item-folder-browse-icon,
         .silky-bs-fslist-browser-check-button,
-        .jmv-ribbon-appmenu-icon,
         .jmv-ribbon-appmenu-back-button > div
         `);
 }, () => {
     return document.body.querySelectorAll(`
-        .silky-bs-logo,
         .jmv-ribbon-fullscreen,
-        .jmv-store-header-logo,
         .silky-bs-back-button > div
         `);
 }, true);

@@ -123,10 +123,7 @@
 
 .silky-bs-logo {
     flex: 4;
-    background-image: url('../assets/logo-store.svg');
-    background-size: 120px;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: none;
 }
 
 .silky-bs-back {

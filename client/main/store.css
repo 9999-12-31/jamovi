@@ -14,10 +14,7 @@
 
 .jmv-store-header-logo {
     height: 100%;
-    background-image: url('../assets/logo-store.svg');    
-    background-repeat: no-repeat;
-    background-size: auto 50%;
-    background-position-y: center;
+    background-image: none;
     background-position: left 12px center;
 }
 

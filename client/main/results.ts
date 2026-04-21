@@ -1,20 +1,15 @@
 'use strict';
 
 import ActionHub from './actionhub';
-
-import host from './host';
 import ResultsPanel from './resultspanel';
 import focusLoop from '../common/focusloop';
-import jamoviIcon from '../common/icon';
 import Instance from './instance';
 
 export class ResultsView extends HTMLElement {
 
-    icon: jamoviIcon;
     richView: ResultsPanel;
     model: Instance;
     selectedView: ResultsPanel;
-    welcome: HTMLElement;
     iframeUrl: string;
 
     constructor() {
@@ -26,12 +21,6 @@ export class ResultsView extends HTMLElement {
         this.iframeUrl = iframeUrl;
 
         this.classList.add('ResultsView');
-        host.version.then(version => {
-            this.icon = new jamoviIcon(version);
-            this.appendChild(this.icon.el);
-        });
-
-
         this.classList.add('jmv-results');
         this.setAttribute('tabindex', '-1');
         focusLoop.applyShortcutOptions(this, {
@@ -94,53 +83,15 @@ export class ResultsView extends HTMLElement {
     }
 
     showWelcome() {
-
-        const iframe = document.createElement('iframe');
-        iframe.classList.add('jmv-welcome-iframe');
-        iframe.sandbox = 'allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox';
-        // hidden to begin with, only show if successful
-        iframe.style.display = 'none';
-
-        this.welcome = document.createElement('div');
-        this.welcome.classList.add('jmv-welcome-panel');
-        this.welcome.setAttribute('role', 'none');
-
-        this.welcome.appendChild(iframe);
-        this.appendChild(this.welcome);
-
-        host.version.then((version) => {
-            iframe.src = `https://www.jamovi.org/welcome/?v=${ version }&p=${ host.os }&plan=${ localStorage.getItem("plan") }`;
-        });
-
-        const messageHandler = (event) => {
-            // wait for a ready message from the iframe's content
-            // only a successful load of the page will lead to this
-            // anything else, i.e. a 500 will not be made visible
-            if (event.source === iframe.contentWindow
-                    && event.data.status === 'ready') {
-                iframe.style.display = null;
-                window.removeEventListener('message', messageHandler);
-            }
-        };
-        window.addEventListener('message', messageHandler);
-
-        this.hidePlaceHolder();
-
-        this.model.analyses().once('analysisCreated', (event) => {
-            this.hideWelcome();
-        });
+        // do nothing - empty results panel
     }
 
     hideWelcome() {
-        if (this.welcome)
-            this.welcome.classList.add('jmv-welcome-panel-hidden');
-
-        this.hidePlaceHolder();
+        // do nothing
     }
 
     hidePlaceHolder() {
-        if (this.icon)
-            this.icon.el.classList.add('hidden');
+        // do nothing
     }
 
     getAsHTML(options, part?) {

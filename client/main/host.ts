@@ -18,7 +18,7 @@ import { EventEmitter } from 'eventemitter3';
 
 const etron = window.electronAPI || {};
 
-const APP_NAME = 'jamovi';
+const APP_NAME = '';
 
 function resolveUrl(root) {
     let v = `${ window.location.protocol }//${ root }`;
