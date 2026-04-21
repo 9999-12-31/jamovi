@@ -46,6 +46,24 @@ if tornado_major < 5:
     raise RuntimeError('tornado 5+ is required')
 
 
+class CORSMixin:
+    """CORS mixin for Tornado handlers"""
+
+    def set_default_headers(self):
+        self.set_header('Access-Control-Allow-Origin', '*')
+        self.set_header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS')
+        self.set_header('Access-Control-Allow-Headers', 'Content-Type, Authorization')
+
+    def options(self, *args, **kwargs):
+        self.set_status(204)
+        self.finish()
+
+
+class CORSStaticFileHandler(CORSMixin, TornadosStaticFileHandler):
+    """Static file handler with CORS support"""
+    pass
+
+
 access_key = conf.get('access_key', None)
 access_key_generated = False
 
@@ -55,7 +73,7 @@ if access_key is None:
     conf.set('access_key', access_key)
 
 
-class SingleFileHandler(RequestHandler):
+class SingleFileHandler(CORSMixin, RequestHandler):
 
     _path: str
     _mime_type: str | None
@@ -79,7 +97,7 @@ class SingleFileHandler(RequestHandler):
             self.set_header(key, value)
 
 
-class StaticFileHandler(TornadosStaticFileHandler):
+class StaticFileHandler(CORSMixin, TornadosStaticFileHandler):
 
     def __init__(self, *args, extra_headers={}, **kwargs):
         self._extra_headers = extra_headers
@@ -90,7 +108,7 @@ class StaticFileHandler(TornadosStaticFileHandler):
             self.set_header(key, value)
 
 
-class SessHandler(RequestHandler):
+class SessHandler(CORSMixin, RequestHandler):
 
     def initialize(self, session):
         self._session = session
@@ -236,7 +254,7 @@ class AnalysisDescriptor(SessHandler):
             self.write(content)
 
 
-class EntryHandler(RequestHandler):
+class EntryHandler(CORSMixin, RequestHandler):
 
     def initialize(self, session):
         self._session = session
@@ -266,7 +284,7 @@ class EntryHandler(RequestHandler):
         self.redirect('%s/%s' % (instance.id, query))
 
 
-class OpenHandler(RequestHandler):
+class OpenHandler(CORSMixin, RequestHandler):
 
     def initialize(self, session):
         self._session = session
@@ -520,12 +538,12 @@ class SettingsHandler(AuthTokenHandler):
             self._session.apply_settings(settings)
 
 
-class VersionHandler(RequestHandler):
+class VersionHandler(CORSMixin, RequestHandler):
     def get(self):
         self.write(app_info.version)
 
 
-class I18nManifestHandler(RequestHandler):
+class I18nManifestHandler(CORSMixin, RequestHandler):
 
     manifest = None
 
@@ -550,7 +568,7 @@ class I18nManifestHandler(RequestHandler):
             self.write(json.dumps(I18nManifestHandler.manifest))
 
 
-class DownloadFileHandler(TornadosStaticFileHandler):
+class DownloadFileHandler(CORSMixin, TornadosStaticFileHandler):
     def set_extra_headers(self, path):
         filename = self.get_argument('filename', None)
         if filename:
@@ -600,7 +618,7 @@ class ModuleUploadHandler(SessHandler):
                 pass
 
 
-class ConfigJSHandler(RequestHandler):
+class ConfigJSHandler(CORSMixin, RequestHandler):
     def initialize(self, roots):
         self._roots = roots
 
