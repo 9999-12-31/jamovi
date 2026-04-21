@@ -56,10 +56,21 @@ class Store extends HTMLElement {
         });
 
         let i = 0;
-        for (let tab of [
-            { name: 'installed', title: _('Installed') },
-            { name: 'store', title: _('Available') },
-            { name: 'sideload', title: _('Sideload')} ]) {
+        let tabs = [
+            { name: 'installed', title: _('Installed') }
+        ];
+        
+        // Add 'store' tab if browseable setting is enabled
+        if (settings.getSetting('permissions_library_browseable', true)) {
+            tabs.push({ name: 'store', title: _('Available') });
+        }
+        
+        // Add 'sideload' tab if side_load setting is enabled
+        if (settings.getSetting('permissions_library_side_load', false)) {
+            tabs.push({ name: 'sideload', title: _('Sideload') });
+        }
+        
+        for (let tab of tabs) {
 
             let $tab = HTML.parse(`<div class="jmv-store-tab store-tabs-list-item store-tabs-auto-select" data-tab="${tab.name}" data-index="${i++}" tabindex="-1" role="tab"><div class="jmv-store-tab-inner">${tab.title}</div></div>`);
             $tabContainer.append($tab);
@@ -89,7 +100,7 @@ class Store extends HTMLElement {
             else {
                 const $pageStore = HTML.parse('<div class="jmv-store-page jmv-store-page-store" aria-hidden="true"></div>');
                 $pageContainer.append($pageStore);
-                $pageStore.append(HTML.parse(`<div class="mode-msg">${_('The jamovi library is not available to your session.')}</div>`));
+                $pageStore.append(HTML.parse(`<div class="mode-msg">${_('The library is not available to your session.')}</div>`));
             }
             this.$pages = $pageContainer.querySelectorAll<HTMLElement>('.jmv-store-page');
         });

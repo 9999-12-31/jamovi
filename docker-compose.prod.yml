@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  jamovi:
+    image: ghcr.io/9999-12-31/jamovi:latest  # 镜像地址
+    container_name: jamovi                          # 容器名称
+    ports:
+      - '41337:41337'  # 主端口
+      - '41338:41338'  # 分析端口1
+      - '41339:41339'  # 分析端口2
+    command: ["/usr/bin/python3", "-u", "-m", "jamovi.server", "41337", "--if=*"]  # 启动命令
+    stdin_open: true                         # 保持STDIN打开
+    stop_grace_period: 0.1s                 # 快速停止容器
+    restart: unless-stopped                 # 除非手动停止，否则自动重启
+    environment:
+      JAMOVI_HOSTNAME: '0.0.0.0'           # 监听所有网络接口，允许所有IP访问
+      JAMOVI_ALLOW_ARBITRARY_CODE: 'false'       # 是否允许执行任意R代码，false禁用更安全，防止代码注入攻击
+      JAMOVI_HOST_A: 'localhost:41337'
+      JAMOVI_HOST_B: 'localhost:41338'
+      JAMOVI_HOST_C: 'localhost:41339'
+      JAMOVI_ACCESS_KEY: ''                      # 访问密钥，留空禁用认证，设置后需要通过?access_key=xxx访问
+      # 模块库权限控制
+      JAMOVI_PERMISSIONS_LIBRARY_BROWSEABLE: '0'   # 禁用在线模块库浏览，只显示已安装和Sideload两个tab
+      JAMOVI_PERMISSIONS_LIBRARY_ADD_REMOVE: '1'   # 启用安装卸载模块（已安装模块可以卸载）
+      JAMOVI_PERMISSIONS_LIBRARY_SHOW_HIDE: '1'    # 启用显示隐藏模块（用户可控制模块是否在分析菜单栏显示）
+      JAMOVI_PERMISSIONS_LIBRARY_SIDE_LOAD: '1'    # 启用从本地上传模块（允许用户本地上传.jmo文件安装）
+    volumes:
+      - ./documents:/root/Documents  # 文档持久化存储目录
+    networks:
+      - jamovi-net  # 使用自定义桥接网络
+
+networks:
+  jamovi-net:
+    driver: bridge  # 使用桥接网络模式
