@@ -119,11 +119,11 @@ msgstr "已从 {list} 移除 {vars}."
 
 #: jamovi/client/main/ribbon/appmenu.js:255
 msgid "A change of language requires jamovi to be restarted"
-msgstr "更改语言需要重新启动 jamovi"
+msgstr "更改语言需要重新启动"
 
 #: jamovi/server/jamovi/server/formatio/omv.py
 msgid "A newer version of jamovi is required"
-msgstr "需要更新的 jamovi 版本"
+msgstr "需要更新版本"
 
 #: jamovi/client/main/ribbon/appmenu.js:99
 msgid "Accent"
@@ -215,7 +215,7 @@ msgstr "由 {hostname} 托管的在线数据集"
 
 #: jamovi/client/main/main.js:128
 msgid "An unexpected error has occured, and jamovi must now close."
-msgstr "发生了意外错误，jamovi 现在必须关闭。"
+msgstr "发生了意外错误，现在必须关闭。"
 
 #: jamovi/server/jamovi/server/syncs/http.py
 msgid "An unexpected error occurred"
@@ -425,7 +425,7 @@ msgstr "关闭文件菜单"
 
 #: jamovi/client/main/main.ts:311
 msgid "Close jamovi window"
-msgstr "关闭 jamovi 窗口"
+msgstr "关闭窗口"
 
 #: jamovi/client/main/ribbon/appmenu.js:49
 msgid "Close preferences"
@@ -518,7 +518,7 @@ msgstr "将数字转换为整数。"
 
 #: jamovi/client/main/vareditor/formulatoolbar.js:130
 msgid "Converts text to a number (if possible)."
-msgstr "将文本转换为数字（如果可能）。"
+msgstr "将文本转换为数字。"
 
 #: jamovi/client/main/vareditor/formulatoolbar.js:128
 msgid "Converts the value to text."
@@ -1006,7 +1006,7 @@ msgstr "筛选器可能不会引用输出变量"
 
 #: jamovi/client/analysisui/main.ts:333
 msgid "Find module in jamovi library"
-msgstr "在 jamovi 库中查找模块"
+msgstr "在库中查找模块"
 
 #: jamovi/client/main/main.ts:243
 msgid "Focus on spreadsheet"
@@ -1309,36 +1309,36 @@ msgstr "斜体"
 #: jamovi/client/main/backstage.js:1005
 #: jamovi/client/main/backstage.js:1016
 msgid "jamovi file {ext}"
-msgstr "jamovi 文件 {ext}"
+msgstr "文件 {ext}"
 
 #: jamovi/client/main/backstage.js:974
 msgid "jamovi files {ext}"
-msgstr "jamovi 文件 {ext}"
+msgstr "文件 {ext}"
 
 #: jamovi/client/main/misc/announcements.js:3
 msgid "jamovi is now available in { insert translation language }! (Many thanks to { insert your name here (or put a more generic \"the jamovi translation team\", if you don't want credit) })"
-msgstr "jamovi 现在提供 { 中文(简体) }! (非常感谢 {王顺(Shun Wang)和梦特团队})"
+msgstr "现在提供 { 中文(简体) }!"
 
 #: jamovi/client/main/misc/announcements.js:2
 msgid "jamovi is now available in { insert translation language }! (Many thanks to @{ insert your twitter handle here (or put a more generic \"the jamovi translation team\", if you don't want credit) })"
-msgstr "jamovi 现在提供{ 中文(简体) }! (非常感谢 @{ 王顺(Shun Wang)和梦特团队 })"
+msgstr "现在提供{ 中文(简体) }!"
 
 #: jamovi/client/main/ribbon/analysetab.js:78
 msgid "jamovi library"
-msgstr "jamovi 库"
+msgstr "库"
 
 #: jamovi/client/main/store/pagesideload.js:27
 msgid "jamovi modules"
-msgstr "jamovi 模块"
+msgstr "模块"
 
 #: jamovi/client/main/backstage.js:1028
 #: jamovi/client/main/backstage.js:1051
 msgid "jamovi template {ext}"
-msgstr "jamovi 模板 {ext}"
+msgstr "模板 {ext}"
 
 #: jamovi/client/main/backstage.js:975
 msgid "jamovi templates {ext}"
-msgstr "jamovi 模板 {ext}"
+msgstr "模板 {ext}"
 
 #: jamovi/client/main/backstage.js:983
 msgid "JASP files {ext}"
@@ -1620,7 +1620,7 @@ msgstr "打开文档 (LibreOffice) {ext}"
 
 #: jamovi/client/main/main.ts:270
 msgid "Open the jamovi module library"
-msgstr "打开 jamovi 模块库"
+msgstr "打开模块库"
 
 #: jamovi/client/main/main.ts:253
 msgid "Open the main menu"
@@ -1696,7 +1696,7 @@ msgstr "位置"
 
 #: jamovi/client/analysisui/main.ts:331
 msgid "Please <em>install or update</em> this module from the jamovi library."
-msgstr "请从 jamovi 库 <em>安装或更新</em> 此模块。"
+msgstr "请从库 <em>安装或更新</em> 此模块。"
 
 #: jamovi/client/main/viewcontroller.js:355
 msgid "Please use ctrl-v to paste into the spreadsheet."
@@ -1825,7 +1825,7 @@ msgstr "移除嵌套过滤器"
 
 #: jamovi/client/main/store/pagemodules.js:130
 msgid "Requires a newer version of jamovi"
-msgstr "需要更新版本的 jamovi"
+msgstr "需要更新版本"
 
 #: jamovi/client/main/ribbon/appmenu.js:254
 msgid "Restart required"
@@ -2281,7 +2281,7 @@ msgstr "{list} 的交互"
 
 #: jamovi/client/main/store.js:80
 msgid "The jamovi library is not available to your session."
-msgstr "您的会话不可使用 jamovi 库。"
+msgstr "您的会话不可使用库。"
 
 #: jamovi/client/main/vareditor/datavarwidget.js:116
 msgid "The level value {r} is already in use."
@@ -2293,7 +2293,7 @@ msgstr "水平值不能为空。"
 
 #: jamovi/server/jamovi/server/instance.py
 msgid "The library is disabled"
-msgstr "jamovi 库被禁用"
+msgstr "库被禁用"
 
 #: jamovi/server/jamovi/server/scheduler.py
 msgid "The module for this analysis is not installed, or is unavailable"
@@ -2354,7 +2354,7 @@ msgstr "这是一个数据变量。"
 
 #: jamovi/client/analysisui/main.ts:330
 msgid "This module is either <em>missing or incompatible</em> with this version of jamovi."
-msgstr "此模块可能与此版本的 jamovi <em>缺失或不兼容</em> 。"
+msgstr "此模块可能<em>缺失或不兼容</em> 。"
 
 #: jamovi/client/main/backstage.js:1136
 #: jamovi/client/main/backstage.js:1271
@@ -2685,7 +2685,7 @@ msgstr "您的连接已丢失。请刷新页面以继续。"
 
 #: jamovi/client/main/utils/headeralert.js:32
 msgid "Your web browser prevented jamovi from opening a new tab"
-msgstr "您的浏览器阻止了 jamovi 打开新标签页"
+msgstr "您的浏览器阻止了打开新标签页"
 
 #: jamovi/client/main/ribbon/appmenu.js:49
 msgid "Zoom"
