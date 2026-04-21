@@ -7,19 +7,19 @@
 
 /* 背景色:使用平台蓝色主题 */
 .jmv-ribbon {
-    background-color: #0056b5 !important;
+    background-color: #ffffff !important;
     color: #ffffff !important;
 }
 
 /* Ribbon 头部区域 */
 .jmv-ribbon-header {
-    background-color: #0056b5 !important;
+    background-color: #ffffff !important;
 }
 
 /* Tab 按钮样式 */
 .jmv-ribbon-tab {
     background-color: transparent !important;
-    color: #ffffff !important;
+    color: #666 !important;
 }
 
 /* Tab 悬停效果 */
