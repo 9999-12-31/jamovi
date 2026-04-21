@@ -61,3 +61,6 @@
 @import "../common/toolbar/toolbarseparator.css";
 @import "../common/focusloop.css";
 @import "../common/menu.css";
+
+/* Custom theme for Inspur Clinical Research Platform integration */
+@import "custom-theme.css";
