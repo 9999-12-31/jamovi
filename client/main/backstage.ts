@@ -1036,11 +1036,7 @@ export class BackstageModel extends EventMap<IBackstageModel> {
 
             let status = await stream;
             let iid = status.url.match(/([a-z0-9-]+)\/$/)[1];
-            if (this.instance.attributes.blank
-                    && this.instance.dataSetModel().attributes.edited === false)
-                host.navigate(iid);
-            else
-                host.openWindow(iid);
+            host.navigate(iid);  // 统一在当前页打开
 
         }
         catch (e) {
