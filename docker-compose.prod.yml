@@ -6,6 +6,8 @@ services:
     container_name: jamovi                                                # 容器名称
     ports:
       - '41337:41337'                                                     # 主服务端口（41338/41339 由系统自动分配）
+      - '41338:41338'
+      - '41339:41339'
     command: ['python3', '-u', '-m', 'jamovi.server', '41337', '--if=*']  # 启动命令
     stdin_open: true                                                      # 保持 STDIN 打开
     stop_grace_period: 0.1s                                               # 快速停止容器

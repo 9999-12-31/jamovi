@@ -20,6 +20,7 @@
 .jmv-ribbon-tab {
     background-color: transparent !important;
     color: #666 !important;
+    font-weight: 600;
 }
 
 /* Tab 悬停效果 */
@@ -84,4 +85,15 @@ body {
 .add-new-variable:hover {
     background: #0070e0 !important;
     background-image: linear-gradient(to bottom, #0070e0, #0070e0);
+}
+
+/* ========== 安装管理弹窗 ========== */
+.jmv-store-header-logo {
+    height: 100%;
+    background-image: none;
+    background-position: left 12px center;
+    background-color: #0056b5 !important;
+}
+button.jmv-ribbon-menu-item[data-name="modules"] {
+    display: none !important;
 }
