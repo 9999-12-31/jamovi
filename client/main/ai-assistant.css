@@ -1,0 +1,218 @@
+/* ==================== Floating Action Button ==================== */
+
+#ai-assistant-fab {
+    position: fixed;
+    bottom: 24px;
+    inset-inline-end: 24px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0056b5 0%, #0070e0 100%);
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 112, 224, 0.4);
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+}
+
+#ai-assistant-fab:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 112, 224, 0.6);
+}
+
+#ai-assistant-fab:active {
+    transform: scale(0.95);
+}
+
+#ai-assistant-fab svg {
+    width: 28px;
+    height: 28px;
+    fill: white;
+    transition: transform 0.3s ease;
+}
+
+#ai-assistant-fab.active svg {
+    transform: rotate(90deg);
+}
+
+/* Tooltip */
+#ai-assistant-fab::before {
+    content: 'AI 助手';
+    position: absolute;
+    inset-inline-end: 68px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+#ai-assistant-fab:hover::before {
+    opacity: 1;
+}
+
+/* ==================== Modal Overlay ==================== */
+
+#ai-assistant-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: none;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#ai-assistant-overlay.visible {
+    opacity: 0;
+    visibility: visible;
+    pointer-events: none;
+}
+
+/* ==================== Panel ==================== */
+
+#ai-assistant-panel {
+    position: fixed;
+    top: 24px;
+    bottom: 24px;
+    inset-inline-end: 24px;
+    width: 420px;
+    background: white;
+    border-radius: 12px 0 0 12px;
+    box-shadow: -8px 8px 32px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(20px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#ai-assistant-panel.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+/* Panel Header */
+#ai-assistant-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background: linear-gradient(135deg, #0056b5 0%, #0070e0 100%);
+    color: white;
+    flex-shrink: 0;
+}
+
+#ai-assistant-header h3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#ai-assistant-header h3::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #4ade80;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+/* Close Button */
+#ai-assistant-close {
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease;
+    font-size: 18px;
+    line-height: 1;
+}
+
+#ai-assistant-close:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Panel Body */
+#ai-assistant-body {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+
+#ai-assistant-body iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: white;
+}
+
+/* Loading State */
+#ai-assistant-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #666;
+}
+
+#ai-assistant-loading .spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #e0e0e0;
+    border-top-color: #0070e0;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin: 0 auto 12px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* ==================== Responsive ==================== */
+
+@media (max-width: 768px) {
+    #ai-assistant-panel {
+        width: calc(100vw - 16px) !important;
+        height: calc(100vh - 80px) !important;
+        bottom: 80px;
+        inset-inline-end: 8px;
+    }
+}

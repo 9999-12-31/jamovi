@@ -17,8 +17,9 @@ services:
       JAMOVI_HOST_A: 'localhost:41337'                                    # 主应用端口（必须指定，否则使用随机端口）
       JAMOVI_HOST_B: 'localhost:41338'                                    # 分析 UI 端口
       JAMOVI_HOST_C: 'localhost:41339'                                    # 结果视图端口
-      JAMOVI_ALLOW_ARBITRARY_CODE: 'false'                                # 禁止执行任意R代码，防止代码注入攻击
+      JAMOVI_ALLOW_ARBITRARY_CODE: 'false'                                # 禁止执行任意R代码,防止代码注入攻击
       JAMOVI_ACCESS_KEY: ''                                               # 访问密钥（留空=禁用认证）
+      JAMOVI_AI_ASSISTANT_URL: 'http://10.110.177.110:1780/HealthAIService/chat/7otOcYEuJMtuzz3f'  # AI 助手地址
       # 模块库权限控制（normal 模式）
       JAMOVI_PERMISSIONS_LIBRARY_BROWSEABLE: '0'                          # 禁用在线模块库浏览（隐藏 Available tab）
       JAMOVI_PERMISSIONS_LIBRARY_ADD_REMOVE: '1'                          # 启用安装/卸载模块

@@ -22,6 +22,7 @@ import './variableeditor';
 import type { VariableEditor } from './variableeditor';
 import './filepanel';
 import type { FilePanel } from './filepanel';
+import './ai-assistant';
 import ActionHub from './actionhub';
 import I18ns from '../common/i18n';
 

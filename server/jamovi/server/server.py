@@ -624,7 +624,24 @@ class ConfigJSHandler(CORSMixin, RequestHandler):
 
     def get(self):
         self.set_header('Content-Type', 'application/javascript')
-        self.write(f'window.config = {{"client":{{"roots":["{ self._roots[0] }","{ self._roots[1] }","{ self._roots[2] }"]}}}}')
+        
+        from .utils import conf
+        conf.init()
+        
+        # Read AI assistant URL from config (supports JAMOVI_AI_ASSISTANT_URL env var)
+        ai_assistant_url = conf.get('ai_assistant_url', '')
+        
+        config = {
+            "client": {
+                "roots": [self._roots[0], self._roots[1], self._roots[2]]
+            }
+        }
+        
+        # Add AI assistant URL if configured
+        if ai_assistant_url:
+            config['client']['aiAssistantUrl'] = ai_assistant_url
+        
+        self.write(f'window.config = {json.dumps(config)}')
 
 
 class Server:
@@ -997,14 +1014,18 @@ class Server:
                     roots[:] = (host_a, host_b, host_c)
 
             # now we have the port numbers, we can add CSP
+            # Allow all origins
+            csp_frame_src = '*'
+            csp_connect_src = '*'
+            
             cache_headers[ 'Content-Security-Policy' ] = f'''
                 default-src 'self';
                 font-src 'self' data:;
                 img-src 'self' data:;
                 script-src  'self' 'unsafe-eval' 'unsafe-inline';
                 style-src 'self' 'unsafe-inline';
-                frame-src 'self' { hosts } https://www.jamovi.org;
-                connect-src 'self' data:;
+                frame-src { csp_frame_src };
+                connect-src { csp_connect_src };
             '''.replace('\n', '')
 
             log.info(f'listening across origin(s): { hosts }')

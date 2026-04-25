@@ -64,3 +64,6 @@
 
 /* Custom theme for Inspur Clinical Research Platform integration */
 @import "custom-theme.css";
+
+/* AI Assistant */
+@import "ai-assistant.css";
