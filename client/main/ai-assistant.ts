@@ -9,11 +9,19 @@
  *   <jmv-ai-assistant url="https://your-ai-assistant-url.com"></jmv-ai-assistant>
  */
 
-const DEFAULT_URL = 'https://example.com';
+const DEFAULT_URL = '';
 
-/** Get AI assistant URL from config, fallback to default */
-function getAiAssistantUrl(): string {
+/** Check if AI assistant URL is configured */
+function isAiAssistantConfigured(): boolean {
     if (typeof window !== 'undefined' && (window as any).config?.client?.aiAssistantUrl) {
+        return !!((window as any).config.client.aiAssistantUrl.trim());
+    }
+    return false;
+}
+
+/** Get AI assistant URL from config */
+function getAiAssistantUrl(): string {
+    if (isAiAssistantConfigured()) {
         return (window as any).config.client.aiAssistantUrl;
     }
     return DEFAULT_URL;
@@ -42,6 +50,11 @@ class AiAssistant extends HTMLElement {
     }
 
     connectedCallback() {
+        // Don't render if no URL is configured
+        if (!isAiAssistantConfigured()) {
+            this.style.display = 'none';
+            return;
+        }
         this._render();
         this._bindEvents();
     }
