@@ -215,7 +215,6 @@ export class BackstageModel extends EventMap<IBackstageModel> {
         this._pcExportListModel = new FSEntryListModel();
         this._pcExportListModel.clickProcess = 'export';
         this._pcExportListModel.fileExtensions = [
-            { extensions: ['pdf'], description: _('PDF Document {ext}', { ext: '(.pdf)' }) },
             { extensions: ['html', 'htm'], description: _('Web Page {ext}', { ext: '(.html, .htm)' }) },
             { extensions: ['omt'], description: _('jamovi template {ext}', { ext: '(.omt)' }) },
             { extensions: ['csv'], description: _('CSV (Comma delimited) {ext}', { ext: '(.csv)' }) },
@@ -239,7 +238,6 @@ export class BackstageModel extends EventMap<IBackstageModel> {
         this._deviceExportListModel.clickProcess = 'export';
         this._deviceExportListModel.writeOnly = true;
         this._deviceExportListModel.fileExtensions = [
-            { extensions: ['pdf'], description: _('PDF Document {ext}', { ext: '(.pdf)' }) },
             { extensions: ['html', 'htm'], description: _('Web Page {ext}', { ext: '(.html, .htm)' }) },
             { extensions: ['omt'], description: _('jamovi template {ext}', { ext: '(.omt)' }) },
             { extensions: ['csv'], description: _('CSV (Comma delimited) {ext}', { ext: '(.csv)' }) },

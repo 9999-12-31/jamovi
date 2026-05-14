@@ -8,6 +8,7 @@ import { exportElem } from '../common/utils/formatio';
 import ContextMenu from './contextmenu';
 import Notify from './notification';
 import host from './host';
+import ActionHub from './actionhub';
 import selectionLoop from '../common/selectionloop';
 import ContextMenuButton from './contextmenu/contextmenubutton';
 
@@ -931,6 +932,12 @@ class ResultsPanel extends EventDistributor {
             iframeWindow.postMessage({ type: 'addNote', data: { address, options } }, '*');
         }
         else if (event.op === 'export') {
+
+            // In browser mode, trigger the top menu export instead of a save dialog
+            if (!host.isElectron) {
+                ActionHub.get('export').request();
+                return;
+            }
 
             let part = flatten(event.address);
 
