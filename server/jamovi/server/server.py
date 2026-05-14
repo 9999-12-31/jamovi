@@ -572,9 +572,12 @@ class DownloadFileHandler(CORSMixin, TornadosStaticFileHandler):
     def set_extra_headers(self, path):
         filename = self.get_argument('filename', None)
         if filename:
+            from urllib.parse import quote as url_quote
+            ascii_filename = filename.encode('ascii', 'replace').decode('ascii')
+            encoded_filename = url_quote(filename)
             self.set_header(
                 'Content-Disposition',
-                f'attachment; filename="{ filename }"')
+                f"attachment; filename=\"{ascii_filename}\"; filename*=UTF-8''{encoded_filename}")
 
 
 class EndHandler(SessHandler):
