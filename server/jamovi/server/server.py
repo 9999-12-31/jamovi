@@ -582,6 +582,50 @@ class EndHandler(SessHandler):
         self._session.stop()
 
 
+class ImportHandler(SessHandler):
+    """Accept file uploads and import them into an existing instance (browser mode)."""
+
+    async def post(self, instance_id):
+        instance = self._session.get(instance_id)
+        if instance is None:
+            self.set_status(404)
+            self.write(json.dumps({'status': 'error', 'message': 'Instance not found'}))
+            return
+
+        if 'file' not in self.request.files:
+            self.set_status(400)
+            self.write(json.dumps({'status': 'error', 'message': 'No file uploaded'}))
+            return
+
+        temp_files = []
+        try:
+            paths = []
+            for uploaded in self.request.files['file']:
+                _, ext = os.path.splitext(uploaded.filename)
+                tmp = NamedTemporaryFile(suffix=ext, delete=False)
+                tmp.write(uploaded.body)
+                tmp.close()
+                temp_files.append(tmp.name)
+                paths.append(tmp.name)
+
+            lang_code = self.request.headers.get('Accept-Language', 'en')
+            self._session.set_language(lang_code)
+
+            await instance.import_files(paths)
+
+            self.write(json.dumps({'status': 'OK'}))
+        except Exception as e:
+            log.exception(e)
+            self.set_status(500)
+            self.write(json.dumps({'status': 'error', 'message': str(e)}))
+        finally:
+            for p in temp_files:
+                try:
+                    os.remove(p)
+                except OSError:
+                    pass
+
+
 class ModuleUploadHandler(SessHandler):
 
     async def post(self):
@@ -878,6 +922,7 @@ class Server:
             (fr'{ path_a }/end', EndHandler, { 'session': self._session }),
             (fr'{ path_a }/version', VersionHandler),
             (fr'{ path_a }/([a-f0-9-]+)/open', OpenHandler, { 'session': self._session }),
+            (fr'{ path_a }/([a-f0-9-]+)/import', ImportHandler, { 'session': self._session }),
             (fr'{ path_a }/([a-f0-9-]+)/save', SaveHandler, { 'session': self._session }),
             (fr'{ path_a }/([a-f0-9-]+)/coms', ClientConnection, { 'session': self._session }),
             (fr'{ path_a }/([a-f0-9-]+/dl/.*)', DownloadFileHandler, { 'path': self._session.session_path }),

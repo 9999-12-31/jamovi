@@ -33,7 +33,8 @@ export interface ISaveOptions {
 }
 
 export interface IImportOptions {
-    paths: Array<string>;
+    paths?: Array<string>;
+    files?: FileList | File[];
 }
 
 

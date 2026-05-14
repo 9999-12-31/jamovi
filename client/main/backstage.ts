@@ -660,7 +660,6 @@ export class BackstageModel extends EventMap<IBackstageModel> {
 
             if ( ! result.cancelled) {
                 if (result.files) {
-                    const file = result.files[0];
                     this.requestImport({ files: result.files });
                 }
                 else {
@@ -1065,8 +1064,33 @@ export class BackstageModel extends EventMap<IBackstageModel> {
             }
         };
 
-        this.instance.import(options.paths)
-            .then(deactivate, undefined, deactivate);
+        if (options.files) {
+            // Browser mode: files are File objects, upload via HTTP FormData
+            const instanceId = this.instance.instanceId();
+            const formData = new FormData();
+            for (let i = 0; i < options.files.length; i++) {
+                const f = options.files[i];
+                formData.append('file', f, f.name);
+            }
+            fetch(`${ host.baseUrl }${ instanceId }/import`, {
+                method: 'POST',
+                body: formData,
+            }).then((resp) => {
+                if ( ! resp.ok)
+                    throw new Error(`Import failed: ${ resp.statusText }`);
+                return resp.json();
+            }).then(() => {
+                this.instance.refreshDataset();
+                deactivate();
+            }).catch((e) => {
+                console.error('Import error:', e);
+                deactivate();
+            });
+        }
+        else {
+            this.instance.import(options.paths)
+                .then(deactivate, undefined, deactivate);
+        }
     }
 
     externalRequestSave() {

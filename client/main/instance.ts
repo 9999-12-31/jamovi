@@ -240,6 +240,10 @@ export class Instance extends EventMap<IInstanceModel> implements IBackstageSupp
 
     }
 
+    refreshDataset() {
+        return this._readDataset(false);
+    }
+
     import(paths: string[]) {
 
         let coms = this.attributes.coms;

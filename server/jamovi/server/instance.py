@@ -1050,19 +1050,12 @@ class Instance:
         if request.op == jcoms.OpenRequest.Op.Value('IMPORT_REPLACE'):
             await self._on_import(request)
 
-    async def _on_import(self, request):
-
-        if request.filePath != '':
-            paths = [ request.filePath ]
-        else:
-            paths = list(request.filePaths)
+    async def import_files(self, paths):
+        """Import one or more files by server-side path. Raises on failure."""
 
         n_files = len(paths)
-        coms = self._coms
-        instance_id = self._instance_id
         instance = self
 
-        # class which provides an iterator which iterates over the data sets
         class MultipleDataSets:
 
             # python 3.6 allows you use to use 'yield' inside async iterators.
@@ -1134,13 +1127,23 @@ class Instance:
                 self._i += 1
                 return (name, model)
 
-        try:
-            if self._perms.open.local is False:
-                raise PermissionError()
+        if self._perms.open.local is False:
+            raise PermissionError()
 
-            datasets = MultipleDataSets(paths)
-            await self._data.import_from(datasets, n_files > 1)
-            self._mod_tracker.clear()
+        datasets = MultipleDataSets(paths)
+        await self._data.import_from(datasets, n_files > 1)
+        self._mod_tracker.clear()
+        self._data.analyses.rerun()
+
+    async def _on_import(self, request):
+
+        if request.filePath != '':
+            paths = [ request.filePath ]
+        else:
+            paths = list(request.filePaths)
+
+        try:
+            await self.import_files(paths)
 
             response = jcoms.OpenProgress()
             self._coms.send(response, self._instance_id, request)
@@ -1170,9 +1173,6 @@ class Instance:
             message = _('Unable to perform import')
             cause = str(e)
             self._coms.send_error(message, cause, self._instance_id, request)
-
-        finally:
-            self._data.analyses.rerun()
 
     def _open_callback(self, task, progress):
         response = jcoms.ComsMessage()
