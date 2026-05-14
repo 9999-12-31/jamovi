@@ -1117,7 +1117,7 @@ class Instance:
                 def prog_cb(p):
                     ioloop.call_soon_threadsafe(
                         functools.partial(
-                            coms.send, None, instance_id, request,
+                            self._coms.send, None, instance_id, request,
                             complete=False, progress=(1000 * (self._i + p) / n_files, 1000)))
 
                 main_settings = instance._settings.group('main')
