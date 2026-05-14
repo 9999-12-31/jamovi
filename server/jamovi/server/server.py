@@ -1061,7 +1061,7 @@ class Server:
             # now we have the port numbers, we can add CSP
             # Allow all origins
             csp_frame_src = '*'
-            csp_connect_src = '*'
+            csp_connect_src = '* data:'
             
             cache_headers[ 'Content-Security-Policy' ] = f'''
                 default-src 'self';
