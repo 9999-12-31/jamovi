@@ -8,7 +8,6 @@ import { exportElem } from '../common/utils/formatio';
 import ContextMenu from './contextmenu';
 import Notify from './notification';
 import host from './host';
-import ActionHub from './actionhub';
 import selectionLoop from '../common/selectionloop';
 import ContextMenuButton from './contextmenu/contextmenubutton';
 
@@ -933,59 +932,57 @@ class ResultsPanel extends EventDistributor {
         }
         else if (event.op === 'export') {
 
-            // In browser mode, trigger the top menu export instead of a save dialog
-            if (!host.isElectron) {
-                ActionHub.get('export').request();
-                return;
-            }
-
             let part = flatten(event.address);
 
-            let saveOptions = {
-                path: undefined, // TBD
-                name: 'Image',
-                export: true,
-                part: part,
-                partType: 'image',
-                overwrite: host.isElectron === false,
-            };
+            // Determine filename from element title
+            let title = event.target.title || event.target.label || 'export';
+            let sanitisedTitle = title.replace(/[/\\?%*:|"<>]/g, '_');
 
             if (event.target.type === 'Image') {
                 let options = {
                     title: _('Export image'),
                     filters: [
-                        { name: 'PDF', description: _('PDF Document {ext}', { ext: '(.pdf)' }), extensions: [ 'pdf' ] },
                         { name: 'PNG', description: _('PNG Image {ext}', { ext: '(.png)' }), extensions: [ 'png' ] },
                         { name: 'SVG', description: _('SVG Image {ext}', { ext: '(.svg)' }), extensions: [ 'svg' ] },
                         { name: 'EPS', description: _('EPS Image {ext}', { ext: '(.eps)' }), extensions: [ 'eps' ] },
                         { name: 'PPTX', description: _('PowerPoint Slide {ext}', { ext: '(.pptx)' }), extensions: [ 'pptx' ] },
                     ]
                 };
-                let result = await host.showSaveDialog(options);
-                if (result.cancelled)
-                    return;
-                saveOptions.path = result.file;
-                let status = await this.model.save(saveOptions);
-                if (host.isElectron === false && status.path) {
-                    let source = path.basename(status.path);
-                    let url = `dl/${ source }?filename=${ path.basename(result.file) }`;
-                    await host.triggerDownload(url);
+                if (host.isElectron) {
+                    let result = await host.showSaveDialog(options);
+                    if (result.cancelled)
+                        return;
+                    let saveOptions = {
+                        path: result.file,
+                        name: 'Image',
+                        export: true,
+                        part: part,
+                        partType: 'image',
+                        overwrite: host.isElectron === false,
+                    };
+                    await this.model.save(saveOptions);
+                } else {
+                    // Browser mode: export as PNG directly
+                    let saveOptions = {
+                        path: '{{Temp}}/' + sanitisedTitle + '.png',
+                        name: 'Image',
+                        export: true,
+                        part: part,
+                        partType: 'image',
+                        overwrite: true,
+                    };
+                    let status = await this.model.save(saveOptions);
+                    if (status.path) {
+                        let source = path.basename(status.path);
+                        let url = `dl/${ source }?filename=${ encodeURIComponent(sanitisedTitle + '.png') }`;
+                        await host.triggerDownload(url);
+                    }
                 }
             }
             else {
-
-                let saveOptions = {
-                    path: undefined, // TBD
-                    name: 'Image',
-                    export: true,
-                    part: part,
-                    overwrite: host.isElectron === false,
-                };
-
                 let options = {
                     title: _('Export results'),
                     filters: [
-                        { name: 'PDF',  description: _('PDF Document {ext}', { ext: '(.pdf)' }),    extensions: [ 'pdf' ] },
                         { name: 'HTML', description: _('Web Page {ext}', { ext: '(.html, .htm)' }), extensions: ['html', 'htm'] },
                     ]
                 };
@@ -993,15 +990,33 @@ class ResultsPanel extends EventDistributor {
                 if (part === '')
                     options.filters.push({ name: 'LaTeX', description: _('LaTeX bundle {ext}', { ext: '(.zip)' }), extensions:  [ 'zip' ] });
 
-                let result = await host.showSaveDialog(options);
-                if (result.cancelled)
-                    return;
-                saveOptions.path = result.file;
-                let status = await this.model.save(saveOptions);
-                if (host.isElectron === false && status.path) {
-                    let source = path.basename(status.path);
-                    let url = `dl/${ source }?filename=${ path.basename(result.file) }`;
-                    await host.triggerDownload(url);
+                if (host.isElectron) {
+                    let result = await host.showSaveDialog(options);
+                    if (result.cancelled)
+                        return;
+                    let saveOptions = {
+                        path: result.file,
+                        name: 'Image',
+                        export: true,
+                        part: part,
+                        overwrite: host.isElectron === false,
+                    };
+                    await this.model.save(saveOptions);
+                } else {
+                    // Browser mode: export as HTML directly
+                    let saveOptions = {
+                        path: '{{Temp}}/' + sanitisedTitle + '.html',
+                        name: 'Image',
+                        export: true,
+                        part: part,
+                        overwrite: true,
+                    };
+                    let status = await this.model.save(saveOptions);
+                    if (status.path) {
+                        let source = path.basename(status.path);
+                        let url = `dl/${ source }?filename=${ encodeURIComponent(sanitisedTitle + '.html') }`;
+                        await host.triggerDownload(url);
+                    }
                 }
             }
         }
