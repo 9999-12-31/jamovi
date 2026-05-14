@@ -761,6 +761,11 @@ export class BackstageModel extends EventMap<IBackstageModel> {
     async tryExport(options: ISaveOptions) {
         try {
             options = Object.assign({ }, options, { export: true });
+            if (!host.isElectron) {
+                // In browser mode, save to temp so the server triggers a download
+                let name = path.basename(options.path);
+                options.path = '{{Temp}}/' + name;
+            }
             await this.requestSave(options);
         }
         catch(e) {
